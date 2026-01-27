@@ -11,6 +11,11 @@ library(ggprism)
 library(scales)
 library(MetBrewer)
 library(ggrepel)
+library(Biostrings)
+library(ggmsa)
+library(bslib)
+library(ape)
+library(ggtree)
 
 ### load aBSREL data
 load(file = "data/aBSREL_data.RData")
@@ -24,6 +29,7 @@ acomys_clusters <- read_csv("data/acomys_bias_one2one--clustered--infl4.csv")
 ### Load the aBSREL dN/dS dataframe
 dNdS_df <- read_delim("data/aBSREL_acomys_dNdS_df.tsv",
                       delim = "\t", escape_double = FALSE, trim_ws = TRUE)
+
 dNdS_df <- dNdS_df %>%
   # calculate and retrieve max omega values
   mutate(max_omega = if_else(rate_class_number == 1, omega_1,
@@ -53,244 +59,33 @@ Acomys_reduced_GO_clusters <- read_delim("data/functional_enrichments_cluster/Ac
                                          trim_ws = TRUE)
 
 ### Load the uniprot-mapped substitutions
-MEME_subs <- read_delim("data/Uniprot_mapping/MEME_subs_mapped_sitefiltered_noMSAs.tsv",
+MEME_subs <- read_delim("data/uniprot_mapping_pairwise/MEME_subs_mapped_sitefiltered_noMSAs.tsv",
                         delim = "\t", escape_double = FALSE,
                         col_types = cols(n_of_sites = col_integer(),
-                                         sites = col_character()), trim_ws = TRUE)
-
-### Load the uniprot-mapped substitutions for the MSA genelist
-MSA_genelist <- read_delim("data/Uniprot_mapping/MEME_subs_uniprot_nogaps_onlysubsites.tsv",
-                        delim = "\t", escape_double = FALSE, trim_ws = TRUE,
-                        col_select = "genename")$genename
+                                         sites = col_character(),
+                                         TOGA_sites = col_character()), trim_ws = TRUE)
 
 ### Load the uniprot sequence annotations
 progo_out <- read_delim("data/Uniprot_annotations/progo_out_combined.tsv",
                         delim = "\t", escape_double = FALSE,
                         trim_ws = TRUE)
-# Remove unneccesary line
-progo_out <- progo_out %>%
-  dplyr::filter(!(feat_name == "Processed zona pellucida sperm-binding protein 1" & is.na(End)))
 
-### Function to create whitespace
-generate_br_tags <- function(n) {
-  tagList(replicate(n, br(), simplify = FALSE))
-}
+### Load the MEME site translation table
+MEME_trans_df <- read_delim("data/translation_table/MEME_gene_site_translation_all_positions.tsv",
+                            delim = "\t",
+                            escape_double = FALSE,
+                            trim_ws = TRUE)
 
-### Create function for generating vertical lines in plotly graphs
-vline <- function(x = 0, color = "#92351E") {
-  list(
-    type = "line",
-    y0 = 0,
-    y1 = 1,
-    yref = "paper",
-    x0 = x,
-    x1 = x,
-    line = list(color = color, width = 1)
-  )
-}
+MEME_trans_df <- MEME_trans_df %>%
+  dplyr::rename(TOGA_Human_site = TOGA_orig_Human_site,
+                TOGA_Acomys_site = TOGA_orig_Acomys_site,
+                MSA_site = ggmsa_site) 
 
-### Function for generating rectangles in plotly graphs
-ly_rect <- function(x0, x1, y0, y1, fillcolor) {
-  list(type = "rect",
-       fillcolor = fillcolor, opacity = 0.8,
-       x0 = x0, x1 = x1, xref = "x",
-       y0 = y0, y1 = y1, yref = "y",
-       layer = "below",
-       line = list(color = fillcolor))
-}
-
-### Function for creating the interactive aBSREL STRING cluster-based
-### scatterplot.
-###   args:
-###     dNdS_acomys_clust: The dN/dS and STRING clusters combined dataframe
-###     pal: The color mappings to the data-values for the traces
-###     dNdS_column: Either 'mean_dNdS' or 'max_omega'. Thus, this selects if
-###                  you want to visualize the mean dN/dS or the highest
-###                  estimated omega class per gene.
-###     xaxis_title: The xaxis title that is selected.
-###     hover_text: Changes the hovertext for the dN/dS values
-Create_STRINGScatterplot <- function(dNdS_acomys_clust,
-                                     pal,
-                                     dNdS_column = "mean_dNdS",
-                                     xaxis_title = "Mean dN/dS",
-                                     hover_text = "Mean dN/dS") {
-  dNdS_column <- sym(dNdS_column)
-  
-  p <- eval(expr({
-    # Create ranges for the hidden traces
-    rangex <- range(`$`(dNdS_acomys_clust, !!dNdS_column))
-    rangey <- range(dNdS_acomys_clust$P_value_c)
-    
-    # Plot plotly, where a separate trace is generated for each STRING cluster
-    # (the non-clustered genes too have a separate trace).
-    p <- plot_ly()
-    for (clust in c(seq(max(dNdS_acomys_clust$Cluster, na.rm = TRUE)), NA)) {
-      if (is.na(clust)) {
-        p <- add_trace(p,
-                       data = dplyr::filter(dNdS_acomys_clust, is.na(Cluster)),
-                       type = "scatter",
-                       mode = "markers",
-                       x = ~ !!dNdS_column,
-                       y = ~P_value_c,
-                       color = ~sign,
-                       colors = pal,
-                       legendgroup = "Not Clustered",
-                       text = ~paste0("<b>gene:</b> ", genename, "<br>",
-                                      "<b>Ensembl transcript ID:</b> ", transcript_id, "<br>",
-                                      "<b>FDR:</b> ", P_value_c, "<br>",
-                                      "<b>-log10(FDR):</b> ", -log10(P_value_c), "<br>",
-                                      "<b>", hover_text, ":</b> ", !!dNdS_column, "<br>",
-                                      "<b>log10(", hover_text, "):</b> ", log10(!!dNdS_column)))
-      } else {
-        p <- add_trace(p,
-                       data = dplyr::filter(dNdS_acomys_clust, Cluster == clust),
-                       type = "scatter",
-                       mode = "markers",
-                       x = ~ !!dNdS_column,
-                       y = ~P_value_c,
-                       color = ~sign,
-                       colors = pal,
-                       legendgroup = paste("Cluster", clust),
-                       text = ~paste0("<b>gene:</b> ", genename, "<br>",
-                                      "<b>Ensembl transcript ID:</b> ", transcript_id, "<br>",
-                                      "<b>FDR:</b> ", P_value_c, "<br>",
-                                      "<b>-log10(FDR):</b> ", -log10(P_value_c), "<br>",
-                                      "<b>mean dN/dS:</b> ", !!dNdS_column, "<br>",
-                                      "<b>log10(mean dN/dS):</b> ", log10(!!dNdS_column)))
-      }
-    }
-    # Add styling using layout()
-    p %>% layout(xaxis = list(title = xaxis_title, type = "log", tickformat = ".1e"),
-                 yaxis = list(title = "Acomys cahirinus diversifying selection P-value", type = "log", tickformat = ".1e", autorange = "reversed"),
-                 legend = list(title = list(text = "<b>STRING clusters</b>"))) %>%
-      # Add additional hidden traces with the same ranges as the x and y-axes,
-      # so that the plot does not resize when a cluster is selected/deselected
-      add_trace(x = rangex[2], y = rangey[2], type = "scatter", mode = "markers",
-                showlegend = FALSE, opacity = 0, hoverinfo='skip') %>%
-      add_trace(x = rangex[1], y = rangey[1], type = "scatter", mode = "markers",
-                showlegend = FALSE, opacity = 0, hoverinfo='skip') 
-  }))
-  return(p)
-}
-
-# Function to link uniprot sequence annotations to the unimapped MEME
-# substitutions data
-link_protein_features <- function(site_df, features_df,
-                                  exclude_features = c("CHAIN")) {
-  
-  uni_subs_features <- site_df %>%
-    mutate(features = map2(site, genename, ~ {
-      site <- as.integer(.x)
-      gene <- .y
-      
-      # filter features df for selected gene
-      domain_df <- features_df %>%
-        dplyr::filter(Gene == gene) %>%
-        dplyr::filter(!(feat_type %in% exclude_features)) %>%
-        # determine if a site falls in a feature/features
-        mutate(in_feature = site >= as.integer(Start) & site <= as.integer(End)) %>%
-        dplyr::filter(in_feature == TRUE) %>%
-        dplyr::select(feat_name, feat_type, Start, End)
-      
-      if (nrow(domain_df) == 0) {
-        return(NA)
-      } else {
-        return(domain_df)
-      }
-    }))
-  
-  # unnest the features
-  uni_subs_features <- uni_subs_features %>%
-    unnest(features)
-  
-  if (!("feat_name" %in% colnames(uni_subs_features))) {
-    # When no sites were linked to Uniprot features, still create the feat_name,
-    # feat_type, Start and End columns
-    uni_subs_features$feat_type <- NA
-    uni_subs_features$feat_name <- NA
-    uni_subs_features$Start <- NA
-    uni_subs_features$End <- NA
-  }
-  
-  return(uni_subs_features)
-}
-
-identify_feature_sites <- function(site_df, features_df,
-                                   selected_features = c("DOMAIN", "REGION",
-                                                         "MOTIF")) {
-  # function that creates a column that identifies if a site was present in the
-  # selected features
-  
-  uni_subs_identified <- site_df %>%
-    mutate(in_feature = map2_lgl(site, genename, ~ {
-      site <- as.integer(.x)
-      gene <- .y
-      
-      # filter features df for selected gene
-      domain_df <- features_df %>%
-        dplyr::filter(entryName == gene) %>%
-        dplyr::filter(type %in% selected_features) %>%
-        # determine if a site falls in the selected features
-        mutate(in_feature = site >= as.integer(begin) & site <= as.integer(end))
-      
-      if (any(domain_df$in_feature)) {
-        return(TRUE)
-      } else {
-        return(FALSE)
-      }
-    }))
-  
-  return(uni_subs_identified)
-}
-
-### Function that takes a vector of Uniprot features and simplifies the
-### labels. For example, 'Fibronectin type-III 4' becomes
-### 'Fibronectin type-III'. The output is a vector with the simplified
-### labels 
-Translate_UP_features <- function(Uniprot_features) {
-  case_when(
-    str_detect(Uniprot_features, coll("Cadherin")) ~ "Cadherin",
-    str_detect(Uniprot_features, coll("DRBM")) ~ "DRBM",
-    str_detect(Uniprot_features, regex("EGF-like \\d+; calcium-binding")) ~ "EGF-like; calcium-binding",
-    str_detect(Uniprot_features, coll("UvrD-like helicase ATP-binding")) ~ "UvrD-like helicase ATP-binding",
-    str_detect(Uniprot_features, coll("Fibronectin type-III")) ~ "Fibronectin type-III",
-    str_detect(Uniprot_features, coll("Ig-like C2-type")) ~ "Ig-like C2-type",
-    str_detect(Uniprot_features, coll("Bromo")) ~ "Bromo",
-    str_detect(Uniprot_features, coll("BRCT")) ~ "BRCT",
-    str_detect(Uniprot_features, coll("Sushi")) ~ "Sushi",
-    str_detect(Uniprot_features, coll("PAS")) ~ "PAS",
-    str_detect(Uniprot_features, coll("EF-hand")) ~ "EF-hand",
-    str_detect(Uniprot_features, coll("RRM")) ~ "RRM",
-    str_detect(Uniprot_features, coll("WW")) ~ "WW",
-    str_detect(Uniprot_features, coll("EGF-like")) ~ "EGF-like",
-    str_detect(Uniprot_features, coll("TSP type-1")) ~ "TSP type-1",
-    str_detect(Uniprot_features, coll("CUB")) ~ "CUB",
-    str_detect(Uniprot_features, regex("EGF-like \\d+; incomplete")) ~ "EGF-like; incomplete",
-    str_detect(Uniprot_features, coll("Beta/gamma crystallin 'Greek key'")) ~ "Beta/gamma crystallin 'Greek key'",
-    str_detect(Uniprot_features, coll("Ig-like")) ~ "Ig-like",
-    str_detect(Uniprot_features, coll("Ig-like")) ~ "Ig-like",
-    Uniprot_features == "NONE" ~ "NONE",
-    is.character(Uniprot_features) ~ Uniprot_features
-  )
-}
+### Source functions
+source("app_functions.R")
 
 ### load the genenames and corresponding ensemble IDs for the significant and
 ### non-significant genes
-
-cbind_genelists <- function(genelist_paths, col_names) {
-  # Function that reads the genelists and binds the columns in a single dataframe.
-  #   args:
-  #     genelist_paths: A vector of the filepaths of the genelists.
-  #     col_names: A vector of the names that the columns should have in the
-  #                combined datraframe. Should be in the same order as genelist_paths.
-  require(readr)
-  require(dplyr)
-  
-  dfs <- lapply(seq_along(genelist_paths), function(i) {
-    read_csv(genelist_paths[i], col_names = col_names[i], show_col_types = FALSE)
-  })
-  return(do.call("cbind", dfs))
-}
 
 ### get function arguments (filepaths and column names)
 genelist_path <- file.path("data", "genelists_bias_one2one")
@@ -319,302 +114,344 @@ transcript_ids_sign <- sign_genes$ensembleTrans
 MEME_genenames <- sign_genes$names
 MEME_transcript_ids <- sign_genes$ensembleTrans
 
+### create coord selection list for interactive switching
+coord_options <- list("1" = c("MSA_site", "MSA (in the multiple sequence alignment tab),"),
+                      "2" = c("TOGA_Human_site", "Human TOGA sequence,"),
+                      "3" = c("TOGA_Acomys_site", "A. cahirinus TOGA sequence,"),
+                      "4" = c("UP_Human_site", "Human canonical uniprot sequence,"))
+
+# CSS override (fpr tables without scrollbars)
+tags$head(
+  tags$style(HTML("
+      /* Disable DT internal scrolling for one table */
+      .no-dt-scroll .dataTables_scrollBody {
+        overflow-y: visible !important;
+        max-height: none !important;
+      }
+    ")))
+
 # Define UI ----
-ui <- navbarPage(
-  title = HTML(paste(em("Acomys cahirinus"), "study")),
-  theme = shinytheme("flatly"),
-  tabPanel("aBSREL results", 
-           fluidRow(
-             tabsetPanel(
-               tabPanel("aBSREL LRT results",
-                        column(3,
-                               wellPanel(
-                                 h3("Gene selection"),
-                                 selectizeInput(inputId = "aBSRELGeneInput", "Select the gene for which you want to see the results", 
-                                                choices = NULL),
-                                 checkboxInput("aBSRELSignSwitch", HTML(paste("Only allow selecting genes with significant signs of episodic",
-                                                                              "diversifying selection in", em("Acomys cahirinus"))), value = FALSE),
-                                 checkboxInput("aBSRELTranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE)),
-                               wellPanel(
-                                 h3("Table options"),
-                                 checkboxInput("aBSRELTableSignBranches", "Only show significant Branches", value = FALSE)
-                               )),
-                        column(9,
-                               div(p(strong("This page displays the aBSREL likelyhood ratio test (LRT) results for the selected gene.",
-                                        "Every row represents an aBSREL LRT performed for a specific phylogenetic branch (i.e. species).",
-                                        "The", em("Homo sapiens, A. cahirinus"), "and", em("M. musculus"), "branches were tested for",
-                                        "positive selection in every analyzed gene, while for some genes an additional random selection",
-                                        "of 3 rodent branches and 9 non-rodent branches were tested for positive selection.",
-                                        "Nevertheless, only the A. cahirinus branch LRT results were utilized for the generation of",
-                                        "the", em("A. cahirinus"), "positively selected genelist.")),
-                                   p("The following columns are listed in the table below:"),
-                                   tags$ul(
-                                     tags$li(strong(em("Branch name:")), em("The name of the tested phylogenetic branch, which is a combination of the genome assembly name and the TOGA projection ID")),
-                                     tags$li(strong(em("Genome assembly name:")), em("The identifier of the genome assembly used for this species (i.e. the genome assembly were TOGA identified the orthologs)")),
-                                     tags$li(strong(em("TOGA projection ID:")), em("The transcript name that was given to the projected ortholog found in this genome assembly. This unique transcript identifier is made up of the human reference transcript ID, the genename and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID)")),
-                                     tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
-                                     tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
-                                     tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
-                                     tags$li(strong(em("Uncorrected P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the uncorrected P-value was below the significance threshold of 0.05")),
-                                     tags$li(strong(em("FDR-adjusted P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the FDR-adjusted P-value was below the significance threshold of 0.05")),
-                                  )),
-                               br(),
-                               uiOutput("aBSRELTableDescription"),
-                               br(),
-                               DT::dataTableOutput("aBSREL_table"),
+ui <- page_navbar(
+  title = HTML("Title to be determined"),
+  theme = bs_theme(version = 5, bootswatch = "lux"),
+  nav_panel("aBSREL results",
+            navset_underline(
+              nav_panel("aBSREL LRT results",
+                        layout_sidebar(
+                          sidebar = sidebar(
+                            width = 350,
+                            h3("Gene selection"),
+                            selectizeInput(inputId = "aBSRELGeneInput", "Select the gene for which you want to see the results", 
+                                           choices = NULL),
+                            checkboxInput("aBSRELSignSwitch", HTML(paste("Only allow selecting genes with significant signs of episodic",
+                                                                         "diversifying selection in", em("Acomys cahirinus"))), value = FALSE),
+                            checkboxInput("aBSRELTranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE),
+                            h3("Table options"),
+                            checkboxInput("aBSRELTableSignBranches", "Only show significant Branches", value = FALSE)
+                          ),
+                          div(p(strong("This page displays the aBSREL likelyhood ratio test (LRT) results for the selected gene.",
+                                       "Every row represents an aBSREL LRT performed for a specific phylogenetic branch (i.e. species).",
+                                       "The", em("Homo sapiens, A. cahirinus"), "and", em("M. musculus"), "branches were tested for",
+                                       "positive selection in every analyzed gene, while for some genes an additional random selection",
+                                       "of 3 rodent branches and 9 non-rodent branches were tested for positive selection.",
+                                       "Nevertheless, only the A. cahirinus branch LRT results were utilized for the generation of",
+                                       "the", em("A. cahirinus"), "positively selected genelist.")),
+                              p("The following columns are listed in the table below:"),
+                              tags$ul(
+                                tags$li(strong(em("Branch name:")), em("The name of the tested phylogenetic branch, which is a combination of the genome assembly name and the TOGA projection ID")),
+                                tags$li(strong(em("Genome assembly name:")), em("The identifier of the genome assembly used for this species (i.e. the genome assembly were TOGA identified the orthologs)")),
+                                tags$li(strong(em("TOGA projection ID:")), em("The transcript name that was given to the projected ortholog found in this genome assembly. This unique transcript identifier is made up of the human reference transcript ID, the genename and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID)")),
+                                tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
+                                tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
+                                tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
+                                tags$li(strong(em("Uncorrected P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the uncorrected P-value was below the significance threshold of 0.05")),
+                                tags$li(strong(em("FDR-adjusted P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the FDR-adjusted P-value was below the significance threshold of 0.05")),
+                              )),
+                          card(
+                            full_screen = TRUE,
+                            card_header(uiOutput("aBSRELTableDescription")),
+                            card_body(
+                              # Wrapped inside CSS class that disables scrolling
+                              div(
+                                class = "no-dt-scroll",
+                                DT::dataTableOutput("aBSREL_table")
+                              )
+                            )
+                          )
                         )),
-               tabPanel("STRING interaction network",
-                        column(3,
-                               wellPanel(
-                                 h4("Display options for STRING clusters"),
-                                 checkboxInput("STRINGplotSwitch", HTML("Display all clusters with at least three genes"), value = FALSE),
-                                 br(),
-                                 sliderInput("STRINGClustTableSlider", "Cluster number:",
-                                             min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
-                                                                na.rm = TRUE),
-                                             value = c(1, 8)),
-                                 checkboxInput("STRINGDisplayNonClust", HTML("Display non-clustered genes in table"), value = FALSE),
-                                 actionButton("STRINGClustTableAction", "Refresh")
-                               )),
-                        column(9,
-                               div(p(strong("This page displays the STRING clusters that were identified in the", em("A. cahirinus"),
-                                            "(episodic) positively selected genelist. The clusters were generated using the Markov cluster (MCL) algorithm with an inflation parameter of 4")),
-                                   p(strong("We identified 8 STRING clusters with at least 5 genes and 64 STRING clusters with the minimum of 2 genes",
-                                            "These can be explored using the interactive scatterplot and table below. Furthermore, the desired STRING",
-                                            "clusters in the table can be selected using the range buttons on the left side of the page."))
-                                   
-                               ),
-                               uiOutput("aBSRELSTRINGplot"),
-                               br(),
-                               p(strong("Double click a cluster in the cluster legend of the scatterplot to view that cluster and hide all others.",
-                                        "Double click that cluster again in the cluster legend to visualize all clusters again.",
-                                        "To view specific details about specific genes, hover over them in the scatterplot")),
-                               fluidRow(
-                                 column(12,
-                                        checkboxInput("STRINGScatterdNdSSwitch", "Display scatterplot for the highest estimated dN/dS values (i.e. the highest estimated omega class) per gene", value = FALSE,
-                                                      width = "100%"))),
-                               plotlyOutput("aBSRELSTRINGScatterplot"),
-                               br(),
-                               div(p(strong("This table displays the HyPhy aBSREL output data for the", em("A. cahirinus"),
-                                            "Positively selected genelist for each individual STRING cluster. Select the",
-                                            "desired STRING clusters using the range buttons on the left side of the page")),
-                                   p("The following columns are listed in the table below:"),
-                                   tags$ul(
-                                     tags$li(strong(em("STRING cluster:")), em("The STRING cluster in which the gene was clustered by the MCL algorithm.")),
-                                     tags$li(strong(em("genename:")), em("The gene symbol")),
-                                     tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
-                                     tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
-                                     tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
-                                     tags$li(strong(em("Inferred branch length:")), em("The length of the A. cahirinus branch, as estimated in the aBSREL full adaptive model. This length is given as the number of substitutions per site.")),
-                                     tags$li(strong(em("Inferred dN branch length:")), em("The non-synonynous component of the inferred A. cahirinus branch length. This length is given as the number of non-synonymous substitutions per site.")),
-                                     tags$li(strong(em("Inferred dS branch length:")), em("The synonynous component of the inferred A. cahirinus branch length. This length is given as the number of synonymous substitutions per site.")),
-                                     tags$li(strong(em("Mean dN/dS:")), em("The mean dN/dS ratio (i.e. the non-synonymous substitution rate divided by the synonymous substitution rate) estimated for the A. cahirinus branch for this gene. This mean dN/dS ratio is calculated by averaging the dN/dS ratios for each estimated omega class, taking into account the proportion of sites assigned to these omega classes.")),
-                                     tags$li(strong(em("Maximum dN/dS:")), em("The maximum (max) dN/dS is the highest estimated dN/dS ratio (i.e. omega class) for the A. cahirinus branch for this gene")),
-                                     tags$li(strong(em("proportion of sites with maximum dN/dS:")), em("The proportion of codon sites were the maximum dN/dS was estimated. In other words, the proportion of codon sites which were assigned to the omega class with the highest dN/dS ratio.")),
-                                   )),
-                               gt_output("STRINGClusterTable"))),
-               tabPanel("Functional overrepresentation analysis",
-                        column(3,
-                               wellPanel(
-                                 h4("Display options for functionel enrichment of full aBSREL genelist"),
-                               ),
-                               generate_br_tags(40),
-                               wellPanel(
-                                 h4("Display options for functionel enrichment of STRING clusters"),
-                                 checkboxInput("FunEnrichReducedSwitch", HTML("Display all GO-terms per cluster instead of only the reduced GO-terms"), value = FALSE),
-                                 h4("Select which clusters to display"),
-                                 sliderInput("FunEnrichSelectClust", "Cluster number:",
-                                             min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
-                                                                na.rm = TRUE),
-                                             value = c(1, 8)),
-                                 actionButton("FunEnrichClustAction", "Refresh")
-                               )),
-                        column(9,
-                               div(p(strong("This page contains the functional overrepresentation analysis results of both complete aBSREL positively selected genelist and the cluster-specific overrepresentation results",
-                                  "The clusterProfiler (4.10.0) R-package was used to perform this functional over-representation analysis. Moreover, we used the rrvgo R package (1.15.1) to reduce the number of",
-                                  "cluster-specific significant GO-terms based on their semantic similarity (Sayols, 2023)")),
-                                  p("Just like the STRING interaction network table, the desired STRING clusters in the table",
-                                    "and plot can be selected using the range buttons on the left side of the page.",
-                                    "There is also the option to display all the GO-terms per cluster, and not just the reduced GO-terms.")),
-                               hr(),
-                               strong("Functional overrepresentation analysis of complete positively selected genelist"),
-                               br(),
-                               plotOutput("FunEnrichaBSRELAll", width = "100%", height = "300px"),
-                               br(),
-                               gt_output("FunEnrichaBSRELAllTable"),
-                               hr(),
-                               strong("Functional overrepresentation analysis of the individual positively selected STRING clusters"),
-                               br(),
-                               # The inline = TRUE is required so that the plot
-                               # and table don't overlap
-                               plotOutput("FunEnrichaBSRELClusters", inline = TRUE),
-                               br(),
-                               gt_output("FunEnrichaBSRELClustersTable")
-                               ))
-             )
-           )
+              nav_panel("STRING interaction network",
+                        layout_sidebar(
+                          sidebar = sidebar(
+                            h4("Display options for STRING clusters"),
+                            checkboxInput("STRINGplotSwitch", HTML("Display all clusters with at least three genes"), value = FALSE),
+                            br(),
+                            sliderInput("STRINGClustTableSlider", "Cluster number:",
+                                        min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
+                                                           na.rm = TRUE),
+                                        value = c(1, 8)),
+                            checkboxInput("STRINGDisplayNonClust", HTML("Display non-clustered genes in table"), value = FALSE),
+                            actionButton("STRINGClustTableAction", "Refresh")
+                          ),
+                          div(p(strong("This page displays the STRING clusters that were identified in the", em("A. cahirinus"),
+                                       "(episodic) positively selected genelist. The clusters were generated using the Markov cluster (MCL) algorithm with an inflation parameter of 4")),
+                              p(strong("We identified 8 STRING clusters with at least 5 genes and 64 STRING clusters with the minimum of 2 genes",
+                                       "These can be explored using the interactive scatterplot and table below. Furthermore, the desired STRING",
+                                       "clusters in the table can be selected using the range buttons on the left side of the page."))
+                              
+                          ),
+                          p(strong("Double click a cluster in the cluster legend of the scatterplot to view that cluster and hide all others.",
+                                   "Double click that cluster again in the cluster legend to visualize all clusters again.",
+                                   "To view specific details about specific genes, hover over them in the scatterplot")),
+                          fluidRow(
+                            column(12,
+                                   checkboxInput("STRINGScatterdNdSSwitch", "Display scatterplot for the highest estimated dN/dS values (i.e. the highest estimated omega class) per gene", value = FALSE,
+                                                 width = "100%"))),
+                          plotlyOutput("aBSRELSTRINGScatterplot"),
+                          br(),
+                          div(p(strong("This table displays the HyPhy aBSREL output data for the", em("A. cahirinus"),
+                                       "Positively selected genelist for each individual STRING cluster. Select the",
+                                       "desired STRING clusters using the range buttons on the left side of the page")),
+                              p("The following columns are listed in the table below:"),
+                              tags$ul(
+                                tags$li(strong(em("STRING cluster:")), em("The STRING cluster in which the gene was clustered by the MCL algorithm.")),
+                                tags$li(strong(em("genename:")), em("The gene symbol")),
+                                tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
+                                tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
+                                tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
+                                tags$li(strong(em("Inferred branch length:")), em("The length of the A. cahirinus branch, as estimated in the aBSREL full adaptive model. This length is given as the number of substitutions per site.")),
+                                tags$li(strong(em("Inferred dN branch length:")), em("The non-synonynous component of the inferred A. cahirinus branch length. This length is given as the number of non-synonymous substitutions per site.")),
+                                tags$li(strong(em("Inferred dS branch length:")), em("The synonynous component of the inferred A. cahirinus branch length. This length is given as the number of synonymous substitutions per site.")),
+                                tags$li(strong(em("Mean dN/dS:")), em("The mean dN/dS ratio (i.e. the non-synonymous substitution rate divided by the synonymous substitution rate) estimated for the A. cahirinus branch for this gene. This mean dN/dS ratio is calculated by averaging the dN/dS ratios for each estimated omega class, taking into account the proportion of sites assigned to these omega classes.")),
+                                tags$li(strong(em("Maximum dN/dS:")), em("The maximum (max) dN/dS is the highest estimated dN/dS ratio (i.e. omega class) for the A. cahirinus branch for this gene")),
+                                tags$li(strong(em("proportion of sites with maximum dN/dS:")), em("The proportion of codon sites were the maximum dN/dS was estimated. In other words, the proportion of codon sites which were assigned to the omega class with the highest dN/dS ratio.")),
+                              )),
+                          gt_output("STRINGClusterTable"))),
+              nav_panel("Functional overrepresentation analysis",
+                        layout_sidebar(
+                          sidebar = sidebar(
+                            #generate_br_tags(40),
+                            h4("Display options for functionel enrichment of STRING clusters"),
+                            checkboxInput("FunEnrichReducedSwitch", HTML("Display all GO-terms per cluster instead of only the reduced GO-terms"), value = FALSE),
+                            h4("Select which clusters to display"),
+                            sliderInput("FunEnrichSelectClust", "Cluster number:",
+                                        min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
+                                                           na.rm = TRUE),
+                                        value = c(1, 8)),
+                            actionButton("FunEnrichClustAction", "Refresh")
+                          ),
+                          
+                          div(p(strong("This page contains the functional overrepresentation analysis results of both complete aBSREL positively selected genelist and the cluster-specific overrepresentation results",
+                                       "The clusterProfiler (4.10.0) R-package was used to perform this functional over-representation analysis. Moreover, we used the rrvgo R package (1.15.1) to reduce the number of",
+                                       "cluster-specific significant GO-terms based on their semantic similarity (Sayols, 2023)")),
+                              p("Just like the STRING interaction network table, the desired STRING clusters in the table",
+                                "and plot can be selected using the range buttons on the left side of the page.",
+                                "There is also the option to display all the GO-terms per cluster, and not just the reduced GO-terms.")),
+                          hr(),
+                          strong("Functional overrepresentation analysis of complete positively selected genelist"),
+                          br(),
+                          plotOutput("FunEnrichaBSRELAll", width = "100%", height = "300px"),
+                          br(),
+                          gt_output("FunEnrichaBSRELAllTable"),
+                          hr(),
+                          strong("Functional overrepresentation analysis of the individual positively selected STRING clusters"),
+                          br(),
+                          # The inline = TRUE is required so that the plot
+                          # and table don't overlap
+                          plotOutput("FunEnrichaBSRELClusters", inline = TRUE),
+                          br(),
+                          gt_output("FunEnrichaBSRELClustersTable")
+                        )
+              )
+            )
   ),
-  tabPanel("MEME results",
-                    fluidRow(
-                      column(3,
-                             wellPanel(
-                               h3("Gene selection"),
-                               selectizeInput(inputId = "MEMEGeneInput", "Select the gene for which you want to see the results", 
-                                              choices = NULL),
-                               checkboxInput("MEMETranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE)),
-                             wellPanel(
-                               h3("Table options"),
-                               checkboxInput("MEMETableSignSites", "Only show significant sites", value = FALSE),
-                               numericInput("p_val_select", "p-value significance cut-off", value = 0.1)
-                             )),
-                      column(9,
-                             tabsetPanel(
-                               tabPanel("MEME LRT results",
-                                        br(),
-                                        uiOutput("MEMETableDescription"),
-                                        br(),
-                                        p(paste("This HyPhy MEME analysis was a follow-up analysis after",
-                                                "the HyPhy aBSREL analysis. During the aBSREL analysis,",
-                                                "genes were found that exhibited signs of episodic diversifying",
-                                                "selection in Acomys cahirinus. However, HyPhy aBSREL",
-                                                "detects episodic diversifying selection in specific branches of",
-                                                "a phylogeny without informing us which sites are responsible.",
-                                                "To get an indication of which codon sites could be under episodic",
-                                                "diversifying selection in the genes found by aBSREL, HyPhy MEME",
-                                                "was used. HyPhy MEME is a mixed effects model of evolution (MEME)",
-                                                "that can detect episodic diversifying selection at an individual",
-                                                "site (among all branches). Thus, HyPhy MEME might give us additional",
-                                                "insights into which codon sites might be responsible for the episodic",
-                                                "diversifying selection signal in the genelist found by aBSREL.",
-                                                "A word of caution is advised however, as HyPhy MEME can only detect",
-                                                "if a codon site shows signs of diversifying selection among all branches",
-                                                "(i.e. MEME detects selection at an individual site, not an individual",
-                                                "branch-site). So, HyPhy MEME predicting that a codon site shows",
-                                                "significant diversifying selection does not guarantee that any individual",
-                                                "branch (like the Acomys cahirinus branch) exhibits diversifying selection",
-                                                "at that codon site. nevertheless, HyPhy MEME can give us an indication", 
-                                                "which sites might be involved in the episodic diversifying selection signal",
-                                                "in the Acomys cahirinus genes, even when this limitation is kept in mind.")),
-                                        p(paste("Every Gene was individually analyzed using HyPhy MEME. The test results are",
-                                                "described in the tables below, where the column names represent the following:")),
-                                        tags$ul(
-                                          tags$li(HTML(paste(strong(HTML("&alpha;")), ": Synonymous substitution rate at a site."))),
-                                          tags$li(HTML(paste(strong(HTML("&beta;<sup>-</sup>")), ": Non-synonymous substitution rate at a site for the negative/neutral evolution component."))),
-                                          tags$li(HTML(paste(strong(HTML("p<sup>-</sup>")), ": Mixture distribution weight allocated to &beta;<sup>-</sup>; loosely -- the proportion of the tree evolving neutrally or under negative selection."))),
-                                          tags$li(HTML(paste(strong(HTML("&beta;<sup>+</sup>")), ": Non-synonymous substitution rate at a site for the positive/neutral evolution component."))),
-                                          tags$li(HTML(paste(strong(HTML("p<sup>+</sup>")), ": Mixture distribution weight allocated to &beta;<sup>+</sup>; loosely -- the proportion of the tree evolving neutrally or under positive selection."))),
-                                          tags$li(HTML(paste(strong("LRT"), ": Likelihood ratio test statistic for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
-                                          tags$li(HTML(paste(strong("p-value"), ": Asymptotic p-value for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
-                                          tags$li(HTML(paste(strong("number of branches under selection"), ": The (very approximate and rough) estimate of how many branches may have been under selection at this site, i.e., had an empirical Bayes factor of 100 or more for the &beta;<sup>+</sup> rate."))),
-                                          tags$li(HTML(paste(strong("Total branch length"), ": The total length of branches contributing to inference at this site, and used to scale dN-dS."))),
-                                          tags$li(HTML(paste(strong("MEME LogL"), ": Site Log-likelihood under the MEME model."))),
-                                          tags$li(HTML(paste(strong("FEL LogL"), ": Site Log-likelihood under the FEL model."))),
-                                          tags$li(HTML(paste(strong("Variation p"), ": Asymptotic p-value for whether or not there is evidence of dN/dS variation across branches."))),
-                                        ),
-                                        hr(),
-                                        p(strong(HTML(paste("This table and summary data represents the MEME likelyhood ratio test results for each site of the",
-                                                "selected gene. Here, the positional site information is relative to the human gene",
-                                                "that was used in the TOGA multiple sequence alignment (i.e. the multiple sequence",
-                                                "alignment with mammalian orthologs of the selected gene, available at the",
-                                                a("TOGA ortholog database", href="https://genome.senckenberg.de//download/TOGA/human_hg38_reference/MultipleCodonAlignments/")
-                                                )))),
-                                        br(),
-                                        DT::dataTableOutput("MEME_table"),
-                                        br(),
-                                        uiOutput("MEMEResultDescription"),
-                                        hr(),
-                                        p(strong(HTML(paste("This table and summary data represents the positively-selected sites that could be mapped to a canonical Uniprot protein sequence.",
-                                                            "Here, the positional site information is relative to the canonical protein sequence of the human Uniprot accession.",
-                                                            "Furthermore, only the sites are displayed were an amino acid substitution took place in the A. cahirinus branch of the phylogeny."
-                                        )))),
-                                        br(),
-                                        DT::dataTableOutput("MEME_table_unimapped"),
-                                        br(),
-                                        uiOutput("MEMEResultDescription_unimapped"),
-                                        hr()
-                                        ),
-                               tabPanel("Multiple sequence alignment",
-                                        h3("Multiple sequence alignment"),
-                                        p(paste("This tab displays the protein multiple sequence alignment (MSA),",
-                                                "which were created by translating the TOGA codon MSAs.")),
-                                        p("Description of the MSAs:"),
-                                        tags$ul(
-                                          tags$li("Blue columns represent columns where over 50% of the species in the MSA had an identical amino acid."),
-                                          tags$li("A dot represents a residue that was an 'NNN' codon (i.e. A codon that was masked in the original TOGA alignment) or a codon gap. Keep in mind that this MSA represents the MEME input sequence, where positions that represented gaps in the human sequence were removed. Thus, the sequences of the other mammals in this MSA can be missing insertions and could be shorter than the original TOGA ortholog."),
-                                          tags$li("The red arrows point at columns that have evidence of episodic diversifying selection, according to HyPhy MEME.")),
-                                        br(),
-                                        radioButtons(
-                                          "MSAradioselect",
-                                          "Select MSA display option",
-                                          choices = list("Identity/conservation" = 1, "Charge" = 2, "Structure" = 3),
-                                          selected = 1
-                                        ),
-                                        uiOutput("MultipleAlignmentText"),
-                                        uiOutput("MultipleAlignment"),
-                                        hr()
-                                        ),
-                               tabPanel("Substitutions",
-                                        div(h3("Predicted substitutions from the last common mammalian ancestor to", em("A. cahirinus"), "at all diversifying codon sites"),
-                                            p("Of note: These site positions are relative to the human gene that was used in the TOGA MSA (i.e. the multiple sequence",
-                                              "alignment with mammalian orthologs of the selected gene, available at the",
-                                              a("TOGA ortholog database.", href="https://genome.senckenberg.de//download/TOGA/human_hg38_reference/MultipleCodonAlignments/"),
-                                              "Thus, these site positions can not be directly used for locating substitutions on the Uniprot canonical sequence.")),
-                                        hr(),
-                                        DT::dataTableOutput("MEME_acomys_sub"),
-                                        hr(),
-                                        h3("All substitutions at diversifying codon sites"),
-                                        div(p("This table displays the predicted substitutions (by HyPhy MEME) at diversifying sites of all tested species. Substitutions that appear to be indels are indicated with the term 'Gap' (e.g. C-333-Gap)."),
-                                            p("Of note: These site positions are relative to the human gene that was used in the TOGA MSA (i.e. the multiple sequence",
-                                              "alignment with mammalian orthologs of the selected gene, available at the",
-                                              a("TOGA ortholog database.", href="https://genome.senckenberg.de//download/TOGA/human_hg38_reference/MultipleCodonAlignments/"),
-                                              "Thus, these site positions can not be directly used for locating substitutions on the Uniprot canonical sequence.")),
-                                        hr(),
-                                        DT::dataTableOutput("MEME_branch_subs"),
-                                        hr()
-                               ),
-                               tabPanel("EBF",
-                                        uiOutput("EBFBubbleplotDesc"),
-                                        plotlyOutput("EBF_bubbleplot"),
-                                        br(),
-                                        uiOutput("EBFTableDesc"),
-                                        fluidRow(
-                                          column(3,
-                                                 checkboxInput("MEME_EBF_inf_remove", "Remove infinite EBF values", value = TRUE)),
-                                          column(9,
-                                                 checkboxInput("MEME_EBF_acomys_select", "Only select Acomys cahirinus EBF values", value = TRUE))),
-                                        gt_output("EBF_table")
-                                        ),
-                               tabPanel("Uniprot sequence annotations",
-                                        uiOutput("DomainPageDesc"),
-                                        br(),
-                                        p(HTML(paste0("For the genes where positively selected sites were mapped to ",
-                                                 "their corresponding Uniprot accessions, this page displays ",
-                                                 "these sites mapped to the canonical sequence isoform. ",
-                                                 "These protein sequence annotations for the genes were retrieved by ",
-                                                 "the EMBL-EBI Proteins REST API, more specifically the features service. ",
-                                                 "The protein visualized below is annotated with the DOMAIN, ",
-                                                 "REGION and MOTIF Uniprot annotation types, which were retrieved . Other types of ",
-                                                 "Uniprot annotations can be found in the table below."))),
-                                        br(),
-                                        strong(paste("Select A. cahirinus empirical Bayes factor (EBF)",
-                                                     "cutoff value. EBF values below this value will not",
-                                                     "be displayed in the Uniprot sequence annotation plot",
-                                                     "and table")),
-                                        numericInput("UniDomainEBFSelect", NULL, value = 100),
-                                        br(),
-                                        plotlyOutput("UniDomainPlot", height = "150px"),
-                                        br(),
-                                        uiOutput("UniDomainSiteDesc"),
-                                        gt_output("UniDomainSiteTable"),
-                                        hr(),
-                                        uiOutput("UniDomainFeatDesc"),
-                                        gt_output("UniDomainFeatTable"),
-                                        )
-                             )
-                      )
-                    )
-           )
-  )
+  nav_panel("MEME results",
+            layout_sidebar(
+              sidebar = sidebar(
+                width = 350,
+                h3("Gene selection"),
+                selectizeInput(inputId = "MEMEGeneInput", "Select the gene for which you want to see the results", 
+                               choices = NULL),
+                checkboxInput("MEMETranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE),
+                h3("Table options"),
+                checkboxInput("MEMETableSignSites", "Only show significant sites", value = FALSE),
+                numericInput("p_val_select", "p-value significance cut-off", value = 0.05),
+                radioButtons(
+                  "MEMEFilterSitesForSubs",
+                  label = "Filter for sites with substitutions",
+                  choices = list(
+                    "All sites" = 1,
+                    "Sites with substitution in Homo sapiens" = 2,
+                    "Sites with substitution in A. cahirinus" = 3),
+                  selected = 1
+                )
+              ),
+              navset_underline(
+                nav_panel("MEME LRT results",
+                          br(),
+                          p(paste("This HyPhy MEME analysis was a follow-up analysis after",
+                                  "the HyPhy aBSREL analysis. During the aBSREL analysis,",
+                                  "genes were found that exhibited signs of episodic diversifying",
+                                  "selection in Acomys cahirinus. However, HyPhy aBSREL",
+                                  "detects episodic diversifying selection in specific branches of",
+                                  "a phylogeny without informing us which sites are responsible.",
+                                  "To get an indication of which codon sites could be under episodic",
+                                  "diversifying selection in the genes found by aBSREL, HyPhy MEME",
+                                  "was used. HyPhy MEME is a mixed effects model of evolution (MEME)",
+                                  "that can detect episodic diversifying selection at an individual",
+                                  "site (among all branches). Thus, HyPhy MEME might give us additional",
+                                  "insights into which codon sites might be responsible for the episodic",
+                                  "diversifying selection signal in the genelist found by aBSREL.",
+                                  "A word of caution is advised however, as HyPhy MEME can only detect",
+                                  "if a codon site shows signs of diversifying selection among all branches",
+                                  "(i.e. MEME detects selection at an individual site, not an individual",
+                                  "branch-site). So, HyPhy MEME predicting that a codon site shows",
+                                  "significant diversifying selection does not guarantee that any individual",
+                                  "branch (like the Acomys cahirinus branch) exhibits diversifying selection",
+                                  "at that codon site. nevertheless, HyPhy MEME can give us an indication", 
+                                  "which sites might be involved in the episodic diversifying selection signal",
+                                  "in the Acomys cahirinus genes, even when this limitation is kept in mind.")),
+                          p(paste("Every Gene was individually analyzed using HyPhy MEME. The test results are",
+                                  "described in the tables below, where the column names represent the following:")),
+                          tags$ul(
+                            tags$li(HTML(paste(strong(HTML("&alpha;")), ": Synonymous substitution rate at a site."))),
+                            tags$li(HTML(paste(strong(HTML("&beta;<sup>-</sup>")), ": Non-synonymous substitution rate at a site for the negative/neutral evolution component."))),
+                            tags$li(HTML(paste(strong(HTML("p<sup>-</sup>")), ": Mixture distribution weight allocated to &beta;<sup>-</sup>; loosely -- the proportion of the tree evolving neutrally or under negative selection."))),
+                            tags$li(HTML(paste(strong(HTML("&beta;<sup>+</sup>")), ": Non-synonymous substitution rate at a site for the positive/neutral evolution component."))),
+                            tags$li(HTML(paste(strong(HTML("p<sup>+</sup>")), ": Mixture distribution weight allocated to &beta;<sup>+</sup>; loosely -- the proportion of the tree evolving neutrally or under positive selection."))),
+                            tags$li(HTML(paste(strong("LRT"), ": Likelihood ratio test statistic for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
+                            tags$li(HTML(paste(strong("p-value"), ": Asymptotic p-value for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
+                            tags$li(HTML(paste(strong("number of branches under selection"), ": The (very approximate and rough) estimate of how many branches may have been under selection at this site, i.e., had an empirical Bayes factor of 100 or more for the &beta;<sup>+</sup> rate."))),
+                            tags$li(HTML(paste(strong("Total branch length"), ": The total length of branches contributing to inference at this site, and used to scale dN-dS."))),
+                            tags$li(HTML(paste(strong("MEME LogL"), ": Site Log-likelihood under the MEME model."))),
+                            tags$li(HTML(paste(strong("FEL LogL"), ": Site Log-likelihood under the FEL model."))),
+                            tags$li(HTML(paste(strong("Variation p"), ": Asymptotic p-value for whether or not there is evidence of dN/dS variation across branches."))),
+                          ),
+                          card(
+                            full_screen = TRUE,
+                            card_header(uiOutput("MEMETableDescription")),
+                            card_body(
+                              p(HTML(paste("This table and summary data represents the MEME likelyhood ratio test results for each site of the",
+                                           "selected gene. Here, the positional site information is relative to the human gene",
+                                           "that was used in the TOGA multiple sequence alignment (i.e. the multiple sequence",
+                                           "alignment with mammalian orthologs of the selected gene, available at the",
+                                           a("TOGA ortholog database", href="https://genome.senckenberg.de//download/TOGA/human_hg38_reference/MultipleCodonAlignments/")
+                              ))),
+                              gt::gt_output("MEME_table")
+                            )),
+                          card(
+                            full_screen = TRUE,
+                            card_header(uiOutput("MEMEResultDescriptionTitle")),
+                            card_body(
+                              selectInput("MEMEResultCoordSelector", label = "Select reference frame", choices = list("MSA site" = 1,
+                                                                                                                      "TOGA Human site" = 2,
+                                                                                                                      "TOGA Acomys_site" = 3,
+                                                                                                                      "UP Human site" = 4),
+                                          selected = 2),
+                              uiOutput("MEMEResultDescription"),
+                            )),
+                ),
+                nav_panel("Multiple sequence alignment",
+                          h3("Multiple sequence alignment"),
+                          p(paste("This tab displays the protein multiple sequence alignment (MSA),",
+                                  "which were created by translating the TOGA codon MSAs.")),
+                          p("Description of the MSAs:"),
+                          tags$ul(
+                            tags$li("Blue columns represent columns where over 50% of the species in the MSA had an identical amino acid."),
+                            tags$li("A dot represents a residue that was an 'NNN' codon (i.e. A codon that was masked in the original TOGA alignment) or a codon gap. Keep in mind that this MSA represents the MEME input sequence, where positions that represented gaps in the human sequence were removed. Thus, the sequences of the other mammals in this MSA can be missing insertions and could be shorter than the original TOGA ortholog."),
+                            tags$li("The red arrows point at columns that have evidence of episodic diversifying selection, according to HyPhy MEME.")),
+                          br(),
+                          radioButtons(
+                            "MSAradioselect",
+                            "Select MSA display option",
+                            choices = list("Identity/conservation" = 1, "Charge" = 2, "Structure" = 3),
+                            selected = 1
+                          ),
+                          uiOutput("MultipleAlignmentText"),
+                          uiOutput("MultipleAlignment"),
+                          hr()
+                ),
+                nav_panel("Substitutions",
+                          div(p("This page visualizes predicted substitutions at positively selected sites, identified using the HyPhy MEME framework across",
+                                "the mammalian species included in the evolutionary model."),
+                              p("These substitutions are displayed as a tree view for a selected site, or in the form of an interactive table where all substitutions are displayed among the mammalian species",
+                                "The tree view is particularly usefull for identifying where a substitution took place according to the MEME evolutionary model."),
+                              p("Substitutions are in the form of A11Q. Substitutions that appear to be indels are indicated with the term 'Gap' (e.g. C-333-Gap)."),
+                              p("Here, the TOGA-Human and TOGA-Acomys reference frames refer to the positions in the TOGA-identified Human and", em("A. cahirinus"), "orthologs respectively.",
+                                "These orthologs can be found at the", a("TOGA ortholog database.", href="https://genome.senckenberg.de//download/TOGA/"))),
+                          card(
+                            full_screen = TRUE,
+                            card_header(h5("MEME-identified substitutions tree view")),
+                            card_body(
+                              layout_sidebar(
+                                sidebar = sidebar(
+                                  selectInput("MEMETreeCoordSelector", label = "Select reference frame", choices = list("MSA site" = 1,
+                                                                                                                        "TOGA Human site" = 2,
+                                                                                                                        "TOGA Acomys_site" = 3,
+                                                                                                                        "UP Human site" = 4),
+                                              selected = 2),
+                                  selectizeInput(inputId = "SubSiteSelect", "Select site for phylogenetic tree annotation", choices = NULL),
+                                ),
+                                uiOutput("SubPhyloText"),
+                                plotOutput("SubSitePhylo", width = "100%", height = "1400px"),
+                              )
+                            )
+                          ),
+                          card(
+                            full_screen = TRUE,
+                            card_header(h5("All substitutions at positively selected codon sites")),
+                            card_body(
+                              # Wrapped inside CSS class that disables scrolling
+                              div(
+                                class = "no-dt-scroll", 
+                                DT::dataTableOutput("MEME_branch_subs"),
+                              ),
+                            )
+                          )
+                ),
+                nav_panel("EBF",
+                          uiOutput("EBFBubbleplotDesc"),
+                          plotlyOutput("EBF_bubbleplot"),
+                          br(),
+                          uiOutput("EBFTableDesc"),
+                          fluidRow(
+                            column(3,
+                                   checkboxInput("MEME_EBF_inf_remove", "Remove infinite EBF values", value = TRUE)),
+                            column(9,
+                                   checkboxInput("MEME_EBF_acomys_select", "Only select Acomys cahirinus EBF values", value = TRUE))),
+                          gt_output("EBF_table")
+                ),
+                nav_panel("Uniprot sequence annotations",
+                          uiOutput("DomainPageDesc"),
+                          br(),
+                          p(HTML(paste0("For the genes where positively selected sites were mapped to ",
+                                        "their corresponding Uniprot accessions, this page displays ",
+                                        "these sites mapped to the canonical sequence isoform. ",
+                                        "These protein sequence annotations for the genes were retrieved by ",
+                                        "the EMBL-EBI Proteins REST API, more specifically the features service. ",
+                                        "The protein visualized below is annotated with the DOMAIN, ",
+                                        "REGION and MOTIF Uniprot annotation types, which were retrieved . Other types of ",
+                                        "Uniprot annotations can be found in the table below."))),
+                          br(),
+                          strong(paste("Select A. cahirinus empirical Bayes factor (EBF)",
+                                       "cutoff value. EBF values below this value will not",
+                                       "be displayed in the Uniprot sequence annotation plot",
+                                       "and table")),
+                          numericInput("UniDomainEBFSelect", NULL, value = 100),
+                          br(),
+                          plotlyOutput("UniDomainPlot", height = "150px"),
+                          br(),
+                          uiOutput("UniDomainSiteDesc"),
+                          gt_output("UniDomainSiteTable"),
+                          hr(),
+                          uiOutput("UniDomainFeatDesc"),
+                          gt_output("UniDomainFeatTable"),
+                )
+              )
+            )
+  ),
+  nav_spacer(),
+  nav_item(bslib::input_dark_mode(mode = "light"))
+)
 
 # Define server logic ----
 server <- function(input, output, session) {
@@ -646,15 +483,6 @@ server <- function(input, output, session) {
 
   })
   
-  # Selection of STRINGp cluster plot
-  output$aBSRELSTRINGplot <- renderUI({
-    if (input$STRINGplotSwitch) {
-      tags$img(src = "./images/stringdb_all_clusters_with_three_genes.svg", width = 510 * 1.6, height = 472 * 1.6)
-    } else {
-      tags$img(src = "./images/Acomys_stringdb_clusters.svg", width = 510 * 1.5, height = 472 * 1.5)
-    }
-  })
-  
   # Generate table of aBSREL info for each STRING cluster
   STRINGClustTable <- eventReactive(input$STRINGClustTableAction, {
     
@@ -673,7 +501,7 @@ server <- function(input, output, session) {
     aBSREL_table <- all_genes %>%
       as_tibble() %>%
       select(-names) %>%
-      rename(gene_id = ensemble, transcript_id = ensembleTrans) %>%
+      dplyr::rename(gene_id = ensemble, transcript_id = ensembleTrans) %>%
       right_join(aBSREL_table)
     
     # Join the omega (i.e. dN/dS) data with the aBSREL LRT data
@@ -698,13 +526,13 @@ server <- function(input, output, session) {
     # add species name to data
     aBSREL_table_omega_test <- name_conversion %>%
       dplyr::select(`Assembly name`, Species_Tree) %>%
-      rename(branch_assembly = `Assembly name`) %>%
+      dplyr::rename(branch_assembly = `Assembly name`) %>%
       right_join(aBSREL_table_omega_test) %>%
       dplyr::select(-branch_assembly)
     
     # Add STRINGdb clusters to data
     aBSREL_table_omega_test_clusters <- acomys_clusters %>%
-      rename(Cluster = `__mclCluster`, gene_id = `query term`) %>%
+      dplyr::rename(Cluster = `__mclCluster`, gene_id = `query term`) %>%
       dplyr::select(gene_id, Cluster) %>%
       right_join(aBSREL_table_omega_test)
     
@@ -794,7 +622,7 @@ server <- function(input, output, session) {
     # branch had no annotated ortholog (that was classified as intact, partial
     # intact or uncertain loss)
     dNdS_df <- dNdS_df %>%
-      filter(MRCA_present_aco == TRUE) %>%
+      dplyr::filter(MRCA_present_aco == TRUE) %>%
       # Add a separate column where P-values are slightly shifted
       # (by half of the minimum non-0 p-value in the data).
       mutate(P_value_c = P_value + (min(P_value[P_value > 0])/2))
@@ -1042,30 +870,29 @@ server <- function(input, output, session) {
   
   get_aBSREL_results <- reactive({
     
-    genename_chosen <- get_genename()
+    # Stop if no gene selected
+    req(input$aBSRELGeneInput)
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (genename_chosen == "") {
-      return(NULL)
-    }
+    genename_chosen <- get_genename()
     
     # generation of datatable
     aBSREL_data %>%
-      filter(genename == genename_chosen) %>%
-      use_series(test_results) %>%
-      extract2(1) %>%
-      rename("Branch name" = "branch_name",
+      dplyr::filter(genename == genename_chosen) %>%
+      magrittr::use_series(test_results) %>%
+      magrittr::extract2(1) %>%
+      dplyr::rename("Branch name" = "branch_name",
              "Genome assembly name" = "branch_assembly",
              "TOGA projection ID" = "branch_projection",
              "Likelyhood ratio test statistic" = "LRT",
-             "Uncorrected P-value" = "p_value", "FDR-adjusted P-value" = "p_value_cor",
+             "Uncorrected P-value" = "p_value",
+             "FDR-adjusted P-value" = "p_value_cor",
              "Uncorrected P-value significant (P-value < 0.05)" = "significant",
              "FDR-adjusted P-value significant (P-value < 0.05)" = "significant_cor") %>%
       # remove non-significant branches of input$aBSRELTableSignBranches is TRUE
       {if (input$aBSRELTableSignBranches) 
-        filter(., `FDR-adjusted P-value significant (P-value < 0.05)` == TRUE) else .} %>%
+        dplyr::filter(., `FDR-adjusted P-value significant (P-value < 0.05)` == TRUE) else .} %>%
       # change assembly names to species names
-      mutate(`Branch name` = map_chr(`Branch name`, ~ {
+      dplyr::mutate(`Branch name` = map_chr(`Branch name`, ~ {
         if (.x == "REFERENCE") {
           return("Homo_sapiens")
         } else if (!(.x %in% name_conversion$`Assembly name`)) {
@@ -1088,16 +915,14 @@ server <- function(input, output, session) {
   
   output$aBSREL_table <- DT::renderDataTable({
     
-    # Makes sure no table gets generated when no gene has been chosen
-    if (get_genename() == "") {
-      return(tibble())
-    }
+    # Stop if no gene selected
+    req(input$aBSRELGeneInput)
     
     get_aBSREL_results()
     
   }, escape = FALSE, rownames = FALSE, 
-  options = list(scrollY = "500px", scrollX = TRUE, 
-                 lengthMenu = c(50, 100, 250, get_aBSREL_results_length()))
+  options = list(scrollX = TRUE, 
+                 lengthMenu = c(get_aBSREL_results_length(), 10, 20))
   )
   
   ### Backend for MEME results page
@@ -1137,11 +962,11 @@ server <- function(input, output, session) {
     
     if (get_genename_MEME() == "") {
       # If no gene has been selected
-      paragraph <- strong("Select a gene to display its results")
+      paragraph <- h5("Select a gene to display its results")
       paragraph
     } else {
       # If a gene has been selected
-      paragraph <- paste0(strong(paste("MEME results of", get_genename_MEME())))
+      paragraph <- paste0(h5(paste("MEME results of", get_genename_MEME())))
       HTML(paragraph)
     }
   })
@@ -1149,10 +974,8 @@ server <- function(input, output, session) {
   # extract the MEME_data row from the selected gene
   get_MEME_data_row <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
     
     # load the required RData object
     load(file.path("data", "MEME_data",
@@ -1160,54 +983,200 @@ server <- function(input, output, session) {
     return(RData_row)
   })
   
+  get_gene_site_translations <- reactive({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    # Prepare translation table for gene
+    gene_trans_df <- MEME_trans_df %>%
+      dplyr::filter(genename == get_genename_MEME()) %>%
+      dplyr::select(-transcript_id, -genename)
+    gene_trans_df
+  })
+  
   get_MEME_results <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
 
     MEME_row <- get_MEME_data_row()
-    
-    MEME_row %>%
+  
+    MEME_results <- MEME_row %>%
       use_series(csv) %>%
       extract2(1) %>%
       # add an additional site column
-      add_column(site = seq(nrow(.))) %>%
-      relocate(site) %>%
+      add_column(TOGA_Human_site = seq(nrow(.))) %>%
+      # Join with translation df
+      dplyr::right_join(get_gene_site_translations(), by = join_by(TOGA_Human_site)) %>%
+      dplyr::relocate(MSA_site, TOGA_Human_site, TOGA_Acomys_site, UP_Human_site)
+    
+    # Needed to retrieve all non TOGA_Human_sites again
+    MEME_results <- get_gene_site_translations() %>%
+      dplyr::select(MSA_site) %>%
+      dplyr::left_join(MEME_results, by = join_by(MSA_site)) %>%
       # remove non-significant sites if input$MEMETableSignSites is TRUE
-      {if (input$MEMETableSignSites) filter(., `p-value` <= input$p_val_select) else .} 
+      {if (input$MEMETableSignSites) dplyr::filter(., `p-value` <= input$p_val_select) else .}
+    
+    # Combine with substitutions
+    MEME_results_with_subs <- get_MEME_acomys_sub() %>%
+      dplyr::mutate(branch_assembly = replace(branch_assembly, label == "REFERENCE", "REFERENCE"),
+                    Species_Tree = replace(Species_Tree, label == "REFERENCE", "Homo_sapiens")) %>%
+      dplyr::filter(Species_Tree %in% c("Homo_sapiens", "Acomys_cahirinus")) %>%
+      # change substitution site if A. cahirinus
+      dplyr::rowwise() %>%
+      dplyr::mutate(subs = if_else(Species_Tree == "Acomys_cahirinus",
+                                   translate_branch_subs(TOGA_Acomys_site, subs),
+                                   subs)) %>%
+      ungroup() %>%
+      dplyr::select("MSA_site", "TOGA_Human_site", "TOGA_Acomys_site", "UP_Human_site", "subs", "Species_Tree") %>%
+      tidyr::pivot_wider(values_from = "subs", names_from = "Species_Tree") %>%
+      dplyr::right_join(MEME_results, by = join_by(MSA_site, TOGA_Human_site, TOGA_Acomys_site, UP_Human_site)) %>%
+      dplyr::relocate(Homo_sapiens, Acomys_cahirinus, .after = last_col()) %>%
+      dplyr::rename("Substitution in Homo sapiens branch" = Homo_sapiens,
+                    "Substitution in A. cahirinus branch" = Acomys_cahirinus) %>%
+      dplyr::arrange(MSA_site)
+    
+    # Filter for substitutions if selected
+    if (input$MEMEFilterSitesForSubs == 2) {
+      MEME_results_with_subs <- MEME_results_with_subs %>%
+        dplyr::filter(!is.na(`Substitution in Homo sapiens branch`))
+    }
+    if (input$MEMEFilterSitesForSubs == 3) {
+      MEME_results_with_subs <- MEME_results_with_subs %>%
+        dplyr::filter(!is.na(`Substitution in A. cahirinus branch`))
+    }
+    MEME_results_with_subs
   })
   
   get_MEME_results_length <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
     
     nrow(get_MEME_results())
   })
   
-  get_unimapped_MEME_results <- reactive({
+  output$MEME_table <- gt::render_gt({
     
-    # Makes sure no table gets generated when no gene has been selected
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    get_MEME_results() %>%
+      gt() %>%
+      tab_spanner(
+        label = html("<strong><em>Position</em></strong>"),
+        columns = c("MSA_site", "TOGA_Human_site", "TOGA_Acomys_site", "UP_Human_site")
+      ) %>%
+      tab_spanner(
+        label = html("<strong><em>MEME maximum likelyhood estimation output</em></strong>"),
+        columns = c(`&alpha;`, `&beta;<sup>-</sup>`, `p<sup>-</sup>`,
+                    `&beta;<sup>+</sup>`, `p<sup>+</sup>`,
+                    LRT, `p-value`,
+                    `# branches under selection`, `Total branch length`,
+                    `MEME LogL`, `FEL LogL`, `Variation p`)) %>%
+      tab_spanner(
+        label = html("<strong><em>Substitutions</em></strong>"),
+        columns = c(`Substitution in Homo sapiens branch`,
+                    `Substitution in A. cahirinus branch`)) %>%
+      cols_align(align = "left") %>%
+      opt_stylize(style = 1) %>%
+      cols_label(
+        MSA_site = "MSA site",
+        TOGA_Human_site = "TOGA Human site",
+        TOGA_Acomys_site = "TOGA Acomys site",
+        UP_Human_site = "UP Human site",
+        `&alpha;` = gt::html("&alpha;"),
+        `&beta;<sup>-</sup>` = gt::html("&beta;<sup>-</sup>"),
+        `p<sup>-</sup>` = gt::html("p<sup>-</sup>"),
+        `&beta;<sup>+</sup>` = gt::html("&beta;<sup>+</sup>"),
+        `p<sup>+</sup>` = gt::html("p<sup>+</sup>")
+      ) %>%
+      data_color(
+        columns = LRT,
+        palette = "Blues") %>%
+      data_color(
+        columns = `p-value`,
+        palette = "Greens",
+        reverse = TRUE) %>%
+      opt_interactive(use_compact_mode = TRUE,
+                      use_resizers = TRUE,
+                      use_page_size_select = TRUE,
+                      page_size_values = c(10, 25, 50, 100, get_MEME_results_length()))
+    
+  })
+  
+  output$MEMEResultDescriptionTitle <- renderUI({
+    # Makes sure nothing gets generated when no gene has been selected
     if (get_genename_MEME() == "") {
-      return(NULL)
+      # If no gene has been selected
+      paragraph <- h5("Select a gene to display its results")
+      paragraph
+    } else {
+      HTML(paste0(h5(HTML(paste(get_genename_MEME(), "result summary:")))))
+    }
+  })
+  
+  # render block of summarizing text 
+  output$MEMEResultDescription <- renderUI({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMEResultCoordSelector]]
+    
+    # filter with p-value <= 0.1 if input$MEMETableSignSites is FALSE
+    filtered_results <- get_MEME_results() %>%
+      {if (input$MEMETableSignSites == FALSE) dplyr::filter(., `p-value` <= input$p_val_select) else .}
+    
+    # get number of significant sites
+    n_of_sites <- filtered_results %>%  
+      dplyr::pull(coord_sel[1]) %>%
+      length()
+    
+    # get significant site location
+    sites <- filtered_results %>%
+      dplyr::filter(!is.na(.data[[coord_sel[1]]])) %>%
+      dplyr::pull(coord_sel[1]) %>%
+      as.character()
+    
+    # Check if any sites are remaining
+    if (length(sites) == 0) {
+      sites <- "No sites identified."
     }
     
-    MEME_subs %>%
+    sites <- sites %>%
+      paste(collapse = ", ")
+    
+    paragraph <- paste0(p(HTML(paste(get_genename_MEME(), "was found to have", strong(n_of_sites),
+                                     strong("codon sites"), "with significant signs (p <= ", input$p_val_select, ") of episodic diversifying",
+                                     "selection"))),
+                        p(HTML(paste("Relative to the", coord_sel[2], "these codon sites are:", br(), br(), em(sites))))
+    )
+    HTML(paragraph)
+  })
+  
+  get_unimapped_MEME_results <- reactive({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    MEME_UP_results <- MEME_subs %>%
       dplyr::filter(genename == get_genename_MEME()) %>%
-      separate_longer_delim(c(sites, branch_subs, branch_subs_ancestral, `&alpha;`,
+      #dplyr::filter(genename == "IL12RB1") %>%
+      separate_longer_delim(c(sites, TOGA_sites, branch_subs, branch_subs_ancestral, `&alpha;`,
                               `&beta;<sup>-</sup>`, `p<sup>-</sup>`,
                               `&beta;<sup>+</sup>`, `p<sup>+</sup>`, `LRT`, `p-value`,
                               pval_fdr, `#_branches_under_selection`, `Total_branch_length`,
                               `MEME_LogL`, `FEL_LogL`, `Variation_p`),
                             delim = stringr::regex("[;,]")) %>%
       # rename columns
-      dplyr::rename(site = sites) %>%
+      dplyr::rename(UP_Human_site = sites,
+                    TOGA_Human_site = TOGA_sites) %>%
       ## format some columns as doubles and integers
-      mutate(site = as.integer(site),
+      mutate(UP_Human_site = as.integer(UP_Human_site),
+             TOGA_Human_site = as.integer(TOGA_Human_site),
              `#_branches_under_selection` = as.integer(`#_branches_under_selection`),
              `&alpha;` = as.double(`&alpha;`),
              `&beta;<sup>-</sup>` = as.double(`&beta;<sup>-</sup>`),
@@ -1221,122 +1190,83 @@ server <- function(input, output, session) {
              `MEME_LogL` = as.double(`MEME_LogL`),
              `FEL_LogL` = as.double(`FEL_LogL`),
              `Variation_p` = as.double(`Variation_p`)) %>%
-      # remove non-significant sites if input$MEMETableSignSites is TRUE
-      {if (input$MEMETableSignSites) filter(., `p-value` <= input$p_val_select) else .} 
-  })
-  
-  output$MEME_table <- DT::renderDataTable({
-    
-    # Makes sure no table gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
-    
-    get_MEME_results()
-    
-  # escape = FALSE allows HTML tags to be used in the table
-  # options = list(scrollY = "500px", scrollX = TRUE) shortens the table and 
-  # scrollX allows scrolling in the horizontal direction
-  # lengthMenu picks the selectable lengths of the datatable
-    
-  }, escape = FALSE, rownames = FALSE, 
-  options = list(scrollY = "500px", scrollX = TRUE, 
-                 lengthMenu = c(50, 100, 250, get_MEME_results_length()))
-  )
-  
-  # render block of summarizing text 
-  output$MEMEResultDescription <- renderUI({
-    
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
-
-    # filter with p-value <= 0.1 if input$MEMETableSignSites is FALSE
-    filtered_results <- get_MEME_results() %>%
-      {if (input$MEMETableSignSites == FALSE) filter(., `p-value` <= 0.1) else .}
-      
-    # get number of significant sites
-    n_of_sites <- filtered_results %>%  
-      use_series(site) %>%
-      length()
-    
-    # get significant site location
-    sites <- filtered_results %>%
-      use_series(site) %>%
-      as.character() %>%
-      paste(collapse = ", ")
-    
-    paragraph <- paste0(h4(HTML(paste(em(get_genename_MEME()), "result summary:"))), 
-                        p(HTML(paste(get_genename_MEME(), "was found to have", strong(n_of_sites),
-                                strong("codon sites"), "with significant signs (p <= ", input$p_val_select, ") of episodic diversifying",
-                                "selection"))),
-                        p(HTML(paste("These codon sites are", strong(sites), ".")))
-                        )
-    HTML(paragraph)
-  })
-  
-  # Rendering table for uniprot-mapped sites
-  output$MEME_table_unimapped <- DT::renderDataTable({
-    
-    if(nrow(get_unimapped_MEME_results()) == 0) {
-      return(NULL)
-    }
-    
-    get_unimapped_MEME_results() %>%
+      # Combine with translation table
+      dplyr::left_join(get_gene_site_translations(), by = join_by(UP_Human_site, TOGA_Human_site)) %>%
+      #dplyr::left_join(gene_trans_df, by = join_by(UP_Human_site, TOGA_Human_site)) %>%
       dplyr::select(-all_of(c("site_included",
                               "uniprot_gn_symbol", "ensembl_gene_id",
                               "pval_fdr", "n_of_sites", "genename",
                               "transcript_id"))) %>%
-      relocate(branch_subs, branch_subs_ancestral, .after = uniprotswissprot) %>%
-      rename("Amino acid difference between Human and A. cahirinus sequence" = "branch_subs",
-             "Amino acid substitution that took place in the A. cahirinus lineage (i.e. branch)" = "branch_subs_ancestral")
-    }, escape = FALSE, rownames = FALSE, 
-    options = list(scrollY = "500px", scrollX = TRUE, 
-                   lengthMenu = c(25, 50, 100)))
-  
-  # render block of summarizing text for uniprot-mapped sites 
-  output$MEMEResultDescription_unimapped <- renderUI({
-    
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
-    
-    if(nrow(get_unimapped_MEME_results()) == 0) {
-      return(HTML(paste0(h4(HTML(paste("No sites could be mapped to the uniprot accession of gene",
-                           em(get_genename_MEME())))))))
-    }
-    
-    # filter with p-value <= 0.1 if input$MEMETableSignSites is FALSE
-    filtered_results <- get_unimapped_MEME_results() %>%
-      {if (input$MEMETableSignSites == FALSE) filter(., `p-value` <= 0.1) else .}
-    
-    # get number of significant sites
-    n_of_sites <- filtered_results %>%  
-      use_series(site) %>%
-      length()
-    
-    # get significant site location
-    sites <- filtered_results %>%
-      use_series(site) %>%
-      as.character() %>%
-      paste(collapse = ", ")
-    
-    uniprot_acc <- filtered_results %>%
-      use_series(uniprotswissprot) %>%
-      .[1]
-    
-    paragraph <- paste0(h4(HTML(paste(em(get_genename_MEME()), "result summary:"))), 
-                        p(HTML(paste(get_genename_MEME(), "was found to have", strong(n_of_sites),
-                                     strong("codon sites"), "with significant signs (p <= ", input$p_val_select, ") of episodic diversifying",
-                                     "selection that we unambigiously mapped to the canonical protein sequence of",
-                                     get_genename_MEME(), paste0("(", uniprot_acc, ")")
-                                     ))),
-                        p(HTML(paste("These codon sites are", strong(sites), ".")))
-    )
-    HTML(paragraph)
+      dplyr::relocate(MSA_site, TOGA_Human_site,
+                      TOGA_Acomys_site, UP_Human_site,
+                      branch_subs, branch_subs_ancestral,
+                      uniprotswissprot) %>%
+      dplyr::arrange(TOGA_Human_site) %>%
+      # Correct location site position of branch_subs_ancestral column
+      dplyr::mutate(branch_subs_ancestral = purrr::map2_chr(TOGA_Acomys_site,
+                                                            branch_subs_ancestral,
+                                                            translate_branch_subs)) %>%
+      # remove non-significant sites if input$MEMETableSignSites is TRUE
+      {if (input$MEMETableSignSites) dplyr::filter(., `p-value` <= input$p_val_select) else .} 
   })
+  
+  # Get length of unimapped results
+  get_unimapped_MEME_length <- reactive({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    nrow(get_unimapped_MEME_results())
+  })
+  
+  # # Rendering table for uniprot-mapped sites
+  # output$MEME_table_unimapped <- gt::render_gt({
+  #   
+  #   if(nrow(get_unimapped_MEME_results()) == 0) {
+  #     return(NULL)
+  #   }
+  #   
+  #   get_unimapped_MEME_results() %>%
+  #     dplyr::rename("Amino acid difference between Human and A. cahirinus sequence" = "branch_subs",
+  #            "Amino acid substitution that took place in the A. cahirinus lineage (i.e. branch)" = "branch_subs_ancestral") %>%
+  #   gt() %>%
+  #     tab_spanner(
+  #       label = html("<strong><em>Position</em></strong>"),
+  #       columns = c("MSA_site", "TOGA_Human_site", "TOGA_Acomys_site", "UP_Human_site")
+  #     ) %>%
+  #     tab_spanner(
+  #       label = html("<strong><em>MEME maximum likelyhood estimation output</em></strong>"),
+  #       columns = c(`&alpha;`, `&beta;<sup>-</sup>`, `p<sup>-</sup>`,
+  #                   `&beta;<sup>+</sup>`, `p<sup>+</sup>`,
+  #                   LRT, `p-value`,
+  #                   `#_branches_under_selection`, `Total_branch_length`,
+  #                   `MEME_LogL`, `FEL_LogL`, `Variation_p`)) %>%
+  #     cols_align(align = "left") %>%
+  #     opt_stylize(style = 1) %>%
+  #     cols_label(
+  #       MSA_site = "MSA site",
+  #       TOGA_Human_site = "TOGA Human site",
+  #       TOGA_Acomys_site = "TOGA Acomys site",
+  #       UP_Human_site = "UP Human site",
+  #       `&alpha;` = gt::html("&alpha;"),
+  #       `&beta;<sup>-</sup>` = gt::html("&beta;<sup>-</sup>"),
+  #       `p<sup>-</sup>` = gt::html("p<sup>-</sup>"),
+  #       `&beta;<sup>+</sup>` = gt::html("&beta;<sup>+</sup>"),
+  #       `p<sup>+</sup>` = gt::html("p<sup>+</sup>")
+  #     ) %>%
+  #     data_color(
+  #       columns = LRT,
+  #       palette = "Blues") %>%
+  #     data_color(
+  #       columns = `p-value`,
+  #       palette = "Greens",
+  #       reverse = TRUE) %>%
+  #     opt_interactive(use_compact_mode = TRUE,
+  #                     use_resizers = TRUE,
+  #                     use_page_size_select = TRUE,
+  #                     page_size_values = c(10, 25, 50, get_unimapped_MEME_length()))
+  #   
+  #   })
   
   ### MEME backend for 'Multiple sequence alignment' tabpanel
   
@@ -1344,23 +1274,14 @@ server <- function(input, output, session) {
     if (get_genename_MEME() == "") {
       return("Please select a gene to display the multiple sequence alignment")
     }
-    if (!(get_genename_MEME() %in% MSA_genelist)) {
-      return("This gene was not mapped to a uniprot entry, and consequently no MSA was generated for this gene. Please select a different gene to display the multiple sequence alignment")
-    } else {
-      return(NULL)
-    }
+    return(NULL)
   })
   
   # Render the multiple sequence alignment
   output$MultipleAlignment <- renderUI({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
-    if (!(get_genename_MEME() %in% MSA_genelist)) {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
     
     # create URL
     if (input$MSAradioselect == 1) {
@@ -1381,96 +1302,386 @@ server <- function(input, output, session) {
   # Get acomys substitution data from MEME_data
   get_MEME_acomys_sub <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
     
-    MEME_row <- get_MEME_data_row()
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMETreeCoordSelector]]
     
-    MEME_row <- MEME_row %>%
-      use_series(substitutions) %>%
-      extract2(1)
+    branch_substitutions <- get_MEME_data_row() %>%
+      dplyr::pull(branch_subs) %>%
+      magrittr::extract2(1)
     
-    HLacoCah2_colname <- colnames(MEME_row)[str_detect(colnames(MEME_row), "HLacoCah2")]
+    # Prepare the substitution dataframe for tree merging
+    site_branch_subs <- branch_substitutions %>%
+      #dplyr::filter(label %in% node_lab) %>%
+      tidyr::separate_longer_delim(subs, delim = "/") %>%
+      dplyr::mutate(subs = if_else(subs == "", NA_character_, subs)) %>%
+      tidyr::separate_wider_regex(subs, c("(?:\\b(?:[ACDEFGHIKLMNPQRSTVWY]|Gap|InMut))?",
+                                          "-?",
+                                          TOGA_Human_site = "\\d+",
+                                          "-?",
+                                          "(?:(?:[ACDEFGHIKLMNPQRSTVWY]|Gap|InMut)\\b)?"),
+                                  cols_remove = FALSE) %>%
+      dplyr::mutate(TOGA_Human_site = as.integer(TOGA_Human_site)) %>%
+      # Add other reference frames
+      dplyr::left_join(get_gene_site_translations() %>%
+                         dplyr::mutate(TOGA_Human_site = as.integer(TOGA_Human_site)) %>%
+                         # `.&TOGA_orig_Human_site` are the sites in the
+                         # branch_substitutions column
+                         dplyr::filter((TOGA_Human_site %in% .$TOGA_Human_site) &
+                                         (!is.na(TOGA_Human_site))),
+                       by = join_by(TOGA_Human_site)) %>%
+      # Add species names
+      dplyr::left_join(name_conversion %>%
+                         dplyr::select(`Assembly name`, Species_Tree) %>%
+                         dplyr::rename(branch_assembly = `Assembly name`),
+                       by = join_by(branch_assembly)) %>%
+      # Change substitution to match coordinate frame
+      dplyr::mutate(subs = purrr::map2_chr(.data[[coord_sel[1]]],
+                                           subs,
+                                           translate_branch_subs))
     
-    MEME_row %>%
-      rename("Acomys_cahirinus" = all_of(HLacoCah2_colname))
+    site_branch_subs
   })
   
-  get_MEME_acomys_sub_length <- reactive({
+  get_MEME_acomys_sub_pval <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMETreeCoordSelector]]
+    
+    # Link to p-values of sites
+    site_branch_subs <- get_MEME_results() %>%
+      dplyr::select(MSA_site, `p-value`) %>%
+      dplyr::right_join(get_MEME_acomys_sub(), by = join_by(MSA_site)) %>%
+      # remove non-significant sites if input$MEMETableSignSites is TRUE
+      {if (input$MEMETableSignSites) dplyr::filter(., `p-value` <= input$p_val_select) else .} %>%
+      dplyr::mutate(`p-value` = round(`p-value`, digits = 4)) %>%
+      # Add homo sapiens
+      dplyr::mutate(Species_Tree = replace(Species_Tree, label == "REFERENCE", "Homo_sapiens"))
+    
+    # Filter for sites with substitutions, if selected
+    if (input$MEMEFilterSitesForSubs == 2) {
+      sites_to_keep <- site_branch_subs %>%
+        dplyr::filter((Species_Tree == "Homo_sapiens") & (!is.na(subs))) %>%
+        dplyr::pull(.data[[coord_sel[1]]])
+      
+      site_branch_subs <- site_branch_subs %>%
+        dplyr::filter(.data[[coord_sel[1]]] %in% sites_to_keep)
     }
-    
-    nrow(get_MEME_acomys_sub())
+    if (input$MEMEFilterSitesForSubs == 3) {
+      sites_to_keep <- site_branch_subs %>%
+        dplyr::filter((Species_Tree == "Acomys_cahirinus") & (!is.na(subs))) %>%
+        dplyr::pull(.data[[coord_sel[1]]])
+      
+      site_branch_subs <- site_branch_subs %>%
+        dplyr::filter(.data[[coord_sel[1]]] %in% sites_to_keep)
+    }
+    site_branch_subs
   })
   
-  output$MEME_acomys_sub <- DT::renderDataTable({
-    
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
-    
-    get_MEME_acomys_sub()
-  }, rownames = FALSE, options = list(scrollY = "300px", scrollX = TRUE, 
-                                      lengthMenu = c(get_MEME_acomys_sub_length(), 20))
-  )
   
-  get_MEME_branch_subs <- reactive({
+  get_site_options <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
     
-    MEME_row <- get_MEME_data_row()
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMETreeCoordSelector]]
     
-    MEME_row %>%
-      use_series(branch_subs) %>%
-      extract2(1) %>%
-      select(!node) %>%
-      rename("Branch name" = "label", "Substitutions" = "subs") %>%
-      # change assembly names to species names
-      mutate(`Branch name` = map_chr(`Branch name`, ~ {
-        if (.x == "REFERENCE") {
-          return("Homo_sapiens")
-        } else if (!(.x %in% name_conversion$`Assembly name`)) {
-          return(.x)
-        } else if (.x %in% name_conversion$`Assembly name`) {
-          index <- which(.x == name_conversion$`Assembly name`)
-          species_tree <- name_conversion$Species_Tree[index]
-          return(species_tree)
-        } else {
-          cat("ERROR! non-recognized branch name!")
-          return(NULL)
-        }
-    }))
+    site_options <- get_MEME_acomys_sub_pval() %>%
+      dplyr::pull(.data[[coord_sel[1]]]) %>%
+      .[!is.na(.)] %>%
+      unique() %>%
+      .[order(.)] %>%
+      as.character()
+    
+    site_options
   })
   
-  get_MEME_branch_subs_length <- reactive({
+  # Get the site selection options
+  observe({
+  
+    freezeReactiveValue(input, "SubSiteSelect")
+    updateSelectizeInput(session, "SubSiteSelect", choices = get_site_options(),
+                         server = TRUE, 
+                         options = list(placeholder = "Site"))
+  })
+  
+  # Get the display table
+  get_sub_display_table <- reactive({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (is.null(get_site_options())) {
       return(NULL)
     }
     
-    nrow(get_MEME_branch_subs())
+    site_display_table <- get_MEME_acomys_sub_pval() %>%
+      dplyr::mutate(label = if_else(!is.na(Species_Tree), Species_Tree, label)) %>%
+      dplyr::select(label, branch_assembly, branch_projection, MSA_site,
+                    TOGA_Human_site, TOGA_Acomys_site, UP_Human_site, subs, `p-value`) %>%
+      dplyr::rename(Assembly_name = branch_assembly,
+                    TOGA_projection_name = branch_projection,
+                    substitution = subs) %>%
+      dplyr::arrange(label) %>%
+      # Add homo sapiens
+      dplyr::mutate(label = replace(label, label == "REFERENCE", "Homo_sapiens"),
+                    Assembly_name = replace(Assembly_name, label == "Homo_sapiens", "REFERENCE")) %>%
+      # Remove NA (i.e. no substitution) rows
+      dplyr::filter(!is.na(substitution))
+  })
+  
+  get_display_table_length <- reactive({
+    
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (is.null(get_site_options())) {
+      return(NULL)
+    }
+    
+    nrow(get_sub_display_table())
+  })
+  
+  # This prepares the substitution dataframe for use with the phylogenetic tree
+  get_MEME_acomys_sub_for_phylo <- reactive({
+    
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (length(get_site_options()) == 0) {
+      return(NULL)
+    }
+    
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMETreeCoordSelector]]
+    
+    cols_to_remove <- c("TOGA_Human_site", "MSA_site", "TOGA_Acomys_site", "UP_Human_site")
+    cols_to_remove <- cols_to_remove[cols_to_remove != coord_sel[1]]
+
+    site_branch_subs <- get_MEME_acomys_sub_pval() %>%
+      dplyr::select(!all_of(c("p-value", cols_to_remove))) %>%
+      dplyr::distinct(label, subs, .keep_all = TRUE) %>%
+      tidyr::pivot_wider(names_from = all_of(coord_sel[1]), values_from = subs) %>%
+      # Join with tibble_tree
+      {if ("branch.length" %in% colnames(.)) {
+        dplyr::select(., -node, -branch.length, -branch_assembly, -branch_projection)
+      } else {
+        dplyr::select(., -node, -branch_assembly, -branch_projection)
+      }
+      }
+    
+    site_branch_subs
+  })
+  
+  prepare_phylogeny <- reactive({
+    
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (length(get_site_options()) == 0) {
+      return(NULL)
+    }
+    
+    # Get and prepare tree from MEME data
+    gene_tree <- get_MEME_data_row() %>%
+      dplyr::pull(tree)
+    
+    gene_tree <- ape::read.tree(text = gene_tree)
+    tibble_tree <- as_tibble(gene_tree)
+    
+    # Pattern used to retrieve species names from label
+    branch_pattern <- "vs_(.+?)_(.+?_.+?_.+?)$"
+    
+    # Get branch assembly (e.g. HLacoCah2) and branch projection 
+    # (e.g. ENST00000011653_CD4_109) from branch names in separate columns.
+    tibble_tree$branch_assembly <- sapply(tibble_tree$label, function(branch) {
+      if (branch == "REFERENCE") {
+        return("REFERENCE")
+      }
+      if (stringr::str_detect(branch, pattern = branch_pattern)) {
+        return(stringr::str_match(branch, branch_pattern)[2])
+      } else {
+        return(NA)
+      }
+    })
+    tibble_tree$branch_projection <- sapply(tibble_tree$label, function(branch) {
+      if (branch == "REFERENCE") {
+        return("REFERENCE")
+      }
+      if (stringr::str_detect(branch, pattern = branch_pattern)) {
+        return(stringr::str_match(branch, branch_pattern)[3])
+      } else {
+        return(NA)
+      }
+    })
+    
+    # Merge tree with substitutions
+    tibble_tree_anno <- tibble_tree %>%
+      dplyr::left_join(get_MEME_acomys_sub_for_phylo(), by = join_by(label)) %>%
+      dplyr::select(-Species_Tree) %>%
+      dplyr::left_join(name_conversion %>%
+                         dplyr::select(`Assembly name`, Species_Tree) %>%
+                         dplyr::rename(branch_assembly = `Assembly name`),
+                       by = join_by(branch_assembly)) %>%
+      # Add homo sapiens
+      dplyr::mutate(Species_Tree = replace(Species_Tree, branch_assembly == "REFERENCE", "Homo_sapiens"))
+    
+    # prepare order data
+    orders <- c("Rodentia", "Lagomorpha", "Primates", "Scandentia", "Artiodactyla",
+                "Carnivora", "Pholidota", "Perissodactyla", "Dermoptera", "Chiroptera",
+                "Eulipotyphla", "Afrotheria", "Xenarthra")
+    
+    # filter out species not in the tree and add order information 
+    species_orders <- name_conversion %>%
+      dplyr::filter(Species_Tree %in% tibble_tree_anno$Species_Tree) %>%
+      .[!(duplicated(.$Species_Tree)),] %>%
+      dplyr::mutate(species_order = purrr::map_chr(`Taxonomic Lineage`, ~ {
+        for (spec_order in orders) {
+          if (stringr::str_detect(.x, spec_order)) {
+            return(spec_order)
+          }
+        }    
+      })) %>%
+      dplyr::select(Species_Tree, species_order) %>%
+      #manually add homo sapiens order
+      dplyr::add_row(Species_Tree = "Homo_sapiens", species_order = "Primates")
+    
+    # Annotate tree with order information
+    tibble_tree_anno <- tibble_tree_anno %>%
+      left_join(species_orders, by = 'Species_Tree')
+    
+    clades <- lapply(orders, function(i) {
+      selected_nodes <- tibble_tree_anno %>%
+        filter(species_order == i) %>%
+        select(node) %>%
+        flatten_int()
+      return(selected_nodes)
+    })
+    names(clades) <- orders
+    
+    # Remove zero length list elements
+    clades <- clades[sapply(clades, length) != 0]
+    
+    tibble_tree_anno <- ggtree::groupOTU(tibble_tree_anno, clades)
+    # remove unnecessary species_order column
+    tibble_tree_anno <- tibble_tree_anno %>%
+      select(!species_order)
+    
+    # Find node representing Acomys Cahirinus
+    Acomys_node <- tibble_tree_anno %>%
+      dplyr::filter(Species_Tree == "Acomys_cahirinus") %>%
+      dplyr::pull(node)
+    
+    # Replace the labels with cleaner species names
+    tibble_tree_nodes <- tibble_tree_anno %>%
+      dplyr::mutate(label = if_else(!is.na(Species_Tree), Species_Tree, label))
+    
+    # Detect MRCA of the species orders
+    grp_MRCA_nodes <- sapply(unique(tibble_tree_nodes$group), function(grp) {
+      # "0" represents the root, which has no MCRA
+      if (grp == "0") {
+        return(NA)
+      }
+      grp_species <- tibble_tree_nodes$Species_Tree[tibble_tree_nodes$group == grp]
+      ggtree::MRCA(tibble_tree_nodes, grp_species[!is.na(grp_species)])$node
+    })
+    grp_MRCA_nodes <- grp_MRCA_nodes[!is.na(grp_MRCA_nodes)]
+    
+    # Create column indicating whether a node is an MRCA node or an Acomys node
+    tibble_tree_nodes <- tibble_tree_nodes %>%
+      dplyr::mutate(is_MRCA = node %in% grp_MRCA_nodes,
+                    is_aco = node == Acomys_node)
+    
+    Anno_tree <- treeio::as.treedata(tibble_tree_nodes)
+
+    # Plot base tree with tippoints colored by species order/group
+    p1 <- ggtree(Anno_tree, aes(x, y), open.angle = 10, size = 0.5) +
+      geom_tippoint(mapping = aes(color = group, subset = !is_aco)) +
+      #give acomys different label point
+      geom_tippoint(mapping = aes(subset = is_aco),
+                    shape = 17, size = 2, color = MetBrewer::met.brewer("Cross")[5])
+    # Highlight the species orders/groups using geom_highlight
+    p2 <- p1 + geom_hilight(mapping = aes(subset = is_MRCA, fill = group), alpha = 0.2) +
+      guides(alpha = "none") +
+      scale_fill_manual(name = "Order",
+                        values = MetBrewer::met.brewer("Cross", type = "continuous", n = 14),
+                        breaks = c("Carnivora", "Pholidota", "Perissodactyla",
+                                   "Artiodactyla", "Chiroptera", "Eulipotyphla",
+                                   "Rodentia", "Lagomorpha", "Primates", "Dermoptera",
+                                   "Scandentia", "Afrotheria", "Xenarthra")) +
+      scale_color_manual(name = "Order",
+                         values = MetBrewer::met.brewer("Cross", type = "continuous", n = 14),
+                         breaks = c("Carnivora", "Pholidota", "Perissodactyla",
+                                    "Artiodactyla", "Chiroptera", "Eulipotyphla",
+                                    "Rodentia", "Lagomorpha", "Primates", "Dermoptera",
+                                    "Scandentia", "Afrotheria", "Xenarthra")) +
+      # Add tip labels
+      geom_tiplab(align = TRUE) +
+      # move legend position
+      theme(legend.position = "bottom") +
+      # Adds 30% more space to the right
+      hexpand(0.15, direction = 1)
+    
+    # Add branch length scale, if the tree contained branch lengths
+    if ("branch.length" %in% colnames(tibble_tree_anno)) {
+      p2 <- p2 + geom_treescale()
+    }
+    
+    p2
+  })
+  
+  # Add substitution annotation
+  annotate_phylo <- reactive({
+    
+    req(input$SubSiteSelect)
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (length(get_site_options()) == 0) {
+      return(NULL)
+    }
+    
+    prepare_phylogeny() +
+      geom_label(aes(label = .data[[input$SubSiteSelect]]), hjust = 1.2)
+  })
+  
+  # Display message when no gene is selected
+  output$SubPhyloText <- renderUI({
+    if (get_genename_MEME() == "") {
+      return("Please select a gene to display the phylogenetic tree with the substitution data.")
+    } else if (is.null(get_site_options())) {
+      return(NULL)
+    } else if (length(get_site_options()) == 0) {
+      # Get selected coordinate frame
+      coord_sel <- coord_options[[input$MEMETreeCoordSelector]]
+      return(paste0("For ", get_genename_MEME(), " in the ", coord_sel[1], " reference frame: No substitutions found"))
+    } else {
+      return(NULL)
+    }
+  })
+  
+  output$SubSitePhylo <- renderPlot({
+    
+    req(input$MEMEGeneInput)
+    
+    # Makes sure nothing gets generated when no sites has been selected
+    if (length(get_site_options()) == 0) {
+      return(NULL)
+    }
+    
+    annotate_phylo()
   })
   
   output$MEME_branch_subs <- DT::renderDataTable({
     
-    # Makes sure nothing gets generated when no gene has been selected
-    if (get_genename_MEME() == "") {
-      return(NULL)
-    }
+    req(input$MEMEGeneInput)
     
-    get_MEME_branch_subs()
-  }, rownames = FALSE, options = list(scrollY = "500px", scrollX = TRUE, 
-                                      lengthMenu = c(get_MEME_branch_subs_length(), 20))
+    get_sub_display_table()
+  }, rownames = FALSE, options = list(scrollX = TRUE,
+                                      lengthMenu = c(20, 50, 100, get_display_table_length()))
   )
   
   ### MEME backend for 'EBF' tabpanel
@@ -1508,7 +1719,7 @@ server <- function(input, output, session) {
       extract2(1)
     
     # filter for selected assemblies
-    EBF_data_table %<>% filter(branch %in% c("REFERENCE", "HLacoCah2", "HLpsaObe1",
+    EBF_data_table %<>% dplyr::filter(branch %in% c("REFERENCE", "HLacoCah2", "HLpsaObe1",
                                         "HLmerUng1", "HLratNor7", "rn6", "HLmusPah1",
                                         "HLmusCar1", "mm10", "mm39", "HLmesAur2",
                                         "mesAur1", "HLcriGri3", "HLsigHis1",
@@ -1551,7 +1762,7 @@ server <- function(input, output, session) {
     # Get sites that have EBF 100 in the A. cahirinus branch and that are
     # significant
     EBF100_sites <- EBF_data_table_MLE %>%
-      filter(EBF >= 100 & sign == TRUE & branch == "HLacoCah2") %>%
+      dplyr::filter(EBF >= 100 & sign == TRUE & branch == "HLacoCah2") %>%
       pull(site) %>%
       unique()
     
@@ -1622,7 +1833,7 @@ server <- function(input, output, session) {
       extract2(1)
     
     # Filter EBF_table for leaf nodes only, using the name conversion df
-    EBF_data_table %<>% filter(branch %in% c("REFERENCE", "HLacoCah2", "HLpsaObe1",
+    EBF_data_table %<>% dplyr::filter(branch %in% c("REFERENCE", "HLacoCah2", "HLpsaObe1",
                                                 "HLmerUng1", "HLratNor7", "rn6", "HLmusPah1",
                                                 "HLmusCar1", "mm10", "mm39", "HLmesAur2",
                                                 "mesAur1", "HLcriGri3", "HLsigHis1",
@@ -1687,12 +1898,12 @@ server <- function(input, output, session) {
     
     # remove infinite rows
     EBF_table_MLE <- get_EBF_data_bubbleplot() %>%
-      filter(!(is.infinite(EBF)))
+      dplyr::filter(!(is.infinite(EBF)))
     
     EBF_table_MLE <- EBF_table_MLE %>%
       mutate(EBF_100 = if_else(EBF_100 == FALSE, "MEME LRT p-value > 0.05\nor\nEBF < 100",
                                "MEME LRT p-value <= 0.05\nand\nEBF >= 100")) %>%
-      filter(EBF >= 0)
+      dplyr::filter(EBF >= 0)
     
     # Generate data that will be hidden in the plot, for the purpose of keeping
     # the plot range identical when hiding/selecting legend items
@@ -1703,7 +1914,7 @@ server <- function(input, output, session) {
     
     # Generate plotly
     plot_ly() %>%
-      add_trace(data = filter(EBF_table_MLE, EBF_100 == "MEME LRT p-value > 0.05\nor\nEBF < 100"),
+      add_trace(data = dplyr::filter(EBF_table_MLE, EBF_100 == "MEME LRT p-value > 0.05\nor\nEBF < 100"),
                 name = "MEME LRT p-value > 0.05\nor\nEBF < 100",
                 x = ~site,
                 y = ~branch,
@@ -1714,7 +1925,7 @@ server <- function(input, output, session) {
                 size = ~EBF,
                 sizes = c(0.0001, 200),
                 text = ~paste("<b>log10(EBF):</b> ", EBF)) %>%
-      add_trace(data = filter(EBF_table_MLE, EBF_100 == "MEME LRT p-value <= 0.05\nand\nEBF >= 100"),
+      add_trace(data = dplyr::filter(EBF_table_MLE, EBF_100 == "MEME LRT p-value <= 0.05\nand\nEBF >= 100"),
                 name = "MEME LRT p-value <= 0.05\nand\nEBF >= 100",
                 x = ~site,
                 y = ~branch,
@@ -1751,7 +1962,7 @@ server <- function(input, output, session) {
       return(NULL)
     }
     get_EBF_data_table() %>%
-      {if (input$MEME_EBF_inf_remove) filter(., !(is.infinite(EBF))) else .}
+      {if (input$MEME_EBF_inf_remove) dplyr::filter(., !(is.infinite(EBF))) else .}
   })
   
   MEME_EBF_acomys_selecter <- reactive({
@@ -1760,7 +1971,7 @@ server <- function(input, output, session) {
       return(NULL)
     }
     MEME_EBF_inf_remover() %>%
-      {if (input$MEME_EBF_acomys_select) filter(., branch == "Acomys_cahirinus") else .}
+      {if (input$MEME_EBF_acomys_select) dplyr::filter(., branch == "Acomys_cahirinus") else .}
   })
   
   # render datatable
