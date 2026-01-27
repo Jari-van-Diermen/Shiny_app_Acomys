@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM rocker/shiny:4
+FROM rocker/shiny:4.5.2
 
 ### Install R packages
 RUN R -e "install.packages(c('renv', 'devtools'), repos = c(CRAN = 'https://cloud.r-project.org'))"
