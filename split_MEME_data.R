@@ -7,6 +7,9 @@ library(magrittr)
 ### set working directory
 setwd(file.path("~", "Documents", "Github", "Shiny_app_Acomys"))
 
+### Source split functions
+source("./split_functions.R")
+
 ### load and rename aBSREL data
 
 load(file = file.path("data_files", "aBSREL_analysis_pval_count.RData"))
@@ -28,76 +31,81 @@ dNdS_df <- read_delim(file.path("data_files", "aBSREL_dNdS_df.tsv"),
 ### Load MEME data
 
 # MEME data with substitution columns
-load(file = file.path("data_files", "MEME_substitutions_small.RData"))
+load(file = file.path("data_files", "MEME_substitutions.RData"))
+MEME_data <- MEME_simple_nsites_subs
+rm(MEME_simple_nsites_subs)
 
-# # EBF data calculated from the MEME data
-# load(file = file.path("data_files", "MEME_EBF_values_simple.RData"))
+# Create an input tree column
+MEME_data <- MEME_data %>%
+  dplyr::rowwise() %>%
+  dplyr::mutate(tree = misc_data %>%
+                  magrittr::extract2("input") %>%
+                  magrittr::extract2("trees") %>%
+                  magrittr::extract2("0") %>%
+                    paste0(";")
+                  ) %>%
+  dplyr::ungroup()
 
-# Uniprot-mapped EBF data from MEME results for bubbleplot
-load(file = file.path("data_files", "EBF_data_uniprot_bubbleplot.RData"))
-EBF_data_unimapped_bubble <- EBF_data_uniprot_noMSA
-rm(EBF_data_uniprot_noMSA)
+# Simplify the data by removing unneccesary columns
+MEME_data <- MEME_data %>%
+  dplyr::select(-branch_attributes, -substitutions, -post_prob_omega_class, -misc_data)
 
-# Uniprot-mapped EBF data from MEME results for sign sites
-load(file = file.path("data_files", "EBF_data_uniprot.RData"))
-EBF_data_unimapped <- EBF_data_mapped_noMSA
-rm(EBF_data_mapped_noMSA)
+# EBF data calculated from the MEME data
+load(file = file.path("data_files", "MEME_EBF_values_simple.RData"))
 
-# rename data
-MEME_data <- MEME_simple_nsites_subs_small
-rm(MEME_simple_nsites_subs_small)
+### Load uniprot-mapped MEME-data
 
-# # Combine EBF_data with MEME_data 
-# MEME_data %<>%
-#   left_join(MEME_EBF_simple)
+# # Uniprot-mapped EBF data from MEME results for bubbleplot
+# load(file = file.path("data_files", "EBF_data_uniprot_bubbleplot.RData"))
+# EBF_data_unimapped_bubble <- EBF_data_uniprot_noMSA
+# rm(EBF_data_uniprot_noMSA)
+
+# # Uniprot-mapped EBF data from MEME results for sign sites
+# load(file = file.path("data_files", "EBF_data_uniprot.RData"))
+# EBF_data_unimapped <- EBF_data_mapped_noMSA
+# rm(EBF_data_mapped_noMSA)
 
 ### Split the data in multiple files on a per row basis
 
-# Function that takes the complete MEME or aBSREL data object, and creates a
-# new RData object per row
-#
-# args:
-#   RData_object: An RData object to split into multiple files using the rows
-#   column_name: the column name of the column that will be used for the
-#   splitting procedure
-#   RData_basename: The basename that the separate files should have
-#   subdir_name: The subdirectory that is created to store the generated RData
-#   files
-split_rows <- function(RData_object, column_name = "genename", 
-                       RData_basename = "MEME_data_",
-                       subdir_name = file.path("~", "Documents", "Github",
-                                               "Shiny_app_Acomys",
-                                               "Shiny_Acomys", "data",
-                                               "MEME_data")) {
-  column_vector <- RData_object[[column_name]]
-  
-  dir.create(subdir_name)
-  
-  # Loop through the rows and save each one as a separate RData file
-  for (row_id in seq_along(RData_object[[column_name]])) {
-    
-    RData_row <- RData_object[row_id,]
-    RData_genename <- RData_row[[column_name]]
-    
-    save(RData_row, file = file.path(subdir_name, paste0(RData_basename, RData_genename, ".RData")))
-    cat(paste0("Saved ", RData_genename, " row as a separate RData object\n\n"))
-  }
-}
+## Prepare the EBF data
+
+# Filter EBF-data for selected bubbleplot assemblies
+
+bubble_assemblies <- c("REFERENCE", "HLacoCah2", "HLpsaObe1",
+                       "HLmerUng1", "HLratNor7", "rn6", "HLmusPah1",
+                       "HLmusCar1", "mm10", "mm39", "HLmesAur2",
+                       "mesAur1", "HLcriGri3", "HLsigHis1",
+                       "HLonyTor1", "HLperManBai2", "HLondZib1",
+                       "HLellLut1")
+
+MEME_EBF_simple <- MEME_EBF_simple %>%
+  mutate(EBF_table = purrr:::map(EBF_table, ~ {
+    EBF_df_filt <- .x %>%
+      dplyr::filter(branch %in% bubble_assemblies)
+    return(EBF_df_filt)
+  }))
+
+# Split EBF data
+split_rows(MEME_EBF_simple, RData_basename = "EBF_data_",
+           subdir_name = file.path("~", "Documents", "Github",
+                                   "Shiny_app_Acomys",
+                                   "Shiny_Acomys", "data",
+                                   "EBF_data"))
 
 # get separate files for MEME data rows and unimapped-EBF values
 split_rows(MEME_data)
 
-split_rows(EBF_data_unimapped_bubble, RData_basename = "EBF_data_up_bubble_",
-           subdir_name = file.path("~", "Documents", "Github",
-                                   "Shiny_app_Acomys",
-                                   "Shiny_Acomys", "data",
-                                   "EBF_data_uniprot_bubbleplot"))
-
-split_rows(EBF_data_unimapped, RData_basename = "EBF_data_up_",
-           subdir_name = file.path("~", "Documents", "Github",
-                                   "Shiny_app_Acomys",
-                                   "Shiny_Acomys", "data",
-                                   "EBF_data_uniprot"))
+# split_rows(EBF_data_unimapped_bubble, RData_basename = "EBF_data_up_bubble_",
+#            subdir_name = file.path("~", "Documents", "Github",
+#                                    "Shiny_app_Acomys",
+#                                    "Shiny_Acomys", "data",
+#                                    "EBF_data_uniprot_bubbleplot"))
+# 
+# split_rows(EBF_data_unimapped, RData_basename = "EBF_data_up_",
+#            subdir_name = file.path("~", "Documents", "Github",
+#                                    "Shiny_app_Acomys",
+#                                    "Shiny_Acomys", "data",
+#                                    "EBF_data_uniprot"))
 
 # Combine aBSREL_data and aBSREL_data_bias into one dataframe
 
