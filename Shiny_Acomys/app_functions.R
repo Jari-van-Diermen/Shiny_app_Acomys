@@ -116,13 +116,16 @@ translate_branch_subs <- function(aco_site, branch_sub) {
 
 # Function to link uniprot sequence annotations to the unimapped MEME
 # substitutions data
-link_protein_features <- function(site_df, features_df,
+link_protein_features <- function(site_df, features_df, gene,
+                                  site_df_col,
                                   exclude_features = c("CHAIN")) {
   
   uni_subs_features <- site_df %>%
-    mutate(features = map2(site, genename, ~ {
+    mutate(features = purrr::map(.data[[site_df_col]], ~ {
       site <- as.integer(.x)
-      gene <- .y
+      
+      # If site is NA, skip
+      if (is.na(site)) {return(NA)}
       
       # filter features df for selected gene
       domain_df <- features_df %>%
@@ -156,16 +159,19 @@ link_protein_features <- function(site_df, features_df,
   return(uni_subs_features)
 }
 
-identify_feature_sites <- function(site_df, features_df,
+identify_feature_sites <- function(site_df, features_df, gene,
+                                   site_df_col,
                                    selected_features = c("DOMAIN", "REGION",
                                                          "MOTIF")) {
   # function that creates a column that identifies if a site was present in the
   # selected features
   
   uni_subs_identified <- site_df %>%
-    mutate(in_feature = map2_lgl(site, genename, ~ {
+    mutate(in_feature = purrr::map_lgl(.data[[site_df_col]], ~ {
       site <- as.integer(.x)
-      gene <- .y
+      
+      # If site is NA, skip
+      if (is.na(site)) {return(NA)}
       
       # filter features df for selected gene
       domain_df <- features_df %>%
