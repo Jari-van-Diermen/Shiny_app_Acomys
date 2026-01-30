@@ -1,0 +1,10 @@
+.allowstrong strong,
+.allowstrong b {
+  font-weight: 700;
+}
+
+/* Disable DT internal scrolling for one table */
+.no-dt-scroll .dataTables_scrollBody {
+  overflow-y: visible !important;
+  max-height: none !important;
+}
