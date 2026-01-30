@@ -1,0 +1,274 @@
+Species,Assembly name,Species_Tree,Taxonomic Lineage
+Acinonyx_jubatus,HLaciJub2,Acinonyx_jubatus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Acinonychinae; Acinonyx
+Acomys_cahirinus,HLacoCah1,Acomys_cahirinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Deomyinae; Acomys
+Acomys_cahirinus,HLacoCah2,Acomys_cahirinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Deomyinae; Acomys
+Ailuropoda_melanoleuca,HLailMel2,Ailuropoda_melanoleuca,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Ursidae; Ailuropoda
+Ailurus_fulgens,HLailFul2,Ailurus_fulgens,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Ailuridae; Ailurus
+Allactaga_bullata,HLallBul1,Allactaga_bullata,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Dipodoidea; Dipodidae; Allactaginae; Allactaga
+Alouatta_palliata,HLaloPal1,Alouatta_palliata,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Atelidae; Alouattinae; Alouatta
+Ammotragus_lervia,HLammLer1,Ammotragus_lervia,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Ammotragus
+Anoura_caudifer,HLanoCau1,Anoura_caudifer,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Glossophaginae; Anoura
+Antilocapra_americana,HLantAme1,Antilocapra_americana,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Antilocapridae; Antilocapra
+Aotus_nancymaae,aotNan1,Aotus_nancymaae,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Aotidae; Aotus
+Aplodontia_rufa,HLaplRuf1,Aplodontia_rufa,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Aplodontiidae; Aplodontia
+Artibeus_jamaicensis,HLartJam1,Artibeus_jamaicensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Stenodermatinae; Artibeus
+Artibeus_jamaicensis,HLartJam2,Artibeus_jamaicensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Stenodermatinae; Artibeus
+Ateles_geoffroyi,HLateGeo1,Ateles_geoffroyi,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Atelidae; Atelinae; Ateles
+Balaenoptera_acutorostrata_scammoni,balAcu1,Balaenoptera_acutorostrata,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Mysticeti; Balaenopteridae; Balaenoptera; Balaenoptera acutorostrata
+Balaenoptera_bonaerensis,HLbalBon1,Balaenoptera_bonaerensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Mysticeti; Balaenopteridae; Balaenoptera
+Beatragus_hunteri,HLbeaHun1,Beatragus_hunteri,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Alcelaphinae; Beatragus
+Bison_bison_bison,HLbisBisBis2,Bison_bison,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bison; Bison bison
+Bison_bison_bison,bisBis1,Bison_bison,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bison; Bison bison
+Bos_indicus,HLbosInd2,Bos_indicus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bos
+Bos_mutus,HLbosMut2,Bos_mutus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bos
+Bos_taurus,bosTau9,Bos_taurus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bos
+Bubalus_bubalis,HLbubBub2,Bubalus_bubalis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bubalus
+Callithrix_jacchus,HLcalJac4,Callithrix_jacchus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Cebidae; Callitrichinae; Callithrix; Callithrix
+Camelus_bactrianus,HLcamBac1,Camelus_bactrianus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Tylopoda; Camelidae; Camelus
+Camelus_dromedarius,HLcamDro2,Camelus_dromedarius,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Tylopoda; Camelidae; Camelus
+Camelus_ferus,HLcamFer3,Camelus_ferus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Tylopoda; Camelidae; Camelus
+Canis_lupus_familiaris,canFam4,Canis_lupus_familiaris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Canis; Canis lupus
+Canis_lupus_familiaris,canFam5,Canis_lupus_familiaris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Canis; Canis lupus
+Capra_aegagrus,HLcapAeg1,Capra_aegagrus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Capra
+Capra_hircus,HLcapHir2,Capra_hircus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Capra
+Carollia_perspicillata,HLcarPer3,Carollia_perspicillata,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Carolliinae; Carollia
+Castor_canadensis,HLcasCan3,Castor_canadensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Castorimorpha; Castoridae; Castor
+Catagonus_wagneri,HLcatWag1,Catagonus_wagneri,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Suina; Tayassuidae; Catagonus
+Cavia_aperea,cavApe1,Cavia_aperea,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Caviidae; Cavia
+Cavia_porcellus,cavPor3,Cavia_porcellus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Caviidae; Cavia
+Cavia_tschudii,HLcavTsc1,Cavia_tschudii,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Caviidae; Cavia
+Cebus_albifrons,HLcebAlb1,Cebus_albifrons,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Cebidae; Cebinae; Cebus
+Cebus_capucinus_imitator,cebCap1,Cebus_capucinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Cebidae; Cebinae; Cebus; Cebus capucinus
+Ceratotherium_simum_cottoni,HLcerSimCot1,Ceratotherium_simum_cottoni,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Rhinocerotidae; Ceratotherium; Ceratotherium simum
+Ceratotherium_simum_cottoni,HLcerSimCot2,Ceratotherium_simum_cottoni,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Rhinocerotidae; Ceratotherium; Ceratotherium simum
+Ceratotherium_simum_simum,cerSim1,Ceratotherium_simum,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Rhinocerotidae; Ceratotherium; Ceratotherium simum
+Cercocebus_atys,cerAty1,Cercocebus_atys,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Cercocebus
+Cercopithecus_neglectus,HLcerNeg1,Cercopithecus_neglectus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Cercopithecus
+Cheirogaleus_medius,HLcheMed1,Cheirogaleus_medius,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Cheirogaleidae; Cheirogaleus
+Chinchilla_lanigera,chiLan1,Chinchilla_lanigera,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Chinchillidae; Chinchilla
+Chlorocebus_sabaeus,chlSab2,Chlorocebus_sabaeus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Chlorocebus
+Choloepus_didactylus,HLchoDid1,Choloepus_didactylus,Mammalia; Theria; Eutheria; Xenarthra; Pilosa; Folivora; Megalonychidae; Choloepus
+Choloepus_didactylus,HLchoDid2,Choloepus_didactylus,Mammalia; Theria; Eutheria; Xenarthra; Pilosa; Folivora; Megalonychidae; Choloepus
+Choloepus_hoffmanni,HLchoHof3,Choloepus_hoffmanni,Mammalia; Theria; Eutheria; Xenarthra; Pilosa; Folivora; Megalonychidae; Choloepus
+Chrysochloris_asiatica,chrAsi1,Chrysochloris_asiatica,Mammalia; Theria; Eutheria; Afrotheria; Chrysochloridae; Chrysochlorinae; Chrysochloris
+Colobus_angolensis_palliatus,colAng1,Colobus_angolensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Colobus; Colobus angolensis
+Condylura_cristata,conCri1,Condylura_cristata,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Talpidae; Condylura
+Craseonycteris_thonglongyai,HLcraTho1,Craseonycteris_thonglongyai,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Craseonycteridae; Craseonycteris
+Cricetomys_gambianus,HLcriGam1,Cricetomys_gambianus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Nesomyidae; Cricetomyinae; Cricetomys
+Cricetulus_griseus,HLcriGri3,Cricetulus_griseus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Cricetinae; Cricetulus
+Cryptoprocta_ferox,HLcryFer2,Cryptoprocta_ferox,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Eupleridae; Euplerinae; Cryptoprocta
+Ctenodactylus_gundi,HLcteGun1,Ctenodactylus_gundi,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Ctenodactylidae; Ctenodactylus
+Ctenomys_sociabilis,HLcteSoc1,Ctenomys_sociabilis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Ctenomyidae; Ctenomys
+Dasyprocta_punctata,HLdasPun1,Dasyprocta_punctata,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Dasyproctidae; Dasyprocta
+Dasypus_novemcinctus,dasNov3,Dasypus_novemcinctus,Mammalia; Theria; Eutheria; Xenarthra; Cingulata; Dasypodidae; Dasypus
+Daubentonia_madagascariensis,HLdauMad1,Daubentonia_madagascariensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Chiromyiformes; Daubentoniidae; Daubentonia
+Delphinapterus_leucas,HLdelLeu2,Delphinapterus_leucas,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Monodontidae; Delphinapterus
+Delphinapterus_leucas,HLdelLeu3,Delphinapterus_leucas,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Monodontidae; Delphinapterus
+Dicerorhinus_sumatrensis_sumatrensis,HLdicSum1,Dicerorhinus_sumatrensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Rhinocerotidae; Dicerorhinus; Dicerorhinus sumatrensis
+Diceros_bicornis,HLdicBic1,Diceros_bicornis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Rhinocerotidae; Diceros
+Dinomys_branickii,HLdinBra1,Dinomys_branickii,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Dinomyidae; Dinomys
+Dipodomys_ordii,dipOrd2,Dipodomys_ordii,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Castorimorpha; Heteromyidae; Dipodomyinae; Dipodomys
+Dipodomys_stephensi,HLdipSte1,Dipodomys_stephensi,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Castorimorpha; Heteromyidae; Dipodomyinae; Dipodomys
+Dolichotis_patagonum,HLdolPat1,Dolichotis_patagonum,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Caviidae; Dolichotis
+Echinops_telfairi,echTel2,Echinops_telfairi,Mammalia; Theria; Eutheria; Afrotheria; Tenrecidae; Tenrecinae; Echinops
+Eidolon_helvum,HLeidHel2,Eidolon_helvum,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Megachiroptera; Pteropodidae; Pteropodinae; Eidolon
+Elaphurus_davidianus,HLelaDav1,Elaphurus_davidianus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Cervidae; Cervinae; Elaphurus
+Elephantulus_edwardii,eleEdw1,Elephantulus_edwardii,Mammalia; Theria; Eutheria; Afrotheria; Macroscelidea; Macroscelididae; Elephantulus
+Ellobius_lutescens,HLellLut1,Ellobius_lutescens,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Arvicolinae; Ellobius
+Ellobius_talpinus,HLellTal1,Ellobius_talpinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Arvicolinae; Ellobius
+Enhydra_lutris_kenyoni,enhLutKen1,Enhydra_lutris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mustelidae; Lutrinae; Enhydra; Enhydra lutris
+Eptesicus_fuscus,HLeptFus2,Eptesicus_fuscus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Eptesicus
+Eptesicus_fuscus,eptFus1,Eptesicus_fuscus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Eptesicus
+Equus_asinus,HLequAsi1,Equus_asinus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Equidae; Equus; Asinus
+Equus_caballus,equCab3,Equus_caballus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Equidae; Equus; Equus
+Equus_przewalskii,equPrz1,Equus_przewalskii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Equidae; Equus; Equus
+Erinaceus_europaeus,eriEur2,Erinaceus_europaeus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Erinaceidae; Erinaceinae; Erinaceus
+Erythrocebus_patas,HLeryPat1,Erythrocebus_patas,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Erythrocebus
+Eschrichtius_robustus,HLescRob1,Eschrichtius_robustus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Mysticeti; Eschrichtiidae; Eschrichtius
+Eschrichtius_robustus,HLescRob2,Eschrichtius_robustus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Mysticeti; Eschrichtiidae; Eschrichtius
+Eubalaena_japonica,HLeubJap1,Eubalaena_japonica,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Mysticeti; Balaenidae; Eubalaena
+Eulemur_flavifrons,HLeulFla1,Eulemur_flavifrons,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Lemuridae; Eulemur
+Eulemur_flavifrons,eulFla1,Eulemur_flavifrons,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Lemuridae; Eulemur
+Eulemur_fulvus,HLeulFul1,Eulemur_fulvus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Lemuridae; Eulemur
+Felis_catus,felCat9,Felis_catus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Felinae; Felis
+Felis_nigripes,HLfelNig1,Felis_nigripes,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Felinae; Felis
+Felis_nigripes,HLfelNig2,Felis_nigripes,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Felinae; Felis
+Fukomys_damarensis,HLfukDam2,Fukomys_damarensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Bathyergidae; Fukomys
+Galeopterus_variegatus,HLgalVar2,Galeopterus_variegatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Dermoptera; Cynocephalidae; Galeopterus
+Giraffa_tippelskirchi,HLgirTip1,Giraffa_tippelskirchi,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Giraffidae; Giraffa
+Glis_glis,HLgliGli1,Glis_glis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Gliridae; Glirinae; Glis
+Gorilla_gorilla_gorilla,gorGor6,Gorilla_gorilla,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Gorilla; Gorilla gorilla
+Graphiurus_murinus,HLgraMur1,Graphiurus_murinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Gliridae; Graphiurinae; Graphiurus
+Helogale_parvula,HLhelPar1,Helogale_parvula,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Herpestidae; Helogale
+Hemitragus_hylocrius,HLhemHyl1,Hemitragus_hylocrius,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Hemitragus
+Heterocephalus_glaber,HLhetGla3,Heterocephalus_glaber,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Bathyergidae; Heterocephalus
+Heterocephalus_glaber,hetGla2,Heterocephalus_glaber,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Bathyergidae; Heterocephalus
+Heterohyrax_brucei,HLhetBru1,Heterohyrax_brucei,Mammalia; Theria; Eutheria; Afrotheria; Hyracoidea; Procaviidae; Heterohyrax
+Hippopotamus_amphibius,HLhipAmp1,Hippopotamus_amphibius,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Ancodonta; Hippopotamidae; Hippopotamus
+Hippopotamus_amphibius,HLhipAmp3,Hippopotamus_amphibius,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Ancodonta; Hippopotamidae; Hippopotamus
+Hipposideros_armiger,HLhipArm1,Hipposideros_armiger,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Hipposideridae; Hipposideros
+Hipposideros_galeritus,HLhipGal1,Hipposideros_galeritus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Hipposideridae; Hipposideros
+Hyaena_hyaena,HLhyaHya1,Hyaena_hyaena,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Hyaenidae; Hyaena
+Hydrochoerus_hydrochaeris,HLhydHyd1,Hydrochoerus_hydrochaeris,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Hydrochaeridae; Hydrochoerus
+Hydrochoerus_hydrochaeris,HLhydHyd2,Hydrochoerus_hydrochaeris,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Hydrochaeridae; Hydrochoerus
+Hystrix_cristata,HLhysCri1,Hystrix_cristata,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Hystricidae; Hystrix
+Ictidomys_tridecemlineatus,HLictTri2,Ictidomys_tridecemlineatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Sciuridae; Xerinae; Marmotini; Ictidomys
+Ictidomys_tridecemlineatus,speTri2,Ictidomys_tridecemlineatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Sciuridae; Xerinae; Marmotini; Ictidomys
+Indri_indri,HLindInd1,Indri_indri,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Indriidae; Indri
+Inia_geoffrensis,HLlniGeo1,Inia_geoffrensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Iniidae; Inia
+Jaculus_jaculus,jacJac1,Jaculus_jaculus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Dipodoidea; Dipodidae; Dipodinae; Jaculus
+Kogia_breviceps,HLkogBre1,Kogia_breviceps,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Physeteridae; Kogia
+Lasiurus_borealis,HLlasBor1,Lasiurus_borealis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Lasiurus
+Lemur_catta,HLlemCat1,Lemur_catta,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Lemuridae; Lemur
+Lemur_catta,HLlemCat2,Lemur_catta,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Lemuridae; Lemur
+Leptonychotes_weddellii,HLlepWed2,Leptonychotes_weddellii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Phocidae; Leptonychotes
+Leptonychotes_weddellii,lepWed1,Leptonychotes_weddellii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Phocidae; Leptonychotes
+Lepus_americanus,HLlepAme1,Lepus_americanus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Lagomorpha; Leporidae; Lepus
+Lipotes_vexillifer,lipVex1,Lipotes_vexillifer,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Lipotidae; Lipotes
+Loxodonta_africana,HLloxAfr4,Loxodonta_africana,Mammalia; Theria; Eutheria; Afrotheria; Proboscidea; Elephantidae; Loxodonta
+Lycaon_pictus,HLlycPic2,Lycaon_pictus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Lycaon
+Lycaon_pictus,HLlycPic3,Lycaon_pictus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Lycaon
+Macaca_fascicularis,HLmacFas6,Macaca_fascicularis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Macaca
+Macaca_mulatta,rheMac10,Macaca_mulatta,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Macaca
+Macaca_nemestrina,macNem1,Macaca_nemestrina,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Macaca
+Macroglossus_sobrinus,HLmacSob1,Macroglossus_sobrinus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Megachiroptera; Pteropodidae; Macroglossinae; Macroglossus
+Mandrillus_leucophaeus,manLeu1,Mandrillus_leucophaeus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Mandrillus
+Manis_javanica,HLmanJav1,Manis_javanica,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Pholidota; Manidae; Manis
+Manis_javanica,HLmanJav2,Manis_javanica,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Pholidota; Manidae; Manis
+Manis_pentadactyla,HLmanPen2,Manis_pentadactyla,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Pholidota; Manidae; Manis
+Manis_pentadactyla,manPen1,Manis_pentadactyla,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Pholidota; Manidae; Manis
+Marmota_marmota_marmota,HLmarMar1,Marmota_marmota,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Sciuridae; Xerinae; Marmotini; Marmota; Marmota marmota
+Megaderma_lyra,HLmegLyr2,Megaderma_lyra,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Megadermatidae; Megaderma
+Mellivora_capensis,HLmelCap1,Mellivora_capensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mustelidae; Mellivoriane; Mellivora
+Meriones_unguiculatus,HLmerUng1,Meriones_unguiculatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Gerbillinae; Meriones
+Mesocricetus_auratus,HLmesAur2,Mesocricetus_auratus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Cricetinae; Mesocricetus
+Mesocricetus_auratus,mesAur1,Mesocricetus_auratus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Cricetinae; Mesocricetus
+Mesoplodon_bidens,HLmesBid1,Mesoplodon_bidens,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Ziphiidae; Mesoplodon
+Microcebus_murinus,micMur3,Microcebus_murinus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Cheirogaleidae; Microcebus
+Microgale_talazaci,HLmicTal1,Microgale_talazaci,Mammalia; Theria; Eutheria; Afrotheria; Tenrecidae; Oryzorictinae; Microgale
+Micronycteris_hirsuta,HLmicHir1,Micronycteris_hirsuta,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Phyllostominae; Micronycteris
+Microtus_ochrogaster,micOch1,Microtus_ochrogaster,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Arvicolinae; Microtus
+Miniopterus_natalensis,HLminNat1,Miniopterus_natalensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Miniopterinae; Miniopterus
+Miniopterus_schreibersii,HLminSch1,Miniopterus_schreibersii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Miniopterinae; Miniopterus
+Mirounga_angustirostris,HLmirAng2,Mirounga_angustirostris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Phocidae; Mirounga
+Mirza_coquereli,HLmirCoq1,Mirza_coquereli,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Cheirogaleidae; Mirza
+Monodon_monoceros,HLmonMon1,Monodon_monoceros,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Monodontidae; Monodon
+Mormoops_blainvillei,HLmorBla1,Mormoops_blainvillei,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Mormoopidae; Mormoops
+Moschus_moschiferus,HLmosMos1,Moschus_moschiferus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Moschidae; Moschus
+Mungos_mungo,HLmunMug1,Mungos_mungo,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Herpestidae; Mungos
+Murina_aurata_feae,HLmurAurFea1,Murina_feae,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Murina; Murina aurata
+Mus_caroli,HLmusCar1,Mus_caroli,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Mus_musculus,mm10,Mus_musculus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Mus_musculus,mm39,Mus_musculus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Mus_pahari,HLmusPah1,Mus_pahari,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Coelomys
+Mus_spretus,HLmusSpr1,Mus_spretus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Muscardinus_avellanarius,HLmusAve1,Muscardinus_avellanarius,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Gliridae; Muscardinus
+Mustela_putorius,HLmusPut1,Mustela_putorius,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mustelidae; Mustelinae; Mustela
+Myocastor_coypus,HLmyoCoy1,Myocastor_coypus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Myocastoridae; Myocastor
+Myotis_brandtii,myoBra1,Myotis_brandtii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Myotis
+Myotis_davidii,myoDav1,Myotis_davidii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Myotis
+Myotis_lucifugus,HLmyoLuc1,Myotis_lucifugus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Myotis
+Myotis_lucifugus,myoLuc2,Myotis_lucifugus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Myotis
+Myotis_myotis,HLmyoMyo6,Myotis_myotis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Myotis
+Myrmecophaga_tridactyla,HLmyrTri1,Myrmecophaga_tridactyla,Mammalia; Theria; Eutheria; Xenarthra; Pilosa; Vermilingua; Myrmecophagidae; Myrmecophaga
+Nannospalax_galili,nanGal1,Nannospalax_galili,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Spalacidae; Spalacinae; Nannospalax
+Nasalis_larvatus,nasLar1,Nasalis_larvatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Nasalis
+Neomonachus_schauinslandi,neoSch1,Neomonachus_schauinslandi,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Phocidae; Neomonachus
+Neophocaena_asiaeorientalis_asiaeorientalis,HLneoAsi1,Neophocaena_asiaeorientalis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Phocoenidae; Neophocaena; Neophocaena asiaeorientalis
+Noctilio_leporinus,HLnocLep1,Noctilio_leporinus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Noctilionidae; Noctilio
+Nomascus_leucogenys,HLnomLeu4,Nomascus_leucogenys,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hylobatidae; Nomascus
+Nycticebus_coucang,HLnycCou1,Nycticebus_coucang,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lorisiformes; Lorisidae; Nycticebus
+Ochotona_princeps,ochPri3,Ochotona_princeps,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Lagomorpha; Ochotonidae; Ochotona
+Octodon_degus,octDeg1,Octodon_degus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Octodontidae; Octodon
+Odobenus_rosmarus,HLodoRos1,Odobenus_rosmarus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Odobenidae; Odobenus
+Odocoileus_virginianus,HLodoVir2,Odocoileus_virginianus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Cervidae; Odocoileinae; Odocoileus
+Odocoileus_virginianus,HLodoVir3,Odocoileus_virginianus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Cervidae; Odocoileinae; Odocoileus
+Okapia_johnstoni,HLokaJoh2,Okapia_johnstoni,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Giraffidae; Okapia
+Ondatra_zibethicus,HLondZib1,Ondatra_zibethicus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Arvicolinae; Ondatra
+Onychomys_torridus,HLonyTor1,Onychomys_torridus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Neotominae; Onychomys
+Orcinus_orca,HLorcOrc2,Orcinus_orca,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Delphinidae; Orcinus
+Orycteropus_afer_afer,HLoryAfeAfe2,Orycteropus_afer,Mammalia; Theria; Eutheria; Afrotheria; Tubulidentata; Orycteropodidae; Orycteropus; Orycteropus afer
+Orycteropus_afer_afer,oryAfe1,Orycteropus_afer,Mammalia; Theria; Eutheria; Afrotheria; Tubulidentata; Orycteropodidae; Orycteropus; Orycteropus afer
+Oryctolagus_cuniculus,HLoryCun3,Oryctolagus_cuniculus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Lagomorpha; Leporidae; Oryctolagus
+Oryctolagus_cuniculus,oryCun2,Oryctolagus_cuniculus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Lagomorpha; Leporidae; Oryctolagus
+Otolemur_garnettii,otoGar3,Otolemur_garnettii,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lorisiformes; Galagidae; Otolemur
+Ovis_aries,HLoviAri5,Ovis_aries,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Ovis
+Ovis_canadensis,HLoviCan2,Ovis_canadensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Caprinae; Ovis
+Pan_paniscus,panPan3,Pan_paniscus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Pan
+Pan_troglodytes,panTro6,Pan_troglodytes,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Pan
+Panthera_onca,HLpanOnc1,Panthera_onca,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Pantherinae; Panthera
+Panthera_onca,HLpanOnc2,Panthera_onca,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Pantherinae; Panthera
+Panthera_pardus,HLpanPar1,Panthera_pardus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Pantherinae; Panthera
+Panthera_tigris_altaica,panTig1,Panthera_tigris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Pantherinae; Panthera; Panthera tigris
+Pantholops_hodgsonii,panHod1,Pantholops_hodgsonii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Antilopinae; Pantholops
+Papio_anubis,HLpapAnu5,Papio_anubis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Cercopithecinae; Papio
+Paradoxurus_hermaphroditus,HLparHer1,Paradoxurus_hermaphroditus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Viverridae; Paradoxurinae; Paradoxurus
+Perognathus_longimembris_pacificus,HLperLonPac1,Perognathus_longimembris,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Castorimorpha; Heteromyidae; Perognathinae; Perognathus; Perognathus longimembris
+Peromyscus_maniculatus_bairdii,HLperManBai2,Peromyscus_maniculatus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Neotominae; Peromyscus; Peromyscus maniculatus
+Petromus_typicus,HLpetTyp1,Petromus_typicus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Petromuridae; Petromus
+Phocoena_phocoena,HLphoPho1,Phocoena_phocoena,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Phocoenidae; Phocoena
+Phocoena_phocoena,HLphoPho2,Phocoena_phocoena,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Phocoenidae; Phocoena
+Piliocolobus_tephrosceles,HLpilTep2,Piliocolobus_tephrosceles,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Piliocolobus
+Pipistrellus_pipistrellus,HLpipPip1,Pipistrellus_pipistrellus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Pipistrellus
+Pipistrellus_pipistrellus,HLpipPip2,Pipistrellus_pipistrellus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Vespertilionidae; Pipistrellus
+Pithecia_pithecia,HLpitPit1,Pithecia_pithecia,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Pitheciidae; Pitheciinae; Pithecia
+Platanista_minor,HLplaMin1,Platanista_gangetica,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Platanistidae; Platanista
+Plecturocebus_donacophilus,HLpleDon1,Callicebus_donacophilus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Pitheciidae; Callicebinae; Plecturocebus
+Pongo_abelii,ponAbe3,Pongo_abelii,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Ponginae; Pongo
+Procavia_capensis,HLproCap3,Procavia_capensis,Mammalia; Theria; Eutheria; Afrotheria; Hyracoidea; Procaviidae; Procavia
+Procavia_capensis,HLproCap4,Procavia_capensis,Mammalia; Theria; Eutheria; Afrotheria; Hyracoidea; Procaviidae; Procavia
+Propithecus_coquereli,HLproCoq2,Propithecus_coquereli,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Indriidae; Propithecus
+Propithecus_coquereli,proCoq1,Propithecus_coquereli,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Strepsirrhini; Lemuriformes; Indriidae; Propithecus
+Psammomys_obesus,HLpsaObe1,Psammomys_obesus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Gerbillinae; Psammomys
+Pteronotus_parnellii,ptePar1,Pteronotus_parnellii,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Mormoopidae; Pteronotus
+Pteronura_brasiliensis,HLpteBra1,Pteronura_brasiliensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mustelidae; Lutrinae; Pteronura
+Pteronura_brasiliensis,HLpteBra2,Pteronura_brasiliensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mustelidae; Lutrinae; Pteronura
+Pteropus_alecto,pteAle1,Pteropus_alecto,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Megachiroptera; Pteropodidae; Pteropodinae; Pteropus
+Pteropus_vampyrus,HLpteVam2,Pteropus_vampyrus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Megachiroptera; Pteropodidae; Pteropodinae; Pteropus
+Puma_concolor,HLpumCon1,Puma_concolor,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Felinae; Puma
+Pygathrix_nemaeus,HLpygNem1,Pygathrix_nemaeus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Pygathrix
+Rangifer_tarandus,HLranTar1,Rangifer_tarandus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Cervidae; Odocoileinae; Rangifer
+Rattus_norvegicus,HLratNor7,Rattus_norvegicus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Rattus
+Rattus_norvegicus,rn6,Rattus_norvegicus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Rattus
+Rattus_norvegicus,rn7,Rattus_norvegicus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Rattus
+Rhinolophus_sinicus,HLrhiSin1,Rhinolophus_sinicus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Rhinolophidae; Rhinolophinae; Rhinolophus
+Rhinopithecus_bieti,rhiBie1,Rhinopithecus_bieti,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Rhinopithecus
+Rhinopithecus_roxellana,HLrhiRox2,Rhinopithecus_roxellana,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Rhinopithecus
+Rousettus_aegyptiacus,HLrouAeg4,Rousettus_aegyptiacus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Megachiroptera; Pteropodidae; Pteropodinae; Rousettus
+Saguinus_imperator,HLsagImp1,Saguinus_imperator,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Cebidae; Callitrichinae; Saguinus
+Saiga_tatarica,HLsaiTat1,Saiga_tatarica,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Pecora; Bovidae; Antilopinae; Saiga
+Saimiri_boliviensis,HLsaiBol1,Saimiri_boliviensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Platyrrhini; Cebidae; Saimiriinae; Saimiri
+Scalopus_aquaticus,HLscaAqu1,Scalopus_aquaticus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Talpidae; Scalopus
+Semnopithecus_entellus,HLsemEnt1,Semnopithecus_entellus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Cercopithecoidea; Cercopithecidae; Colobinae; Semnopithecus
+Sigmodon_hispidus,HLsigHis1,Sigmodon_hispidus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Cricetidae; Sigmodontinae; Sigmodon
+Solenodon_paradoxus,HLsolPar1,Solenodon_paradoxus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Solenodontidae; Solenodon
+Sorex_araneus,sorAra2,Sorex_araneus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Soricidae; Soricinae; Sorex
+Spermophilus_dauricus,HLspeDau1,Spermophilus_dauricus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Sciuridae; Xerinae; Marmotini; Spermophilus
+Spilogale_gracilis,HLspiGra1,Spilogale_gracilis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Mephitidae; Spilogale
+Suricata_suricatta,HLsurSur1,Suricata_suricatta,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Herpestidae; Suricata
+Suricata_suricatta,HLsurSur2,Suricata_suricatta,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Feliformia; Herpestidae; Suricata
+Sus_scrofa,susScr11,Sus_scrofa,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Suina; Suidae; Sus
+Tadarida_brasiliensis,HLtadBra1,Tadarida_brasiliensis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Molossidae; Tadarida
+Tamandua_tetradactyla,HLtamTet1,Tamandua_tetradactyla,Mammalia; Theria; Eutheria; Xenarthra; Pilosa; Vermilingua; Myrmecophagidae; Tamandua
+Tapirus_indicus,HLtapInd1,Tapirus_indicus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Tapiridae; Tapirus
+Tapirus_indicus,HLtapInd2,Tapirus_indicus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Tapiridae; Tapirus
+Tapirus_terrestris,HLtapTer1,Tapirus_terrestris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Tapiridae; Tapirus
+Tapirus_terrestris,HLtapTer2,Tapirus_terrestris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Perissodactyla; Tapiridae; Tapirus
+Thryonomys_swinderianus,HLthrSwi1,Thryonomys_swinderianus,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Hystricomorpha; Thryonomyidae; Thryonomys
+Tolypeutes_matacus,HLtolMat1,Tolypeutes_matacus,Mammalia; Theria; Eutheria; Xenarthra; Cingulata; Chlamyphoridae; Tolypeutes
+Tonatia_saurophila,HLtonSau1,Tonatia_saurophila,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Chiroptera; Microchiroptera; Phyllostomidae; Phyllostominae; Tonatia
+Tragulus_javanicus,HLtraJav1,Tragulus_javanicus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Ruminantia; Tragulina; Tragulidae; Tragulus
+Trichechus_manatus,HLtriManLat2,Trichechus_manatus,Mammalia; Theria; Eutheria; Afrotheria; Sirenia; Trichechidae; Trichechus
+Tupaia_chinensis,tupChi1,Tupaia_chinensis,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Scandentia; Tupaiidae; Tupaia
+Tursiops_truncatus,HLturTru3,Tursiops_truncatus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Delphinidae; Tursiops
+Tursiops_truncatus,HLturTru4,Tursiops_truncatus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Delphinidae; Tursiops
+Tursiops_truncatus,HLturTru5,Tursiops_truncatus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Delphinidae; Tursiops
+Uropsilus_gracilis,HLuroGra1,Uropsilus_gracilis,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Eulipotyphla; Talpidae; Uropsilus
+Ursus_maritimus,ursMar1,Ursus_maritimus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Ursidae; Ursus
+Vicugna_pacos,HLvicPac4,Vicugna_pacos,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Tylopoda; Camelidae; Vicugna
+Vicugna_pacos,vicPac2,Vicugna_pacos,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Tylopoda; Camelidae; Vicugna
+Vulpes_lagopus,HLvulLag1,Vulpes_lagopus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Canidae; Vulpes
+Xerus_inauris,HLxerIna1,Xerus_inauris,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Sciuromorpha; Sciuridae; Xerinae; Xerini; Xerus
+Zalophus_californianus,HLzalCal1,Zalophus_californianus,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Carnivora; Caniformia; Otariidae; Zalophus
+Zapus_hudsonius,HLzapHud1,Zapus_hudsonius,Mammalia; Theria; Eutheria; Boreoeutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Dipodoidea; Dipodidae; Zapodinae; Zapus
+Ziphius_cavirostris,HLzipCav1,Ziphius_cavirostris,Mammalia; Theria; Eutheria; Boreoeutheria; Laurasiatheria; Artiodactyla; Whippomorpha; Cetacea; Odontoceti; Ziphiidae; Ziphius

@@ -1,0 +1,4573 @@
+Gene	Start	End	feat_name	feat_type
+ABI3BP	37	37	N-linked (GlcNAc...) asparagine	CARBOHYD
+ABI3BP	116	214	Fibronectin type-III 1	DOMAIN
+ABI3BP	833	926	Fibronectin type-III 2	DOMAIN
+ABI3BP	315	351	Disordered	REGION
+ABI3BP	384	811	Disordered	REGION
+ABI3BP	22	1068	Target of Nesh-SH3	CHAIN
+ABI3BP	1	21		SIGNAL
+ACIN1	268	268	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1)	CROSSLNK
+ACIN1	305	305	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	315	315	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	375	375	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	532	532	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	732	732	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	861	861	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+ACIN1	879	879	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	970	970	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	1047	1047	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	1107	1107	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ACIN1	72	106	SAP	DOMAIN
+ACIN1	132	132	Phosphoserine	MOD_RES
+ACIN1	166	166	Phosphoserine	MOD_RES
+ACIN1	169	169	Phosphoserine	MOD_RES
+ACIN1	208	208	Phosphoserine	MOD_RES
+ACIN1	210	210	Phosphoserine	MOD_RES
+ACIN1	216	216	Phosphoserine	MOD_RES
+ACIN1	240	240	Phosphoserine	MOD_RES
+ACIN1	243	243	Phosphoserine	MOD_RES
+ACIN1	254	254	Phosphothreonine	MOD_RES
+ACIN1	269	269	Phosphothreonine	MOD_RES
+ACIN1	295	295	Phosphoserine	MOD_RES
+ACIN1	326	326	Phosphothreonine	MOD_RES
+ACIN1	328	328	Phosphoserine	MOD_RES
+ACIN1	365	365	Phosphoserine	MOD_RES
+ACIN1	384	384	Phosphoserine	MOD_RES
+ACIN1	386	386	Phosphoserine	MOD_RES
+ACIN1	388	388	Phosphoserine	MOD_RES
+ACIN1	393	393	Phosphothreonine	MOD_RES
+ACIN1	400	400	Phosphoserine	MOD_RES
+ACIN1	410	410	Phosphoserine	MOD_RES
+ACIN1	414	414	Phosphothreonine	MOD_RES
+ACIN1	420	420	Phosphothreonine	MOD_RES
+ACIN1	434	434	Phosphoserine	MOD_RES
+ACIN1	453	453	Phosphoserine	MOD_RES
+ACIN1	478	478	Phosphoserine	MOD_RES
+ACIN1	490	490	Phosphoserine	MOD_RES
+ACIN1	512	512	Phosphotyrosine	MOD_RES
+ACIN1	522	522	Phosphoserine	MOD_RES
+ACIN1	561	561	Phosphoserine	MOD_RES
+ACIN1	654	654	N6,N6,N6-trimethyllysine; by EHMT2; alternate	MOD_RES
+ACIN1	654	654	N6,N6-dimethyllysine; by EHMT2; alternate	MOD_RES
+ACIN1	655	655	Phosphoserine	MOD_RES
+ACIN1	657	657	Phosphoserine	MOD_RES
+ACIN1	682	682	Phosphothreonine	MOD_RES
+ACIN1	710	710	Phosphoserine	MOD_RES
+ACIN1	714	714	Phosphoserine	MOD_RES
+ACIN1	717	717	N6-acetyllysine	MOD_RES
+ACIN1	720	720	Phosphothreonine	MOD_RES
+ACIN1	729	729	Phosphoserine	MOD_RES
+ACIN1	825	825	Phosphoserine	MOD_RES
+ACIN1	838	838	Phosphoserine	MOD_RES
+ACIN1	861	861	N6-acetyllysine; alternate	MOD_RES
+ACIN1	895	895	Phosphoserine	MOD_RES
+ACIN1	898	898	Phosphoserine	MOD_RES
+ACIN1	976	976	Phosphothreonine	MOD_RES
+ACIN1	987	987	Phosphoserine	MOD_RES
+ACIN1	990	990	Phosphoserine	MOD_RES
+ACIN1	1004	1004	Phosphoserine	MOD_RES
+ACIN1	1180	1180	Phosphoserine; by SRPK2 and PKB/AKT1	MOD_RES
+ACIN1	825	825	Phosphoserine	MOD_RES
+ACIN1	1	29	Disordered	REGION
+ACIN1	159	460	Disordered	REGION
+ACIN1	475	530	Disordered	REGION
+ACIN1	548	865	Disordered	REGION
+ACIN1	892	953	Disordered	REGION
+ACIN1	1098	1341	Disordered	REGION
+ACIN1	1210	1237	Sufficient for interaction with RNPS1 and SAP18 and formation of the ASAP complex	REGION
+ACIN1	1093	1094	Cleavage; by caspase-3	SITE
+ACIN1	1	1341	Apoptotic chromatin condensation inducer in the nucleus	CHAIN
+ACKR2	19	19	N-linked (GlcNAc...) asparagine	CARBOHYD
+ACKR2	117	195		DISULFID
+ACKR2	327	384	C-terminal cytoplasmic tail	REGION
+ACKR2	363	384	Disordered	REGION
+ACKR2	1	384	Atypical chemokine receptor 2	CHAIN
+ADAMTS13	83	83		BINDING
+ADAMTS13	173	173		BINDING
+ADAMTS13	182	182		BINDING
+ADAMTS13	184	184		BINDING
+ADAMTS13	187	187		BINDING
+ADAMTS13	212	212		BINDING
+ADAMTS13	224	224		BINDING
+ADAMTS13	228	228		BINDING
+ADAMTS13	234	234		BINDING
+ADAMTS13	281	281		BINDING
+ADAMTS13	284	284		BINDING
+ADAMTS13	142	142	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	146	146	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	387	387	C-linked (Man) tryptophan	CARBOHYD
+ADAMTS13	399	399	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	552	552	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	579	579	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	614	614	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	667	667	N-linked (GlcNAc...) (complex) asparagine	CARBOHYD
+ADAMTS13	698	698	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	707	707	N-linked (GlcNAc...) (complex) asparagine	CARBOHYD
+ADAMTS13	757	757	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	828	828	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	907	907	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	965	965	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	1027	1027	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	1087	1087	O-linked (Fuc...) serine	CARBOHYD
+ADAMTS13	1235	1235	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	1354	1354	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADAMTS13	155	208		DISULFID
+ADAMTS13	202	281		DISULFID
+ADAMTS13	242	265		DISULFID
+ADAMTS13	311	337		DISULFID
+ADAMTS13	322	347		DISULFID
+ADAMTS13	332	366		DISULFID
+ADAMTS13	360	371		DISULFID
+ADAMTS13	396	433		DISULFID
+ADAMTS13	400	438		DISULFID
+ADAMTS13	411	423		DISULFID
+ADAMTS13	450	487		DISULFID
+ADAMTS13	483	522		DISULFID
+ADAMTS13	508	527		DISULFID
+ADAMTS13	532	548		DISULFID
+ADAMTS13	545	555		DISULFID
+ADAMTS13	80	286	Peptidase M12B	DOMAIN
+ADAMTS13	287	383	Disintegrin	DOMAIN
+ADAMTS13	384	439	TSP type-1 1	DOMAIN
+ADAMTS13	682	730	TSP type-1 2	DOMAIN
+ADAMTS13	742	805	TSP type-1 3	DOMAIN
+ADAMTS13	808	859	TSP type-1 4	DOMAIN
+ADAMTS13	896	950	TSP type-1 5	DOMAIN
+ADAMTS13	951	1011	TSP type-1 6	DOMAIN
+ADAMTS13	1012	1068	TSP type-1 7	DOMAIN
+ADAMTS13	1072	1131	TSP type-1 8	DOMAIN
+ADAMTS13	1192	1298	CUB 1	DOMAIN
+ADAMTS13	1299	1427	CUB 2	DOMAIN
+ADAMTS13	498	500	Cell attachment site	MOTIF
+ADAMTS13	51	70	Disordered	REGION
+ADAMTS13	440	556	Cysteine-rich	REGION
+ADAMTS13	556	685	Spacer	REGION
+ADAMTS13	75	1427	A disintegrin and metalloproteinase with thrombospondin motifs 13	CHAIN
+ADAMTS13	1	29		SIGNAL
+ADGRE1	94	94	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	99	99	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	127	127	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	167	167	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	189	189	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	194	194	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	232	232	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	258	258	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	312	312	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	366	366	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	375	375	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	448	448	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRE1	35	47		DISULFID
+ADGRE1	41	56		DISULFID
+ADGRE1	58	78		DISULFID
+ADGRE1	84	97		DISULFID
+ADGRE1	91	106		DISULFID
+ADGRE1	108	130		DISULFID
+ADGRE1	136	148		DISULFID
+ADGRE1	142	157		DISULFID
+ADGRE1	159	170		DISULFID
+ADGRE1	176	188		DISULFID
+ADGRE1	182	197		DISULFID
+ADGRE1	199	219		DISULFID
+ADGRE1	225	235		DISULFID
+ADGRE1	229	244		DISULFID
+ADGRE1	246	266		DISULFID
+ADGRE1	272	285		DISULFID
+ADGRE1	279	294		DISULFID
+ADGRE1	296	315		DISULFID
+ADGRE1	31	79	EGF-like 1	DOMAIN
+ADGRE1	80	131	EGF-like 2; calcium-binding	DOMAIN
+ADGRE1	132	171	EGF-like 3; calcium-binding	DOMAIN
+ADGRE1	172	220	EGF-like 4; calcium-binding	DOMAIN
+ADGRE1	221	267	EGF-like 5; calcium-binding	DOMAIN
+ADGRE1	268	316	EGF-like 6; calcium-binding	DOMAIN
+ADGRE1	547	596	GPS	DOMAIN
+ADGRE1	862	886	Disordered	REGION
+ADGRE1	21	886	Adhesion G protein-coupled receptor E1	CHAIN
+ADGRE1	1	20		SIGNAL
+ADGRF3	188	188	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	264	264	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	301	301	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	382	382	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	441	441	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	648	648	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADGRF3	712	764	GPS	DOMAIN
+ADGRF3	26	1079	Adhesion G-protein coupled receptor F3	CHAIN
+ADGRF3	1	25		SIGNAL
+ADRB2	113	113		BINDING
+ADRB2	113	113		BINDING
+ADRB2	118	118		BINDING
+ADRB2	203	203		BINDING
+ADRB2	293	293		BINDING
+ADRB2	312	312		BINDING
+ADRB2	312	312		BINDING
+ADRB2	316	316		BINDING
+ADRB2	6	6	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADRB2	15	15	N-linked (GlcNAc...) asparagine	CARBOHYD
+ADRB2	106	191		DISULFID
+ADRB2	184	190		DISULFID
+ADRB2	265	265	S-palmitoyl cysteine	LIPID
+ADRB2	341	341	S-palmitoyl cysteine	LIPID
+ADRB2	141	141	Phosphotyrosine	MOD_RES
+ADRB2	246	246	Phosphoserine	MOD_RES
+ADRB2	261	261	Phosphoserine; by PKA	MOD_RES
+ADRB2	262	262	Phosphoserine; by PKA	MOD_RES
+ADRB2	345	345	Phosphoserine; by PKA	MOD_RES
+ADRB2	346	346	Phosphoserine; by PKA	MOD_RES
+ADRB2	355	355	Phosphoserine; by BARK	MOD_RES
+ADRB2	356	356	Phosphoserine; by BARK	MOD_RES
+ADRB2	382	382	4-hydroxyproline	MOD_RES
+ADRB2	395	395	4-hydroxyproline	MOD_RES
+ADRB2	410	413	PDZ-binding	MOTIF
+ADRB2	392	413	Disordered	REGION
+ADRB2	1	413	Beta-2 adrenergic receptor	CHAIN
+AHCTF1	1971	1983	A.T hook	DNA_BIND
+AHCTF1	509	509	Phosphoserine	MOD_RES
+AHCTF1	528	528	Phosphoserine	MOD_RES
+AHCTF1	1080	1080	Phosphoserine	MOD_RES
+AHCTF1	1138	1138	Phosphoserine	MOD_RES
+AHCTF1	1142	1142	Phosphoserine	MOD_RES
+AHCTF1	1150	1150	Phosphoserine	MOD_RES
+AHCTF1	1153	1153	Phosphoserine	MOD_RES
+AHCTF1	1155	1155	Phosphoserine	MOD_RES
+AHCTF1	1160	1160	Phosphoserine	MOD_RES
+AHCTF1	1175	1175	Phosphothreonine	MOD_RES
+AHCTF1	1214	1214	Phosphoserine	MOD_RES
+AHCTF1	1218	1218	Phosphoserine	MOD_RES
+AHCTF1	1222	1222	Phosphoserine	MOD_RES
+AHCTF1	1232	1232	Phosphoserine	MOD_RES
+AHCTF1	1250	1250	Phosphoserine	MOD_RES
+AHCTF1	1257	1257	Phosphothreonine	MOD_RES
+AHCTF1	1283	1283	Phosphoserine	MOD_RES
+AHCTF1	1297	1297	Phosphoserine	MOD_RES
+AHCTF1	1369	1369	Phosphothreonine	MOD_RES
+AHCTF1	1371	1371	Phosphoserine	MOD_RES
+AHCTF1	1513	1513	Phosphoserine	MOD_RES
+AHCTF1	1517	1517	Phosphothreonine	MOD_RES
+AHCTF1	1533	1533	Phosphoserine	MOD_RES
+AHCTF1	1541	1541	Phosphoserine	MOD_RES
+AHCTF1	1729	1729	Phosphoserine	MOD_RES
+AHCTF1	1806	1806	Phosphoserine	MOD_RES
+AHCTF1	1808	1808	Phosphothreonine	MOD_RES
+AHCTF1	1878	1878	Phosphoserine	MOD_RES
+AHCTF1	1884	1884	Phosphoserine	MOD_RES
+AHCTF1	1898	1898	Phosphoserine	MOD_RES
+AHCTF1	1944	1944	Phosphoserine	MOD_RES
+AHCTF1	1946	1946	Phosphoserine	MOD_RES
+AHCTF1	1996	1996	Phosphoserine	MOD_RES
+AHCTF1	2043	2043	Phosphoserine	MOD_RES
+AHCTF1	2044	2044	Phosphoserine	MOD_RES
+AHCTF1	2060	2060	Phosphoserine	MOD_RES
+AHCTF1	2089	2089	Phosphoserine	MOD_RES
+AHCTF1	2120	2120	Phosphoserine	MOD_RES
+AHCTF1	2123	2123	Phosphoserine	MOD_RES
+AHCTF1	2154	2154	Phosphoserine	MOD_RES
+AHCTF1	2212	2212	Phosphoserine	MOD_RES
+AHCTF1	2222	2222	Phosphoserine	MOD_RES
+AHCTF1	2226	2226	Phosphoserine	MOD_RES
+AHCTF1	1	981	Necessary for cytoplasmic localization	REGION
+AHCTF1	1	494	Seven-bladed beta propeller repeats	REGION
+AHCTF1	591	1092	Important for nuclear localization	REGION
+AHCTF1	1019	2266	Disordered	REGION
+AHCTF1	1149	2266	Necessary for nuclear localization	REGION
+AHCTF1	1446	1698	Mediates transcriptional activity	REGION
+AHCTF1	1842	2266	Important for nuclear localization and chromatin binding	REGION
+AHCTF1	1	2266	Protein ELYS	CHAIN
+AKAP9	152	902		COILED
+AKAP9	932	1010		COILED
+AKAP9	1088	1173		COILED
+AKAP9	1241	1268		COILED
+AKAP9	1324	1380		COILED
+AKAP9	1422	1447		COILED
+AKAP9	1573	1647		COILED
+AKAP9	1845	2443		COILED
+AKAP9	2532	2549		COILED
+AKAP9	2591	2764		COILED
+AKAP9	3061	3088		COILED
+AKAP9	3120	3466		COILED
+AKAP9	3583	3685		COILED
+AKAP9	153	153	Phosphoserine	MOD_RES
+AKAP9	1327	1327	Phosphoserine	MOD_RES
+AKAP9	1765	1765	Phosphoserine	MOD_RES
+AKAP9	3690	3690	Phosphoserine	MOD_RES
+AKAP9	3842	3842	Phosphoserine	MOD_RES
+AKAP9	3865	3865	Phosphoserine	MOD_RES
+AKAP9	3897	3897	Phosphoserine	MOD_RES
+AKAP9	1	57	Disordered	REGION
+AKAP9	1682	1713	Disordered	REGION
+AKAP9	2542	2555	PKA-RII subunit binding domain	REGION
+AKAP9	3377	3405	Disordered	REGION
+AKAP9	1	3907	A-kinase anchor protein 9	CHAIN
+AKNAD1	372	484		COILED
+AKNAD1	159	248	Disordered	REGION
+AKNAD1	303	325	Disordered	REGION
+AKNAD1	510	545	Disordered	REGION
+AKNAD1	575	596	Disordered	REGION
+AKNAD1	1	836	Protein AKNAD1	CHAIN
+ALPK3	1296	1346		DISULFID
+ALPK3	77	168	Ig-like 1	DOMAIN
+ALPK3	1274	1362	Ig-like 2	DOMAIN
+ALPK3	1390	1625	Alpha-type protein kinase	DOMAIN
+ALPK3	228	228	Phosphoserine	MOD_RES
+ALPK3	1222	1222	Phosphoserine	MOD_RES
+ALPK3	65	85	Disordered	REGION
+ALPK3	110	235	Disordered	REGION
+ALPK3	413	446	Disordered	REGION
+ALPK3	510	951	Disordered	REGION
+ALPK3	994	1047	Disordered	REGION
+ALPK3	1121	1154	Disordered	REGION
+ALPK3	1284	1347	Disordered	REGION
+ALPK3	1375	1428	Disordered	REGION
+ALPK3	1	1705	Alpha-protein kinase 3	CHAIN
+AMHR2	209	217		BINDING
+AMHR2	230	230		BINDING
+AMHR2	66	66	N-linked (GlcNAc...) asparagine	CARBOHYD
+AMHR2	119	119	N-linked (GlcNAc...) asparagine	CARBOHYD
+AMHR2	55	79		DISULFID
+AMHR2	92	109		DISULFID
+AMHR2	203	518	Protein kinase	DOMAIN
+AMHR2	18	573	Anti-Muellerian hormone type-2 receptor	CHAIN
+AMHR2	1	17		SIGNAL
+ANKFY1	1110	1110		BINDING
+ANKFY1	1113	1113		BINDING
+ANKFY1	1126	1126		BINDING
+ANKFY1	1129	1129		BINDING
+ANKFY1	1134	1134		BINDING
+ANKFY1	1137	1137		BINDING
+ANKFY1	1156	1156		BINDING
+ANKFY1	1159	1159		BINDING
+ANKFY1	68	130	BTB	DOMAIN
+ANKFY1	2	2	N-acetylalanine	MOD_RES
+ANKFY1	270	270	Phosphoserine	MOD_RES
+ANKFY1	421	423	NPF	MOTIF
+ANKFY1	650	759	Interaction with RHOD and RAB5A	REGION
+ANKFY1	217	247	ANK 1	REPEAT
+ANKFY1	255	284	ANK 2	REPEAT
+ANKFY1	288	317	ANK 3	REPEAT
+ANKFY1	322	362	ANK 4	REPEAT
+ANKFY1	366	396	ANK 5	REPEAT
+ANKFY1	490	519	ANK 6	REPEAT
+ANKFY1	542	572	ANK 7	REPEAT
+ANKFY1	588	617	ANK 8	REPEAT
+ANKFY1	621	650	ANK 9	REPEAT
+ANKFY1	654	683	ANK 10	REPEAT
+ANKFY1	687	716	ANK 11	REPEAT
+ANKFY1	724	753	ANK 12	REPEAT
+ANKFY1	769	798	ANK 13	REPEAT
+ANKFY1	802	832	ANK 14	REPEAT
+ANKFY1	836	865	ANK 15	REPEAT
+ANKFY1	870	899	ANK 16	REPEAT
+ANKFY1	905	934	ANK 17	REPEAT
+ANKFY1	938	967	ANK 18	REPEAT
+ANKFY1	971	1001	ANK 19	REPEAT
+ANKFY1	1005	1037	ANK 20	REPEAT
+ANKFY1	1043	1072	ANK 21	REPEAT
+ANKFY1	1104	1164	FYVE-type	ZN_FING
+ANKFY1	2	1169	Rabankyrin-5	CHAIN
+ANKRD24	320	517		COILED
+ANKRD24	714	1110		COILED
+ANKRD24	272	320	Disordered	REGION
+ANKRD24	607	627	Disordered	REGION
+ANKRD24	766	785	Disordered	REGION
+ANKRD24	81	110	ANK 1	REPEAT
+ANKRD24	114	143	ANK 2	REPEAT
+ANKRD24	147	176	ANK 3	REPEAT
+ANKRD24	180	209	ANK 4	REPEAT
+ANKRD24	213	242	ANK 5	REPEAT
+ANKRD24	1	1146	Ankyrin repeat domain-containing protein 24	CHAIN
+ANKRD33	335	369	Disordered	REGION
+ANKRD33	405	427	Disordered	REGION
+ANKRD33	94	123	ANK 1	REPEAT
+ANKRD33	130	160	ANK 2	REPEAT
+ANKRD33	164	193	ANK 3	REPEAT
+ANKRD33	223	257	ANK 4	REPEAT
+ANKRD33	1	452	Photoreceptor ankyrin repeat protein	CHAIN
+APOA2	29	29	Interchain (with C-136 in APOD); in heterodimeric form	DISULFID
+APOA2	24	24	Pyrrolidone carboxylic acid	MOD_RES
+APOA2	49	49	Methionine sulfoxide	MOD_RES
+APOA2	54	54	Phosphoserine; by FAM20C	MOD_RES
+APOA2	68	68	Phosphoserine; by FAM20C	MOD_RES
+APOA2	32	43	O-glycosylated at one site	REGION
+APOA2	19	100	Proapolipoprotein A-II	CHAIN
+APOA2	24	100	Apolipoprotein A-II	CHAIN
+APOA2	24	99	Truncated apolipoprotein A-II	CHAIN
+APOA2	1	18		SIGNAL
+APOA5	54	157		COILED
+APOA5	236	262		COILED
+APOA5	55	55	Phosphothreonine; by FAM20C	MOD_RES
+APOA5	59	59	Phosphoserine	MOD_RES
+APOA5	24	366	Apolipoprotein A-V	CHAIN
+APOA5	1	23		SIGNAL
+APOF	118	118	N-linked (GlcNAc...) asparagine	CARBOHYD
+APOF	274	274	O-linked (GalNAc...) threonine	CARBOHYD
+APOF	323	323	Phosphoserine	MOD_RES
+APOF	165	326	Apolipoprotein F	CHAIN
+APOF	1	35		SIGNAL
+APOLD1	226	253		COILED
+APOLD1	1	279	Apolipoprotein L domain-containing protein 1	CHAIN
+ARHGAP9	22	88	SH3	DOMAIN
+ARHGAP9	213	247	WW	DOMAIN
+ARHGAP9	322	435	PH	DOMAIN
+ARHGAP9	542	749	Rho-GAP	DOMAIN
+ARHGAP9	475	475	Phosphoserine	MOD_RES
+ARHGAP9	500	500	Phosphoserine	MOD_RES
+ARHGAP9	120	187	Disordered	REGION
+ARHGAP9	242	319	Disordered	REGION
+ARHGAP9	342	345	Lipid binding	REGION
+ARHGAP9	397	399	Lipid binding	REGION
+ARHGAP9	432	669	Lipid binding	REGION
+ARHGAP9	446	488	Disordered	REGION
+ARHGAP9	1	750	Rho GTPase-activating protein 9	CHAIN
+ARMH2	1	230	Armadillo-like helical domain-containing protein 2	CHAIN
+ATF7IP2	328	378		COILED
+ATF7IP2	575	680	Fibronectin type-III	DOMAIN
+ATF7IP2	416	416	Phosphoserine	MOD_RES
+ATF7IP2	488	488	Phosphoserine	MOD_RES
+ATF7IP2	521	521	Phosphoserine	MOD_RES
+ATF7IP2	120	148	Disordered	REGION
+ATF7IP2	418	491	Disordered	REGION
+ATF7IP2	513	538	Disordered	REGION
+ATF7IP2	1	682	Activating transcription factor 7-interacting protein 2	CHAIN
+ATN1	1183	1183	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ATN1	34	34	Phosphoserine	MOD_RES
+ATN1	77	77	Phosphoserine	MOD_RES
+ATN1	79	79	Phosphoserine	MOD_RES
+ATN1	101	101	Phosphoserine	MOD_RES
+ATN1	103	103	Phosphoserine	MOD_RES
+ATN1	107	107	Phosphoserine	MOD_RES
+ATN1	632	632	Phosphoserine	MOD_RES
+ATN1	641	641	N6-acetyllysine	MOD_RES
+ATN1	653	653	Phosphothreonine	MOD_RES
+ATN1	661	661	Phosphoserine	MOD_RES
+ATN1	669	669	Phosphothreonine	MOD_RES
+ATN1	739	739	Phosphoserine; by MAPK8	MOD_RES
+ATN1	746	746	Phosphoserine	MOD_RES
+ATN1	748	748	Phosphoserine	MOD_RES
+ATN1	896	896	Phosphoserine	MOD_RES
+ATN1	1115	1115	Asymmetric dimethylarginine	MOD_RES
+ATN1	16	32	Nuclear localization signal	MOTIF
+ATN1	1033	1041	Nuclear export signal	MOTIF
+ATN1	1	608	Disordered	REGION
+ATN1	517	567	Involved in binding BAIAP2	REGION
+ATN1	622	767	Disordered	REGION
+ATN1	785	862	Disordered	REGION
+ATN1	879	894	Required for interaction with FAT1	REGION
+ATN1	1049	1065	HX repeat	REGION
+ATN1	109	110	Cleavage; by CASP-3	SITE
+ATN1	1	1190	Atrophin-1	CHAIN
+AUNIP	267	267	Phosphoserine	MOD_RES
+AUNIP	292	292	Phosphoserine	MOD_RES
+AUNIP	71	98	Disordered	REGION
+AUNIP	187	357	Interaction with AURKA	REGION
+AUNIP	281	357	Interaction with RBBP8/CtIP	REGION
+AUNIP	1	357	Aurora kinase A- and ninein-interacting protein	CHAIN
+BBC3	10	10	Phosphoserine	MOD_RES
+BBC3	137	151	BH3	MOTIF
+BBC3	27	261	Disordered	REGION
+BBC3	1	261	Bcl-2-binding component 3, isoforms 3/4	CHAIN
+BBS4	1	66	Required for localization to centrosomes	REGION
+BBS4	1	25	Disordered	REGION
+BBS4	101	337	Interaction with PCM1	REGION
+BBS4	338	519	Required for localization to centrosomes	REGION
+BBS4	440	519	Disordered	REGION
+BBS4	67	100	TPR 1	REPEAT
+BBS4	101	134	TPR 2	REPEAT
+BBS4	135	168	TPR 3	REPEAT
+BBS4	169	201	TPR 4	REPEAT
+BBS4	203	235	TPR 5	REPEAT
+BBS4	237	269	TPR 6	REPEAT
+BBS4	270	303	TPR 7	REPEAT
+BBS4	304	337	TPR 8	REPEAT
+BBS4	339	371	TPR 9	REPEAT
+BBS4	373	408	TPR 10	REPEAT
+BBS4	1	519	Bardet-Biedl syndrome 4 protein	CHAIN
+BCAP29	166	233		COILED
+BCAP29	238	241	Di-lysine motif	MOTIF
+BCAP29	198	223	Disordered	REGION
+BCAP29	1	241	B-cell receptor-associated protein 29	CHAIN
+BIN2	304	329		COILED
+BIN2	28	244	BAR	DOMAIN
+BIN2	273	273	Phosphoserine	MOD_RES
+BIN2	357	357	Phosphoserine	MOD_RES
+BIN2	383	383	Phosphoserine	MOD_RES
+BIN2	395	395	Phosphoserine	MOD_RES
+BIN2	436	436	Phosphoserine	MOD_RES
+BIN2	438	438	Phosphothreonine	MOD_RES
+BIN2	440	440	Phosphoserine	MOD_RES
+BIN2	444	444	Phosphoserine	MOD_RES
+BIN2	447	447	Phosphoserine	MOD_RES
+BIN2	451	451	Phosphoserine	MOD_RES
+BIN2	458	458	Phosphoserine	MOD_RES
+BIN2	462	462	Phosphoserine	MOD_RES
+BIN2	267	565	Disordered	REGION
+BIN2	1	565	Bridging integrator 2	CHAIN
+BNIP5	302	302	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+BNIP5	1	34	Disordered	REGION
+BNIP5	53	243	Disordered	REGION
+BNIP5	259	494	Disordered	REGION
+BNIP5	1	652	Protein BNIP5	CHAIN
+BRD8	97	171		COILED
+BRD8	469	469	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+BRD8	481	481	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1); alternate	CROSSLNK
+BRD8	481	481	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+BRD8	509	509	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+BRD8	575	575	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+BRD8	612	612	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+BRD8	724	794	Bromo 1	DOMAIN
+BRD8	1120	1190	Bromo 2	DOMAIN
+BRD8	85	85	N6-acetyllysine	MOD_RES
+BRD8	383	383	Phosphoserine	MOD_RES
+BRD8	387	387	Phosphoserine	MOD_RES
+BRD8	481	481	N6-acetyllysine; alternate	MOD_RES
+BRD8	579	579	Phosphoserine	MOD_RES
+BRD8	621	621	Phosphoserine	MOD_RES
+BRD8	637	637	Phosphoserine	MOD_RES
+BRD8	641	641	Phosphoserine	MOD_RES
+BRD8	264	264	Phosphothreonine	MOD_RES
+BRD8	268	268	Phosphoserine	MOD_RES
+BRD8	284	284	Phosphoserine	MOD_RES
+BRD8	924	924	Phosphoserine	MOD_RES
+BRD8	124	124	Phosphothreonine	MOD_RES
+BRD8	128	128	Phosphoserine	MOD_RES
+BRD8	144	144	Phosphoserine	MOD_RES
+BRD8	264	264	Phosphothreonine	MOD_RES
+BRD8	268	268	Phosphoserine	MOD_RES
+BRD8	284	284	Phosphoserine	MOD_RES
+BRD8	186	205	Disordered	REGION
+BRD8	551	597	Disordered	REGION
+BRD8	621	672	Disordered	REGION
+BRD8	827	848	Disordered	REGION
+BRD8	903	940	Disordered	REGION
+BRD8	966	999	Disordered	REGION
+BRD8	1	1235	Bromodomain-containing protein 8	CHAIN
+BRWD1	1177	1247	Bromo 1	DOMAIN
+BRWD1	1330	1400	Bromo 2	DOMAIN
+BRWD1	687	687	Phosphothreonine	MOD_RES
+BRWD1	696	696	Phosphoserine	MOD_RES
+BRWD1	701	701	Phosphoserine	MOD_RES
+BRWD1	710	710	Phosphoserine	MOD_RES
+BRWD1	1289	1289	Phosphoserine	MOD_RES
+BRWD1	1475	1475	Phosphoserine	MOD_RES
+BRWD1	1477	1477	Phosphothreonine	MOD_RES
+BRWD1	1479	1479	Phosphoserine	MOD_RES
+BRWD1	1605	1605	Phosphoserine	MOD_RES
+BRWD1	1607	1607	Phosphoserine	MOD_RES
+BRWD1	1678	1678	Phosphoserine	MOD_RES
+BRWD1	1683	1683	Phosphoserine	MOD_RES
+BRWD1	1686	1686	Phosphoserine	MOD_RES
+BRWD1	1755	1755	Phosphoserine	MOD_RES
+BRWD1	1756	1756	Phosphoserine	MOD_RES
+BRWD1	1786	1786	Phosphoserine	MOD_RES
+BRWD1	1788	1788	Phosphoserine	MOD_RES
+BRWD1	1793	1793	Phosphoserine	MOD_RES
+BRWD1	1820	1820	Phosphoserine	MOD_RES
+BRWD1	1867	1867	Phosphothreonine	MOD_RES
+BRWD1	1871	1871	Phosphoserine	MOD_RES
+BRWD1	1904	1904	Phosphoserine	MOD_RES
+BRWD1	1905	1905	Phosphoserine	MOD_RES
+BRWD1	1907	1907	Phosphoserine	MOD_RES
+BRWD1	1910	1910	Phosphoserine	MOD_RES
+BRWD1	1943	1943	Phosphoserine	MOD_RES
+BRWD1	1955	1955	Phosphothreonine	MOD_RES
+BRWD1	2018	2018	Phosphoserine	MOD_RES
+BRWD1	2020	2020	Phosphoserine	MOD_RES
+BRWD1	2052	2052	Phosphoserine	MOD_RES
+BRWD1	2164	2164	Phosphothreonine	MOD_RES
+BRWD1	2166	2166	Phosphoserine	MOD_RES
+BRWD1	2214	2214	Phosphoserine	MOD_RES
+BRWD1	668	691	Disordered	REGION
+BRWD1	809	867	Disordered	REGION
+BRWD1	895	925	Disordered	REGION
+BRWD1	1271	1304	Disordered	REGION
+BRWD1	1434	1593	Disordered	REGION
+BRWD1	1670	1805	Disordered	REGION
+BRWD1	1817	1839	Disordered	REGION
+BRWD1	1862	1899	Disordered	REGION
+BRWD1	2014	2077	Disordered	REGION
+BRWD1	2112	2184	Disordered	REGION
+BRWD1	184	223	WD 1	REPEAT
+BRWD1	226	265	WD 2	REPEAT
+BRWD1	268	311	WD 3	REPEAT
+BRWD1	322	365	WD 4	REPEAT
+BRWD1	366	405	WD 5	REPEAT
+BRWD1	424	463	WD 6	REPEAT
+BRWD1	466	506	WD 7	REPEAT
+BRWD1	514	553	WD 8	REPEAT
+BRWD1	1	2320	Bromodomain and WD repeat-containing protein 1	CHAIN
+C11orf24	49	49	N-linked (GlcNAc...) asparagine	CARBOHYD
+C11orf24	72	101	Disordered	REGION
+C11orf24	154	187	Disordered	REGION
+C11orf24	215	381	Disordered	REGION
+C11orf24	21	449	Uncharacterized protein C11orf24	CHAIN
+C11orf24	1	20		SIGNAL
+C11orf71	1	25	Disordered	REGION
+C11orf71	53	91	Disordered	REGION
+C11orf71	1	123	Uncharacterized protein C11orf71	CHAIN
+C12orf42	193	245	Disordered	REGION
+C12orf42	1	360	Uncharacterized protein C12orf42	CHAIN
+C12orf43	61	61	Phosphoserine	MOD_RES
+C12orf43	79	79	Phosphothreonine	MOD_RES
+C12orf43	138	138	Phosphoserine	MOD_RES
+C12orf43	182	182	Phosphothreonine	MOD_RES
+C12orf43	211	211	Phosphothreonine	MOD_RES
+C12orf43	236	241	Nucleolar localization signal (NLS)	MOTIF
+C12orf43	1	79	Disordered	REGION
+C12orf43	126	262	Disordered	REGION
+C12orf43	1	262	Protein CUSTOS	CHAIN
+C12orf54	1	34	Disordered	REGION
+C12orf54	64	127	Disordered	REGION
+C12orf54	1	127	Uncharacterized protein C12orf54	CHAIN
+C12orf71	1	21	Disordered	REGION
+C12orf71	1	269	Uncharacterized protein C12orf71	CHAIN
+C20orf141	1	36	Disordered	REGION
+C20orf141	1	165	Uncharacterized protein C20orf141	CHAIN
+C20orf203	62	93	Disordered	REGION
+C20orf203	1	194	Uncharacterized protein C20orf203	CHAIN
+C2CD4A	253	369	C2	DOMAIN
+C2CD4A	151	176	Disordered	REGION
+C2CD4A	197	240	Disordered	REGION
+C2CD4A	1	369	C2 calcium-dependent domain-containing protein 4A	CHAIN
+C4orf50	37	72		COILED
+C4orf50	1	276	Uncharacterized protein C4orf50	CHAIN
+C5orf15	75	75	N-linked (GlcNAc...) asparagine	CARBOHYD
+C5orf15	229	229	Phosphoserine	MOD_RES
+C5orf15	256	256	Phosphoserine	MOD_RES
+C5orf15	73	123	Disordered	REGION
+C5orf15	135	168	Disordered	REGION
+C5orf15	50	265	Keratinocyte-associated transmembrane protein 2	CHAIN
+C5orf15	1	49		SIGNAL
+C6orf52	1	152	Putative uncharacterized protein C6orf52	CHAIN
+C9orf43	289	374	Disordered	REGION
+C9orf43	1	461	Uncharacterized protein C9orf43	CHAIN
+C9orf50	1	37	Disordered	REGION
+C9orf50	102	132	Disordered	REGION
+C9orf50	1	431	Uncharacterized protein C9orf50	CHAIN
+CATSPERE	61	61	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	114	114	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	414	414	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	472	472	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	487	487	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	493	493	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	535	535	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	796	796	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	854	854	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	881	881	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	886	886	N-linked (GlcNAc...) asparagine	CARBOHYD
+CATSPERE	57	71		DISULFID
+CATSPERE	101	206		DISULFID
+CATSPERE	246	336		DISULFID
+CATSPERE	410	413		DISULFID
+CATSPERE	583	690		DISULFID
+CATSPERE	703	885		DISULFID
+CATSPERE	719	752		DISULFID
+CATSPERE	804	835		DISULFID
+CATSPERE	20	951	Cation channel sperm-associated auxiliary subunit epsilon	CHAIN
+CATSPERE	1	19		SIGNAL
+CBX8	11	69	Chromo	DOMAIN
+CBX8	110	110	Phosphoserine	MOD_RES
+CBX8	130	130	Phosphoserine	MOD_RES
+CBX8	191	191	Phosphoserine	MOD_RES
+CBX8	256	256	Phosphoserine	MOD_RES
+CBX8	265	265	Phosphoserine	MOD_RES
+CBX8	311	311	Phosphoserine	MOD_RES
+CBX8	332	332	Phosphoserine	MOD_RES
+CBX8	352	352	Phosphoserine	MOD_RES
+CBX8	124	241	Disordered	REGION
+CBX8	298	327	Disordered	REGION
+CBX8	1	389	Chromobox protein homolog 8	CHAIN
+CCDC121	1	30		COILED
+CCDC121	105	243		COILED
+CCDC121	253	278	Disordered	REGION
+CCDC121	1	278	Coiled-coil domain-containing protein 121	CHAIN
+CCDC150	106	299		COILED
+CCDC150	398	680		COILED
+CCDC150	712	940		COILED
+CCDC150	970	1033		COILED
+CCDC150	1055	1101	Disordered	REGION
+CCDC150	1	1101	Coiled-coil domain-containing protein 150	CHAIN
+CCDC185	266	295		COILED
+CCDC185	359	392		COILED
+CCDC185	431	501		COILED
+CCDC185	534	573		COILED
+CCDC185	528	528	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+CCDC185	1	242	Disordered	REGION
+CCDC185	314	376	Disordered	REGION
+CCDC185	574	607	Disordered	REGION
+CCDC185	1	623	Coiled-coil domain-containing protein 185	CHAIN
+CCDC187	816	851		COILED
+CCDC187	1	41	Disordered	REGION
+CCDC187	62	184	Disordered	REGION
+CCDC187	219	278	Disordered	REGION
+CCDC187	300	319	Disordered	REGION
+CCDC187	392	484	Disordered	REGION
+CCDC187	496	539	Disordered	REGION
+CCDC187	551	658	Disordered	REGION
+CCDC187	1010	1030	Disordered	REGION
+CCDC187	1	1063	Coiled-coil domain-containing protein 187	CHAIN
+CCDC28A	234	263		COILED
+CCDC28A	121	166	Disordered	REGION
+CCDC28A	76	77	Breakpoint for translocation to form NUP98-CCDC28A	SITE
+CCDC28A	1	274	Coiled-coil domain-containing protein 28A	CHAIN
+CCDC73	59	210		COILED
+CCDC73	236	384		COILED
+CCDC73	1052	1079	Disordered	REGION
+CCDC73	1	1079	Coiled-coil domain-containing protein 73	CHAIN
+CCDC78	74	105		COILED
+CCDC78	217	246		COILED
+CCDC78	345	381	Disordered	REGION
+CCDC78	1	438	Coiled-coil domain-containing protein 78	CHAIN
+CCNT2	407	407	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+CCNT2	12	147	Cyclin N-terminal	DOMAIN
+CCNT2	480	480	Phosphoserine	MOD_RES
+CCNT2	601	601	Phosphoserine	MOD_RES
+CCNT2	1	300	Interaction with MDFIC and MDFI	REGION
+CCNT2	250	300	Interaction with POLR2A	REGION
+CCNT2	341	430	Disordered	REGION
+CCNT2	497	652	Disordered	REGION
+CCNT2	1	730	Cyclin-T2	CHAIN
+CD109	68	68	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	118	118	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	247	247	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	279	279	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	365	365	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	419	419	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	513	513	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	645	645	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	1086	1086	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	1355	1355	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD109	921	924	Isoglutamyl cysteine thioester (Cys-Gln)	CROSSLNK
+CD109	1420	1420	GPI-anchor amidated alanine	LIPID
+CD109	593	702	Bait region (approximate)	REGION
+CD109	22	1420	CD109 antigen	CHAIN
+CD109	1	21		SIGNAL
+CD300LG	96	96	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD300LG	137	137	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	143	143	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	144	144	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	155	155	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	161	161	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	170	170	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	171	171	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	177	177	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	187	187	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	195	195	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	196	196	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	199	199	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	201	201	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	202	202	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	207	207	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	208	208	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	213	213	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	214	214	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	222	222	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	223	223	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	224	224	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	228	228	O-linked (GalNAc...) threonine	CARBOHYD
+CD300LG	229	229	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	237	237	O-linked (GalNAc...) serine	CARBOHYD
+CD300LG	37	107		DISULFID
+CD300LG	19	121	Ig-like V-type	DOMAIN
+CD300LG	146	239	Disordered	REGION
+CD300LG	19	332	CMRF35-like molecule 9	CHAIN
+CD300LG	1	18		SIGNAL
+CD4	296	296	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD4	325	325	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD4	41	109		DISULFID
+CD4	155	184		DISULFID
+CD4	328	370		DISULFID
+CD4	26	125	Ig-like V-type	DOMAIN
+CD4	126	203	Ig-like C2-type 1	DOMAIN
+CD4	204	317	Ig-like C2-type 2	DOMAIN
+CD4	318	374	Ig-like C2-type 3	DOMAIN
+CD4	419	419	S-palmitoyl cysteine	LIPID
+CD4	422	422	S-palmitoyl cysteine	LIPID
+CD4	433	433	Phosphoserine	MOD_RES
+CD4	440	440	Phosphoserine	MOD_RES
+CD4	456	456	Phosphoserine	MOD_RES
+CD4	427	455	HIV-1 Vpu-susceptibility domain	REGION
+CD4	26	458	T-cell surface glycoprotein CD4	CHAIN
+CD4	1	25		SIGNAL
+CD79B	73	73	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD79B	101	101	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD79B	127	127	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD79B	128	128	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD79B	43	126		DISULFID
+CD79B	65	122		DISULFID
+CD79B	136	136	Interchain (with C-119 in alpha chain)	DISULFID
+CD79B	38	138	Ig-like V-type	DOMAIN
+CD79B	185	213	ITAM	DOMAIN
+CD79B	196	196	Phosphotyrosine; by SRC-type Tyr-kinases	MOD_RES
+CD79B	207	207	Phosphotyrosine; by SRC-type Tyr-kinases	MOD_RES
+CD79B	29	229	B-cell antigen receptor complex-associated protein beta chain	CHAIN
+CD79B	1	28		SIGNAL
+CD93	325	325	N-linked (GlcNAc...) asparagine	CARBOHYD
+CD93	141	165		DISULFID
+CD93	264	275		DISULFID
+CD93	271	285		DISULFID
+CD93	287	300		DISULFID
+CD93	306	317		DISULFID
+CD93	311	328		DISULFID
+CD93	330	343		DISULFID
+CD93	349	358		DISULFID
+CD93	354	367		DISULFID
+CD93	369	383		DISULFID
+CD93	389	400		DISULFID
+CD93	396	409		DISULFID
+CD93	411	425		DISULFID
+CD93	431	443		DISULFID
+CD93	439	452		DISULFID
+CD93	454	467		DISULFID
+CD93	32	174	C-type lectin	DOMAIN
+CD93	260	301	EGF-like 1	DOMAIN
+CD93	302	344	EGF-like 2	DOMAIN
+CD93	345	384	EGF-like 3; calcium-binding	DOMAIN
+CD93	385	426	EGF-like 4; calcium-binding	DOMAIN
+CD93	427	468	EGF-like 5; calcium-binding	DOMAIN
+CD93	627	627	Phosphoserine	MOD_RES
+CD93	644	644	Phosphotyrosine	MOD_RES
+CD93	472	546	Disordered	REGION
+CD93	553	572	Disordered	REGION
+CD93	611	652	Disordered	REGION
+CD93	22	652	Complement component C1q receptor	CHAIN
+CD93	1	21		SIGNAL
+CDHR5	44	44	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	81	81	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	140	140	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	198	198	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	297	297	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	308	308	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	405	405	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	526	526	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDHR5	71	124	Cadherin 1	DOMAIN
+CDHR5	125	237	Cadherin 2	DOMAIN
+CDHR5	249	354	Cadherin 3	DOMAIN
+CDHR5	355	459	Cadherin 4	DOMAIN
+CDHR5	770	770	Phosphoserine	MOD_RES
+CDHR5	810	810	Phosphothreonine	MOD_RES
+CDHR5	817	817	Phosphoserine	MOD_RES
+CDHR5	819	819	Phosphoserine	MOD_RES
+CDHR5	821	821	Phosphoserine	MOD_RES
+CDHR5	452	661	Disordered	REGION
+CDHR5	540	645	4 X 31 AA approximate tandem repeats	REGION
+CDHR5	691	845	Mediates interaction with USH1C and MYO7B and is required for proper localization to microvilli tips and function in microvilli organization	REGION
+CDHR5	724	789	Disordered	REGION
+CDHR5	811	845	Disordered	REGION
+CDHR5	540	570	1	REPEAT
+CDHR5	571	601	2	REPEAT
+CDHR5	602	631	3	REPEAT
+CDHR5	632	645	4; truncated	REPEAT
+CDHR5	26	845	Cadherin-related family member 5	CHAIN
+CDHR5	1	25		SIGNAL
+CDKN2A	1	1	N-acetylmethionine	MOD_RES
+CDKN2A	7	7	Phosphoserine	MOD_RES
+CDKN2A	8	8	Phosphoserine	MOD_RES
+CDKN2A	140	140	Phosphoserine	MOD_RES
+CDKN2A	152	152	Phosphoserine	MOD_RES
+CDKN2A	1	64	Interaction with CDK5RAP3 and MDM2	REGION
+CDKN2A	56	132	Disordered	REGION
+CDKN2A	11	40	ANK 1	REPEAT
+CDKN2A	44	72	ANK 2	REPEAT
+CDKN2A	77	106	ANK 3	REPEAT
+CDKN2A	110	139	ANK 4	REPEAT
+CDKN2A	1	156	Cyclin-dependent kinase inhibitor 2A	CHAIN
+CDSN	172	172	N-linked (GlcNAc...) asparagine	CARBOHYD
+CDSN	38	248	Disordered	REGION
+CDSN	383	492	Disordered	REGION
+CDSN	33	529	Corneodesmosin	CHAIN
+CDSN	1	32		SIGNAL
+CENPA	2	2	N,N,N-trimethylglycine	MOD_RES
+CENPA	7	7	Phosphoserine; by AURKA and AURKB	MOD_RES
+CENPA	17	17	Phosphoserine	MOD_RES
+CENPA	19	19	Phosphoserine	MOD_RES
+CENPA	27	27	Phosphoserine	MOD_RES
+CENPA	68	68	Phosphoserine	MOD_RES
+CENPA	1	46	Disordered	REGION
+CENPA	39	54	Important for flexibility of DNA ends that protrude from nucleosomes	REGION
+CENPA	75	116	CATD	REGION
+CENPA	2	140	Histone H3-like centromeric protein A	CHAIN
+CEP295	207	273		COILED
+CEP295	500	552		COILED
+CEP295	1053	1082		COILED
+CEP295	1498	1544		COILED
+CEP295	1728	1758		COILED
+CEP295	2556	2581		COILED
+CEP295	14	14	Phosphoserine	MOD_RES
+CEP295	654	654	Phosphoserine	MOD_RES
+CEP295	938	938	Phosphoserine	MOD_RES
+CEP295	1637	1637	Phosphoserine	MOD_RES
+CEP295	2473	2473	Phosphothreonine	MOD_RES
+CEP295	1	560	Necessary for centriole targeting and microtubule association	REGION
+CEP295	1008	1029	Disordered	REGION
+CEP295	1558	1580	Disordered	REGION
+CEP295	1795	1834	Disordered	REGION
+CEP295	1979	2004	Disordered	REGION
+CEP295	2085	2117	Disordered	REGION
+CEP295	2478	2601	ALMS motif	REGION
+CEP295	1	2601	Centrosomal protein of 295 kDa	CHAIN
+CIR1	79	79	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+CIR1	340	340	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+CIR1	202	202	Phosphoserine	MOD_RES
+CIR1	235	245	Nuclear localization signal	MOTIF
+CIR1	291	298	Nuclear localization signal	MOTIF
+CIR1	1	121	Interaction with RBPJ	REGION
+CIR1	72	93	Disordered	REGION
+CIR1	204	232	Interaction with RP9	REGION
+CIR1	218	450	Disordered	REGION
+CIR1	1	450	Corepressor interacting with RBPJ 1	CHAIN
+CLEC4F	79	79	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	113	113	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	207	207	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	230	230	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	244	244	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	312	312	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	385	385	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	399	399	N-linked (GlcNAc...) asparagine	CARBOHYD
+CLEC4F	476	589	C-type lectin	DOMAIN
+CLEC4F	1	589	C-type lectin domain family 4 member F	CHAIN
+CLOCK	67	67	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1)	CROSSLNK
+CLOCK	842	842	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1)	CROSSLNK
+CLOCK	34	84	bHLH	DOMAIN
+CLOCK	107	177	PAS 1	DOMAIN
+CLOCK	262	332	PAS 2	DOMAIN
+CLOCK	336	379	PAC	DOMAIN
+CLOCK	38	38	Phosphoserine	MOD_RES
+CLOCK	42	42	Phosphoserine	MOD_RES
+CLOCK	408	408	Phosphoserine	MOD_RES
+CLOCK	427	427	Phosphoserine; by GSK3-beta	MOD_RES
+CLOCK	431	431	Phosphoserine	MOD_RES
+CLOCK	451	451	Phosphothreonine; by CDK5	MOD_RES
+CLOCK	461	461	Phosphothreonine; by CDK5	MOD_RES
+CLOCK	32	47	Nuclear localization signal	MOTIF
+CLOCK	371	845	Interaction with NR3C1	REGION
+CLOCK	392	411	Disordered	REGION
+CLOCK	420	495	Disordered	REGION
+CLOCK	450	570	Interaction with SIRT1	REGION
+CLOCK	514	564	Implicated in the circadian rhythmicity	REGION
+CLOCK	624	654	Disordered	REGION
+CLOCK	764	783	Disordered	REGION
+CLOCK	811	846	Disordered	REGION
+CLOCK	39	39	Interaction with E-box DNA	SITE
+CLOCK	43	43	Interaction with E-box DNA	SITE
+CLOCK	47	47	Interaction with E-box DNA	SITE
+CLOCK	84	84	Important for interaction with BMAL1	SITE
+CLOCK	1	846	Circadian locomoter output cycles protein kaput	CHAIN
+CLUH	335	577	Clu	DOMAIN
+CLUH	279	279	Phosphoserine	MOD_RES
+CLUH	281	281	Phosphoserine	MOD_RES
+CLUH	654	654	Phosphoserine	MOD_RES
+CLUH	664	664	Phosphoserine	MOD_RES
+CLUH	723	723	Phosphoserine	MOD_RES
+CLUH	1	34	Disordered	REGION
+CLUH	636	674	Disordered	REGION
+CLUH	1264	1309	Disordered	REGION
+CLUH	978	1011	TPR 1	REPEAT
+CLUH	1020	1053	TPR 2	REPEAT
+CLUH	1104	1137	TPR 3	REPEAT
+CLUH	1146	1179	TPR 4	REPEAT
+CLUH	1	1309	Clustered mitochondria protein homolog	CHAIN
+CMTM2	82	204	MARVEL	DOMAIN
+CMTM2	1	63	Disordered	REGION
+CMTM2	208	248	Disordered	REGION
+CMTM2	1	248	CKLF-like MARVEL transmembrane domain-containing protein 2	CHAIN
+CMTM4	49	176	MARVEL	DOMAIN
+CMTM4	194	194	Phosphoserine	MOD_RES
+CMTM4	1	38	Disordered	REGION
+CMTM4	1	234	CKLF-like MARVEL transmembrane domain-containing protein 4	CHAIN
+COL15A1	243	243	O-linked (Xyl...) (chondroitin sulfate) serine	CARBOHYD
+COL15A1	247	247	O-linked (Xyl...) (chondroitin sulfate) serine	CARBOHYD
+COL15A1	265	265	O-linked (GalNAc...) threonine	CARBOHYD
+COL15A1	306	306	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	324	324	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	343	343	O-linked (Xyl...) (chondroitin sulfate) serine	CARBOHYD
+COL15A1	687	687	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	745	745	O-linked (Xyl...) (chondroitin sulfate) serine	CARBOHYD
+COL15A1	807	807	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	814	814	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	1046	1046	N-linked (GlcNAc...) asparagine	CARBOHYD
+COL15A1	1237	1377		DISULFID
+COL15A1	1339	1369		DISULFID
+COL15A1	66	249	Laminin G-like	DOMAIN
+COL15A1	619	680	Collagen-like 1	DOMAIN
+COL15A1	681	731	Collagen-like 2	DOMAIN
+COL15A1	823	865	Collagen-like 3	DOMAIN
+COL15A1	879	927	Collagen-like 4	DOMAIN
+COL15A1	223	250	Disordered	REGION
+COL15A1	229	555	Nonhelical region 1 (NC1)	REGION
+COL15A1	266	301	Disordered	REGION
+COL15A1	358	555	4 X tandem repeats	REGION
+COL15A1	371	795	Disordered	REGION
+COL15A1	556	573	Triple-helical region 1 (COL1)	REGION
+COL15A1	574	618	Nonhelical region 2 (NC2)	REGION
+COL15A1	619	732	Triple-helical region 2 (COL2)	REGION
+COL15A1	733	763	Nonhelical region 3 (NC3)	REGION
+COL15A1	764	798	Triple-helical region 3 (COL3)	REGION
+COL15A1	799	822	Nonhelical region 4 (NC4)	REGION
+COL15A1	823	867	Triple-helical region 4 (COL4)	REGION
+COL15A1	827	864	Disordered	REGION
+COL15A1	868	878	Nonhelical region 5 (NC5)	REGION
+COL15A1	879	949	Triple-helical region 5 (COL5)	REGION
+COL15A1	950	983	Nonhelical region 6 (NC6)	REGION
+COL15A1	984	1013	Triple-helical region 6 (COL6)	REGION
+COL15A1	988	1016	Disordered	REGION
+COL15A1	1014	1027	Nonhelical region 7 (NC7)	REGION
+COL15A1	1028	1045	Triple-helical region 7 (COL7)	REGION
+COL15A1	1029	1133	Disordered	REGION
+COL15A1	1046	1052	Nonhelical region 8 (NC8)	REGION
+COL15A1	1053	1107	Triple-helical region 8 (COL8)	REGION
+COL15A1	1108	1117	Nonhelical region 9 (NC9)	REGION
+COL15A1	1118	1132	Triple-helical region 9 (COL9)	REGION
+COL15A1	1133	1388	Nonhelical region 10 (NC10)	REGION
+COL15A1	358	408	1	REPEAT
+COL15A1	409	459	2	REPEAT
+COL15A1	460	509	3	REPEAT
+COL15A1	510	555	4	REPEAT
+COL15A1	28	1388	Collagen alpha-1(XV) chain	CHAIN
+COL15A1	1198	1386	Restin	CHAIN
+COL15A1	1207	1386	Restin-2	CHAIN
+COL15A1	1213	1386	Restin-3	CHAIN
+COL15A1	1221	1386	Restin-4	CHAIN
+COL15A1	1	27		SIGNAL
+CR1L	48	48	N-linked (GlcNAc...) asparagine	CARBOHYD
+CR1L	35	78		DISULFID
+CR1L	65	91		DISULFID
+CR1L	96	137		DISULFID
+CR1L	123	153		DISULFID
+CR1L	158	207		DISULFID
+CR1L	187	224		DISULFID
+CR1L	230	272		DISULFID
+CR1L	258	285		DISULFID
+CR1L	289	332		DISULFID
+CR1L	318	345		DISULFID
+CR1L	350	392		DISULFID
+CR1L	378	408		DISULFID
+CR1L	413	454		DISULFID
+CR1L	440	470		DISULFID
+CR1L	504	541		DISULFID
+CR1L	33	93	Sushi 1	DOMAIN
+CR1L	94	155	Sushi 2	DOMAIN
+CR1L	156	226	Sushi 3	DOMAIN
+CR1L	228	287	Sushi 4	DOMAIN
+CR1L	287	347	Sushi 5	DOMAIN
+CR1L	348	410	Sushi 6	DOMAIN
+CR1L	411	472	Sushi 7	DOMAIN
+CR1L	473	543	Sushi 8	DOMAIN
+CR1L	33	569	Complement component receptor 1-like protein	CHAIN
+CR1L	1	32		SIGNAL
+CRELD2	251	251	N-linked (GlcNAc...) asparagine	CARBOHYD
+CRELD2	31	34	Redox-active	DISULFID
+CRELD2	140	154		DISULFID
+CRELD2	148	166		DISULFID
+CRELD2	168	177		DISULFID
+CRELD2	263	266	Redox-active	DISULFID
+CRELD2	294	308		DISULFID
+CRELD2	301	317		DISULFID
+CRELD2	319	330		DISULFID
+CRELD2	136	178	EGF-like 1	DOMAIN
+CRELD2	290	331	EGF-like 2; calcium-binding	DOMAIN
+CRELD2	31	34	CXXC	MOTIF
+CRELD2	263	266	CXXC	MOTIF
+CRELD2	332	353	Disordered	REGION
+CRELD2	193	240	FU 1	REPEAT
+CRELD2	253	302	FU 2	REPEAT
+CRELD2	25	353	Protein disulfide isomerase CRELD2	CHAIN
+CRELD2	1	24		SIGNAL
+CRYBG2	986	1023	Beta/gamma crystallin 'Greek key' 1	DOMAIN
+CRYBG2	1024	1067	Beta/gamma crystallin 'Greek key' 2	DOMAIN
+CRYBG2	1073	1113	Beta/gamma crystallin 'Greek key' 3	DOMAIN
+CRYBG2	1114	1156	Beta/gamma crystallin 'Greek key' 4	DOMAIN
+CRYBG2	1168	1213	Beta/gamma crystallin 'Greek key' 5	DOMAIN
+CRYBG2	1214	1256	Beta/gamma crystallin 'Greek key' 6	DOMAIN
+CRYBG2	1262	1302	Beta/gamma crystallin 'Greek key' 7	DOMAIN
+CRYBG2	1303	1345	Beta/gamma crystallin 'Greek key' 8	DOMAIN
+CRYBG2	1356	1393	Beta/gamma crystallin 'Greek key' 9	DOMAIN
+CRYBG2	1394	1437	Beta/gamma crystallin 'Greek key' 10	DOMAIN
+CRYBG2	1443	1483	Beta/gamma crystallin 'Greek key' 11	DOMAIN
+CRYBG2	1484	1525	Beta/gamma crystallin 'Greek key' 12	DOMAIN
+CRYBG2	1569	1659	Ricin B-type lectin	DOMAIN
+CRYBG2	72	135	Disordered	REGION
+CRYBG2	148	168	Disordered	REGION
+CRYBG2	242	268	Disordered	REGION
+CRYBG2	297	321	Disordered	REGION
+CRYBG2	337	380	Disordered	REGION
+CRYBG2	411	757	Disordered	REGION
+CRYBG2	808	871	Disordered	REGION
+CRYBG2	883	903	Disordered	REGION
+CRYBG2	1	1661	Beta/gamma crystallin domain-containing protein 2	CHAIN
+CSF3R	51	51	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	93	93	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	128	128	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	134	134	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	389	389	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	474	474	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	579	579	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	610	610	N-linked (GlcNAc...) asparagine	CARBOHYD
+CSF3R	26	52		DISULFID
+CSF3R	46	101		DISULFID
+CSF3R	131	142		DISULFID
+CSF3R	167	218		DISULFID
+CSF3R	177	186		DISULFID
+CSF3R	248	295		DISULFID
+CSF3R	266	309		DISULFID
+CSF3R	25	117	Ig-like C2-type	DOMAIN
+CSF3R	125	230	Fibronectin type-III 1	DOMAIN
+CSF3R	233	332	Fibronectin type-III 2	DOMAIN
+CSF3R	334	430	Fibronectin type-III 3	DOMAIN
+CSF3R	431	528	Fibronectin type-III 4	DOMAIN
+CSF3R	530	623	Fibronectin type-III 5	DOMAIN
+CSF3R	318	322	WSXWS motif	MOTIF
+CSF3R	658	666	Box 1 motif	MOTIF
+CSF3R	25	836	Granulocyte colony-stimulating factor receptor	CHAIN
+CSF3R	1	24		SIGNAL
+CSN1S1	31	31	Phosphoserine	MOD_RES
+CSN1S1	33	33	Phosphoserine	MOD_RES
+CSN1S1	41	41	Phosphoserine	MOD_RES
+CSN1S1	71	71	Phosphoserine	MOD_RES
+CSN1S1	85	85	Phosphoserine	MOD_RES
+CSN1S1	86	86	Phosphoserine	MOD_RES
+CSN1S1	88	88	Phosphoserine	MOD_RES
+CSN1S1	89	89	Phosphoserine	MOD_RES
+CSN1S1	90	90	Phosphoserine	MOD_RES
+CSN1S1	91	91	Phosphoserine	MOD_RES
+CSN1S1	16	185	Alpha-S1-casein	CHAIN
+CSN1S1	1	15		SIGNAL
+CSTF2T	16	94	RRM	DOMAIN
+CSTF2T	320	320	Phosphothreonine	MOD_RES
+CSTF2T	563	563	Phosphoserine	MOD_RES
+CSTF2T	203	241	Disordered	REGION
+CSTF2T	262	418	Disordered	REGION
+CSTF2T	418	462	9 X 5 AA tandem repeats of M-E-T-R-[AG]	REGION
+CSTF2T	505	549	9 X 5 AA tandem repeats of G-[AT]-G-[MI]-Q	REGION
+CSTF2T	542	573	Disordered	REGION
+CSTF2T	418	422	1-1	REPEAT
+CSTF2T	423	427	1-2; approximate	REPEAT
+CSTF2T	428	432	1-3; approximate	REPEAT
+CSTF2T	433	437	1-4; approximate	REPEAT
+CSTF2T	438	442	1-5; approximate	REPEAT
+CSTF2T	443	447	1-6	REPEAT
+CSTF2T	448	452	1-7; approximate	REPEAT
+CSTF2T	453	457	1-8; approximate	REPEAT
+CSTF2T	458	462	1-9; approximate	REPEAT
+CSTF2T	505	509	2-1	REPEAT
+CSTF2T	510	514	2-2	REPEAT
+CSTF2T	515	519	2-3	REPEAT
+CSTF2T	520	524	2-4	REPEAT
+CSTF2T	525	529	2-5; approximate	REPEAT
+CSTF2T	530	534	2-6	REPEAT
+CSTF2T	535	539	2-7; approximate	REPEAT
+CSTF2T	540	544	2-8; approximate	REPEAT
+CSTF2T	545	549	2-9; approximate	REPEAT
+CSTF2T	1	616	Cleavage stimulation factor subunit 2 tau variant	CHAIN
+CXCL16	168	168	N-linked (GlcNAc...) asparagine	CARBOHYD
+CXCL16	38	68		DISULFID
+CXCL16	40	82		DISULFID
+CXCL16	32	107	Chemokine	REGION
+CXCL16	146	165	Disordered	REGION
+CXCL16	178	200	Disordered	REGION
+CXCL16	231	254	Disordered	REGION
+CXCL16	30	254	C-X-C motif chemokine 16	CHAIN
+CXCL16	1	29		SIGNAL
+CXCR2	22	22	N-linked (GlcNAc...) asparagine	CARBOHYD
+CXCR2	119	196		DISULFID
+CXCR2	347	347	Phosphoserine	MOD_RES
+CXCR2	351	351	Phosphoserine	MOD_RES
+CXCR2	352	352	Phosphoserine	MOD_RES
+CXCR2	353	353	Phosphoserine	MOD_RES
+CXCR2	35	36	(Microbial infection) Cleavage; by Staphylococcus aureus/SspP	SITE
+CXCR2	1	360	C-X-C chemokine receptor type 2	CHAIN
+CXorf58	306	332	Disordered	REGION
+CXorf58	1	332	Uncharacterized protein CXorf58	CHAIN
+CXorf66	24	24	N-linked (GlcNAc...) asparagine	CARBOHYD
+CXorf66	99	184	Disordered	REGION
+CXorf66	209	247	Disordered	REGION
+CXorf66	295	316	Disordered	REGION
+CXorf66	20	361	Uncharacterized protein CXorf66	CHAIN
+CXorf66	1	19		SIGNAL
+CYBRD1	50	50	axial binding residue	BINDING
+CYBRD1	70	70		BINDING
+CYBRD1	79	79		BINDING
+CYBRD1	79	79		BINDING
+CYBRD1	83	83		BINDING
+CYBRD1	86	86	axial binding residue	BINDING
+CYBRD1	108	108		BINDING
+CYBRD1	115	118		BINDING
+CYBRD1	120	120	axial binding residue	BINDING
+CYBRD1	152	152		BINDING
+CYBRD1	159	159	axial binding residue	BINDING
+CYBRD1	180	180		BINDING
+CYBRD1	225	225		BINDING
+CYBRD1	15	220	Cytochrome b561	DOMAIN
+CYBRD1	232	232	Phosphoserine	MOD_RES
+CYBRD1	285	285	Phosphothreonine	MOD_RES
+CYBRD1	229	268	Disordered	REGION
+CYBRD1	1	286	Plasma membrane ascorbate-dependent reductase CYBRD1	CHAIN
+CYGB	81	81	distal binding residue	BINDING
+CYGB	113	113	proximal binding residue	BINDING
+CYGB	38	38	Interchain (with C-83)	DISULFID
+CYGB	83	83	Interchain (with C-38)	DISULFID
+CYGB	17	167	Globin	REGION
+CYGB	1	190	Cytoglobin	CHAIN
+CYLC1	110	241	Disordered	REGION
+CYLC1	267	615	Disordered	REGION
+CYLC1	532	553	8 X approximate tandem repeats	REGION
+CYLC1	278	305	1	REPEAT
+CYLC1	306	342	2	REPEAT
+CYLC1	343	379	3	REPEAT
+CYLC1	380	417	4	REPEAT
+CYLC1	418	453	5	REPEAT
+CYLC1	454	491	6	REPEAT
+CYLC1	492	531	7	REPEAT
+CYLC1	532	553	8	REPEAT
+CYLC1	1	651	Cylicin-1	CHAIN
+CYP27A1	476	476	axial binding residue	BINDING
+CYP27A1	283	283	N6-acetyllysine	MOD_RES
+CYP27A1	509	509	N6-acetyllysine	MOD_RES
+CYP27A1	520	520	N6-acetyllysine	MOD_RES
+CYP27A1	384	398	Sterol-binding	REGION
+CYP27A1	1	33	Mitochondrion	TRANSIT
+CYP27A1	34	531	Sterol 26-hydroxylase, mitochondrial	CHAIN
+CYSLTR2	20	20	N-linked (GlcNAc...) asparagine	CARBOHYD
+CYSLTR2	26	26	N-linked (GlcNAc...) asparagine	CARBOHYD
+CYSLTR2	30	30	N-linked (GlcNAc...) asparagine	CARBOHYD
+CYSLTR2	181	181	N-linked (GlcNAc...) asparagine	CARBOHYD
+CYSLTR2	111	187		DISULFID
+CYSLTR2	1	346	Cysteinyl leukotriene receptor 2	CHAIN
+CYSRT1	51	105	Disordered	REGION
+CYSRT1	1	144	Cysteine-rich tail protein 1	CHAIN
+DAPK3	19	27		BINDING
+DAPK3	42	42		BINDING
+DAPK3	94	94		BINDING
+DAPK3	96	96		BINDING
+DAPK3	13	275	Protein kinase	DOMAIN
+DAPK3	50	50	Phosphoserine; by autocatalysis	MOD_RES
+DAPK3	180	180	Phosphothreonine	MOD_RES
+DAPK3	225	225	Phosphothreonine	MOD_RES
+DAPK3	265	265	Phosphothreonine; by autocatalysis and ROCK1	MOD_RES
+DAPK3	299	299	Phosphothreonine; by autocatalysis, DAPK1 and ROCK1	MOD_RES
+DAPK3	306	306	Phosphothreonine; by autocatalysis	MOD_RES
+DAPK3	309	309	Phosphoserine; by DAPK1	MOD_RES
+DAPK3	311	311	Phosphoserine; by autocatalysis and DAPK1	MOD_RES
+DAPK3	312	312	Phosphoserine; by DAPK1	MOD_RES
+DAPK3	318	318	Phosphoserine; by DAPK1	MOD_RES
+DAPK3	326	326	Phosphoserine; by DAPK1	MOD_RES
+DAPK3	161	204	Activation segment	REGION
+DAPK3	427	441	Leucine-zipper	REGION
+DAPK3	1	454	Death-associated protein kinase 3	CHAIN
+DBNDD2	217	217	Phosphoserine	MOD_RES
+DBNDD2	218	218	Phosphoserine	MOD_RES
+DBNDD2	237	237	Phosphothreonine	MOD_RES
+DBNDD2	242	242	Phosphoserine	MOD_RES
+DBNDD2	27	56	Disordered	REGION
+DBNDD2	174	259	Disordered	REGION
+DBNDD2	1	259	Dysbindin domain-containing protein 2	CHAIN
+DENND1C	13	157	uDENN	DOMAIN
+DENND1C	182	318	cDENN	DOMAIN
+DENND1C	320	398	dDENN	DOMAIN
+DENND1C	553	553	Phosphoserine	MOD_RES
+DENND1C	401	405	FXDXF motif	MOTIF
+DENND1C	558	567	Clathrin box	MOTIF
+DENND1C	479	540	Disordered	REGION
+DENND1C	604	801	Disordered	REGION
+DENND1C	1	801	DENN domain-containing protein 1C	CHAIN
+DEPDC1	24	108	DEP	DOMAIN
+DEPDC1	281	321	Rho-GAP	DOMAIN
+DEPDC1	512	512	Phosphoserine	MOD_RES
+DEPDC1	598	653	Interaction with ZNF224	REGION
+DEPDC1	1	811	DEP domain-containing protein 1A	CHAIN
+DGKK	216	309	PH	DOMAIN
+DGKK	487	622	DAGKc	DOMAIN
+DGKK	78	78	Phosphotyrosine	MOD_RES
+DGKK	1	160	Disordered	REGION
+DGKK	48	179	33 X 4 AA approximate tandem repeats of E-P-A-P	REGION
+DGKK	190	209	Disordered	REGION
+DGKK	805	825	Disordered	REGION
+DGKK	1199	1268	Required for localization to the plasma membrane	REGION
+DGKK	1252	1271	Disordered	REGION
+DGKK	48	51	1	REPEAT
+DGKK	52	55	2	REPEAT
+DGKK	56	59	3	REPEAT
+DGKK	60	63	4	REPEAT
+DGKK	64	67	5	REPEAT
+DGKK	68	71	6	REPEAT
+DGKK	72	75	7	REPEAT
+DGKK	76	79	8	REPEAT
+DGKK	80	83	9	REPEAT
+DGKK	84	87	10	REPEAT
+DGKK	88	91	11	REPEAT
+DGKK	92	95	12	REPEAT
+DGKK	96	99	13	REPEAT
+DGKK	100	103	14	REPEAT
+DGKK	104	107	15	REPEAT
+DGKK	108	111	16	REPEAT
+DGKK	112	115	17	REPEAT
+DGKK	116	119	18	REPEAT
+DGKK	120	123	19	REPEAT
+DGKK	124	127	20	REPEAT
+DGKK	128	131	21	REPEAT
+DGKK	132	135	22	REPEAT
+DGKK	136	139	23	REPEAT
+DGKK	140	143	24	REPEAT
+DGKK	144	147	25	REPEAT
+DGKK	148	151	26	REPEAT
+DGKK	152	155	27	REPEAT
+DGKK	156	159	28	REPEAT
+DGKK	160	163	29	REPEAT
+DGKK	164	167	30	REPEAT
+DGKK	168	171	31	REPEAT
+DGKK	172	175	32	REPEAT
+DGKK	176	179	33	REPEAT
+DGKK	327	377	Phorbol-ester/DAG-type 1	ZN_FING
+DGKK	398	449	Phorbol-ester/DAG-type 2	ZN_FING
+DGKK	1	1271	Diacylglycerol kinase kappa	CHAIN
+DMRTB1	11	58	DM	DNA_BIND
+DMRTB1	91	131	Disordered	REGION
+DMRTB1	245	342	Disordered	REGION
+DMRTB1	1	342	Doublesex- and mab-3-related transcription factor B1	CHAIN
+DNAAF1	256	294	LRRCT	DOMAIN
+DNAAF1	358	358	Phosphoserine	MOD_RES
+DNAAF1	559	559	Phosphothreonine	MOD_RES
+DNAAF1	562	562	Phosphoserine	MOD_RES
+DNAAF1	583	583	Phosphoserine	MOD_RES
+DNAAF1	1	91	Disordered	REGION
+DNAAF1	330	513	Disordered	REGION
+DNAAF1	632	703	Disordered	REGION
+DNAAF1	107	129	LRR 1	REPEAT
+DNAAF1	130	151	LRR 2	REPEAT
+DNAAF1	152	173	LRR 3	REPEAT
+DNAAF1	174	195	LRR 4	REPEAT
+DNAAF1	196	217	LRR 5	REPEAT
+DNAAF1	221	242	LRR 6	REPEAT
+DNAAF1	1	725	Dynein axonemal assembly factor 1	CHAIN
+DNMT3L	41	173	ADD	DOMAIN
+DNMT3L	52	82	GATA-type; atypical	ZN_FING
+DNMT3L	93	149	PHD-type; atypical	ZN_FING
+DNMT3L	1	386	DNA (cytosine-5)-methyltransferase 3-like	CHAIN
+DPPA3	1	31	Disordered	REGION
+DPPA3	140	159	Disordered	REGION
+DPPA3	1	159	Developmental pluripotency-associated protein 3	CHAIN
+DUSP2	23	144	Rhodanese	DOMAIN
+DUSP2	172	313	Tyrosine-protein phosphatase	DOMAIN
+DUSP2	1	314	Dual specificity protein phosphatase 2	CHAIN
+ECH1	116	120		BINDING
+ECH1	174	174		BINDING
+ECH1	231	231	N6-succinyllysine	MOD_RES
+ECH1	268	268	Phosphoserine	MOD_RES
+ECH1	327	327	N6-acetyllysine	MOD_RES
+ECH1	326	328	Microbody targeting signal	MOTIF
+ECH1	197	197	Important for catalytic activity	SITE
+ECH1	205	205	Important for catalytic activity	SITE
+ECH1	1	33	Mitochondrion	TRANSIT
+ECH1	34	328	Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial	CHAIN
+ECPAS	1039	1039	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1)	CROSSLNK
+ECPAS	2	2	N-acetylalanine	MOD_RES
+ECPAS	830	830	Phosphoserine	MOD_RES
+ECPAS	836	836	Phosphothreonine	MOD_RES
+ECPAS	193	217	Disordered	REGION
+ECPAS	28	65	HEAT 1	REPEAT
+ECPAS	107	144	HEAT 2	REPEAT
+ECPAS	162	205	HEAT 3	REPEAT
+ECPAS	326	362	HEAT 4	REPEAT
+ECPAS	387	426	HEAT 5	REPEAT
+ECPAS	429	466	HEAT 6	REPEAT
+ECPAS	469	507	HEAT 7	REPEAT
+ECPAS	683	720	HEAT 8	REPEAT
+ECPAS	721	759	HEAT 9	REPEAT
+ECPAS	783	820	HEAT 10	REPEAT
+ECPAS	829	868	HEAT 11	REPEAT
+ECPAS	870	907	HEAT 12	REPEAT
+ECPAS	931	969	HEAT 13	REPEAT
+ECPAS	975	1012	HEAT 14	REPEAT
+ECPAS	1013	1050	HEAT 15	REPEAT
+ECPAS	1112	1149	HEAT 16	REPEAT
+ECPAS	1152	1189	HEAT 17	REPEAT
+ECPAS	1194	1231	HEAT 18	REPEAT
+ECPAS	1243	1281	HEAT 19	REPEAT
+ECPAS	1285	1323	HEAT 20	REPEAT
+ECPAS	1348	1386	HEAT 21	REPEAT
+ECPAS	1390	1427	HEAT 22	REPEAT
+ECPAS	1517	1554	HEAT 23	REPEAT
+ECPAS	1558	1595	HEAT 24	REPEAT
+ECPAS	1605	1642	HEAT 25	REPEAT
+ECPAS	1646	1683	HEAT 26	REPEAT
+ECPAS	1779	1822	HEAT 27	REPEAT
+ECPAS	2	1845	Proteasome adapter and scaffold protein ECM29	CHAIN
+EEF2K	296	302		BINDING
+EEF2K	116	326	Alpha-type protein kinase	DOMAIN
+EEF2K	2	2	N-acetylalanine	MOD_RES
+EEF2K	18	18	Phosphoserine	MOD_RES
+EEF2K	27	27	Phosphoserine	MOD_RES
+EEF2K	61	61	Phosphoserine; by autocatalysis	MOD_RES
+EEF2K	66	66	Phosphoserine; by autocatalysis	MOD_RES
+EEF2K	70	70	Phosphoserine	MOD_RES
+EEF2K	71	71	Phosphoserine	MOD_RES
+EEF2K	72	72	Phosphoserine	MOD_RES
+EEF2K	74	74	Phosphoserine	MOD_RES
+EEF2K	78	78	Phosphoserine; by autocatalysis and TRPM7	MOD_RES
+EEF2K	243	243	Phosphoserine	MOD_RES
+EEF2K	348	348	Phosphothreonine; by autocatalysis	MOD_RES
+EEF2K	353	353	Phosphothreonine; by autocatalysis	MOD_RES
+EEF2K	359	359	Phosphoserine; by MAPK13 and CDK1	MOD_RES
+EEF2K	366	366	Phosphoserine; by autocatalysis, RPS6KA1 and RPS6KB1	MOD_RES
+EEF2K	392	392	Phosphoserine	MOD_RES
+EEF2K	398	398	Phosphoserine; by AMPK	MOD_RES
+EEF2K	435	435	Phosphoserine	MOD_RES
+EEF2K	445	445	Phosphoserine; by autocatalysis	MOD_RES
+EEF2K	470	470	Phosphoserine	MOD_RES
+EEF2K	474	474	Phosphoserine; by autocatalysis	MOD_RES
+EEF2K	477	477	Phosphoserine	MOD_RES
+EEF2K	491	491	Phosphoserine; by autocatalysis	MOD_RES
+EEF2K	500	500	Phosphoserine; by PKA	MOD_RES
+EEF2K	1	53	Disordered	REGION
+EEF2K	81	94	Calmodulin-binding	REGION
+EEF2K	352	405	Disordered	REGION
+EEF2K	423	477	Disordered	REGION
+EEF2K	2	725	Eukaryotic elongation factor 2 kinase	CHAIN
+EFCAB13	488	523	EF-hand 1	DOMAIN
+EFCAB13	524	559	EF-hand 2	DOMAIN
+EFCAB13	633	668	EF-hand 3	DOMAIN
+EFCAB13	756	791	EF-hand 4	DOMAIN
+EFCAB13	792	827	EF-hand 5	DOMAIN
+EFCAB13	864	899	EF-hand 6	DOMAIN
+EFCAB13	384	448	Disordered	REGION
+EFCAB13	1	973	EF-hand calcium-binding domain-containing protein 13	CHAIN
+ELN	776	781		DISULFID
+ELN	34	34	Hydroxyproline	MOD_RES
+ELN	65	65	Hydroxyproline; partial	MOD_RES
+ELN	67	67	Hydroxyproline; partial	MOD_RES
+ELN	88	88	Hydroxyproline; partial	MOD_RES
+ELN	104	104	Allysine	MOD_RES
+ELN	107	107	Allysine	MOD_RES
+ELN	116	116	4-hydroxyproline; partial	MOD_RES
+ELN	156	156	Hydroxyproline; partial	MOD_RES
+ELN	167	167	Hydroxyproline; partial	MOD_RES
+ELN	170	170	Hydroxyproline; partial	MOD_RES
+ELN	177	177	Hydroxyproline; partial	MOD_RES
+ELN	190	190	4-hydroxyproline; partial	MOD_RES
+ELN	241	241	Allysine	MOD_RES
+ELN	261	261	Allysine	MOD_RES
+ELN	265	265	Allysine	MOD_RES
+ELN	283	283	4-hydroxyproline; partial	MOD_RES
+ELN	286	286	4-hydroxyproline; partial	MOD_RES
+ELN	290	290	Hydroxyproline; partial	MOD_RES
+ELN	312	312	Allysine	MOD_RES
+ELN	315	315	Allysine	MOD_RES
+ELN	327	327	4-hydroxyproline; partial	MOD_RES
+ELN	342	342	4-hydroxyproline; partial	MOD_RES
+ELN	347	347	4-hydroxyproline; partial	MOD_RES
+ELN	352	352	Hydroxyproline; partial	MOD_RES
+ELN	355	355	Hydroxyproline; partial	MOD_RES
+ELN	360	360	4-hydroxyproline; partial	MOD_RES
+ELN	375	375	Allysine	MOD_RES
+ELN	379	379	Allysine	MOD_RES
+ELN	382	382	Allysine	MOD_RES
+ELN	415	415	4-hydroxyproline; partial	MOD_RES
+ELN	421	421	Hydroxyproline; partial	MOD_RES
+ELN	427	427	4-hydroxyproline; partial	MOD_RES
+ELN	448	448	Allysine	MOD_RES
+ELN	451	451	Allysine	MOD_RES
+ELN	465	465	Hydroxyproline; partial	MOD_RES
+ELN	481	481	4-hydroxyproline; partial	MOD_RES
+ELN	492	492	Allysine	MOD_RES
+ELN	496	496	Allysine	MOD_RES
+ELN	522	522	Hydroxyproline; partial	MOD_RES
+ELN	550	550	Hydroxyproline; partial	MOD_RES
+ELN	558	558	Allysine	MOD_RES
+ELN	562	562	Allysine	MOD_RES
+ELN	566	566	Allysine	MOD_RES
+ELN	580	580	4-hydroxyproline; partial	MOD_RES
+ELN	589	589	4-hydroxyproline	MOD_RES
+ELN	598	598	4-hydroxyproline	MOD_RES
+ELN	607	607	4-hydroxyproline; partial	MOD_RES
+ELN	646	646	Hydroxyproline; partial	MOD_RES
+ELN	653	653	Allysine	MOD_RES
+ELN	656	656	Allysine	MOD_RES
+ELN	677	677	4-hydroxyproline; partial	MOD_RES
+ELN	693	693	Allysine	MOD_RES
+ELN	697	697	Allysine	MOD_RES
+ELN	735	735	Allysine	MOD_RES
+ELN	738	738	Allysine	MOD_RES
+ELN	769	769	Hydroxyproline; partial	MOD_RES
+ELN	772	772	Hydroxyproline; partial	MOD_RES
+ELN	615	645	Disordered	REGION
+ELN	27	786	Elastin	CHAIN
+ELN	1	26		SIGNAL
+ELOF1	26	26		BINDING
+ELOF1	29	29		BINDING
+ELOF1	50	50		BINDING
+ELOF1	53	53		BINDING
+ELOF1	1	83	Transcription elongation factor 1 homolog	CHAIN
+EPB42	2	2	N-myristoyl glycine	LIPID
+EPB42	248	248	Phosphoserine; by PKA	MOD_RES
+EPB42	31	39	Band 3 binding	REGION
+EPB42	2	691	Protein 4.2	CHAIN
+ERCC6L	122	129		BINDING
+ERCC6L	109	277	Helicase ATP-binding	DOMAIN
+ERCC6L	464	620	Helicase C-terminal	DOMAIN
+ERCC6L	14	14	Phosphoserine	MOD_RES
+ERCC6L	755	755	Phosphoserine	MOD_RES
+ERCC6L	774	774	Phosphoserine	MOD_RES
+ERCC6L	807	807	Phosphoserine	MOD_RES
+ERCC6L	810	810	Phosphoserine	MOD_RES
+ERCC6L	813	813	Phosphothreonine	MOD_RES
+ERCC6L	820	820	Phosphoserine	MOD_RES
+ERCC6L	969	969	Phosphoserine	MOD_RES
+ERCC6L	971	971	Phosphoserine	MOD_RES
+ERCC6L	995	995	Phosphoserine	MOD_RES
+ERCC6L	1004	1004	Phosphoserine	MOD_RES
+ERCC6L	1028	1028	Phosphoserine	MOD_RES
+ERCC6L	1063	1063	Phosphothreonine; by PLK1	MOD_RES
+ERCC6L	1069	1069	Phosphoserine	MOD_RES
+ERCC6L	1098	1098	Phosphoserine	MOD_RES
+ERCC6L	1118	1118	Phosphoserine	MOD_RES
+ERCC6L	1181	1181	Phosphoserine	MOD_RES
+ERCC6L	1188	1188	Phosphoserine	MOD_RES
+ERCC6L	228	231	DEAH box	MOTIF
+ERCC6L	735	768	Disordered	REGION
+ERCC6L	926	946	Disordered	REGION
+ERCC6L	1061	1092	Disordered	REGION
+ERCC6L	1110	1199	Disordered	REGION
+ERCC6L	21	54	TPR 1	REPEAT
+ERCC6L	1200	1233	TPR 2	REPEAT
+ERCC6L	1	1250	DNA excision repair protein ERCC-6-like	CHAIN
+ERICH3	165	187	Disordered	REGION
+ERICH3	408	429	Disordered	REGION
+ERICH3	475	661	Disordered	REGION
+ERICH3	673	724	Disordered	REGION
+ERICH3	773	870	Disordered	REGION
+ERICH3	923	1146	Disordered	REGION
+ERICH3	1167	1334	Disordered	REGION
+ERICH3	1360	1383	Disordered	REGION
+ERICH3	1425	1530	Disordered	REGION
+ERICH3	1	1530	Glutamate-rich protein 3	CHAIN
+ERICH6B	1	105	Disordered	REGION
+ERICH6B	1	696	Glutamate-rich protein 6B	CHAIN
+ETV3L	39	120	ETS	DNA_BIND
+ETV3L	178	201	Disordered	REGION
+ETV3L	1	361	ETS translocation variant 3-like protein	CHAIN
+EXOC3L1	1	370	Mediates interaction with EXOC2, EXOC4 and EXOC5	REGION
+EXOC3L1	1	23	Disordered	REGION
+EXOC3L1	1	746	Exocyst complex component 3-like protein	CHAIN
+FAM13A	666	730		COILED
+FAM13A	946	978		COILED
+FAM13A	43	231	Rho-GAP	DOMAIN
+FAM13A	345	345	Phosphoserine	MOD_RES
+FAM13A	597	597	Phosphoserine	MOD_RES
+FAM13A	617	617	Phosphoserine	MOD_RES
+FAM13A	727	727	Phosphoserine	MOD_RES
+FAM13A	732	732	Phosphothreonine	MOD_RES
+FAM13A	269	290	Disordered	REGION
+FAM13A	381	437	Disordered	REGION
+FAM13A	459	562	Disordered	REGION
+FAM13A	628	663	Disordered	REGION
+FAM13A	726	759	Disordered	REGION
+FAM13A	1	1023	Protein FAM13A	CHAIN
+FAM13B	23	212	Rho-GAP	DOMAIN
+FAM13B	487	521	Disordered	REGION
+FAM13B	621	671	Disordered	REGION
+FAM13B	1	915	Protein FAM13B	CHAIN
+FAM161B	262	292		COILED
+FAM161B	510	546		COILED
+FAM161B	1	39	Disordered	REGION
+FAM161B	89	110	Disordered	REGION
+FAM161B	135	167	Disordered	REGION
+FAM161B	332	352	Disordered	REGION
+FAM161B	388	439	Disordered	REGION
+FAM161B	583	647	Disordered	REGION
+FAM161B	1	647	Protein FAM161B	CHAIN
+FAM181A	1	35	Disordered	REGION
+FAM181A	117	160	Disordered	REGION
+FAM181A	172	193	Disordered	REGION
+FAM181A	1	354	Protein FAM181A	CHAIN
+FAM71E2	244	264	Disordered	REGION
+FAM71E2	292	317	Disordered	REGION
+FAM71E2	373	404	Disordered	REGION
+FAM71E2	424	597	Disordered	REGION
+FAM71E2	758	830	Disordered	REGION
+FAM71E2	842	869	Disordered	REGION
+FAM71E2	1	922	Golgi-associated RAB2 interactor protein 5B	CHAIN
+FANCB	2	2	N-acetylthreonine	MOD_RES
+FANCB	2	859	Fanconi anemia group B protein	CHAIN
+FANCE	249	249	Phosphoserine	MOD_RES
+FANCE	346	346	Phosphothreonine; by CHEK1	MOD_RES
+FANCE	374	374	Phosphoserine; by CHEK1	MOD_RES
+FANCE	150	371	Interaction with FANCC	REGION
+FANCE	171	252	Disordered	REGION
+FANCE	1	536	Fanconi anemia group E protein	CHAIN
+FBLN7	124	124	N-linked (GlcNAc...) asparagine	CARBOHYD
+FBLN7	307	307	N-linked (GlcNAc...) asparagine	CARBOHYD
+FBLN7	28	53		COILED
+FBLN7	81	121		DISULFID
+FBLN7	107	134		DISULFID
+FBLN7	140	151		DISULFID
+FBLN7	145	160		DISULFID
+FBLN7	162	171		DISULFID
+FBLN7	228	244		DISULFID
+FBLN7	240	253		DISULFID
+FBLN7	255	268		DISULFID
+FBLN7	274	287		DISULFID
+FBLN7	281	296		DISULFID
+FBLN7	301	318		DISULFID
+FBLN7	79	136	Sushi	DOMAIN
+FBLN7	136	172	EGF-like 1; calcium-binding	DOMAIN
+FBLN7	224	269	EGF-like 2; calcium-binding	DOMAIN
+FBLN7	270	319	EGF-like 3; calcium-binding	DOMAIN
+FBLN7	25	439	Fibulin-7	CHAIN
+FBLN7	1	24		SIGNAL
+FBXW12	1	45	F-box	DOMAIN
+FBXW12	89	132	WD 1	REPEAT
+FBXW12	136	174	WD 2	REPEAT
+FBXW12	178	217	WD 3	REPEAT
+FBXW12	222	263	WD 4	REPEAT
+FBXW12	270	315	WD 5	REPEAT
+FBXW12	320	367	WD 6	REPEAT
+FBXW12	370	407	WD 7	REPEAT
+FBXW12	416	461	WD 8	REPEAT
+FBXW12	1	464	F-box/WD repeat-containing protein 12	CHAIN
+FCRL6	65	65	N-linked (GlcNAc...) asparagine	CARBOHYD
+FCRL6	273	273	N-linked (GlcNAc...) asparagine	CARBOHYD
+FCRL6	39	83		DISULFID
+FCRL6	132	180		DISULFID
+FCRL6	228	276		DISULFID
+FCRL6	20	95	Ig-like C2-type 1	DOMAIN
+FCRL6	111	197	Ig-like C2-type 2	DOMAIN
+FCRL6	207	293	Ig-like C2-type 3	DOMAIN
+FCRL6	371	371	Phosphotyrosine	MOD_RES
+FCRL6	369	374	ITIM motif	MOTIF
+FCRL6	20	434	Fc receptor-like protein 6	CHAIN
+FCRL6	1	19		SIGNAL
+FGF21	143	209	Disordered	REGION
+FGF21	29	209	Fibroblast growth factor 21	CHAIN
+FGF21	1	28		SIGNAL
+FOXK1	305	400	Fork-head	DNA_BIND
+FOXK1	123	175	FHA	DOMAIN
+FOXK1	2	2	N-acetylalanine	MOD_RES
+FOXK1	101	101	Phosphoserine	MOD_RES
+FOXK1	161	161	Omega-N-methylarginine	MOD_RES
+FOXK1	191	191	Omega-N-methylarginine	MOD_RES
+FOXK1	213	213	Phosphoserine	MOD_RES
+FOXK1	223	223	Phosphoserine	MOD_RES
+FOXK1	239	239	Phosphoserine	MOD_RES
+FOXK1	243	243	Phosphoserine	MOD_RES
+FOXK1	245	245	Phosphothreonine	MOD_RES
+FOXK1	247	247	Phosphothreonine	MOD_RES
+FOXK1	253	253	Phosphoserine	MOD_RES
+FOXK1	257	257	Phosphoserine	MOD_RES
+FOXK1	295	295	Phosphoserine	MOD_RES
+FOXK1	299	299	Phosphoserine	MOD_RES
+FOXK1	416	416	Phosphoserine	MOD_RES
+FOXK1	420	420	Phosphoserine	MOD_RES
+FOXK1	422	422	Phosphothreonine	MOD_RES
+FOXK1	428	428	Phosphoserine	MOD_RES
+FOXK1	436	436	Phosphothreonine	MOD_RES
+FOXK1	441	441	Phosphoserine	MOD_RES
+FOXK1	445	445	Phosphoserine	MOD_RES
+FOXK1	459	459	Phosphoserine	MOD_RES
+FOXK1	2	40	Interaction with SIN3A and SIN3B	REGION
+FOXK1	36	79	Disordered	REGION
+FOXK1	95	420	Required for interaction with FOXO4 and MEF2C	REGION
+FOXK1	287	306	Disordered	REGION
+FOXK1	413	436	Disordered	REGION
+FOXK1	676	733	Disordered	REGION
+FOXK1	2	733	Forkhead box protein K1	CHAIN
+FOXP3	250	250	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+FOXP3	252	252	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+FOXP3	263	263	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate	CROSSLNK
+FOXP3	268	268	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin); alternate	CROSSLNK
+FOXP3	393	393	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+FOXP3	337	423	Fork-head	DNA_BIND
+FOXP3	19	19	Phosphoserine; by CDK2	MOD_RES
+FOXP3	31	31	N6-acetyllysine	MOD_RES
+FOXP3	263	263	N6-acetyllysine; alternate	MOD_RES
+FOXP3	268	268	N6-acetyllysine; alternate	MOD_RES
+FOXP3	418	418	Phosphoserine	MOD_RES
+FOXP3	68	76	Nuclear export signal	MOTIF
+FOXP3	92	96	LXXLL motif	MOTIF
+FOXP3	239	248	Nuclear export signal	MOTIF
+FOXP3	414	417	Nuclear localization signal	MOTIF
+FOXP3	1	68	Disordered	REGION
+FOXP3	106	198	Interaction with ZFP90	REGION
+FOXP3	106	190	Essential for transcriptional repressor activity and for interaction with KAT5 and HDAC7	REGION
+FOXP3	149	199	Interaction with IKZF4	REGION
+FOXP3	239	260	Leucine-zipper	REGION
+FOXP3	278	336	Interaction with RUNX1	REGION
+FOXP3	51	52	Cleavage	SITE
+FOXP3	417	418	Cleavage; by PCSK1 or PCSK2	SITE
+FOXP3	197	222	C2H2-type	ZN_FING
+FOXP3	1	431	Forkhead box protein P3	CHAIN
+FOXP3	1	417	Forkhead box protein P3, C-terminally processed	CHAIN
+FOXP3	52	417	Forkhead box protein P3 41 kDa form	CHAIN
+FOXR1	173	272	Fork-head	DNA_BIND
+FOXR1	31	50	Disordered	REGION
+FOXR1	65	166	Disordered	REGION
+FOXR1	1	292	Forkhead box protein R1	CHAIN
+FXYD6	69	95	Disordered	REGION
+FXYD6	19	95	FXYD domain-containing ion transport regulator 6	CHAIN
+FXYD6	1	18		SIGNAL
+G6PC2	79	79		BINDING
+G6PC2	168	168		BINDING
+G6PC2	92	92	N-linked (GlcNAc...) asparagine	CARBOHYD
+G6PC2	352	355	Prevents secretion from ER	MOTIF
+G6PC2	1	355	Glucose-6-phosphatase 2	CHAIN
+GALNT15	174	174		BINDING
+GALNT15	204	204		BINDING
+GALNT15	227	227		BINDING
+GALNT15	228	228		BINDING
+GALNT15	229	229		BINDING
+GALNT15	332	332		BINDING
+GALNT15	360	360		BINDING
+GALNT15	87	87	N-linked (GlcNAc...) asparagine	CARBOHYD
+GALNT15	124	355		DISULFID
+GALNT15	346	422		DISULFID
+GALNT15	504	631	Ricin B-type lectin	DOMAIN
+GALNT15	133	243	Catalytic subdomain A	REGION
+GALNT15	301	363	Catalytic subdomain B	REGION
+GALNT15	1	443	Inactive polypeptide N-acetylgalactosaminyltransferase-like protein 5	CHAIN
+GHR	46	46	N-linked (GlcNAc...) asparagine	CARBOHYD
+GHR	115	115	N-linked (GlcNAc...) asparagine	CARBOHYD
+GHR	156	156	N-linked (GlcNAc...) asparagine	CARBOHYD
+GHR	161	161	N-linked (GlcNAc...) asparagine	CARBOHYD
+GHR	200	200	N-linked (GlcNAc...) asparagine	CARBOHYD
+GHR	56	66		DISULFID
+GHR	101	112		DISULFID
+GHR	126	140		DISULFID
+GHR	151	254	Fibronectin type-III	DOMAIN
+GHR	341	341	Phosphoserine	MOD_RES
+GHR	240	244	WSXWS motif	MOTIF
+GHR	297	305	Box 1 motif	MOTIF
+GHR	340	349	UbE motif	MOTIF
+GHR	260	262	Required for ADAM17-mediated proteolysis	REGION
+GHR	353	391	Disordered	REGION
+GHR	345	345	Required for endocytosis and down-regulation	SITE
+GHR	19	638	Growth hormone receptor	CHAIN
+GHR	19	256	Growth hormone-binding protein	CHAIN
+GHR	1	18		SIGNAL
+GLB1L	97	97	N-linked (GlcNAc...) asparagine	CARBOHYD
+GLB1L	243	243	N-linked (GlcNAc...) asparagine	CARBOHYD
+GLB1L	28	654	Beta-galactosidase-1-like protein	CHAIN
+GLB1L	1	27		SIGNAL
+GPRIN1	999	999	S-palmitoyl cysteine	LIPID
+GPRIN1	1000	1000	S-palmitoyl cysteine	LIPID
+GPRIN1	60	60	Phosphothreonine	MOD_RES
+GPRIN1	64	64	Phosphoserine	MOD_RES
+GPRIN1	75	75	Phosphoserine	MOD_RES
+GPRIN1	237	237	Phosphoserine	MOD_RES
+GPRIN1	436	436	Phosphoserine	MOD_RES
+GPRIN1	452	452	Phosphoserine	MOD_RES
+GPRIN1	615	615	Phosphoserine	MOD_RES
+GPRIN1	737	737	Phosphoserine	MOD_RES
+GPRIN1	799	799	Phosphoserine	MOD_RES
+GPRIN1	877	877	Phosphothreonine	MOD_RES
+GPRIN1	895	895	Phosphoserine	MOD_RES
+GPRIN1	914	914	Phosphoserine	MOD_RES
+GPRIN1	993	993	Phosphoserine	MOD_RES
+GPRIN1	1	859	Disordered	REGION
+GPRIN1	899	1008	Interaction with GNAO1	REGION
+GPRIN1	943	986	Disordered	REGION
+GPRIN1	1	1008	G protein-regulated inducer of neurite outgrowth 1	CHAIN
+GSDMC	1	257	Triggers pyroptosis	REGION
+GSDMC	240	241	Cleavage; by CASP8	SITE
+GSDMC	365	366	Cleavage; by CASP8	SITE
+GSDMC	1	508	Gasdermin-C	CHAIN
+GSDMC	1	240	Gasdermin-C, N-terminal	CHAIN
+GSDMC	241	508	Gasdermin-C, C-terminal	CHAIN
+GTPBP8	117	124		BINDING
+GTPBP8	124	124		BINDING
+GTPBP8	146	150		BINDING
+GTPBP8	148	148		BINDING
+GTPBP8	164	167		BINDING
+GTPBP8	226	229		BINDING
+GTPBP8	261	263		BINDING
+GTPBP8	109	282	EngB-type G	DOMAIN
+GTPBP8	1	284	GTP-binding protein 8	CHAIN
+GUCD1	1	240	Protein GUCD1	CHAIN
+GYG1	9	15		BINDING
+GYG1	77	77		BINDING
+GYG1	102	104		BINDING
+GYG1	102	102		BINDING
+GYG1	104	104		BINDING
+GYG1	133	135		BINDING
+GYG1	160	164		BINDING
+GYG1	212	218		BINDING
+GYG1	212	212		BINDING
+GYG1	195	195	O-linked (Glc...) tyrosine	CARBOHYD
+GYG1	2	2	N-acetylthreonine	MOD_RES
+GYG1	44	44	Phosphoserine	MOD_RES
+GYG1	301	333	Interaction with GYS1	REGION
+GYG1	86	86	Important for catalytic activity	SITE
+GYG1	2	350	Glycogenin-1	CHAIN
+HAUS7	203	236		COILED
+HAUS7	16	16	Phosphoserine	MOD_RES
+HAUS7	1	20	Disordered	REGION
+HAUS7	1	358	HAUS augmin-like complex subunit 7	CHAIN
+HCFC1R1	110	119	Nuclear export signal	MOTIF
+HCFC1R1	76	79	Interaction with HCFC1	REGION
+HCFC1R1	1	138	Host cell factor C1 regulator 1	CHAIN
+HCFC2	553	553	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HCFC2	359	449	Fibronectin type-III 1	DOMAIN
+HCFC2	583	675	Fibronectin type-III 2	DOMAIN
+HCFC2	677	787	Fibronectin type-III 3	DOMAIN
+HCFC2	399	447	Disordered	REGION
+HCFC2	34	79	Kelch 1	REPEAT
+HCFC2	83	130	Kelch 2	REPEAT
+HCFC2	207	255	Kelch 3	REPEAT
+HCFC2	257	303	Kelch 4	REPEAT
+HCFC2	1	792	Host cell factor 2	CHAIN
+HELZ2	791	798		BINDING
+HELZ2	2421	2428		BINDING
+HELZ2	770	1126	UvrD-like helicase ATP-binding	DOMAIN
+HELZ2	2400	2675	UvrD-like helicase ATP-binding 2	DOMAIN
+HELZ2	1253	1253	Phosphoserine	MOD_RES
+HELZ2	914	917	DEAA box	MOTIF
+HELZ2	1322	1326	LXXLL motif 1	MOTIF
+HELZ2	1365	1369	LXXLL motif 2	MOTIF
+HELZ2	1420	1424	LXXLL motif 3	MOTIF
+HELZ2	2259	2263	LXXLL motif 4	MOTIF
+HELZ2	2476	2480	LXXLL motif 5	MOTIF
+HELZ2	9	32	Disordered	REGION
+HELZ2	810	1306	Interaction with THRAP3	REGION
+HELZ2	2382	2896	Interaction with THRAP3	REGION
+HELZ2	90	114	C3H1-type 1	ZN_FING
+HELZ2	217	246	C3H1-type 2	ZN_FING
+HELZ2	287	311	C2H2-type; atypical	ZN_FING
+HELZ2	327	357	C3H1-type 3	ZN_FING
+HELZ2	1	2896	3'-5' exoribonuclease HELZ2	CHAIN
+HEMGN	123	123	Phosphoserine	MOD_RES
+HEMGN	159	159	Phosphoserine	MOD_RES
+HEMGN	181	181	Phosphoserine	MOD_RES
+HEMGN	188	188	Phosphoserine	MOD_RES
+HEMGN	201	201	Phosphoserine	MOD_RES
+HEMGN	246	246	Phosphothreonine	MOD_RES
+HEMGN	349	349	Phosphoserine	MOD_RES
+HEMGN	353	353	Phosphoserine	MOD_RES
+HEMGN	360	360	Phosphothreonine	MOD_RES
+HEMGN	363	363	Phosphoserine	MOD_RES
+HEMGN	367	367	Phosphoserine	MOD_RES
+HEMGN	1	32	Disordered	REGION
+HEMGN	7	87	Necessary for nuclear localization	REGION
+HEMGN	44	91	Disordered	REGION
+HEMGN	265	290	Disordered	REGION
+HEMGN	306	369	Disordered	REGION
+HEMGN	386	471	Disordered	REGION
+HEMGN	1	484	Hemogen	CHAIN
+HEPN1	1	88	Putative cancer susceptibility gene HEPN1 protein	CHAIN
+HGH1	2	2	N-acetylglycine	MOD_RES
+HGH1	17	17	Phosphoserine	MOD_RES
+HGH1	214	214	Phosphoserine	MOD_RES
+HGH1	388	388	Phosphothreonine	MOD_RES
+HGH1	371	390	Disordered	REGION
+HGH1	2	390	Protein HGH1 homolog	CHAIN
+HJURP	354	354	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HJURP	581	581	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HJURP	586	586	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HJURP	123	123	Phosphoserine	MOD_RES
+HJURP	140	140	Phosphoserine	MOD_RES
+HJURP	185	185	Phosphoserine	MOD_RES
+HJURP	201	201	Phosphoserine	MOD_RES
+HJURP	211	211	Phosphoserine	MOD_RES
+HJURP	412	412	Phosphoserine	MOD_RES
+HJURP	448	448	Phosphoserine	MOD_RES
+HJURP	473	473	Phosphoserine	MOD_RES
+HJURP	486	486	Phosphoserine; by PKB/AKT1	MOD_RES
+HJURP	496	496	Phosphoserine	MOD_RES
+HJURP	595	595	Phosphoserine	MOD_RES
+HJURP	642	642	Phosphoserine	MOD_RES
+HJURP	191	226	Disordered	REGION
+HJURP	512	574	Disordered	REGION
+HJURP	670	748	Disordered	REGION
+HJURP	1	748	Holliday junction recognition protein	CHAIN
+HMGXB3	42	110	HMG box	DNA_BIND
+HMGXB3	363	391	Disordered	REGION
+HMGXB3	448	505	Disordered	REGION
+HMGXB3	562	588	Disordered	REGION
+HMGXB3	1	1292	HMG domain-containing protein 3	CHAIN
+HMHB1	9	17	Loss of recognition by cytotoxic T lymphocyte (CTL)	REGION
+HMHB1	1	41	Minor histocompatibility protein HB-1	CHAIN
+HNRNPL	59	59	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HNRNPL	62	62	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HNRNPL	136	136	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HNRNPL	302	302	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HNRNPL	568	568	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+HNRNPL	102	176	RRM 1	DOMAIN
+HNRNPL	193	270	RRM 2	DOMAIN
+HNRNPL	382	478	RRM 3	DOMAIN
+HNRNPL	495	583	RRM 4	DOMAIN
+HNRNPL	52	52	Phosphoserine	MOD_RES
+HNRNPL	101	101	Phosphoserine	MOD_RES
+HNRNPL	185	185	Phosphoserine	MOD_RES
+HNRNPL	269	269	N6-acetyllysine	MOD_RES
+HNRNPL	291	291	Phosphoserine	MOD_RES
+HNRNPL	298	298	Phosphoserine	MOD_RES
+HNRNPL	354	354	Asymmetric dimethylarginine	MOD_RES
+HNRNPL	358	358	Asymmetric dimethylarginine	MOD_RES
+HNRNPL	381	381	Phosphoserine	MOD_RES
+HNRNPL	544	544	Phosphoserine; by CaMK4	MOD_RES
+HNRNPL	1	100	Disordered	REGION
+HNRNPL	284	378	Disordered	REGION
+HNRNPL	1	589	Heterogeneous nuclear ribonucleoprotein L	CHAIN
+HSH2D	34	125	SH2	DOMAIN
+HSH2D	157	199	Disordered	REGION
+HSH2D	241	352	Disordered	REGION
+HSH2D	1	352	Hematopoietic SH2 domain-containing protein	CHAIN
+IFNGR1	34	34	N-linked (GlcNAc...) asparagine	CARBOHYD
+IFNGR1	79	79	N-linked (GlcNAc...) asparagine	CARBOHYD
+IFNGR1	86	86	N-linked (GlcNAc...) asparagine	CARBOHYD
+IFNGR1	179	179	N-linked (GlcNAc...) asparagine	CARBOHYD
+IFNGR1	240	240	N-linked (GlcNAc...) asparagine	CARBOHYD
+IFNGR1	77	85		DISULFID
+IFNGR1	122	167		DISULFID
+IFNGR1	195	200		DISULFID
+IFNGR1	214	235		DISULFID
+IFNGR1	369	369	Phosphoserine	MOD_RES
+IFNGR1	372	372	Phosphothreonine	MOD_RES
+IFNGR1	378	378	Phosphoserine	MOD_RES
+IFNGR1	403	403	Phosphoserine	MOD_RES
+IFNGR1	457	457	Phosphotyrosine	MOD_RES
+IFNGR1	329	437	Disordered	REGION
+IFNGR1	18	489	Interferon gamma receptor 1	CHAIN
+IFNGR1	1	17		SIGNAL
+IGF2	96	96	O-linked (GalNAc...) threonine	CARBOHYD
+IGF2	99	99	O-linked (GalNAc...) threonine	CARBOHYD
+IGF2	163	163	O-linked (GalNAc...) threonine	CARBOHYD
+IGF2	33	71		DISULFID
+IGF2	45	84		DISULFID
+IGF2	70	75		DISULFID
+IGF2	25	52	B	REGION
+IGF2	53	64	C	REGION
+IGF2	65	85	A	REGION
+IGF2	86	91	D	REGION
+IGF2	161	180	Disordered	REGION
+IGF2	48	48	Important for interaction with integrin	SITE
+IGF2	58	58	Important for interaction with integrin	SITE
+IGF2	61	61	Important for interaction with integrin	SITE
+IGF2	62	62	Important for interaction with integrin	SITE
+IGF2	25	91	Insulin-like growth factor II	CHAIN
+IGF2	26	91	Insulin-like growth factor II Ala-25 Del	CHAIN
+IGF2	1	24		SIGNAL
+IGF2R	112	112	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	400	400	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	435	435	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	543	543	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	581	581	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	626	626	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	747	747	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	871	871	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	951	951	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	957	957	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1164	1164	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1246	1246	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1312	1312	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1656	1656	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1757	1757	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	1816	1816	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	2085	2085	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	2136	2136	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGF2R	49	69		DISULFID
+IGF2R	77	84		DISULFID
+IGF2R	117	149		DISULFID
+IGF2R	134	161		DISULFID
+IGF2R	174	212		DISULFID
+IGF2R	228	235		DISULFID
+IGF2R	275	306		DISULFID
+IGF2R	288	318		DISULFID
+IGF2R	328	366		DISULFID
+IGF2R	374	382		DISULFID
+IGF2R	420	454		DISULFID
+IGF2R	434	466		DISULFID
+IGF2R	475	519		DISULFID
+IGF2R	531	538		DISULFID
+IGF2R	572	605		DISULFID
+IGF2R	586	617		DISULFID
+IGF2R	627	664		DISULFID
+IGF2R	672	679		DISULFID
+IGF2R	731	760		DISULFID
+IGF2R	767	814		DISULFID
+IGF2R	823	830		DISULFID
+IGF2R	875	910		DISULFID
+IGF2R	893	922		DISULFID
+IGF2R	934	970		DISULFID
+IGF2R	976	987		DISULFID
+IGF2R	1042	1077		DISULFID
+IGF2R	1084	1125		DISULFID
+IGF2R	1134	1142		DISULFID
+IGF2R	1177	1205		DISULFID
+IGF2R	1190	1217		DISULFID
+IGF2R	1227	1262		DISULFID
+IGF2R	1270	1282		DISULFID
+IGF2R	1319	1349		DISULFID
+IGF2R	1333	1361		DISULFID
+IGF2R	1369	1408		DISULFID
+IGF2R	1420	1427		DISULFID
+IGF2R	1461	1494		DISULFID
+IGF2R	1476	1506		DISULFID
+IGF2R	1516	1553		DISULFID
+IGF2R	1559	1566		DISULFID
+IGF2R	1598	1634		DISULFID
+IGF2R	1614	1646		DISULFID
+IGF2R	1652	1695		DISULFID
+IGF2R	1706	1713		DISULFID
+IGF2R	1750	1783		DISULFID
+IGF2R	1766	1795		DISULFID
+IGF2R	1804	1839		DISULFID
+IGF2R	1850	1856		DISULFID
+IGF2R	1893	1975		DISULFID
+IGF2R	1903	1927		DISULFID
+IGF2R	1917	1942		DISULFID
+IGF2R	1957	1987		DISULFID
+IGF2R	1994	2029		DISULFID
+IGF2R	2039	2046		DISULFID
+IGF2R	2082	2113		DISULFID
+IGF2R	2096	2125		DISULFID
+IGF2R	2188	2194		DISULFID
+IGF2R	2232	2266		DISULFID
+IGF2R	2248	2278		DISULFID
+IGF2R	47	163	MRH 1	DOMAIN
+IGF2R	172	320	MRH 2	DOMAIN
+IGF2R	326	468	MRH 3	DOMAIN
+IGF2R	473	619	MRH 4	DOMAIN
+IGF2R	625	762	MRH 5	DOMAIN
+IGF2R	765	924	MRH 6	DOMAIN
+IGF2R	932	1079	MRH 7	DOMAIN
+IGF2R	1082	1219	MRH 8	DOMAIN
+IGF2R	1225	1363	MRH 9	DOMAIN
+IGF2R	1367	1508	MRH 10	DOMAIN
+IGF2R	1514	1648	MRH 11	DOMAIN
+IGF2R	1650	1797	MRH 12	DOMAIN
+IGF2R	1802	1989	Fibronectin type-II	DOMAIN
+IGF2R	1992	2127	MRH 14	DOMAIN
+IGF2R	2135	2280	MRH 15	DOMAIN
+IGF2R	2352	2352	N6-acetyllysine	MOD_RES
+IGF2R	2409	2409	Phosphoserine	MOD_RES
+IGF2R	2425	2425	Omega-N-methylarginine	MOD_RES
+IGF2R	2479	2479	Phosphoserine	MOD_RES
+IGF2R	2484	2484	Phosphoserine	MOD_RES
+IGF2R	2424	2491	Disordered	REGION
+IGF2R	41	2491	Cation-independent mannose-6-phosphate receptor	CHAIN
+IGF2R	1	40		SIGNAL
+IGFALS	64	64	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	85	85	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	96	96	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	368	368	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	515	515	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	580	580	N-linked (GlcNAc...) asparagine	CARBOHYD
+IGFALS	32	74	LRRNT	DOMAIN
+IGFALS	536	605	LRRCT	DOMAIN
+IGFALS	75	96	LRR 1	REPEAT
+IGFALS	99	120	LRR 2	REPEAT
+IGFALS	123	144	LRR 3	REPEAT
+IGFALS	147	168	LRR 4	REPEAT
+IGFALS	171	192	LRR 5	REPEAT
+IGFALS	195	216	LRR 6	REPEAT
+IGFALS	219	240	LRR 7	REPEAT
+IGFALS	243	264	LRR 8	REPEAT
+IGFALS	267	288	LRR 9	REPEAT
+IGFALS	291	312	LRR 10	REPEAT
+IGFALS	315	336	LRR 11	REPEAT
+IGFALS	339	360	LRR 12	REPEAT
+IGFALS	363	384	LRR 13	REPEAT
+IGFALS	387	408	LRR 14	REPEAT
+IGFALS	411	432	LRR 15	REPEAT
+IGFALS	435	456	LRR 16	REPEAT
+IGFALS	459	480	LRR 17	REPEAT
+IGFALS	483	504	LRR 18	REPEAT
+IGFALS	507	528	LRR 19	REPEAT
+IGFALS	28	605	Insulin-like growth factor-binding protein complex acid labile subunit	CHAIN
+IGFALS	1	27		SIGNAL
+IL12RB1	121	121	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	329	329	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	346	346	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	352	352	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	442	442	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	456	456	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL12RB1	52	62		DISULFID
+IL12RB1	46	136	Fibronectin type-III 1	DOMAIN
+IL12RB1	142	234	Fibronectin type-III 2	DOMAIN
+IL12RB1	237	337	Fibronectin type-III 3	DOMAIN
+IL12RB1	338	444	Fibronectin type-III 4	DOMAIN
+IL12RB1	448	542	Fibronectin type-III 5	DOMAIN
+IL12RB1	222	226	WSXWS motif	MOTIF
+IL12RB1	577	585	Box 1 motif	MOTIF
+IL12RB1	626	648	Disordered	REGION
+IL12RB1	24	662	Interleukin-12 receptor subunit beta-1	CHAIN
+IL12RB1	1	23		SIGNAL
+IL17RC	189	189	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	257	257	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	284	284	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	297	297	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	324	324	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	334	334	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	420	420	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	443	443	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	477	477	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL17RC	265	277		DISULFID
+IL17RC	341	391		DISULFID
+IL17RC	343	359		DISULFID
+IL17RC	400	409		DISULFID
+IL17RC	439	453		DISULFID
+IL17RC	481	488		DISULFID
+IL17RC	515	529		DISULFID
+IL17RC	583	735	SEFIR	DOMAIN
+IL17RC	762	791	Disordered	REGION
+IL17RC	21	791	Interleukin-17 receptor C	CHAIN
+IL17RC	1	20		SIGNAL
+IL23R	29	29	N-linked (GlcNAc...) asparagine; partial	CARBOHYD
+IL23R	47	47	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL23R	81	81	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL23R	141	141	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL23R	180	180	N-linked (GlcNAc...) (high mannose) asparagine	CARBOHYD
+IL23R	232	232	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL23R	262	262	N-linked (GlcNAc...) asparagine	CARBOHYD
+IL23R	273	273	N-linked (GlcNAc...) asparagine; partial	CARBOHYD
+IL23R	127	217	Fibronectin type-III 1	DOMAIN
+IL23R	219	318	Fibronectin type-III 2	DOMAIN
+IL23R	24	629	Interleukin-23 receptor	CHAIN
+IL23R	1	23		SIGNAL
+INCENP	72	72	Phosphoserine	MOD_RES
+INCENP	119	119	Phosphoserine	MOD_RES
+INCENP	143	143	Phosphoserine	MOD_RES
+INCENP	148	148	Phosphoserine	MOD_RES
+INCENP	150	150	Phosphothreonine	MOD_RES
+INCENP	195	195	Phosphothreonine	MOD_RES
+INCENP	197	197	Phosphoserine	MOD_RES
+INCENP	199	199	Phosphothreonine	MOD_RES
+INCENP	213	213	Phosphothreonine	MOD_RES
+INCENP	214	214	Phosphoserine	MOD_RES
+INCENP	219	219	Phosphothreonine	MOD_RES
+INCENP	239	239	Phosphothreonine	MOD_RES
+INCENP	263	263	Phosphoserine	MOD_RES
+INCENP	269	269	Phosphoserine	MOD_RES
+INCENP	275	275	Phosphoserine	MOD_RES
+INCENP	292	292	Phosphothreonine	MOD_RES
+INCENP	296	296	Phosphoserine	MOD_RES
+INCENP	306	306	Phosphoserine	MOD_RES
+INCENP	312	312	Phosphoserine	MOD_RES
+INCENP	314	314	Phosphoserine	MOD_RES
+INCENP	330	330	Phosphoserine	MOD_RES
+INCENP	400	400	Phosphoserine	MOD_RES
+INCENP	406	406	Phosphothreonine	MOD_RES
+INCENP	446	446	Phosphoserine	MOD_RES
+INCENP	476	476	Phosphoserine	MOD_RES
+INCENP	478	478	Phosphothreonine	MOD_RES
+INCENP	480	480	Phosphoserine	MOD_RES
+INCENP	510	510	Phosphoserine	MOD_RES
+INCENP	514	514	Phosphoserine	MOD_RES
+INCENP	828	828	Phosphoserine	MOD_RES
+INCENP	831	831	Phosphoserine	MOD_RES
+INCENP	832	832	Phosphothreonine	MOD_RES
+INCENP	892	892	Phosphothreonine; by AURKB and AURKC	MOD_RES
+INCENP	893	893	Phosphoserine; by AURKB and AURKC	MOD_RES
+INCENP	894	894	Phosphoserine; by AURKB and AURKC	MOD_RES
+INCENP	899	899	Phosphoserine	MOD_RES
+INCENP	914	914	Phosphoserine	MOD_RES
+INCENP	167	171	PXVXL/I motif	MOTIF
+INCENP	48	105	Disordered	REGION
+INCENP	124	248	Interaction with CBX5	REGION
+INCENP	138	159	Disordered	REGION
+INCENP	190	253	Disordered	REGION
+INCENP	285	316	Disordered	REGION
+INCENP	371	489	Disordered	REGION
+INCENP	531	765	SAH	REGION
+INCENP	607	640	Disordered	REGION
+INCENP	660	740	Disordered	REGION
+INCENP	754	787	Disordered	REGION
+INCENP	822	897	Interaction with AURKC	REGION
+INCENP	826	900	IN box	REGION
+INCENP	826	845	Disordered	REGION
+INCENP	1	918	Inner centromere protein	CHAIN
+INPP5E	641	641	S-farnesyl cysteine	LIPID
+INPP5E	64	64	N6-succinyllysine	MOD_RES
+INPP5E	299	299	N6-acetyllysine	MOD_RES
+INPP5E	1	193	Disordered	REGION
+INPP5E	10	242	13 X 4 AA repeats of P-X-X-P	REGION
+INPP5E	10	13	1	REPEAT
+INPP5E	15	18	2	REPEAT
+INPP5E	28	31	3	REPEAT
+INPP5E	39	42	4	REPEAT
+INPP5E	55	58	5	REPEAT
+INPP5E	69	71	6	REPEAT
+INPP5E	72	74	7	REPEAT
+INPP5E	75	78	8	REPEAT
+INPP5E	121	124	9	REPEAT
+INPP5E	169	172	10	REPEAT
+INPP5E	183	185	11	REPEAT
+INPP5E	190	193	12	REPEAT
+INPP5E	236	239	13	REPEAT
+INPP5E	1	33	Mitochondrion	TRANSIT
+INPP5E	34	525	Mitochondrial-processing peptidase subunit alpha	CHAIN
+INSL6	33	179		DISULFID
+INSL6	45	192		DISULFID
+INSL6	178	183		DISULFID
+INSL6	21	213	Insulin-like peptide INSL6	CHAIN
+INSL6	1	20		SIGNAL
+IQCC	6	35	IQ	DOMAIN
+IQCC	438	438	Phosphoserine	MOD_RES
+IQCC	105	157	Disordered	REGION
+IQCC	214	233	Disordered	REGION
+IQCC	238	310	Disordered	REGION
+IQCC	394	466	Disordered	REGION
+IQCC	1	466	IQ domain-containing protein C	CHAIN
+ITIH4	81	81	N-linked (GlcNAc...) asparagine	CARBOHYD
+ITIH4	207	207	N-linked (GlcNAc...) asparagine	CARBOHYD
+ITIH4	274	274	N-linked (GlcNAc...) asparagine; atypical	CARBOHYD
+ITIH4	517	517	N-linked (GlcNAc...) asparagine	CARBOHYD
+ITIH4	577	577	N-linked (GlcNAc...) asparagine	CARBOHYD
+ITIH4	719	719	O-linked (GalNAc...) threonine	CARBOHYD
+ITIH4	720	720	O-linked (GalNAc...) threonine	CARBOHYD
+ITIH4	722	722	O-linked (GalNAc...) threonine	CARBOHYD
+ITIH4	747	925		DISULFID
+ITIH4	29	148	VIT	DOMAIN
+ITIH4	272	432	VWFA	DOMAIN
+ITIH4	595	618	Disordered	REGION
+ITIH4	658	688	Proline-rich (PRR) potential bioactive peptide	REGION
+ITIH4	719	725	O-glycosylated at three sites	REGION
+ITIH4	688	689	Cleavage; by kallikrein	SITE
+ITIH4	29	661	70 kDa inter-alpha-trypsin inhibitor heavy chain H4	CHAIN
+ITIH4	689	930	35 kDa inter-alpha-trypsin inhibitor heavy chain H4	CHAIN
+ITIH4	1	28		SIGNAL
+IVL	496	496	Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-? in other proteins)	CROSSLNK
+IVL	79	79	Omega-hydroxyceramide glutamate ester	LIPID
+IVL	118	118	Omega-hydroxyceramide glutamate ester	LIPID
+IVL	133	133	Omega-hydroxyceramide glutamate ester	LIPID
+IVL	1	132	Disordered	REGION
+IVL	149	540	Disordered	REGION
+IVL	153	542	39 X 10 AA approximate tandem repeats of [LP]-[EKG]-[LHVYQEK]-[PLSQE]-[EQDV]-[QHEKRGA]-Q-[EMVQLP]-[GKLE]-[QHVNLD]	REGION
+IVL	153	162	1	REPEAT
+IVL	163	172	2	REPEAT
+IVL	173	182	3	REPEAT
+IVL	183	192	4	REPEAT
+IVL	193	202	5	REPEAT
+IVL	203	212	6	REPEAT
+IVL	213	222	7	REPEAT
+IVL	223	232	8	REPEAT
+IVL	233	242	9	REPEAT
+IVL	243	252	10	REPEAT
+IVL	253	262	11	REPEAT
+IVL	263	272	12	REPEAT
+IVL	273	282	13	REPEAT
+IVL	283	292	14	REPEAT
+IVL	293	302	15	REPEAT
+IVL	303	312	16	REPEAT
+IVL	313	322	17	REPEAT
+IVL	323	332	18	REPEAT
+IVL	333	342	19	REPEAT
+IVL	343	352	20	REPEAT
+IVL	353	362	21	REPEAT
+IVL	363	372	22	REPEAT
+IVL	373	382	23	REPEAT
+IVL	383	392	24; approximate	REPEAT
+IVL	393	402	25	REPEAT
+IVL	403	412	26	REPEAT
+IVL	413	422	27	REPEAT
+IVL	423	432	28	REPEAT
+IVL	433	442	29	REPEAT
+IVL	443	452	30	REPEAT
+IVL	453	462	31	REPEAT
+IVL	463	472	32	REPEAT
+IVL	473	482	33	REPEAT
+IVL	483	492	34	REPEAT
+IVL	493	502	35	REPEAT
+IVL	503	512	36; approximate	REPEAT
+IVL	513	522	37	REPEAT
+IVL	523	532	38	REPEAT
+IVL	533	542	39; approximate	REPEAT
+IVL	1	585	Involucrin	CHAIN
+JCAD	1044	1044	Phosphoserine	MOD_RES
+JCAD	1050	1050	Phosphoserine	MOD_RES
+JCAD	1194	1194	Phosphoserine	MOD_RES
+JCAD	1281	1281	Phosphoserine	MOD_RES
+JCAD	1	147	Disordered	REGION
+JCAD	249	411	Disordered	REGION
+JCAD	454	554	Disordered	REGION
+JCAD	591	813	Disordered	REGION
+JCAD	840	1076	Disordered	REGION
+JCAD	1105	1141	Disordered	REGION
+JCAD	1157	1207	Disordered	REGION
+JCAD	1225	1260	Disordered	REGION
+JCAD	1276	1359	Disordered	REGION
+JCAD	1	1359	Junctional cadherin 5-associated protein	CHAIN
+JSRP1	1	118	Disordered	REGION
+JSRP1	3	76	Mediates interaction with CACNA1S	REGION
+JSRP1	157	331	Disordered	REGION
+JSRP1	1	331	Junctional sarcoplasmic reticulum protein 1	CHAIN
+KCNT1	133	133	N-linked (GlcNAc...) asparagine	CARBOHYD
+KCNT1	137	137	N-linked (GlcNAc...) asparagine	CARBOHYD
+KCNT1	475	596	RCK N-terminal	DOMAIN
+KCNT1	1	37	Disordered	REGION
+KCNT1	660	689	Disordered	REGION
+KCNT1	1048	1078	Disordered	REGION
+KCNT1	1204	1230	Disordered	REGION
+KCNT1	1	1230	Potassium channel subfamily T member 1	CHAIN
+KIAA1614	1	77	Disordered	REGION
+KIAA1614	98	223	Disordered	REGION
+KIAA1614	313	366	Disordered	REGION
+KIAA1614	378	457	Disordered	REGION
+KIAA1614	613	663	Disordered	REGION
+KIAA1614	685	823	Disordered	REGION
+KIAA1614	831	850	Disordered	REGION
+KIAA1614	877	930	Disordered	REGION
+KIAA1614	942	999	Disordered	REGION
+KIAA1614	1015	1063	Disordered	REGION
+KIAA1614	1087	1106	Disordered	REGION
+KIAA1614	1	1190	Uncharacterized protein KIAA1614	CHAIN
+KLC1	27	156		COILED
+KLC1	162	162	Phosphoserine	MOD_RES
+KLC1	449	449	Phosphotyrosine	MOD_RES
+KLC1	460	460	Phosphoserine	MOD_RES
+KLC1	521	521	Phosphoserine; by AMPK	MOD_RES
+KLC1	524	524	Phosphoserine; by AMPK	MOD_RES
+KLC1	600	600	Phosphoserine	MOD_RES
+KLC1	631	631	Phosphoserine	MOD_RES
+KLC1	591	591	Phosphoserine	MOD_RES
+KLC1	622	622	Phosphoserine	MOD_RES
+KLC1	547	547	Phosphoserine	MOD_RES
+KLC1	578	578	Phosphoserine	MOD_RES
+KLC1	600	600	Phosphoserine	MOD_RES
+KLC1	155	203	Disordered	REGION
+KLC1	553	573	Disordered	REGION
+KLC1	213	246	TPR 1	REPEAT
+KLC1	255	288	TPR 2	REPEAT
+KLC1	297	330	TPR 3	REPEAT
+KLC1	339	372	TPR 4	REPEAT
+KLC1	381	414	TPR 5	REPEAT
+KLC1	464	497	TPR 6	REPEAT
+KLC1	1	573	Kinesin light chain 1	CHAIN
+KLF18	964	988	C2H2-type 1	ZN_FING
+KLF18	994	1018	C2H2-type 2	ZN_FING
+KLF18	1024	1046	C2H2-type 3	ZN_FING
+KLF18	1	1052	Kruppel-like factor 18	CHAIN
+KRT2	178	491	IF rod	DOMAIN
+KRT2	12	12	Omega-N-methylarginine	MOD_RES
+KRT2	20	20	Asymmetric dimethylarginine	MOD_RES
+KRT2	23	23	Phosphoserine	MOD_RES
+KRT2	26	26	Phosphoserine	MOD_RES
+KRT2	62	62	Phosphoserine	MOD_RES
+KRT2	1	177	Head	REGION
+KRT2	178	213	Coil 1A	REGION
+KRT2	214	232	Linker 1	REGION
+KRT2	233	324	Coil 1B	REGION
+KRT2	325	348	Linker 12	REGION
+KRT2	349	487	Coil 2	REGION
+KRT2	488	639	Tail	REGION
+KRT2	514	559	Disordered	REGION
+KRT2	574	639	Disordered	REGION
+KRT2	429	429	Stutter	SITE
+KRT2	1	639	Keratin, type II cytoskeletal 2 epidermal	CHAIN
+KRTAP10-1	26	266	24 X 5 AA repeats of C-C-X(3)	REGION
+KRTAP10-1	26	30	1	REPEAT
+KRTAP10-1	31	35	2	REPEAT
+KRTAP10-1	36	40	3	REPEAT
+KRTAP10-1	57	61	4	REPEAT
+KRTAP10-1	79	83	5	REPEAT
+KRTAP10-1	89	93	6	REPEAT
+KRTAP10-1	99	103	7	REPEAT
+KRTAP10-1	104	108	8	REPEAT
+KRTAP10-1	109	113	9	REPEAT
+KRTAP10-1	121	125	10	REPEAT
+KRTAP10-1	131	135	11	REPEAT
+KRTAP10-1	141	145	12	REPEAT
+KRTAP10-1	146	150	13	REPEAT
+KRTAP10-1	163	167	14	REPEAT
+KRTAP10-1	173	177	15	REPEAT
+KRTAP10-1	183	187	16	REPEAT
+KRTAP10-1	193	197	17	REPEAT
+KRTAP10-1	198	202	18	REPEAT
+KRTAP10-1	210	214	19	REPEAT
+KRTAP10-1	220	224	20	REPEAT
+KRTAP10-1	225	229	21	REPEAT
+KRTAP10-1	244	248	22	REPEAT
+KRTAP10-1	251	255	23	REPEAT
+KRTAP10-1	262	266	24	REPEAT
+KRTAP10-1	1	282	Keratin-associated protein 10-1	CHAIN
+KRTAP10-3	26	214	18 X 5 AA repeats of C-C-X(3)	REGION
+KRTAP10-3	26	30	1	REPEAT
+KRTAP10-3	31	35	2	REPEAT
+KRTAP10-3	36	40	3	REPEAT
+KRTAP10-3	57	61	4	REPEAT
+KRTAP10-3	79	83	5	REPEAT
+KRTAP10-3	89	93	6	REPEAT
+KRTAP10-3	99	103	7	REPEAT
+KRTAP10-3	104	108	8	REPEAT
+KRTAP10-3	109	113	9	REPEAT
+KRTAP10-3	114	118	10	REPEAT
+KRTAP10-3	119	123	11	REPEAT
+KRTAP10-3	124	128	12	REPEAT
+KRTAP10-3	136	140	13	REPEAT
+KRTAP10-3	146	150	14	REPEAT
+KRTAP10-3	151	155	15	REPEAT
+KRTAP10-3	177	181	16	REPEAT
+KRTAP10-3	188	192	17	REPEAT
+KRTAP10-3	210	214	18	REPEAT
+KRTAP10-3	1	221	Keratin-associated protein 10-3	CHAIN
+KRTAP10-4	36	395	36 X 5 AA repeats of C-C-X(3)	REGION
+KRTAP10-4	36	40	1	REPEAT
+KRTAP10-4	41	45	2	REPEAT
+KRTAP10-4	46	50	3	REPEAT
+KRTAP10-4	67	71	4	REPEAT
+KRTAP10-4	89	93	5	REPEAT
+KRTAP10-4	99	103	6	REPEAT
+KRTAP10-4	109	113	7	REPEAT
+KRTAP10-4	114	118	8	REPEAT
+KRTAP10-4	119	123	9	REPEAT
+KRTAP10-4	124	128	10	REPEAT
+KRTAP10-4	129	133	11	REPEAT
+KRTAP10-4	135	139	12	REPEAT
+KRTAP10-4	145	149	13	REPEAT
+KRTAP10-4	155	159	14	REPEAT
+KRTAP10-4	160	164	15	REPEAT
+KRTAP10-4	172	176	16	REPEAT
+KRTAP10-4	186	190	17	REPEAT
+KRTAP10-4	208	212	18	REPEAT
+KRTAP10-4	218	222	19	REPEAT
+KRTAP10-4	228	232	20	REPEAT
+KRTAP10-4	233	237	21	REPEAT
+KRTAP10-4	238	242	22	REPEAT
+KRTAP10-4	250	254	23	REPEAT
+KRTAP10-4	270	274	24	REPEAT
+KRTAP10-4	275	279	25	REPEAT
+KRTAP10-4	280	284	26	REPEAT
+KRTAP10-4	297	301	27	REPEAT
+KRTAP10-4	307	311	28	REPEAT
+KRTAP10-4	317	321	29	REPEAT
+KRTAP10-4	322	326	30	REPEAT
+KRTAP10-4	339	343	31	REPEAT
+KRTAP10-4	349	353	33	REPEAT
+KRTAP10-4	354	358	34	REPEAT
+KRTAP10-4	373	377	35	REPEAT
+KRTAP10-4	391	395	36	REPEAT
+KRTAP10-4	1	401	Keratin-associated protein 10-4	CHAIN
+KRTAP17-1	1	105	Keratin-associated protein 17-1	CHAIN
+L3MBTL1	622	622		BINDING
+L3MBTL1	627	627		BINDING
+L3MBTL1	640	640		BINDING
+L3MBTL1	646	646		BINDING
+L3MBTL1	117	117	Phosphoserine	MOD_RES
+L3MBTL1	127	269	Disordered	REGION
+L3MBTL1	447	454	Interaction with monomethylated and dimethylated peptides	REGION
+L3MBTL1	580	605	Disordered	REGION
+L3MBTL1	657	697	Disordered	REGION
+L3MBTL1	274	374	MBT 1	REPEAT
+L3MBTL1	382	481	MBT 2	REPEAT
+L3MBTL1	490	585	MBT 3	REPEAT
+L3MBTL1	423	423	Mediates recognition of monomethylated and dimethylated peptides	SITE
+L3MBTL1	426	426	Positioned at the entrance of MBT 2 and is required for recognition of monomethylated and dimethylated peptides	SITE
+L3MBTL1	613	656	CCHHC-type	ZN_FING
+L3MBTL1	1	840	Lethal(3)malignant brain tumor-like protein 1	CHAIN
+LAMP3	112	112	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	158	158	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	164	164	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	200	200	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	232	232	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	266	266	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	291	291	N-linked (GlcNAc...) asparagine	CARBOHYD
+LAMP3	237	274		DISULFID
+LAMP3	339	376		DISULFID
+LAMP3	136	167	Disordered	REGION
+LAMP3	179	219	Disordered	REGION
+LAMP3	28	416	Lysosome-associated membrane glycoprotein 3	CHAIN
+LAMP3	1	27		SIGNAL
+LARP1	260	260	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LARP1	311	311	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LARP1	531	531	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LARP1	703	703	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LARP1	397	487	HTH La-type RNA-binding	DOMAIN
+LARP1	2	2	N-acetylalanine	MOD_RES
+LARP1	75	75	Phosphoserine	MOD_RES
+LARP1	90	90	Phosphoserine	MOD_RES
+LARP1	143	143	Phosphoserine	MOD_RES
+LARP1	165	165	Phosphoserine	MOD_RES
+LARP1	215	215	Phosphoserine	MOD_RES
+LARP1	220	220	Phosphoserine	MOD_RES
+LARP1	223	223	Phosphothreonine	MOD_RES
+LARP1	225	225	Phosphoserine	MOD_RES
+LARP1	228	228	Phosphoserine	MOD_RES
+LARP1	240	240	Omega-N-methylarginine	MOD_RES
+LARP1	324	324	Phosphoserine	MOD_RES
+LARP1	327	327	Phosphoserine	MOD_RES
+LARP1	376	376	Phosphothreonine	MOD_RES
+LARP1	517	517	Phosphoserine	MOD_RES
+LARP1	521	521	Phosphoserine	MOD_RES
+LARP1	526	526	Phosphothreonine	MOD_RES
+LARP1	548	548	Phosphoserine	MOD_RES
+LARP1	591	591	Phosphoserine	MOD_RES
+LARP1	627	627	Phosphoserine	MOD_RES
+LARP1	631	631	Phosphoserine	MOD_RES
+LARP1	649	649	Phosphothreonine	MOD_RES
+LARP1	724	724	Phosphothreonine	MOD_RES
+LARP1	766	766	Phosphoserine	MOD_RES
+LARP1	769	769	Phosphothreonine	MOD_RES
+LARP1	770	770	Phosphothreonine	MOD_RES
+LARP1	774	774	Phosphoserine	MOD_RES
+LARP1	777	777	Phosphotyrosine	MOD_RES
+LARP1	782	782	Phosphothreonine	MOD_RES
+LARP1	785	785	Phosphothreonine	MOD_RES
+LARP1	788	788	Phosphothreonine	MOD_RES
+LARP1	797	797	Phosphothreonine	MOD_RES
+LARP1	824	824	Phosphoserine	MOD_RES
+LARP1	845	845	Phosphothreonine	MOD_RES
+LARP1	847	847	Phosphoserine	MOD_RES
+LARP1	851	851	Phosphoserine	MOD_RES
+LARP1	853	853	Phosphoserine	MOD_RES
+LARP1	861	861	Phosphoserine	MOD_RES
+LARP1	865	865	Phosphothreonine	MOD_RES
+LARP1	868	868	Phosphoserine	MOD_RES
+LARP1	892	892	N6-acetyllysine	MOD_RES
+LARP1	1017	1017	N6-acetyllysine	MOD_RES
+LARP1	1040	1040	Phosphoserine	MOD_RES
+LARP1	1058	1058	Phosphoserine	MOD_RES
+LARP1	1089	1089	Phosphoserine	MOD_RES
+LARP1	1	356	Disordered	REGION
+LARP1	77	573	Required for interaction with PABPC1	REGION
+LARP1	511	598	Disordered	REGION
+LARP1	574	1096	Required for interaction with RPTOR and for repression of mRNAs with a 5'TOP motif	REGION
+LARP1	759	861	Disordered	REGION
+LARP1	873	1023	Interaction with mRNA	REGION
+LARP1	956	999	Interaction with 7-methylguanosine mRNA cap structure	REGION
+LARP1	1026	1096	Disordered	REGION
+LARP1	2	1096	La-related protein 1	CHAIN
+LAS1L	215	215	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LAS1L	226	226	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+LAS1L	441	441	Phosphoserine	MOD_RES
+LAS1L	523	523	Phosphoserine	MOD_RES
+LAS1L	560	560	Phosphoserine	MOD_RES
+LAS1L	617	617	Phosphoserine	MOD_RES
+LAS1L	204	255	Disordered	REGION
+LAS1L	547	619	Disordered	REGION
+LAS1L	636	655	Interaction with NOL9	REGION
+LAS1L	1	734	Ribosomal biogenesis protein LAS1L	CHAIN
+LINC00514	111	134	Disordered	REGION
+LINC00514	306	336	Disordered	REGION
+LINC00514	500	536	Disordered	REGION
+LINC00514	23	536	Glycine-rich extracellular protein 1	CHAIN
+LINC00514	1	22		SIGNAL
+LKAAEAR1	1	45	Disordered	REGION
+LKAAEAR1	1	194	Protein LKAAEAR1	CHAIN
+LMNTD2	106	169		COILED
+LMNTD2	350	468	LTD	DOMAIN
+LMNTD2	1	44	Disordered	REGION
+LMNTD2	228	349	Disordered	REGION
+LMNTD2	464	575	Disordered	REGION
+LMNTD2	1	634	Lamin tail domain-containing protein 2	CHAIN
+LORICRIN	89	89	Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-154); alternate	CROSSLNK
+LORICRIN	89	89	Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-216); alternate	CROSSLNK
+LORICRIN	154	154	Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-89)	CROSSLNK
+LORICRIN	212	212	Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-312)	CROSSLNK
+LORICRIN	213	213	Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-312)	CROSSLNK
+LORICRIN	216	216	Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-89)	CROSSLNK
+LORICRIN	312	312	Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-212); alternate	CROSSLNK
+LORICRIN	312	312	Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-213); alternate	CROSSLNK
+LORICRIN	1	27	Disordered	REGION
+LORICRIN	276	312	Disordered	REGION
+LORICRIN	1	312	Loricrin	CHAIN
+LRRC55	38	44		DISULFID
+LRRC55	42	51		DISULFID
+LRRC55	200	227		DISULFID
+LRRC55	202	249		DISULFID
+LRRC55	35	65	LRRNT	DOMAIN
+LRRC55	196	251	LRRCT	DOMAIN
+LRRC55	66	87	LRR 1	REPEAT
+LRRC55	90	111	LRR 2	REPEAT
+LRRC55	114	135	LRR 3	REPEAT
+LRRC55	138	160	LRR 4	REPEAT
+LRRC55	163	186	LRR 5	REPEAT
+LRRC55	35	298	Leucine-rich repeat-containing protein 55	CHAIN
+LRRC55	1	34		SIGNAL
+LRRC56	207	250	LRRCT	DOMAIN
+LRRC56	308	377	Disordered	REGION
+LRRC56	396	475	Disordered	REGION
+LRRC56	507	542	Disordered	REGION
+LRRC56	94	115	LRR 1	REPEAT
+LRRC56	117	138	LRR 2	REPEAT
+LRRC56	139	160	LRR 3	REPEAT
+LRRC56	161	182	LRR 4	REPEAT
+LRRC56	186	206	LRR 5	REPEAT
+LRRC56	1	542	Leucine-rich repeat-containing protein 56	CHAIN
+LRRC66	45	45	N-linked (GlcNAc...) asparagine	CARBOHYD
+LRRC66	115	115	N-linked (GlcNAc...) asparagine	CARBOHYD
+LRRC66	746	746	N-linked (GlcNAc...) asparagine	CARBOHYD
+LRRC66	756	756	N-linked (GlcNAc...) asparagine	CARBOHYD
+LRRC66	723	723	Phosphoserine	MOD_RES
+LRRC66	752	752	Phosphoserine	MOD_RES
+LRRC66	319	368	Disordered	REGION
+LRRC66	463	504	Disordered	REGION
+LRRC66	679	746	Disordered	REGION
+LRRC66	764	816	Disordered	REGION
+LRRC66	855	880	Disordered	REGION
+LRRC66	86	107	LRR 1	REPEAT
+LRRC66	110	130	LRR 2	REPEAT
+LRRC66	149	171	LRR 3	REPEAT
+LRRC66	172	193	LRR 4	REPEAT
+LRRC66	196	217	LRR 5	REPEAT
+LRRC66	220	241	LRR 6	REPEAT
+LRRC66	1	880	Leucine-rich repeat-containing protein 66	CHAIN
+LRRIQ1	283	312	IQ 1	DOMAIN
+LRRIQ1	1117	1157	LRRCT	DOMAIN
+LRRIQ1	1335	1364	IQ 2	DOMAIN
+LRRIQ1	1395	1424	IQ 3	DOMAIN
+LRRIQ1	23	47	Disordered	REGION
+LRRIQ1	182	202	Disordered	REGION
+LRRIQ1	265	285	Disordered	REGION
+LRRIQ1	319	367	Disordered	REGION
+LRRIQ1	1506	1534	Disordered	REGION
+LRRIQ1	819	840	LRR 1	REPEAT
+LRRIQ1	841	861	LRR 2	REPEAT
+LRRIQ1	862	883	LRR 3	REPEAT
+LRRIQ1	884	905	LRR 4	REPEAT
+LRRIQ1	970	991	LRR 5	REPEAT
+LRRIQ1	992	1013	LRR 6	REPEAT
+LRRIQ1	1014	1035	LRR 7	REPEAT
+LRRIQ1	1036	1057	LRR 8	REPEAT
+LRRIQ1	1060	1081	LRR 9	REPEAT
+LRRIQ1	1082	1103	LRR 10	REPEAT
+LRRIQ1	1	1722	Leucine-rich repeat and IQ domain-containing protein 1	CHAIN
+LTB4R	2	2	N-linked (GlcNAc...) asparagine	CARBOHYD
+LTB4R	164	164	N-linked (GlcNAc...) asparagine	CARBOHYD
+LTB4R	310	352	Disordered	REGION
+LTB4R	1	352	Leukotriene B4 receptor 1	CHAIN
+MAEA	121	153	LisH	DOMAIN
+MAEA	159	216	CTLH	DOMAIN
+MAEA	28	28	Phosphothreonine	MOD_RES
+MAEA	1	124	Extracellular and involved in cell to cell contact	REGION
+MAEA	314	314	Essential for ubiquitin ligase activity	SITE
+MAEA	314	381	RING-Gid-type	ZN_FING
+MAEA	1	396	E3 ubiquitin-protein transferase MAEA	CHAIN
+MAP7D3	65	144		COILED
+MAP7D3	558	640		COILED
+MAP7D3	689	724		COILED
+MAP7D3	1	1	N-acetylmethionine	MOD_RES
+MAP7D3	185	185	Phosphoserine	MOD_RES
+MAP7D3	322	322	Phosphoserine	MOD_RES
+MAP7D3	441	441	Phosphoserine	MOD_RES
+MAP7D3	457	457	Phosphoserine	MOD_RES
+MAP7D3	461	461	Phosphoserine	MOD_RES
+MAP7D3	490	490	Phosphoserine	MOD_RES
+MAP7D3	524	524	Phosphoserine	MOD_RES
+MAP7D3	770	770	Phosphoserine	MOD_RES
+MAP7D3	817	817	Phosphoserine	MOD_RES
+MAP7D3	832	832	Phosphoserine	MOD_RES
+MAP7D3	72	137	Disordered	REGION
+MAP7D3	170	246	Disordered	REGION
+MAP7D3	407	475	Disordered	REGION
+MAP7D3	509	533	Disordered	REGION
+MAP7D3	613	697	Disordered	REGION
+MAP7D3	723	754	Disordered	REGION
+MAP7D3	802	876	Disordered	REGION
+MAP7D3	1	876	MAP7 domain-containing protein 3	CHAIN
+MBD1	176	176		BINDING
+MBD1	179	179		BINDING
+MBD1	182	182		BINDING
+MBD1	188	188		BINDING
+MBD1	191	191		BINDING
+MBD1	194	194		BINDING
+MBD1	210	210		BINDING
+MBD1	215	215		BINDING
+MBD1	225	225		BINDING
+MBD1	228	228		BINDING
+MBD1	231	231		BINDING
+MBD1	237	237		BINDING
+MBD1	240	240		BINDING
+MBD1	243	243		BINDING
+MBD1	257	257		BINDING
+MBD1	262	262		BINDING
+MBD1	338	338		BINDING
+MBD1	341	341		BINDING
+MBD1	344	344		BINDING
+MBD1	350	350		BINDING
+MBD1	353	353		BINDING
+MBD1	356	356		BINDING
+MBD1	372	372		BINDING
+MBD1	377	377		BINDING
+MBD1	117	117	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+MBD1	277	277	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+MBD1	422	422	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+MBD1	440	440	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+MBD1	499	499	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+MBD1	538	538	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+MBD1	558	558	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+MBD1	1	69	MBD	DOMAIN
+MBD1	297	297	Phosphoserine	MOD_RES
+MBD1	391	391	Phosphoserine	MOD_RES
+MBD1	399	399	Phosphoserine	MOD_RES
+MBD1	84	88	Nuclear localization signal	MOTIF
+MBD1	80	123	Disordered	REGION
+MBD1	269	308	Disordered	REGION
+MBD1	391	451	Disordered	REGION
+MBD1	520	573	Disordered	REGION
+MBD1	529	592	Transcriptional repression domain (TRD)	REGION
+MBD1	169	216	CXXC-type 1	ZN_FING
+MBD1	217	263	CXXC-type 2	ZN_FING
+MBD1	330	378	CXXC-type 3	ZN_FING
+MBD1	1	605	Methyl-CpG-binding domain protein 1	CHAIN
+MCPH1	1	93	BRCT 1	DOMAIN
+MCPH1	640	730	BRCT 2	DOMAIN
+MCPH1	751	833	BRCT 3	DOMAIN
+MCPH1	279	279	Phosphoserine	MOD_RES
+MCPH1	287	287	Phosphoserine	MOD_RES
+MCPH1	296	296	Phosphoserine	MOD_RES
+MCPH1	333	333	Phosphoserine	MOD_RES
+MCPH1	335	335	Phosphothreonine	MOD_RES
+MCPH1	548	548	Phosphoserine	MOD_RES
+MCPH1	313	381	Disordered	REGION
+MCPH1	419	443	Disordered	REGION
+MCPH1	555	584	Disordered	REGION
+MCPH1	1	835	Microcephalin	CHAIN
+MFRP	227	227	N-linked (GlcNAc...) asparagine	CARBOHYD
+MFRP	415	415	N-linked (GlcNAc...) asparagine	CARBOHYD
+MFRP	144	170		DISULFID
+MFRP	197	216		DISULFID
+MFRP	260	272		DISULFID
+MFRP	267	285		DISULFID
+MFRP	279	294		DISULFID
+MFRP	301	327		DISULFID
+MFRP	354	377		DISULFID
+MFRP	421	433		DISULFID
+MFRP	428	446		DISULFID
+MFRP	440	454		DISULFID
+MFRP	466	528		DISULFID
+MFRP	474	521		DISULFID
+MFRP	512	549		DISULFID
+MFRP	538	576		DISULFID
+MFRP	542	564		DISULFID
+MFRP	144	253	CUB 1	DOMAIN
+MFRP	259	295	LDL-receptor class A 1	DOMAIN
+MFRP	301	414	CUB 2	DOMAIN
+MFRP	420	455	LDL-receptor class A 2	DOMAIN
+MFRP	461	579	FZ	DOMAIN
+MFRP	100	143	Disordered	REGION
+MFRP	1	579	Membrane frizzled-related protein	CHAIN
+MIA3	246	246	N-linked (GlcNAc...) asparagine	CARBOHYD
+MIA3	589	589	N-linked (GlcNAc...) asparagine	CARBOHYD
+MIA3	471	531		COILED
+MIA3	1214	1396		COILED
+MIA3	1487	1639		COILED
+MIA3	45	107	SH3	DOMAIN
+MIA3	226	226	Phosphoserine; by FAM20C	MOD_RES
+MIA3	229	229	Phosphoserine; by FAM20C	MOD_RES
+MIA3	727	727	Phosphoserine	MOD_RES
+MIA3	876	876	Phosphoserine	MOD_RES
+MIA3	1067	1067	Phosphoserine	MOD_RES
+MIA3	1431	1431	Phosphoserine	MOD_RES
+MIA3	1666	1666	Phosphoserine	MOD_RES
+MIA3	1678	1678	Phosphoserine	MOD_RES
+MIA3	1706	1706	Phosphoserine	MOD_RES
+MIA3	1727	1727	Phosphoserine	MOD_RES
+MIA3	1741	1741	Phosphoserine	MOD_RES
+MIA3	1745	1745	Phosphoserine	MOD_RES
+MIA3	1784	1784	Asymmetric dimethylarginine	MOD_RES
+MIA3	1892	1892	Phosphoserine	MOD_RES
+MIA3	1906	1906	Phosphoserine; by FAM20C	MOD_RES
+MIA3	155	258	Disordered	REGION
+MIA3	314	378	Disordered	REGION
+MIA3	390	601	Disordered	REGION
+MIA3	659	918	Disordered	REGION
+MIA3	1093	1121	Disordered	REGION
+MIA3	1211	1650	Mediates interaction with MIA2	REGION
+MIA3	1420	1443	Disordered	REGION
+MIA3	1642	1907	Disordered	REGION
+MIA3	1751	1907	Proline-rich domain (PRD); mediates interaction with the COPII coat subunits SEC23A and SEC23B	REGION
+MIA3	1788	1847	SEC16A-interacting region (SIR); required for its localization to endoplasmic reticulum exit sites and for its interaction with SEC16A	REGION
+MIA3	23	1907	Transport and Golgi organization protein 1 homolog	CHAIN
+MIA3	1	22		SIGNAL
+MICALL2	735	771		COILED
+MICALL2	1	107	Calponin-homology (CH)	DOMAIN
+MICALL2	186	248	LIM zinc-binding	DOMAIN
+MICALL2	723	874	bMERB	DOMAIN
+MICALL2	110	110	Phosphoserine	MOD_RES
+MICALL2	143	143	Phosphoserine	MOD_RES
+MICALL2	153	153	Phosphoserine	MOD_RES
+MICALL2	249	249	Phosphoserine	MOD_RES
+MICALL2	294	294	Phosphoserine	MOD_RES
+MICALL2	494	494	Phosphoserine	MOD_RES
+MICALL2	504	504	Phosphoserine	MOD_RES
+MICALL2	598	598	Phosphoserine	MOD_RES
+MICALL2	644	644	Phosphothreonine	MOD_RES
+MICALL2	649	649	Phosphoserine	MOD_RES
+MICALL2	658	658	Phosphoserine	MOD_RES
+MICALL2	660	660	Phosphoserine	MOD_RES
+MICALL2	726	726	Phosphoserine	MOD_RES
+MICALL2	1	260	Forms an intramolecular interaction with the C-terminal coiled coil domain keeping the protein in a closed conformation	REGION
+MICALL2	117	178	Disordered	REGION
+MICALL2	251	722	Disordered	REGION
+MICALL2	261	697	Mediates targeting to the cell plasma membrane	REGION
+MICALL2	261	388	Necessary and sufficient for interaction with actinins	REGION
+MICALL2	698	807	Forms an intramolecular interaction with the N-terminal Calponin-homology and LIM zinc-binding domains-containing region keeping the protein in a closed conformation	REGION
+MICALL2	807	903	Mediates interaction with RAB13 and is required for transition from the closed to the opened conformation	REGION
+MICALL2	1	904	MICAL-like protein 2	CHAIN
+MON1A	128	128	Phosphoserine	MOD_RES
+MON1A	153	153	Phosphoserine	MOD_RES
+MON1A	158	158	Phosphothreonine	MOD_RES
+MON1A	188	188	Phosphoserine	MOD_RES
+MON1A	102	141	Disordered	REGION
+MON1A	158	185	Disordered	REGION
+MON1A	211	245	Disordered	REGION
+MON1A	1	652	Vacuolar fusion protein MON1 homolog A	CHAIN
+MOV10L1	770	777		BINDING
+MOV10L1	886	889	DEAG box	MOTIF
+MOV10L1	340	385	Disordered	REGION
+MOV10L1	674	710	Disordered	REGION
+MOV10L1	1192	1211	Disordered	REGION
+MOV10L1	1	1211	RNA helicase Mov10l1	CHAIN
+MRAP	105	136	Disordered	REGION
+MRAP	151	172	Disordered	REGION
+MRAP	1	172	Melanocortin-2 receptor accessory protein	CHAIN
+MRPS7	208	208	N6-acetyllysine	MOD_RES
+MRPS7	228	228	N6-acetyllysine	MOD_RES
+MRPS7	1	37	Mitochondrion	TRANSIT
+MRPS7	38	242	Small ribosomal subunit protein uS7m	CHAIN
+MS4A7	218	240	Disordered	REGION
+MS4A7	1	240	Membrane-spanning 4-domains subfamily A member 7	CHAIN
+MTNR1B	175	175		BINDING
+MTNR1B	194	194		BINDING
+MTNR1B	4	4	N-linked (GlcNAc...) asparagine	CARBOHYD
+MTNR1B	113	190		DISULFID
+MTNR1B	1	362	Melatonin receptor type 1B	CHAIN
+MTR	260	260		BINDING
+MTR	323	323		BINDING
+MTR	324	324		BINDING
+MTR	382	384		BINDING
+MTR	449	449		BINDING
+MTR	470	470		BINDING
+MTR	537	537		BINDING
+MTR	579	579		BINDING
+MTR	585	585		BINDING
+MTR	591	591		BINDING
+MTR	709	709		BINDING
+MTR	782	786		BINDING
+MTR	785	785	axial binding residue	BINDING
+MTR	830	830		BINDING
+MTR	834	834		BINDING
+MTR	886	886		BINDING
+MTR	974	974		BINDING
+MTR	1172	1172		BINDING
+MTR	1227	1228		BINDING
+MTR	19	338	Hcy-binding	DOMAIN
+MTR	371	632	Pterin-binding	DOMAIN
+MTR	662	759	B12-binding N-terminal	DOMAIN
+MTR	772	907	B12-binding	DOMAIN
+MTR	923	1265	AdoMet activation	DOMAIN
+MTR	1264	1264	Phosphothreonine	MOD_RES
+MTR	1	1265	Methionine synthase	CHAIN
+MUC20	423	423	N-linked (GlcNAc...) asparagine	CARBOHYD
+MUC20	616	616	N-linked (GlcNAc...) asparagine	CARBOHYD
+MUC20	622	622	N-linked (GlcNAc...) asparagine	CARBOHYD
+MUC20	57	92	Disordered	REGION
+MUC20	170	403	Disordered	REGION
+MUC20	173	400	12 X 20 AA approximate tandem repeats of S-S-E-S-S-A-S-S-D-S-P-H-P-V-I-T-P-S-R-A	REGION
+MUC20	434	515	Disordered	REGION
+MUC20	450	656	Involved in oligomerization	REGION
+MUC20	583	657	Disordered	REGION
+MUC20	657	709	Interaction with MET	REGION
+MUC20	173	192	1	REPEAT
+MUC20	193	211	2	REPEAT
+MUC20	212	230	3	REPEAT
+MUC20	231	249	4	REPEAT
+MUC20	250	268	5	REPEAT
+MUC20	269	287	6	REPEAT
+MUC20	288	306	7	REPEAT
+MUC20	307	325	8	REPEAT
+MUC20	326	344	9	REPEAT
+MUC20	345	363	10	REPEAT
+MUC20	364	382	11	REPEAT
+MUC20	383	400	12; approximate	REPEAT
+MUC20	26	709	Mucin-20	CHAIN
+MUC20	1	25		SIGNAL
+N4BP2	447	454		BINDING
+N4BP2	90	177		COILED
+N4BP2	218	259		COILED
+N4BP2	46	89	CUE	DOMAIN
+N4BP2	1691	1770	Smr	DOMAIN
+N4BP2	906	906	Phosphoserine	MOD_RES
+N4BP2	1210	1210	Phosphothreonine	MOD_RES
+N4BP2	1	40	Disordered	REGION
+N4BP2	95	129	Disordered	REGION
+N4BP2	712	756	Disordered	REGION
+N4BP2	795	822	Disordered	REGION
+N4BP2	836	862	Disordered	REGION
+N4BP2	890	913	Disordered	REGION
+N4BP2	1580	1606	Disordered	REGION
+N4BP2	1	1770	NEDD4-binding protein 2	CHAIN
+NCAPD3	1219	1275		COILED
+NCAPD3	567	567	Phosphoserine	MOD_RES
+NCAPD3	1329	1329	Phosphoserine	MOD_RES
+NCAPD3	1331	1331	Phosphothreonine	MOD_RES
+NCAPD3	1348	1348	Phosphoserine	MOD_RES
+NCAPD3	1357	1357	Phosphoserine	MOD_RES
+NCAPD3	1372	1372	Phosphoserine	MOD_RES
+NCAPD3	1379	1379	Phosphothreonine	MOD_RES
+NCAPD3	1382	1382	Phosphoserine	MOD_RES
+NCAPD3	1384	1384	Phosphoserine	MOD_RES
+NCAPD3	155	188	Disordered	REGION
+NCAPD3	514	533	Disordered	REGION
+NCAPD3	889	911	Disordered	REGION
+NCAPD3	1306	1339	Disordered	REGION
+NCAPD3	1429	1498	Disordered	REGION
+NCAPD3	441	475	HEAT 1	REPEAT
+NCAPD3	537	572	HEAT 2	REPEAT
+NCAPD3	579	610	HEAT 3	REPEAT
+NCAPD3	973	1009	HEAT 4	REPEAT
+NCAPD3	1	1498	Condensin-2 complex subunit D3	CHAIN
+NDUFV3	105	105	Phosphoserine	MOD_RES
+NDUFV3	160	160	Phosphoserine	MOD_RES
+NDUFV3	162	162	Phosphoserine	MOD_RES
+NDUFV3	164	164	Phosphoserine	MOD_RES
+NDUFV3	33	72	Disordered	REGION
+NDUFV3	1	34	Mitochondrion	TRANSIT
+NDUFV3	35	108	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondrial	CHAIN
+NEDD4	1279	1279	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+NEDD4	610	643	WW 1	DOMAIN
+NEDD4	767	800	WW 2	DOMAIN
+NEDD4	840	873	WW 3	DOMAIN
+NEDD4	892	925	WW 4	DOMAIN
+NEDD4	984	1318	HECT	DOMAIN
+NEDD4	576	576	Phosphoserine	MOD_RES
+NEDD4	648	648	Phosphothreonine	MOD_RES
+NEDD4	670	670	Phosphoserine	MOD_RES
+NEDD4	742	742	Phosphoserine	MOD_RES
+NEDD4	747	747	Phosphoserine	MOD_RES
+NEDD4	2	2	N-acetylalanine	MOD_RES
+NEDD4	716	726	Nuclear export signal	MOTIF
+NEDD4	204	229	Disordered	REGION
+NEDD4	578	981	Mediates interaction with TNIK	REGION
+NEDD4	755	780	Disordered	REGION
+NEDD4	796	834	Disordered	REGION
+NEDD4	1	1319	E3 ubiquitin-protein ligase NEDD4	CHAIN
+NEK3	10	18		BINDING
+NEK3	33	33		BINDING
+NEK3	4	257	Protein kinase	DOMAIN
+NEK3	1	1	N-acetylmethionine	MOD_RES
+NEK3	161	161	Phosphothreonine; by autocatalysis	MOD_RES
+NEK3	479	479	Phosphothreonine	MOD_RES
+NEK3	1	285	Interaction with VAV2	REGION
+NEK3	302	325	Disordered	REGION
+NEK3	441	490	Disordered	REGION
+NEK3	1	506	Serine/threonine-protein kinase Nek3	CHAIN
+NFKBIE	157	157	Phosphoserine	MOD_RES
+NFKBIE	161	161	Phosphoserine	MOD_RES
+NFKBIE	183	183	Phosphoserine	MOD_RES
+NFKBIE	1	66	Disordered	REGION
+NFKBIE	84	215	Disordered	REGION
+NFKBIE	222	241	Disordered	REGION
+NFKBIE	258	291	ANK 1	REPEAT
+NFKBIE	293	322	ANK 2	REPEAT
+NFKBIE	326	355	ANK 3	REPEAT
+NFKBIE	369	398	ANK 4	REPEAT
+NFKBIE	403	432	ANK 5	REPEAT
+NFKBIE	436	465	ANK 6	REPEAT
+NFKBIE	1	500	NF-kappa-B inhibitor epsilon	CHAIN
+NFYC	305	379	Disordered	REGION
+NFYC	1	458	Nuclear transcription factor Y subunit gamma	CHAIN
+NINJ2	1	21	Disordered	REGION
+NINJ2	30	41	Helix alpha1	REGION
+NINJ2	44	60	Helix alpha2	REGION
+NINJ2	1	142	Ninjurin-2	CHAIN
+NLRP14	183	190		BINDING
+NLRP14	1	97	Pyrin	DOMAIN
+NLRP14	177	499	NACHT	DOMAIN
+NLRP14	102	121	Disordered	REGION
+NLRP14	730	750	LRR 1	REPEAT
+NLRP14	759	780	LRR 2	REPEAT
+NLRP14	787	807	LRR 3	REPEAT
+NLRP14	816	836	LRR 4	REPEAT
+NLRP14	844	864	LRR 5	REPEAT
+NLRP14	873	894	LRR 6	REPEAT
+NLRP14	901	921	LRR 7	REPEAT
+NLRP14	930	951	LRR 8	REPEAT
+NLRP14	958	978	LRR 9	REPEAT
+NLRP14	987	1008	LRR 10	REPEAT
+NLRP14	1015	1035	LRR 11	REPEAT
+NLRP14	1	1093	NACHT, LRR and PYD domains-containing protein 14	CHAIN
+NOL9	306	313		BINDING
+NOL9	485	485	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOL9	2	2	N-acetylalanine	MOD_RES
+NOL9	487	487	Phosphoserine	MOD_RES
+NOL9	31	47	Nucleolar localization signal	MOTIF
+NOL9	69	101	Disordered	REGION
+NOL9	480	702	Interaction with LAS1L	REGION
+NOL9	680	702	Disordered	REGION
+NOL9	2	702	Polynucleotide 5'-hydroxyl-kinase NOL9	CHAIN
+NOLC1	67	67	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	76	76	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	186	186	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	193	193	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	342	342	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	347	347	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	390	390	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	396	396	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	401	401	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	407	407	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	415	415	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1); alternate	CROSSLNK
+NOLC1	415	415	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+NOLC1	440	440	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	452	452	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	505	505	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	572	572	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1)	CROSSLNK
+NOLC1	579	579	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	604	604	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	613	613	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	647	647	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	663	663	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+NOLC1	695	695	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+NOLC1	10	42	LisH	DOMAIN
+NOLC1	33	33	N6-acetyllysine	MOD_RES
+NOLC1	87	87	Phosphoserine	MOD_RES
+NOLC1	90	90	Phosphoserine	MOD_RES
+NOLC1	91	91	Diphosphoserine	MOD_RES
+NOLC1	91	91	Phosphoserine	MOD_RES
+NOLC1	188	188	Phosphothreonine	MOD_RES
+NOLC1	362	362	Phosphoserine	MOD_RES
+NOLC1	363	363	Phosphoserine	MOD_RES
+NOLC1	366	366	Phosphoserine	MOD_RES
+NOLC1	397	397	Phosphoserine	MOD_RES
+NOLC1	415	415	N6-acetyllysine; alternate	MOD_RES
+NOLC1	456	456	Phosphoserine	MOD_RES
+NOLC1	508	508	Phosphoserine	MOD_RES
+NOLC1	538	538	Phosphoserine	MOD_RES
+NOLC1	563	563	Phosphoserine	MOD_RES
+NOLC1	580	580	Phosphoserine	MOD_RES
+NOLC1	582	582	Phosphoserine	MOD_RES
+NOLC1	607	607	Phosphothreonine	MOD_RES
+NOLC1	610	610	Phosphothreonine	MOD_RES
+NOLC1	622	622	Phosphoserine	MOD_RES
+NOLC1	643	643	Phosphoserine	MOD_RES
+NOLC1	663	663	N6-acetyllysine; alternate	MOD_RES
+NOLC1	683	683	Omega-N-methylarginine	MOD_RES
+NOLC1	686	686	Phosphoserine	MOD_RES
+NOLC1	698	698	Phosphoserine	MOD_RES
+NOLC1	65	637	Disordered	REGION
+NOLC1	84	566	11 X 12 AA approximate repeats of an acidic serine cluster	REGION
+NOLC1	204	382	Interaction with RPA194	REGION
+NOLC1	84	95	Acidic serine cluster 1	REPEAT
+NOLC1	125	136	Acidic serine cluster 2	REPEAT
+NOLC1	167	178	Acidic serine cluster 3	REPEAT
+NOLC1	221	232	Acidic serine cluster 4	REPEAT
+NOLC1	264	275	Acidic serine cluster 5	REPEAT
+NOLC1	325	336	Acidic serine cluster 6	REPEAT
+NOLC1	363	375	Acidic serine cluster 7	REPEAT
+NOLC1	425	436	Acidic serine cluster 8	REPEAT
+NOLC1	470	481	Acidic serine cluster 9	REPEAT
+NOLC1	519	529	Acidic serine cluster 10	REPEAT
+NOLC1	555	566	Acidic serine cluster 11	REPEAT
+NOLC1	1	699	Nucleolar and coiled-body phosphoprotein 1	CHAIN
+NRK	31	39		BINDING
+NRK	54	54		BINDING
+NRK	725	759		COILED
+NRK	25	313	Protein kinase	DOMAIN
+NRK	1209	1552	CNH	DOMAIN
+NRK	852	852	Phosphoserine	MOD_RES
+NRK	855	855	Phosphoserine	MOD_RES
+NRK	1027	1027	Phosphoserine	MOD_RES
+NRK	1031	1031	Phosphoserine	MOD_RES
+NRK	1034	1034	Phosphoserine	MOD_RES
+NRK	492	579	Disordered	REGION
+NRK	783	859	Disordered	REGION
+NRK	926	1156	Disordered	REGION
+NRK	1	1582	Nik-related protein kinase	CHAIN
+NUDT14	38	206	Nudix hydrolase	DOMAIN
+NUDT14	111	129	Nudix box	MOTIF
+NUDT14	1	222	Uridine diphosphate glucose pyrophosphatase NUDT14	CHAIN
+NUDT17	142	142		BINDING
+NUDT17	146	146		BINDING
+NUDT17	90	236	Nudix hydrolase	DOMAIN
+NUDT17	127	148	Nudix box	MOTIF
+NUDT17	299	328	Disordered	REGION
+NUDT17	1	328	Nucleoside diphosphate-linked moiety X motif 17	CHAIN
+OAS2	396	396		BINDING
+OAS2	408	408		BINDING
+OAS2	410	410		BINDING
+OAS2	481	481		BINDING
+OAS2	544	544		BINDING
+OAS2	547	547		BINDING
+OAS2	2	2	N-myristoyl glycine	LIPID
+OAS2	378	378	N6-acetyllysine	MOD_RES
+OAS2	11	335	OAS domain 1	REGION
+OAS2	343	683	OAS domain 2	REGION
+OAS2	2	719	2'-5'-oligoadenylate synthase 2	CHAIN
+OGFR	1	1	N-acetylmethionine	MOD_RES
+OGFR	299	299	Phosphoserine	MOD_RES
+OGFR	315	315	Phosphoserine	MOD_RES
+OGFR	349	349	Phosphoserine	MOD_RES
+OGFR	361	361	Phosphoserine	MOD_RES
+OGFR	378	378	Phosphoserine	MOD_RES
+OGFR	382	382	Phosphoserine	MOD_RES
+OGFR	403	403	Phosphoserine	MOD_RES
+OGFR	420	420	Phosphoserine	MOD_RES
+OGFR	484	484	Phosphoserine	MOD_RES
+OGFR	537	537	Phosphoserine	MOD_RES
+OGFR	557	557	Phosphoserine	MOD_RES
+OGFR	617	617	Phosphoserine	MOD_RES
+OGFR	637	637	Phosphoserine	MOD_RES
+OGFR	267	283	Bipartite nuclear localization signal	MOTIF
+OGFR	1	63	Disordered	REGION
+OGFR	295	407	Disordered	REGION
+OGFR	421	677	Disordered	REGION
+OGFR	517	656	7 X 20 AA approximate tandem repeats of [ST]-P-S-E-T-P-G-P-[SR]-P-A-G-P-[AT]-[GR]-D-E-P-A-[EK]	REGION
+OGFR	517	536	1	REPEAT
+OGFR	537	556	2	REPEAT
+OGFR	557	576	3	REPEAT
+OGFR	577	596	4	REPEAT
+OGFR	597	616	5	REPEAT
+OGFR	617	636	6	REPEAT
+OGFR	637	656	7	REPEAT
+OGFR	1	677	Opioid growth factor receptor	CHAIN
+OR13C4	5	5	N-linked (GlcNAc...) asparagine	CARBOHYD
+OR13C4	97	189		DISULFID
+OR13C4	1	318	Olfactory receptor 13C4	CHAIN
+OR2H1	3	3	N-linked (GlcNAc...) asparagine	CARBOHYD
+OR2H1	95	187		DISULFID
+OR2H1	1	316	Olfactory receptor 2H1	CHAIN
+OSBP	117	122		BINDING
+OSBP	314	314		BINDING
+OSBP	314	314		BINDING
+OSBP	314	314		BINDING
+OSBP	314	314		BINDING
+OSBP	314	314		BINDING
+OSBP	493	496		BINDING
+OSBP	522	523		BINDING
+OSBP	291	326		COILED
+OSBP	730	760		COILED
+OSBP	88	181	PH	DOMAIN
+OSBP	2	2	N-acetylalanine	MOD_RES
+OSBP	190	190	Phosphoserine	MOD_RES
+OSBP	193	193	Phosphoserine	MOD_RES
+OSBP	198	198	Phosphoserine	MOD_RES
+OSBP	238	238	Phosphoserine	MOD_RES
+OSBP	240	240	Phosphoserine	MOD_RES
+OSBP	338	338	Phosphoserine	MOD_RES
+OSBP	345	345	Phosphoserine	MOD_RES
+OSBP	351	351	Phosphoserine	MOD_RES
+OSBP	377	377	Phosphothreonine	MOD_RES
+OSBP	379	379	Phosphoserine	MOD_RES
+OSBP	382	382	Phosphoserine	MOD_RES
+OSBP	385	385	Phosphoserine	MOD_RES
+OSBP	386	386	Phosphoserine	MOD_RES
+OSBP	389	389	Phosphoserine	MOD_RES
+OSBP	358	364	FFAT	MOTIF
+OSBP	61	86	Disordered	REGION
+OSBP	329	353	Disordered	REGION
+OSBP	710	759	Disordered	REGION
+OSBP	2	807	Oxysterol-binding protein 1	CHAIN
+P2RX6	165	165	N-linked (GlcNAc...) asparagine	CARBOHYD
+P2RX6	195	195	N-linked (GlcNAc...) asparagine	CARBOHYD
+P2RX6	210	210	N-linked (GlcNAc...) asparagine	CARBOHYD
+P2RX6	127	177		DISULFID
+P2RX6	138	161		DISULFID
+P2RX6	144	171		DISULFID
+P2RX6	228	238		DISULFID
+P2RX6	272	281		DISULFID
+P2RX6	64	64	Phosphotyrosine	MOD_RES
+P2RX6	410	441	Disordered	REGION
+P2RX6	1	441	P2X purinoceptor 6	CHAIN
+PALM3	4	49		COILED
+PALM3	75	101		COILED
+PALM3	667	667	S-palmitoyl cysteine	LIPID
+PALM3	669	669	S-palmitoyl cysteine	LIPID
+PALM3	670	670	S-farnesyl cysteine	LIPID
+PALM3	124	124	Phosphoserine	MOD_RES
+PALM3	143	143	Phosphoserine	MOD_RES
+PALM3	151	151	Phosphothreonine	MOD_RES
+PALM3	155	155	Phosphoserine	MOD_RES
+PALM3	157	157	Phosphoserine	MOD_RES
+PALM3	260	260	Phosphoserine	MOD_RES
+PALM3	301	301	Phosphothreonine	MOD_RES
+PALM3	325	325	Phosphoserine	MOD_RES
+PALM3	375	375	Phosphoserine	MOD_RES
+PALM3	420	420	Phosphoserine	MOD_RES
+PALM3	544	544	Phosphoserine	MOD_RES
+PALM3	660	660	Phosphoserine	MOD_RES
+PALM3	670	670	Cysteine methyl ester	MOD_RES
+PALM3	49	78	Disordered	REGION
+PALM3	99	213	Disordered	REGION
+PALM3	295	343	Disordered	REGION
+PALM3	356	673	Disordered	REGION
+PALM3	1	670	Paralemmin-3	CHAIN
+PAX6	4	130	Paired	DNA_BIND
+PAX6	210	269	Homeobox	DNA_BIND
+PAX6	7	63	PAI subdomain	REGION
+PAX6	82	130	RED subdomain	REGION
+PAX6	162	201	Disordered	REGION
+PAX6	269	311	Disordered	REGION
+PAX6	345	422	Required for suppression of NFATC1-mediated transcription	REGION
+PAX6	1	422	Paired box protein Pax-6	CHAIN
+PERM1	38	391	Disordered	REGION
+PERM1	425	449	Disordered	REGION
+PERM1	507	545	Disordered	REGION
+PERM1	626	648	Disordered	REGION
+PERM1	1	790	PGC-1 and ERR-induced regulator in muscle protein 1	CHAIN
+PGF	33	33	N-linked (GlcNAc...) asparagine	CARBOHYD
+PGF	101	101	N-linked (GlcNAc...) asparagine	CARBOHYD
+PGF	52	94		DISULFID
+PGF	77	77	Interchain	DISULFID
+PGF	83	128		DISULFID
+PGF	86	86	Interchain	DISULFID
+PGF	87	130		DISULFID
+PGF	175	221	Disordered	REGION
+PGF	193	213	Heparin-binding	REGION
+PGF	19	221	Placenta growth factor	CHAIN
+PGF	1	18		SIGNAL
+PHF3	644	644	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+PHF3	964	964	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+PHF3	1931	1931	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+PHF3	927	1046	TFIIS central	DOMAIN
+PHF3	97	97	Phosphoserine	MOD_RES
+PHF3	125	125	Phosphoserine	MOD_RES
+PHF3	283	283	Phosphoserine	MOD_RES
+PHF3	299	299	Phosphoserine	MOD_RES
+PHF3	680	680	Phosphoserine	MOD_RES
+PHF3	1014	1014	Phosphoserine	MOD_RES
+PHF3	1133	1133	Phosphoserine	MOD_RES
+PHF3	1148	1148	Phosphoserine	MOD_RES
+PHF3	1178	1178	Phosphoserine	MOD_RES
+PHF3	1614	1614	Phosphoserine	MOD_RES
+PHF3	1642	1642	Phosphoserine	MOD_RES
+PHF3	1867	1867	Asymmetric dimethylarginine	MOD_RES
+PHF3	1877	1877	Asymmetric dimethylarginine	MOD_RES
+PHF3	1898	1898	Phosphoserine	MOD_RES
+PHF3	1925	1925	Phosphoserine	MOD_RES
+PHF3	144	178	Disordered	REGION
+PHF3	460	492	Disordered	REGION
+PHF3	528	555	Disordered	REGION
+PHF3	596	685	Disordered	REGION
+PHF3	860	904	Disordered	REGION
+PHF3	1078	1109	Disordered	REGION
+PHF3	1171	1191	Disordered	REGION
+PHF3	1360	1380	Disordered	REGION
+PHF3	1581	1623	Disordered	REGION
+PHF3	1643	1684	Disordered	REGION
+PHF3	1776	1800	Disordered	REGION
+PHF3	1884	2039	Disordered	REGION
+PHF3	717	772	PHD-type	ZN_FING
+PHF3	1	2039	PHD finger protein 3	CHAIN
+PKD1L3	286	286	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD1L3	363	363	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD1L3	515	515	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD1L3	537	537	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD1L3	575	575	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD1L3	51	137		DISULFID
+PKD1L3	112	129		DISULFID
+PKD1L3	30	138	C-type lectin	DOMAIN
+PKD1L3	632	681	GPS	DOMAIN
+PKD1L3	743	860	PLAT	DOMAIN
+PKD1L3	1613	1651	Channel pore-region	REGION
+PKD1L3	24	1732	Polycystin-1-like protein 3	CHAIN
+PKD1L3	1	23		SIGNAL
+PKD2L1	646	646		BINDING
+PKD2L1	648	648		BINDING
+PKD2L1	650	650		BINDING
+PKD2L1	657	657		BINDING
+PKD2L1	177	177	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD2L1	207	207	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD2L1	241	241	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD2L1	505	505	N-linked (GlcNAc...) asparagine	CARBOHYD
+PKD2L1	650	686		COILED
+PKD2L1	700	740		COILED
+PKD2L1	210	223		DISULFID
+PKD2L1	633	668	EF-hand	DOMAIN
+PKD2L1	38	38	S-palmitoyl cysteine	LIPID
+PKD2L1	1	59	Disordered	REGION
+PKD2L1	704	763	Required for homooligomerization	REGION
+PKD2L1	759	805	Disordered	REGION
+PKD2L1	1	805	Polycystin-2-like protein 1	CHAIN
+PKMYT1	116	124		BINDING
+PKMYT1	139	139		BINDING
+PKMYT1	238	238		BINDING
+PKMYT1	251	251		BINDING
+PKMYT1	110	359	Protein kinase	DOMAIN
+PKMYT1	1	1	N-acetylmethionine	MOD_RES
+PKMYT1	17	17	Phosphothreonine	MOD_RES
+PKMYT1	40	40	Phosphoserine	MOD_RES
+PKMYT1	94	94	Phosphoserine	MOD_RES
+PKMYT1	120	120	Phosphoserine	MOD_RES
+PKMYT1	143	143	Phosphoserine	MOD_RES
+PKMYT1	160	160	Phosphoserine	MOD_RES
+PKMYT1	426	426	Phosphoserine; by PLK1	MOD_RES
+PKMYT1	469	469	Phosphoserine	MOD_RES
+PKMYT1	473	473	Phosphoserine	MOD_RES
+PKMYT1	482	482	Phosphoserine	MOD_RES
+PKMYT1	495	495	Phosphothreonine; by PLK1	MOD_RES
+PKMYT1	382	398	Membrane-association motif	MOTIF
+PKMYT1	1	29	Disordered	REGION
+PKMYT1	42	72	Disordered	REGION
+PKMYT1	398	499	Interaction with PIN1	REGION
+PKMYT1	437	499	Interaction with CDC2-CCNB1	REGION
+PKMYT1	451	485	Disordered	REGION
+PKMYT1	1	499	Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase	CHAIN
+PLA2G4D	38	38		BINDING
+PLA2G4D	38	38		BINDING
+PLA2G4D	44	44		BINDING
+PLA2G4D	94	94		BINDING
+PLA2G4D	94	94		BINDING
+PLA2G4D	96	96		BINDING
+PLA2G4D	96	96		BINDING
+PLA2G4D	102	102		BINDING
+PLA2G4D	330	331		BINDING
+PLA2G4D	5	124	C2	DOMAIN
+PLA2G4D	273	818	PLA2c	DOMAIN
+PLA2G4D	1	818	Cytosolic phospholipase A2 delta	CHAIN
+PLEKHS1	14	129	PH	DOMAIN
+PLEKHS1	159	179	Disordered	REGION
+PLEKHS1	255	283	Disordered	REGION
+PLEKHS1	1	465	Pleckstrin homology domain-containing family S member 1	CHAIN
+PLIN4	25	25	Phosphoserine	MOD_RES
+PLIN4	31	31	Phosphoserine	MOD_RES
+PLIN4	1	22	Disordered	REGION
+PLIN4	37	86	Disordered	REGION
+PLIN4	109	999	27 X 33 AA approximate tandem repeat	REGION
+PLIN4	1060	1093	Disordered	REGION
+PLIN4	1240	1260	Disordered	REGION
+PLIN4	109	141	1	REPEAT
+PLIN4	142	174	2	REPEAT
+PLIN4	175	207	3	REPEAT
+PLIN4	208	240	4	REPEAT
+PLIN4	241	273	5	REPEAT
+PLIN4	274	306	6	REPEAT
+PLIN4	307	339	7	REPEAT
+PLIN4	340	372	8	REPEAT
+PLIN4	373	405	9	REPEAT
+PLIN4	406	438	10	REPEAT
+PLIN4	439	471	11	REPEAT
+PLIN4	472	504	12	REPEAT
+PLIN4	505	537	13	REPEAT
+PLIN4	538	570	14	REPEAT
+PLIN4	571	603	15	REPEAT
+PLIN4	604	636	16	REPEAT
+PLIN4	637	669	17	REPEAT
+PLIN4	670	702	18	REPEAT
+PLIN4	703	735	19	REPEAT
+PLIN4	736	768	20	REPEAT
+PLIN4	769	801	21	REPEAT
+PLIN4	802	834	22	REPEAT
+PLIN4	835	867	23	REPEAT
+PLIN4	868	900	24	REPEAT
+PLIN4	901	933	25	REPEAT
+PLIN4	934	966	26	REPEAT
+PLIN4	967	999	27	REPEAT
+PLIN4	1	1371	Perilipin-4	CHAIN
+PLIN5	2	2	Phosphoserine	MOD_RES
+PLIN5	148	148	Phosphoserine	MOD_RES
+PLIN5	322	322	Phosphoserine	MOD_RES
+PLIN5	1	173	Essential for lipid droplet targeting	REGION
+PLIN5	1	108	Interaction with LIPE	REGION
+PLIN5	185	463	Interaction with PNPLA2 and ABHD5	REGION
+PLIN5	444	463	Recruits mitochondria at the lipid droplet surface	REGION
+PLIN5	1	463	Perilipin-5	CHAIN
+POM121L12	1	54	Disordered	REGION
+POM121L12	142	162	Disordered	REGION
+POM121L12	1	296	POM121-like protein 12	CHAIN
+PPBP	63	89		DISULFID
+PPBP	65	105		DISULFID
+PPBP	35	128	Platelet basic protein	CHAIN
+PPBP	44	128	Connective tissue-activating peptide III	CHAIN
+PPBP	44	126	TC-2	CHAIN
+PPBP	44	124	Connective tissue-activating peptide III(1-81)	CHAIN
+PPBP	48	128	Beta-thromboglobulin	CHAIN
+PPBP	55	128	Neutrophil-activating peptide 2(74)	CHAIN
+PPBP	56	128	Neutrophil-activating peptide 2(73)	CHAIN
+PPBP	59	128	Neutrophil-activating peptide 2	CHAIN
+PPBP	59	126	TC-1	CHAIN
+PPBP	59	124	Neutrophil-activating peptide 2(1-66)	CHAIN
+PPBP	59	121	Neutrophil-activating peptide 2(1-63)	CHAIN
+PPBP	1	34		SIGNAL
+PPP1R15A	143	143	Phosphoserine	MOD_RES
+PPP1R15A	262	262	Phosphotyrosine	MOD_RES
+PPP1R15A	391	391	Phosphotyrosine	MOD_RES
+PPP1R15A	434	434	Phosphotyrosine	MOD_RES
+PPP1R15A	512	512	Phosphotyrosine	MOD_RES
+PPP1R15A	1	60	Required for localization in the endoplasmic reticulum	REGION
+PPP1R15A	65	504	Disordered	REGION
+PPP1R15A	337	510	4 X 34 AA approximate repeats	REGION
+PPP1R15A	337	510	Interaction with SMAD7	REGION
+PPP1R15A	483	555	Interaction with KMT2A/MLL1	REGION
+PPP1R15A	534	554	Disordered	REGION
+PPP1R15A	536	583	Interaction with SMARCB1	REGION
+PPP1R15A	625	674	Disordered	REGION
+PPP1R15A	337	369	1	REPEAT
+PPP1R15A	384	417	2	REPEAT
+PPP1R15A	427	460	3	REPEAT
+PPP1R15A	477	510	4	REPEAT
+PPP1R15A	1	674	Protein phosphatase 1 regulatory subunit 15A	CHAIN
+PRM2	8	8	Phosphoserine	MOD_RES
+PRM2	10	10	Phosphoserine	MOD_RES
+PRM2	37	37	Phosphoserine	MOD_RES
+PRM2	1	102	Disordered	REGION
+PRM2	2	102	Basic nuclear protein HPI1	CHAIN
+PRM2	22	102	Basic nuclear protein HPI2	CHAIN
+PRM2	34	102	Basic nuclear protein HPS1	CHAIN
+PRM2	37	102	Basic nuclear protein HPS2	CHAIN
+PRM2	45	102	Sperm histone HP4	CHAIN
+PRM2	46	102	Sperm histone HP2	CHAIN
+PRM2	49	102	Sperm histone HP3	CHAIN
+PROB1	1	111	Disordered	REGION
+PROB1	139	164	Disordered	REGION
+PROB1	196	236	Disordered	REGION
+PROB1	259	460	Disordered	REGION
+PROB1	488	678	Disordered	REGION
+PROB1	690	883	Disordered	REGION
+PROB1	991	1015	Disordered	REGION
+PROB1	1	1015	Proline-rich basic protein 1	CHAIN
+PROCA1	276	276	Phosphoserine	MOD_RES
+PROCA1	308	308	Phosphoserine	MOD_RES
+PROCA1	318	318	Phosphoserine	MOD_RES
+PROCA1	319	319	Phosphoserine	MOD_RES
+PROCA1	355	355	Phosphoserine	MOD_RES
+PROCA1	364	364	Phosphoserine	MOD_RES
+PROCA1	172	364	Disordered	REGION
+PROCA1	1	364	Protein PROCA1	CHAIN
+PRR20G	1	82	Disordered	REGION
+PRR20G	1	210	Proline-rich protein 20G	CHAIN
+PRR30	1	88	Disordered	REGION
+PRR30	123	174	Disordered	REGION
+PRR30	317	412	Disordered	REGION
+PRR30	1	412	Proline-rich protein 30	CHAIN
+PRSS45P	55	55	N-linked (GlcNAc...) asparagine	CARBOHYD
+PRSS45P	19	35		DISULFID
+PRSS45P	116	192		DISULFID
+PRSS45P	151	173		DISULFID
+PRSS45P	182	210		DISULFID
+PRSS45P	1	234	Peptidase S1	DOMAIN
+PRSS45P	1	260	Putative serine protease 45	CHAIN
+PSME1	60	102	Disordered	REGION
+PSME1	1	249	Proteasome activator complex subunit 1	CHAIN
+PTGDR2	4	4	N-linked (GlcNAc...) asparagine	CARBOHYD
+PTGDR2	25	25	N-linked (GlcNAc...) asparagine	CARBOHYD
+PTGDR2	104	182		DISULFID
+PTGDR2	331	331	Phosphoserine	MOD_RES
+PTGDR2	345	345	Phosphoserine	MOD_RES
+PTGDR2	330	333	Involved in the recycling of CRTH2	MOTIF
+PTGDR2	333	363	Disordered	REGION
+PTGDR2	1	395	Prostaglandin D2 receptor 2	CHAIN
+PUM1	828	1168	PUM-HD	DOMAIN
+PUM1	2	2	N-acetylserine	MOD_RES
+PUM1	19	19	Phosphoserine	MOD_RES
+PUM1	75	75	Phosphoserine	MOD_RES
+PUM1	98	98	Phosphoserine	MOD_RES
+PUM1	106	106	Phosphoserine	MOD_RES
+PUM1	112	112	Phosphothreonine	MOD_RES
+PUM1	124	124	Phosphoserine	MOD_RES
+PUM1	159	159	Phosphoserine	MOD_RES
+PUM1	197	197	Phosphoserine	MOD_RES
+PUM1	209	209	Phosphoserine	MOD_RES
+PUM1	229	229	Phosphoserine	MOD_RES
+PUM1	305	305	Phosphoserine	MOD_RES
+PUM1	514	514	Phosphothreonine	MOD_RES
+PUM1	709	709	Phosphoserine	MOD_RES
+PUM1	714	714	Phosphoserine	MOD_RES
+PUM1	796	796	Omega-N-methylarginine	MOD_RES
+PUM1	806	806	Phosphoserine	MOD_RES
+PUM1	822	822	Phosphoserine	MOD_RES
+PUM1	22	73	Disordered	REGION
+PUM1	233	272	Disordered	REGION
+PUM1	485	524	Disordered	REGION
+PUM1	613	648	Disordered	REGION
+PUM1	742	773	Disordered	REGION
+PUM1	863	867	Adenine-nucleotide binding in RNA target	REGION
+PUM1	899	903	Uracil-nucleotide binding in RNA target	REGION
+PUM1	935	939	Adenine-nucleotide binding in RNA target	REGION
+PUM1	971	975	Non-specific-nucleotide binding in RNA target	REGION
+PUM1	1007	1011	Adenine-nucleotide binding in RNA target	REGION
+PUM1	1043	1047	Uracil-nucleotide binding in RNA target	REGION
+PUM1	1079	1083	Guanine-nucleotide binding in RNA target	REGION
+PUM1	1122	1126	Uracil-nucleotide binding in RNA target	REGION
+PUM1	848	883	Pumilio 1	REPEAT
+PUM1	884	919	Pumilio 2	REPEAT
+PUM1	920	955	Pumilio 3	REPEAT
+PUM1	956	991	Pumilio 4	REPEAT
+PUM1	992	1027	Pumilio 5	REPEAT
+PUM1	1028	1063	Pumilio 6	REPEAT
+PUM1	1064	1099	Pumilio 7	REPEAT
+PUM1	1103	1142	Pumilio 8	REPEAT
+PUM1	2	1186	Pumilio homolog 1	CHAIN
+PWWP3A	411	472	PWWP	DOMAIN
+PWWP3A	161	161	Phosphoserine	MOD_RES
+PWWP3A	374	374	Phosphoserine	MOD_RES
+PWWP3A	375	375	Phosphoserine	MOD_RES
+PWWP3A	106	160	Disordered	REGION
+PWWP3A	177	204	Disordered	REGION
+PWWP3A	230	398	Disordered	REGION
+PWWP3A	1	710	PWWP domain-containing DNA repair factor 3A	CHAIN
+PWWP3B	392	453	PWWP	DOMAIN
+PWWP3B	128	128	Phosphoserine	MOD_RES
+PWWP3B	119	143	Disordered	REGION
+PWWP3B	278	303	Disordered	REGION
+PWWP3B	1	696	PWWP domain-containing DNA repair factor 3B	CHAIN
+RAD51AP2	1	35	Disordered	REGION
+RAD51AP2	1111	1159	Interaction with RAD51	REGION
+RAD51AP2	1	1159	RAD51-associated protein 2	CHAIN
+RAD52	152	156		DNA_BIND
+RAD52	104	104	Phosphotyrosine; by ABL1	MOD_RES
+RAD52	199	199	Phosphoserine	MOD_RES
+RAD52	318	318	Phosphothreonine	MOD_RES
+RAD52	335	335	Phosphothreonine	MOD_RES
+RAD52	219	302	Disordered	REGION
+RAD52	221	280	Mediates interaction with RPA2	REGION
+RAD52	368	418	Disordered	REGION
+RAD52	1	418	DNA repair protein RAD52 homolog	CHAIN
+RASGRF2	155	193		COILED
+RASGRF2	22	133	PH 1	DOMAIN
+RASGRF2	205	234	IQ	DOMAIN
+RASGRF2	243	429	DH	DOMAIN
+RASGRF2	470	588	PH 2	DOMAIN
+RASGRF2	635	756	N-terminal Ras-GEF	DOMAIN
+RASGRF2	1002	1234	Ras-GEF	DOMAIN
+RASGRF2	726	726	Phosphoserine	MOD_RES
+RASGRF2	727	727	Phosphoserine	MOD_RES
+RASGRF2	737	737	Phosphoserine; by CDK5	MOD_RES
+RASGRF2	746	746	Phosphoserine	MOD_RES
+RASGRF2	848	848	Phosphoserine	MOD_RES
+RASGRF2	852	852	Phosphoserine	MOD_RES
+RASGRF2	972	972	Phosphoserine	MOD_RES
+RASGRF2	710	809	Disordered	REGION
+RASGRF2	744	752	Regulates proteasomal degradation	REGION
+RASGRF2	829	873	Disordered	REGION
+RASGRF2	1099	1128	Responsible of the affinity for farnesylated versus geranylgeranylated Ras	REGION
+RASGRF2	1	1237	Ras-specific guanine nucleotide-releasing factor 2	CHAIN
+RDH8	9	18		BINDING
+RDH8	142	142		BINDING
+RDH8	1	311	Retinol dehydrogenase 8	CHAIN
+RECQL4	502	509		BINDING
+RECQL4	489	662	Helicase ATP-binding	DOMAIN
+RECQL4	683	850	Helicase C-terminal	DOMAIN
+RECQL4	27	27	Phosphoserine	MOD_RES
+RECQL4	178	178	Phosphoserine	MOD_RES
+RECQL4	180	180	Phosphoserine	MOD_RES
+RECQL4	605	608	DEAH box	MOTIF
+RECQL4	17	180	Disordered	REGION
+RECQL4	201	333	Disordered	REGION
+RECQL4	860	888	Disordered	REGION
+RECQL4	1111	1130	Disordered	REGION
+RECQL4	1	1208	ATP-dependent DNA helicase Q4	CHAIN
+RECQL5	52	59		BINDING
+RECQL5	39	213	Helicase ATP-binding	DOMAIN
+RECQL5	241	403	Helicase C-terminal	DOMAIN
+RECQL5	488	488	Phosphoserine	MOD_RES
+RECQL5	491	491	Phosphoserine	MOD_RES
+RECQL5	727	727	Phosphoserine; by CDK1	MOD_RES
+RECQL5	815	815	Phosphoserine	MOD_RES
+RECQL5	839	839	Phosphothreonine	MOD_RES
+RECQL5	157	160	DEAH box	MOTIF
+RECQL5	490	620	Interaction with POLR2A	REGION
+RECQL5	613	645	Disordered	REGION
+RECQL5	652	725	Interaction with RAD51	REGION
+RECQL5	681	761	Disordered	REGION
+RECQL5	780	901	Disordered	REGION
+RECQL5	1	991	ATP-dependent DNA helicase Q5	CHAIN
+RLN3	35	129	Interchain (between B and A chains)	DISULFID
+RLN3	47	142	Interchain (between B and A chains)	DISULFID
+RLN3	128	133		DISULFID
+RLN3	1	25		SIGNAL
+RNF20	43	90		COILED
+RNF20	168	375		COILED
+RNF20	429	898		COILED
+RNF20	21	21	N6-acetyllysine	MOD_RES
+RNF20	41	41	Phosphoserine	MOD_RES
+RNF20	136	136	Phosphoserine	MOD_RES
+RNF20	138	138	Phosphoserine	MOD_RES
+RNF20	348	348	N6-acetyllysine	MOD_RES
+RNF20	510	510	N6-acetyllysine	MOD_RES
+RNF20	522	522	Phosphoserine	MOD_RES
+RNF20	562	562	Phosphoserine	MOD_RES
+RNF20	1	30	Disordered	REGION
+RNF20	125	155	Disordered	REGION
+RNF20	507	622	Disordered	REGION
+RNF20	922	961	RING-type	ZN_FING
+RNF20	1	975	E3 ubiquitin-protein ligase BRE1A	CHAIN
+RNF34	115	134	SAP 1	DOMAIN
+RNF34	264	278	SAP 2	DOMAIN
+RNF34	169	169	Phosphoserine	MOD_RES
+RNF34	254	254	Phosphoserine	MOD_RES
+RNF34	256	256	Phosphoserine	MOD_RES
+RNF34	194	253	Disordered	REGION
+RNF34	232	233	Cleavage; by caspase-3	SITE
+RNF34	56	107	FYVE-type	ZN_FING
+RNF34	325	360	RING-type	ZN_FING
+RNF34	1	372	E3 ubiquitin-protein ligase RNF34	CHAIN
+RPTN	32	32		BINDING
+RPTN	62	62		BINDING
+RPTN	64	64		BINDING
+RPTN	66	66		BINDING
+RPTN	68	68		BINDING
+RPTN	73	73		BINDING
+RPTN	13	48	EF-hand 1	DOMAIN
+RPTN	49	84	EF-hand 2	DOMAIN
+RPTN	1	91	S-100-like	REGION
+RPTN	92	221	Disordered	REGION
+RPTN	282	584	Disordered	REGION
+RPTN	601	661	Disordered	REGION
+RPTN	677	784	Disordered	REGION
+RPTN	1	784	Repetin	CHAIN
+RTL3	51	101	Disordered	REGION
+RTL3	152	173	Disordered	REGION
+RTL3	397	421	Disordered	REGION
+RTL3	443	462	CCHC-type	ZN_FING
+RTL3	1	475	Retrotransposon Gag-like protein 3	CHAIN
+RUBCN	48	189	RUN	DOMAIN
+RUBCN	197	197	Phosphoserine	MOD_RES
+RUBCN	248	248	Phosphoserine	MOD_RES
+RUBCN	266	266	Phosphoserine	MOD_RES
+RUBCN	388	388	Phosphoserine	MOD_RES
+RUBCN	410	410	Phosphoserine	MOD_RES
+RUBCN	528	528	Phosphoserine	MOD_RES
+RUBCN	562	562	Phosphoserine	MOD_RES
+RUBCN	671	671	Phosphoserine	MOD_RES
+RUBCN	1	22	Disordered	REGION
+RUBCN	49	180	Interaction with PIK3C3	REGION
+RUBCN	204	447	Interaction with YWHAB	REGION
+RUBCN	233	279	Disordered	REGION
+RUBCN	300	600	Interaction with UVRAG	REGION
+RUBCN	307	446	Disordered	REGION
+RUBCN	505	557	Interaction with BECN1	REGION
+RUBCN	562	589	Disordered	REGION
+RUBCN	567	625	Interaction with CYBA	REGION
+RUBCN	672	760	Interaction with CARD9	REGION
+RUBCN	721	972	Interaction with Rab7	REGION
+RUBCN	1	972	Run domain Beclin-1-interacting and cysteine-rich domain-containing protein	CHAIN
+SAMD13	51	119	SAM	DOMAIN
+SAMD13	1	122	Sterile alpha motif domain-containing protein 13	CHAIN
+SAMD15	545	608	SAM	DOMAIN
+SAMD15	1	448	Disordered	REGION
+SAMD15	1	674	Sterile alpha motif domain-containing protein 15	CHAIN
+SAMHD1	116	116	in other chain	BINDING
+SAMHD1	119	119		BINDING
+SAMHD1	137	145	in other chain	BINDING
+SAMHD1	149	149		BINDING
+SAMHD1	164	164		BINDING
+SAMHD1	167	167		BINDING
+SAMHD1	206	206		BINDING
+SAMHD1	207	207		BINDING
+SAMHD1	210	210		BINDING
+SAMHD1	309	315		BINDING
+SAMHD1	311	311		BINDING
+SAMHD1	315	315		BINDING
+SAMHD1	319	319		BINDING
+SAMHD1	333	333	in other chain	BINDING
+SAMHD1	352	354	in other chain	BINDING
+SAMHD1	358	358	in other chain	BINDING
+SAMHD1	366	366		BINDING
+SAMHD1	370	375		BINDING
+SAMHD1	376	376		BINDING
+SAMHD1	377	377		BINDING
+SAMHD1	451	451		BINDING
+SAMHD1	455	455		BINDING
+SAMHD1	523	523	in other chain	BINDING
+SAMHD1	467	467	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+SAMHD1	469	469	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+SAMHD1	492	492	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+SAMHD1	622	622	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+SAMHD1	45	110	SAM	DOMAIN
+SAMHD1	164	316	HD	DOMAIN
+SAMHD1	1	1	N-acetylmethionine	MOD_RES
+SAMHD1	18	18	Phosphoserine	MOD_RES
+SAMHD1	21	21	Phosphothreonine	MOD_RES
+SAMHD1	25	25	Phosphothreonine	MOD_RES
+SAMHD1	33	33	Phosphoserine	MOD_RES
+SAMHD1	93	93	Phosphoserine	MOD_RES
+SAMHD1	592	592	(Microbial infection) Phosphothreonine	MOD_RES
+SAMHD1	592	592	Phosphothreonine; by CDK1	MOD_RES
+SAMHD1	1	36	Disordered	REGION
+SAMHD1	1	626	Deoxynucleoside triphosphate triphosphohydrolase SAMHD1	CHAIN
+SAP25	151	199	Disordered	REGION
+SAP25	1	199	Histone deacetylase complex subunit SAP25	CHAIN
+SCAF4	1	139	CID	DOMAIN
+SCAF4	508	582	RRM	DOMAIN
+SCAF4	49	49	N6-acetyllysine	MOD_RES
+SCAF4	154	154	Phosphoserine	MOD_RES
+SCAF4	656	656	Phosphoserine	MOD_RES
+SCAF4	1004	1004	Phosphoserine	MOD_RES
+SCAF4	145	179	Disordered	REGION
+SCAF4	235	254	Disordered	REGION
+SCAF4	269	331	Disordered	REGION
+SCAF4	424	502	Disordered	REGION
+SCAF4	629	661	Disordered	REGION
+SCAF4	879	1147	Disordered	REGION
+SCAF4	1	1147	SR-related and CTD-associated factor 4	CHAIN
+SCARB1	102	102	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	108	108	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	173	173	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	212	212	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	227	227	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	255	255	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	310	310	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	330	330	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	383	383	N-linked (GlcNAc...) asparagine	CARBOHYD
+SCARB1	251	384		DISULFID
+SCARB1	462	462	S-palmitoyl cysteine	LIPID
+SCARB1	493	493	Phosphoserine	MOD_RES
+SCARB1	393	393	Phosphoserine	MOD_RES
+SCARB1	458	458	Phosphoserine	MOD_RES
+SCARB1	1	552	Scavenger receptor class B member 1	CHAIN
+SCNN1A	1	43	Disordered	REGION
+SCNN1A	620	669	Disordered	REGION
+SCNN1A	1	669	Amiloride-sensitive sodium channel subunit alpha	CHAIN
+SEC11A	165	176	C-terminal short (CTS) helix	REGION
+SEC11A	1	179	Signal peptidase complex catalytic subunit SEC11A	CHAIN
+SEC13	2	2	N-acetylvaline	MOD_RES
+SEC13	184	184	Phosphoserine	MOD_RES
+SEC13	309	309	Phosphoserine	MOD_RES
+SEC13	11	50	WD 1	REPEAT
+SEC13	55	96	WD 2	REPEAT
+SEC13	101	144	WD 3	REPEAT
+SEC13	148	204	WD 4	REPEAT
+SEC13	210	253	WD 5	REPEAT
+SEC13	260	299	WD 6	REPEAT
+SEC13	2	322	Protein SEC13 homolog	CHAIN
+SERPINA6	254	254		BINDING
+SERPINA6	286	286		BINDING
+SERPINA6	390	390		BINDING
+SERPINA6	393	393		BINDING
+SERPINA6	31	31	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	96	96	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	176	176	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	260	260	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	330	330	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	369	369	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINA6	250	250	Conserved cysteine within steroid binding domain	SITE
+SERPINA6	23	405	Corticosteroid-binding globulin	CHAIN
+SERPINA6	1	22		SIGNAL
+SERPINE3	46	46	N-linked (GlcNAc...) asparagine	CARBOHYD
+SERPINE3	143	174	Disordered	REGION
+SERPINE3	369	370	Reactive bond	SITE
+SERPINE3	21	424	Serpin E3	CHAIN
+SERPINE3	1	20		SIGNAL
+SFR1	149	177		COILED
+SFR1	61	61	Phosphoserine	MOD_RES
+SFR1	64	64	Phosphoserine	MOD_RES
+SFR1	1	1	N-acetylmethionine	MOD_RES
+SFR1	1	54	Disordered	REGION
+SFR1	1	436	U10 protein	CHAIN
+SH2D4A	347	440	SH2	DOMAIN
+SH2D4A	118	118	Phosphoserine	MOD_RES
+SH2D4A	124	124	Phosphoserine	MOD_RES
+SH2D4A	261	261	Phosphoserine	MOD_RES
+SH2D4A	315	315	Phosphoserine	MOD_RES
+SH2D4A	45	65	Disordered	REGION
+SH2D4A	107	131	Disordered	REGION
+SH2D4A	152	177	Disordered	REGION
+SH2D4A	237	302	Disordered	REGION
+SH2D4A	1	454	SH2 domain-containing protein 4A	CHAIN
+SHOX2	140	199	Homeobox	DNA_BIND
+SHOX2	313	326	OAR	MOTIF
+SHOX2	27	140	Disordered	REGION
+SHOX2	1	331	Short stature homeobox protein 2	CHAIN
+SIMC1	26	30	SUMO interaction motif 1 (SIM); mediates the binding to polysumoylated substrates	MOTIF
+SIMC1	45	49	SUMO interaction motif 2 (SIM); mediates the binding to polysumoylated substrates	MOTIF
+SIMC1	1	367	Interaction with CTBP1	REGION
+SIMC1	163	199	Disordered	REGION
+SIMC1	246	387	Disordered	REGION
+SIMC1	381	872	Interaction with SLF2	REGION
+SIMC1	459	872	Required for inhibition of CAPN3 protease activity	REGION
+SIMC1	467	802	NSE5-like domain	REGION
+SIMC1	625	655	Disordered	REGION
+SIMC1	1	872	SUMO-interacting motif-containing protein 1	CHAIN
+SLC25A25	60	60		BINDING
+SLC25A25	62	62		BINDING
+SLC25A25	64	64		BINDING
+SLC25A25	66	66		BINDING
+SLC25A25	71	71		BINDING
+SLC25A25	47	80	EF-hand 1	DOMAIN
+SLC25A25	78	113	EF-hand 2	DOMAIN
+SLC25A25	114	149	EF-hand 3	DOMAIN
+SLC25A25	1	165	Regulatory N-terminal domain	REGION
+SLC25A25	151	160	Linker region	REGION
+SLC25A25	166	469	C-terminal transmembrane transporter domain	REGION
+SLC25A25	184	270	Solcar 1	REPEAT
+SLC25A25	278	363	Solcar 2	REPEAT
+SLC25A25	375	463	Solcar 3	REPEAT
+SLC25A25	1	469	Mitochondrial adenyl nucleotide antiporter SLC25A25	CHAIN
+SLC2A13	433	433	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC2A13	458	458	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC2A13	485	485	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC2A13	6	6	Phosphoserine	MOD_RES
+SLC2A13	47	47	Phosphoserine	MOD_RES
+SLC2A13	50	50	Phosphoserine	MOD_RES
+SLC2A13	640	640	Phosphoserine	MOD_RES
+SLC2A13	645	645	Phosphoserine	MOD_RES
+SLC2A13	1	648	Proton myo-inositol cotransporter	CHAIN
+SLC36A2	26	46	Disordered	REGION
+SLC36A2	1	483	Proton-coupled amino acid transporter 2	CHAIN
+SLC38A10	612	612	Phosphoserine	MOD_RES
+SLC38A10	772	772	Phosphothreonine	MOD_RES
+SLC38A10	802	802	Phosphoserine	MOD_RES
+SLC38A10	889	889	Phosphoserine	MOD_RES
+SLC38A10	965	965	Phosphoserine	MOD_RES
+SLC38A10	997	997	Phosphoserine	MOD_RES
+SLC38A10	438	691	Disordered	REGION
+SLC38A10	731	1071	Disordered	REGION
+SLC38A10	1	1119	Solute carrier family 38 member 10	CHAIN
+SLC45A4	424	424	Phosphoserine	MOD_RES
+SLC45A4	454	454	Phosphoserine	MOD_RES
+SLC45A4	485	485	Phosphoserine	MOD_RES
+SLC45A4	732	732	Phosphoserine	MOD_RES
+SLC45A4	1	32	Disordered	REGION
+SLC45A4	259	284	Disordered	REGION
+SLC45A4	379	419	Disordered	REGION
+SLC45A4	460	489	Disordered	REGION
+SLC45A4	726	768	Disordered	REGION
+SLC45A4	1	768	Solute carrier family 45 member 4	CHAIN
+SLC6A6	163	163	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC6A6	179	179	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC6A6	190	190	N-linked (GlcNAc...) asparagine	CARBOHYD
+SLC6A6	322	322	Phosphoserine	MOD_RES
+SLC6A6	1	42	Disordered	REGION
+SLC6A6	1	620	Sodium- and chloride-dependent taurine transporter	CHAIN
+SMAGP	2	2	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	3	3	O-linked (GalNAc...) serine	CARBOHYD
+SMAGP	6	6	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	7	7	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	9	9	O-linked (GalNAc...) serine	CARBOHYD
+SMAGP	16	16	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	17	17	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	23	23	O-linked (GalNAc...) threonine	CARBOHYD
+SMAGP	1	97	Small cell adhesion glycoprotein	CHAIN
+SMCP	6	68	7 X 7 (OR 8) AA approximate repeats	REGION
+SMCP	80	116	Disordered	REGION
+SMCP	6	13	1	REPEAT
+SMCP	14	21	2	REPEAT
+SMCP	30	37	3	REPEAT
+SMCP	38	45	4	REPEAT
+SMCP	46	53	5	REPEAT
+SMCP	54	61	6	REPEAT
+SMCP	62	68	7	REPEAT
+SMCP	1	116	Sperm mitochondrial-associated cysteine-rich protein	CHAIN
+SMTN	24	89		COILED
+SMTN	603	630		COILED
+SMTN	799	906	Calponin-homology (CH)	DOMAIN
+SMTN	2	2	N-acetylalanine	MOD_RES
+SMTN	299	299	Phosphoserine	MOD_RES
+SMTN	301	301	Phosphoserine	MOD_RES
+SMTN	304	304	Phosphoserine	MOD_RES
+SMTN	341	341	Phosphoserine	MOD_RES
+SMTN	351	351	Phosphothreonine	MOD_RES
+SMTN	357	357	Phosphoserine	MOD_RES
+SMTN	360	360	Phosphothreonine	MOD_RES
+SMTN	373	373	Phosphothreonine	MOD_RES
+SMTN	503	503	Phosphoserine	MOD_RES
+SMTN	514	514	Phosphoserine	MOD_RES
+SMTN	523	523	Phosphoserine	MOD_RES
+SMTN	576	576	Phosphoserine	MOD_RES
+SMTN	729	729	Phosphoserine	MOD_RES
+SMTN	792	792	Phosphoserine	MOD_RES
+SMTN	157	456	Disordered	REGION
+SMTN	560	580	Disordered	REGION
+SMTN	617	767	Disordered	REGION
+SMTN	2	917	Smoothelin	CHAIN
+SNX25	434	499		COILED
+SNX25	1	164	PXA	DOMAIN
+SNX25	287	401	RGS	DOMAIN
+SNX25	508	628	PX	DOMAIN
+SNX25	665	665	Phosphoserine	MOD_RES
+SNX25	1	840	Sorting nexin-25	CHAIN
+SPATA21	268	268		BINDING
+SPATA21	270	270		BINDING
+SPATA21	272	272		BINDING
+SPATA21	274	274		BINDING
+SPATA21	279	279		BINDING
+SPATA21	198	225		COILED
+SPATA21	255	290	EF-hand	DOMAIN
+SPATA21	1	76	Disordered	REGION
+SPATA21	99	157	Disordered	REGION
+SPATA21	424	469	Disordered	REGION
+SPATA21	1	469	Spermatogenesis-associated protein 21	CHAIN
+SPATA33	94	94	Phosphoserine	MOD_RES
+SPATA33	86	91	PQIIIT	MOTIF
+SPATA33	1	83	Disordered	REGION
+SPATA33	1	67	Interaction with ATG16L1	REGION
+SPATA33	68	139	Interaction with VDAC2	REGION
+SPATA33	97	139	Disordered	REGION
+SPATA33	1	139	Spermatogenesis-associated protein 33	CHAIN
+SPOPL	31	161	MATH	DOMAIN
+SPOPL	200	267	BTB	DOMAIN
+SPOPL	1	392	Speckle-type POZ protein-like	CHAIN
+SPRR1A	1	29	Disordered	REGION
+SPRR1A	3	29	2 X 12 AA approximate repeats	REGION
+SPRR1A	31	78	6 X 8 AA approximate tandem repeats	REGION
+SPRR1A	68	89	Disordered	REGION
+SPRR1A	3	14	1	REPEAT
+SPRR1A	18	29	2	REPEAT
+SPRR1A	31	38	1	REPEAT
+SPRR1A	39	46	2	REPEAT
+SPRR1A	47	54	3	REPEAT
+SPRR1A	55	62	4	REPEAT
+SPRR1A	63	70	5	REPEAT
+SPRR1A	71	78	6	REPEAT
+SPRR1A	1	89	Cornifin-A	CHAIN
+SRRM5	1	715	Disordered	REGION
+SRRM5	1	715	Serine/arginine repetitive matrix protein 5	CHAIN
+STAU1	72	162	DRBM 1	DOMAIN
+STAU1	184	251	DRBM 2	DOMAIN
+STAU1	286	354	DRBM 3	DOMAIN
+STAU1	2	2	N-acetylserine	MOD_RES
+STAU1	108	108	Asymmetric dimethylarginine	MOD_RES
+STAU1	115	115	Asymmetric dimethylarginine; alternate	MOD_RES
+STAU1	115	115	Omega-N-methylarginine; alternate	MOD_RES
+STAU1	176	176	Phosphoserine	MOD_RES
+STAU1	278	278	Phosphoserine	MOD_RES
+STAU1	390	390	Phosphoserine	MOD_RES
+STAU1	34	55	Disordered	REGION
+STAU1	360	397	Disordered	REGION
+STAU1	2	577	Double-stranded RNA-binding protein Staufen homolog 1	CHAIN
+STOX1	327	346	Disordered	REGION
+STOX1	389	470	Disordered	REGION
+STOX1	497	556	Disordered	REGION
+STOX1	631	651	Disordered	REGION
+STOX1	926	948	Disordered	REGION
+STOX1	1	989	Storkhead-box protein 1	CHAIN
+STPG3	105	136	Disordered	REGION
+STPG3	1	386	Protein STPG3	CHAIN
+SUCO	202	202	N-linked (GlcNAc...) asparagine	CARBOHYD
+SUCO	236	236	N-linked (GlcNAc...) asparagine	CARBOHYD
+SUCO	524	524	N-linked (GlcNAc...) asparagine	CARBOHYD
+SUCO	928	928	N-linked (GlcNAc...) asparagine	CARBOHYD
+SUCO	955	955	N-linked (GlcNAc...) asparagine	CARBOHYD
+SUCO	909	1009		COILED
+SUCO	284	453	SUN	DOMAIN
+SUCO	1081	1081	Phosphoserine	MOD_RES
+SUCO	58	88	Disordered	REGION
+SUCO	118	270	Disordered	REGION
+SUCO	282	304	Disordered	REGION
+SUCO	530	553	Disordered	REGION
+SUCO	583	605	Disordered	REGION
+SUCO	759	788	Disordered	REGION
+SUCO	1152	1172	Disordered	REGION
+SUCO	30	1254	SUN domain-containing ossification factor	CHAIN
+SUCO	1	29		SIGNAL
+SYAP1	158	210	BSD	DOMAIN
+SYAP1	248	248	Phosphothreonine	MOD_RES
+SYAP1	269	269	Phosphoserine	MOD_RES
+SYAP1	313	313	Phosphoserine	MOD_RES
+SYAP1	1	45	Disordered	REGION
+SYAP1	1	352	Synapse-associated protein 1	CHAIN
+SYNPO	330	330	N-linked (GlcNAc...) asparagine	CARBOHYD
+SYNPO	140	140	Phosphoserine	MOD_RES
+SYNPO	207	207	Phosphoserine	MOD_RES
+SYNPO	263	263	Phosphoserine	MOD_RES
+SYNPO	501	501	Phosphoserine	MOD_RES
+SYNPO	525	525	Phosphoserine	MOD_RES
+SYNPO	560	560	Phosphothreonine	MOD_RES
+SYNPO	580	580	Phosphoserine	MOD_RES
+SYNPO	685	685	Phosphoserine	MOD_RES
+SYNPO	702	702	Phosphoserine	MOD_RES
+SYNPO	746	746	Phosphothreonine	MOD_RES
+SYNPO	754	754	Phosphoserine	MOD_RES
+SYNPO	758	758	Phosphoserine	MOD_RES
+SYNPO	779	779	Phosphoserine	MOD_RES
+SYNPO	783	783	Phosphothreonine	MOD_RES
+SYNPO	833	833	Phosphoserine	MOD_RES
+SYNPO	854	854	Phosphoserine	MOD_RES
+SYNPO	1	1	N-acetylmethionine	MOD_RES
+SYNPO	738	738	Phosphoserine	MOD_RES
+SYNPO	784	784	Phosphoserine	MOD_RES
+SYNPO	804	804	Phosphoserine	MOD_RES
+SYNPO	812	812	Phosphoserine	MOD_RES
+SYNPO	826	826	Phosphoserine	MOD_RES
+SYNPO	854	854	Phosphoserine	MOD_RES
+SYNPO	871	871	Phosphoserine	MOD_RES
+SYNPO	894	894	Phosphoserine	MOD_RES
+SYNPO	1	1	N-acetylmethionine	MOD_RES
+SYNPO	562	565	PPxY motif	MOTIF
+SYNPO	581	584	PPxY motif	MOTIF
+SYNPO	1	260	Disordered	REGION
+SYNPO	285	389	Disordered	REGION
+SYNPO	509	558	Disordered	REGION
+SYNPO	589	610	Disordered	REGION
+SYNPO	630	726	Disordered	REGION
+SYNPO	740	763	Disordered	REGION
+SYNPO	826	916	Disordered	REGION
+SYNPO	1	929	Synaptopodin	CHAIN
+TAF1B	13	13		BINDING
+TAF1B	16	16		BINDING
+TAF1B	31	31		BINDING
+TAF1B	34	34		BINDING
+TAF1B	1	1	N-acetylmethionine	MOD_RES
+TAF1B	440	440	N6-acetyllysine	MOD_RES
+TAF1B	40	68	B-reader	REGION
+TAF1B	69	73	B-linker	REGION
+TAF1B	74	261	N-terminal cyclin fold	REGION
+TAF1B	262	372	C-terminal cyclin fold	REGION
+TAF1B	4	39	RRN7-type	ZN_FING
+TAF1B	1	588	TATA box-binding protein-associated factor RNA polymerase I subunit B	CHAIN
+TAF7L	342	462		COILED
+TAF7L	1	97	Disordered	REGION
+TAF7L	327	366	Disordered	REGION
+TAF7L	1	462	Transcription initiation factor TFIID subunit 7-like	CHAIN
+TCHHL1	48	83	EF-hand	DOMAIN
+TCHHL1	102	792	Disordered	REGION
+TCHHL1	858	890	Disordered	REGION
+TCHHL1	1	904	Trichohyalin-like protein 1	CHAIN
+TCOF1	126	126	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	507	507	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	600	600	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+TCOF1	637	637	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	725	725	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	732	732	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	755	755	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO1); alternate	CROSSLNK
+TCOF1	755	755	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+TCOF1	1224	1224	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	1238	1238	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	1248	1248	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TCOF1	1414	1414	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2); alternate	CROSSLNK
+TCOF1	6	38	LisH	DOMAIN
+TCOF1	83	83	Phosphoserine	MOD_RES
+TCOF1	84	84	Phosphothreonine	MOD_RES
+TCOF1	85	85	Phosphoserine	MOD_RES
+TCOF1	87	87	Phosphoserine	MOD_RES
+TCOF1	88	88	Phosphoserine	MOD_RES
+TCOF1	102	102	Phosphothreonine	MOD_RES
+TCOF1	107	107	Phosphoserine	MOD_RES
+TCOF1	134	134	N6-acetyllysine	MOD_RES
+TCOF1	153	153	Phosphoserine	MOD_RES
+TCOF1	155	155	N6-acetyllysine	MOD_RES
+TCOF1	156	156	Phosphoserine	MOD_RES
+TCOF1	171	171	Phosphoserine	MOD_RES
+TCOF1	173	173	Phosphothreonine	MOD_RES
+TCOF1	233	233	Phosphoserine	MOD_RES
+TCOF1	249	249	Phosphothreonine	MOD_RES
+TCOF1	296	296	N6-acetyllysine	MOD_RES
+TCOF1	310	310	Phosphothreonine	MOD_RES
+TCOF1	313	313	N6-acetyllysine	MOD_RES
+TCOF1	316	316	Phosphothreonine	MOD_RES
+TCOF1	322	322	N6-acetyllysine	MOD_RES
+TCOF1	381	381	Phosphoserine	MOD_RES
+TCOF1	413	413	Phosphoserine	MOD_RES
+TCOF1	414	414	Phosphoserine	MOD_RES
+TCOF1	446	446	Phosphoserine	MOD_RES
+TCOF1	484	484	Phosphoserine	MOD_RES
+TCOF1	503	503	Phosphoserine	MOD_RES
+TCOF1	533	533	Phosphothreonine	MOD_RES
+TCOF1	581	581	Phosphothreonine	MOD_RES
+TCOF1	583	583	Phosphoserine	MOD_RES
+TCOF1	600	600	N6-acetyllysine; alternate	MOD_RES
+TCOF1	620	620	Phosphoserine	MOD_RES
+TCOF1	679	679	Phosphoserine	MOD_RES
+TCOF1	716	716	N6-acetyllysine	MOD_RES
+TCOF1	720	720	N6-acetyllysine	MOD_RES
+TCOF1	755	755	N6-acetyllysine; alternate	MOD_RES
+TCOF1	762	762	Phosphoserine	MOD_RES
+TCOF1	764	764	Phosphoserine	MOD_RES
+TCOF1	765	765	Phosphoserine	MOD_RES
+TCOF1	769	769	Phosphoserine	MOD_RES
+TCOF1	771	771	Phosphoserine	MOD_RES
+TCOF1	777	777	Phosphoserine	MOD_RES
+TCOF1	868	868	Phosphoserine	MOD_RES
+TCOF1	870	870	Phosphoserine	MOD_RES
+TCOF1	871	871	Phosphoserine	MOD_RES
+TCOF1	875	875	Phosphoserine	MOD_RES
+TCOF1	877	877	Phosphoserine	MOD_RES
+TCOF1	906	906	Phosphoserine	MOD_RES
+TCOF1	914	914	Phosphothreonine	MOD_RES
+TCOF1	967	967	Phosphoserine	MOD_RES
+TCOF1	974	974	Phosphothreonine	MOD_RES
+TCOF1	983	983	Phosphothreonine	MOD_RES
+TCOF1	998	998	Phosphoserine	MOD_RES
+TCOF1	1111	1111	Phosphoserine	MOD_RES
+TCOF1	1175	1175	Phosphothreonine	MOD_RES
+TCOF1	1190	1190	Phosphoserine	MOD_RES
+TCOF1	1222	1222	Phosphothreonine	MOD_RES
+TCOF1	1228	1228	Phosphoserine	MOD_RES
+TCOF1	1234	1234	Phosphothreonine	MOD_RES
+TCOF1	1257	1257	Phosphoserine	MOD_RES
+TCOF1	1350	1350	Phosphoserine	MOD_RES
+TCOF1	1358	1358	Phosphothreonine	MOD_RES
+TCOF1	1376	1376	Phosphoserine	MOD_RES
+TCOF1	1378	1378	Phosphoserine	MOD_RES
+TCOF1	1407	1407	Phosphoserine	MOD_RES
+TCOF1	1410	1410	Phosphoserine	MOD_RES
+TCOF1	1414	1414	N6-acetyllysine; alternate	MOD_RES
+TCOF1	1469	1469	Phosphoserine	MOD_RES
+TCOF1	1471	1471	Phosphoserine	MOD_RES
+TCOF1	57	1288	Disordered	REGION
+TCOF1	1322	1488	Disordered	REGION
+TCOF1	1	1488	Treacle protein	CHAIN
+TENT4B	177	177		BINDING
+TENT4B	179	179		BINDING
+TENT4B	470	470	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TENT4B	497	497	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TENT4B	512	512	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TENT4B	526	526	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TENT4B	151	151	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TENT4B	308	368	PAP-associated	DOMAIN
+TENT4B	484	484	Phosphoserine	MOD_RES
+TENT4B	557	563	Basic, involved in binding of the RNA primer	MOTIF
+TENT4B	1	105	Disordered	REGION
+TENT4B	435	572	Disordered	REGION
+TENT4B	1	572	Terminal nucleotidyltransferase 4B	CHAIN
+TEX13D	300	419	Disordered	REGION
+TEX13D	431	675	Disordered	REGION
+TEX13D	677	706	RanBP2-type	ZN_FING
+TEX13D	1	714	Testis-expressed protein 13D	CHAIN
+TLE6	510	510	Phosphoserine; by PKA	MOD_RES
+TLE6	1	30	Disordered	REGION
+TLE6	92	121	Disordered	REGION
+TLE6	174	236	Disordered	REGION
+TLE6	284	322	WD 1	REPEAT
+TLE6	332	372	WD 2	REPEAT
+TLE6	377	416	WD 3	REPEAT
+TLE6	419	456	WD 4	REPEAT
+TLE6	458	497	WD 5	REPEAT
+TLE6	499	538	WD 6	REPEAT
+TLE6	540	571	WD 7	REPEAT
+TLE6	1	572	Transducin-like enhancer protein 6	CHAIN
+TMEM140	38	38	N-linked (GlcNAc...) asparagine	CARBOHYD
+TMEM140	1	185	Transmembrane protein 140	CHAIN
+TMEM154	179	179	Phosphoserine	MOD_RES
+TMEM154	163	183	Disordered	REGION
+TMEM154	23	183	Transmembrane protein 154	CHAIN
+TMEM154	1	22		SIGNAL
+TMEM35B	23	154	Transmembrane protein 35B	CHAIN
+TMEM35B	1	22		SIGNAL
+TMEM61	140	172	Disordered	REGION
+TMEM61	191	210	Disordered	REGION
+TMEM61	1	210	Transmembrane protein 61	CHAIN
+TMEM91	1	31	Disordered	REGION
+TMEM91	55	83	Disordered	REGION
+TMEM91	1	172	Transmembrane protein 91	CHAIN
+TMIGD2	73	73	N-linked (GlcNAc...) asparagine	CARBOHYD
+TMIGD2	105	105	N-linked (GlcNAc...) asparagine	CARBOHYD
+TMIGD2	127	127	N-linked (GlcNAc...) asparagine	CARBOHYD
+TMIGD2	44	112		DISULFID
+TMIGD2	23	129	Ig-like	DOMAIN
+TMIGD2	192	192	Phosphotyrosine	MOD_RES
+TMIGD2	220	220	Phosphoserine	MOD_RES
+TMIGD2	222	222	Phosphotyrosine	MOD_RES
+TMIGD2	201	282	Disordered	REGION
+TMIGD2	23	282	Transmembrane and immunoglobulin domain-containing protein 2	CHAIN
+TMIGD2	1	22		SIGNAL
+TNFRSF18	146	146	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNFRSF18	34	49		DISULFID
+TNFRSF18	74	86		DISULFID
+TNFRSF18	81	94		DISULFID
+TNFRSF18	115	134		DISULFID
+TNFRSF18	128	153		DISULFID
+TNFRSF18	214	241	Disordered	REGION
+TNFRSF18	34	72	TNFR-Cys 1	REPEAT
+TNFRSF18	74	112	TNFR-Cys 2	REPEAT
+TNFRSF18	115	153	TNFR-Cys 3	REPEAT
+TNFRSF18	26	241	Tumor necrosis factor receptor superfamily member 18	CHAIN
+TNFRSF18	1	25		SIGNAL
+TNFSF12	139	139	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNFSF12	191	210		DISULFID
+TNFSF12	55	85	Disordered	REGION
+TNFSF12	93	94	Cleavage	SITE
+TNFSF12	1	249	Tumor necrosis factor ligand superfamily member 12, membrane form	CHAIN
+TNFSF12	94	249	Tumor necrosis factor ligand superfamily member 12, secreted form	CHAIN
+TNNI1	2	2	N-acetylproline	MOD_RES
+TNNI1	58	58	Phosphoserine	MOD_RES
+TNNI1	2	48	Involved in binding TNC	REGION
+TNNI1	97	118	Involved in binding TNC and actin	REGION
+TNNI1	2	187	Troponin I, slow skeletal muscle	CHAIN
+TNXB	31	31	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNXB	3855	3855	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNXB	3908	3908	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNXB	3920	3920	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNXB	4095	4095	N-linked (GlcNAc...) asparagine	CARBOHYD
+TNXB	187	197		DISULFID
+TNXB	191	202		DISULFID
+TNXB	204	213		DISULFID
+TNXB	218	228		DISULFID
+TNXB	222	233		DISULFID
+TNXB	235	244		DISULFID
+TNXB	249	259		DISULFID
+TNXB	253	264		DISULFID
+TNXB	266	275		DISULFID
+TNXB	280	290		DISULFID
+TNXB	284	295		DISULFID
+TNXB	297	306		DISULFID
+TNXB	311	321		DISULFID
+TNXB	315	326		DISULFID
+TNXB	328	337		DISULFID
+TNXB	342	352		DISULFID
+TNXB	346	357		DISULFID
+TNXB	359	368		DISULFID
+TNXB	373	383		DISULFID
+TNXB	377	388		DISULFID
+TNXB	390	399		DISULFID
+TNXB	404	414		DISULFID
+TNXB	408	419		DISULFID
+TNXB	421	430		DISULFID
+TNXB	435	445		DISULFID
+TNXB	439	450		DISULFID
+TNXB	452	461		DISULFID
+TNXB	466	476		DISULFID
+TNXB	470	481		DISULFID
+TNXB	483	492		DISULFID
+TNXB	497	507		DISULFID
+TNXB	501	512		DISULFID
+TNXB	514	523		DISULFID
+TNXB	528	538		DISULFID
+TNXB	532	543		DISULFID
+TNXB	545	554		DISULFID
+TNXB	559	569		DISULFID
+TNXB	563	574		DISULFID
+TNXB	576	585		DISULFID
+TNXB	590	600		DISULFID
+TNXB	594	605		DISULFID
+TNXB	607	616		DISULFID
+TNXB	621	631		DISULFID
+TNXB	625	636		DISULFID
+TNXB	638	647		DISULFID
+TNXB	652	662		DISULFID
+TNXB	656	667		DISULFID
+TNXB	669	678		DISULFID
+TNXB	688	698		DISULFID
+TNXB	692	703		DISULFID
+TNXB	705	714		DISULFID
+TNXB	719	729		DISULFID
+TNXB	723	734		DISULFID
+TNXB	736	745		DISULFID
+TNXB	4030	4060		DISULFID
+TNXB	4182	4195		DISULFID
+TNXB	156	168	EGF-like 1; incomplete	DOMAIN
+TNXB	183	213	EGF-like 2	DOMAIN
+TNXB	214	244	EGF-like 3	DOMAIN
+TNXB	245	275	EGF-like 4	DOMAIN
+TNXB	276	306	EGF-like 5	DOMAIN
+TNXB	307	337	EGF-like 6	DOMAIN
+TNXB	338	368	EGF-like 7	DOMAIN
+TNXB	369	399	EGF-like 8	DOMAIN
+TNXB	400	430	EGF-like 9	DOMAIN
+TNXB	431	461	EGF-like 10	DOMAIN
+TNXB	462	492	EGF-like 11	DOMAIN
+TNXB	493	523	EGF-like 12	DOMAIN
+TNXB	524	554	EGF-like 13	DOMAIN
+TNXB	555	585	EGF-like 14	DOMAIN
+TNXB	586	616	EGF-like 15	DOMAIN
+TNXB	617	647	EGF-like 16	DOMAIN
+TNXB	648	679	EGF-like 17	DOMAIN
+TNXB	684	714	EGF-like 18	DOMAIN
+TNXB	715	746	EGF-like 19	DOMAIN
+TNXB	959	1051	Fibronectin type-III 1	DOMAIN
+TNXB	1064	1153	Fibronectin type-III 2	DOMAIN
+TNXB	1161	1249	Fibronectin type-III 3	DOMAIN
+TNXB	1263	1352	Fibronectin type-III 4	DOMAIN
+TNXB	1374	1468	Fibronectin type-III 5	DOMAIN
+TNXB	1476	1572	Fibronectin type-III 6	DOMAIN
+TNXB	1574	1669	Fibronectin type-III 7	DOMAIN
+TNXB	1674	1764	Fibronectin type-III 8	DOMAIN
+TNXB	1778	1868	Fibronectin type-III 9	DOMAIN
+TNXB	1883	1971	Fibronectin type-III 10	DOMAIN
+TNXB	1989	2089	Fibronectin type-III 11	DOMAIN
+TNXB	2097	2185	Fibronectin type-III 12	DOMAIN
+TNXB	2196	2296	Fibronectin type-III 13	DOMAIN
+TNXB	2305	2398	Fibronectin type-III 14	DOMAIN
+TNXB	2408	2502	Fibronectin type-III 15	DOMAIN
+TNXB	2519	2617	Fibronectin type-III 16	DOMAIN
+TNXB	2625	2723	Fibronectin type-III 17	DOMAIN
+TNXB	2733	2840	Fibronectin type-III 18	DOMAIN
+TNXB	2841	2939	Fibronectin type-III 19	DOMAIN
+TNXB	2949	3042	Fibronectin type-III 20	DOMAIN
+TNXB	3062	3153	Fibronectin type-III 21	DOMAIN
+TNXB	3168	3260	Fibronectin type-III 22	DOMAIN
+TNXB	3264	3355	Fibronectin type-III 23	DOMAIN
+TNXB	3357	3446	Fibronectin type-III 24	DOMAIN
+TNXB	3451	3544	Fibronectin type-III 25	DOMAIN
+TNXB	3553	3647	Fibronectin type-III 26	DOMAIN
+TNXB	3657	3754	Fibronectin type-III 27	DOMAIN
+TNXB	3758	3847	Fibronectin type-III 28	DOMAIN
+TNXB	3848	3934	Fibronectin type-III 29	DOMAIN
+TNXB	3935	4025	Fibronectin type-III 30	DOMAIN
+TNXB	4021	4236	Fibrinogen C-terminal	DOMAIN
+TNXB	1666	1668	Cell attachment site	MOTIF
+TNXB	27	57	Disordered	REGION
+TNXB	169	189	Disordered	REGION
+TNXB	926	956	Disordered	REGION
+TNXB	1340	1372	Disordered	REGION
+TNXB	1752	1777	Disordered	REGION
+TNXB	1968	1990	Disordered	REGION
+TNXB	2281	2304	Disordered	REGION
+TNXB	2495	2542	Disordered	REGION
+TNXB	2824	2847	Disordered	REGION
+TNXB	2933	2969	Disordered	REGION
+TNXB	3536	3559	Disordered	REGION
+TNXB	3636	3662	Disordered	REGION
+TNXB	24	4244	Tenascin-X	CHAIN
+TNXB	1	23		SIGNAL
+TP53	176	176		BINDING
+TP53	179	179		BINDING
+TP53	238	238		BINDING
+TP53	242	242		BINDING
+TP53	24	24	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+TP53	291	291	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+TP53	292	292	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in ubiquitin)	CROSSLNK
+TP53	386	386	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO)	CROSSLNK
+TP53	102	292		DNA_BIND
+TP53	9	9	Phosphoserine; by HIPK4	MOD_RES
+TP53	15	15	Phosphoserine; by CDK5, PRPK, AMPK, NUAK1 and ATM	MOD_RES
+TP53	18	18	Phosphothreonine; by CK1, VRK1 and VRK2	MOD_RES
+TP53	20	20	Phosphoserine; by CHEK2, CK1 and PLK3	MOD_RES
+TP53	33	33	Phosphoserine; by CDK5 and CDK7	MOD_RES
+TP53	37	37	Phosphoserine; by MAPKAPK5	MOD_RES
+TP53	46	46	Phosphoserine; by CDK5, DYRK2, HIPK2 and PKC/PRKCG	MOD_RES
+TP53	55	55	Phosphothreonine; by TAF1 and GRK5	MOD_RES
+TP53	120	120	N6-acetyllysine; by KAT6A	MOD_RES
+TP53	183	183	Phosphoserine; by AURKB	MOD_RES
+TP53	269	269	Phosphoserine; by AURKB	MOD_RES
+TP53	284	284	Phosphothreonine; by AURKB	MOD_RES
+TP53	305	305	N6-acetyllysine	MOD_RES
+TP53	315	315	Phosphoserine; by AURKA, CDK1 and CDK2	MOD_RES
+TP53	321	321	N6-acetyllysine	MOD_RES
+TP53	333	333	Omega-N-methylarginine; by PRMT5	MOD_RES
+TP53	335	335	Symmetric dimethylarginine; by PRMT5	MOD_RES
+TP53	337	337	Symmetric dimethylarginine; by PRMT5	MOD_RES
+TP53	370	370	N6,N6-dimethyllysine; alternate	MOD_RES
+TP53	370	370	N6-methyllysine; by SMYD2; alternate	MOD_RES
+TP53	372	372	N6-methyllysine; by SETD7	MOD_RES
+TP53	373	373	N6,N6-dimethyllysine; by EHMT1 and EHMT2; alternate	MOD_RES
+TP53	373	373	N6-acetyllysine; alternate	MOD_RES
+TP53	381	381	N6-acetyllysine	MOD_RES
+TP53	382	382	N6,N6-dimethyllysine; alternate	MOD_RES
+TP53	382	382	N6-acetyllysine; by KAT6A; alternate	MOD_RES
+TP53	382	382	N6-methyllysine; by KMT5A; alternate	MOD_RES
+TP53	392	392	Phosphoserine; by CK2, CDK2 and NUAK1	MOD_RES
+TP53	17	25	TADI	MOTIF
+TP53	48	56	TADII	MOTIF
+TP53	305	321	Bipartite nuclear localization signal	MOTIF
+TP53	339	350	Nuclear export signal	MOTIF
+TP53	370	372	[KR]-[STA]-K motif	MOTIF
+TP53	1	320	Interaction with CCAR2	REGION
+TP53	1	83	Interaction with HRMT1L2	REGION
+TP53	1	44	Transcription activation (acidic)	REGION
+TP53	50	96	Disordered	REGION
+TP53	66	110	Interaction with WWOX	REGION
+TP53	100	370	Interaction with HIPK1	REGION
+TP53	100	300	Required for interaction with ZNF385A	REGION
+TP53	113	236	Required for interaction with FBXO42	REGION
+TP53	116	292	Interaction with AXIN1	REGION
+TP53	241	248	Interaction with the 53BP2 SH3 domain	REGION
+TP53	256	294	Interaction with E4F1	REGION
+TP53	273	280	Interaction with DNA	REGION
+TP53	282	325	Disordered	REGION
+TP53	300	393	Interaction with CARM1	REGION
+TP53	319	360	Interaction with HIPK2	REGION
+TP53	325	356	Oligomerization	REGION
+TP53	351	393	Disordered	REGION
+TP53	359	363	Interaction with USP7	REGION
+TP53	368	387	Basic (repression of DNA-binding)	REGION
+TP53	374	393	Interaction with MORN3	REGION
+TP53	120	120	Interaction with DNA	SITE
+TP53	1	393	Cellular tumor antigen p53	CHAIN
+TRMT10B	73	97		COILED
+TRMT10B	113	310	SAM-dependent MTase TRM10-type	DOMAIN
+TRMT10B	77	98	Disordered	REGION
+TRMT10B	1	316	tRNA methyltransferase 10 homolog B	CHAIN
+TSLP	64	64	N-linked (GlcNAc...) asparagine	CARBOHYD
+TSLP	119	119	N-linked (GlcNAc...) asparagine	CARBOHYD
+TSLP	34	110		DISULFID
+TSLP	69	75		DISULFID
+TSLP	90	137		DISULFID
+TSLP	29	159	Thymic stromal lymphopoietin	CHAIN
+TSLP	1	28		SIGNAL
+TSPYL2	11	11	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TSPYL2	163	163	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TSPYL2	165	165	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TSPYL2	18	18	Phosphoserine	MOD_RES
+TSPYL2	20	20	Phosphoserine	MOD_RES
+TSPYL2	340	340	Phosphothreonine	MOD_RES
+TSPYL2	658	658	Phosphoserine	MOD_RES
+TSPYL2	668	668	Phosphoserine	MOD_RES
+TSPYL2	671	671	Phosphoserine	MOD_RES
+TSPYL2	1	56	Disordered	REGION
+TSPYL2	104	125	Disordered	REGION
+TSPYL2	175	207	Disordered	REGION
+TSPYL2	474	605	Disordered	REGION
+TSPYL2	627	693	Disordered	REGION
+TSPYL2	1	693	Testis-specific Y-encoded-like protein 2	CHAIN
+TTF1	700	700	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+TTF1	161	220	Homeobox	DNA_BIND
+TTF1	612	661	Myb-like 1	DOMAIN
+TTF1	661	745	Myb-like 2	DOMAIN
+TTF1	254	254	Phosphoserine	MOD_RES
+TTF1	219	294	Disordered	REGION
+TTF1	310	339	Disordered	REGION
+TTF1	1	371	Homeobox protein Nkx-2.1	CHAIN
+TTLL3	283	283		BINDING
+TTLL3	289	290		BINDING
+TTLL3	289	289		BINDING
+TTLL3	321	324		BINDING
+TTLL3	334	336		BINDING
+TTLL3	378	379		BINDING
+TTLL3	381	381		BINDING
+TTLL3	456	456		BINDING
+TTLL3	469	469		BINDING
+TTLL3	469	469		BINDING
+TTLL3	469	469		BINDING
+TTLL3	471	471		BINDING
+TTLL3	151	510	TTL	DOMAIN
+TTLL3	50	81	Disordered	REGION
+TTLL3	289	289	Essential for specifying initiation versus elongation step of the glycylase activity	SITE
+TTLL3	1	772	Tubulin monoglycylase TTLL3	CHAIN
+TUBGCP6	810	889	Disordered	REGION
+TUBGCP6	929	951	Disordered	REGION
+TUBGCP6	1000	1023	Disordered	REGION
+TUBGCP6	1027	1269	9 X 27 AA tandem repeats	REGION
+TUBGCP6	1271	1412	Disordered	REGION
+TUBGCP6	1027	1053	1	REPEAT
+TUBGCP6	1054	1080	2	REPEAT
+TUBGCP6	1081	1107	3	REPEAT
+TUBGCP6	1108	1134	4	REPEAT
+TUBGCP6	1135	1161	5	REPEAT
+TUBGCP6	1162	1188	6	REPEAT
+TUBGCP6	1189	1215	7	REPEAT
+TUBGCP6	1216	1242	8	REPEAT
+TUBGCP6	1243	1269	9	REPEAT
+TUBGCP6	1	1819	Gamma-tubulin complex component 6	CHAIN
+TXNRD1	172	173		BINDING
+TXNRD1	192	193		BINDING
+TXNRD1	208	209		BINDING
+TXNRD1	213	217		BINDING
+TXNRD1	281	282		BINDING
+TXNRD1	311	311		BINDING
+TXNRD1	316	316		BINDING
+TXNRD1	348	354		BINDING
+TXNRD1	350	350		BINDING
+TXNRD1	371	372		BINDING
+TXNRD1	376	378		BINDING
+TXNRD1	376	376		BINDING
+TXNRD1	442	443		BINDING
+TXNRD1	465	465		BINDING
+TXNRD1	484	484		BINDING
+TXNRD1	491	493		BINDING
+TXNRD1	491	491		BINDING
+TXNRD1	622	622		BINDING
+TXNRD1	647	648	Cysteinyl-selenocysteine (Cys-Sec)	CROSSLNK
+TXNRD1	209	214	Redox-active	DISULFID
+TXNRD1	56	156	Glutaredoxin	DOMAIN
+TXNRD1	218	218	N6-succinyllysine	MOD_RES
+TXNRD1	281	281	Phosphotyrosine	MOD_RES
+TXNRD1	1	1	N-acetylmethionine	MOD_RES
+TXNRD1	1	49	Disordered	REGION
+TXNRD1	145	149	Required for interaction with ESR1 and ESR2	REGION
+TXNRD1	1	649	Thioredoxin reductase 1, cytoplasmic	CHAIN
+UNKL	563	619		COILED
+UNKL	1	22	Disordered	REGION
+UNKL	326	358	Disordered	REGION
+UNKL	375	400	Disordered	REGION
+UNKL	442	520	Disordered	REGION
+UNKL	545	566	Disordered	REGION
+UNKL	75	104	C3H1-type 1	ZN_FING
+UNKL	115	145	C3H1-type 2	ZN_FING
+UNKL	243	277	C3H1-type 3	ZN_FING
+UNKL	283	310	C3H1-type 4	ZN_FING
+UNKL	639	674	RING-type	ZN_FING
+UNKL	1	680	Putative E3 ubiquitin-protein ligase UNKL	CHAIN
+USF2	235	290	bHLH	DOMAIN
+USF2	1	44	Disordered	REGION
+USF2	215	244	Disordered	REGION
+USF2	307	328	Leucine-zipper	REGION
+USF2	1	346	Upstream stimulatory factor 2	CHAIN
+UTS2	118	123		DISULFID
+UTS2	1	20		SIGNAL
+VPS28	13	120	VPS28 N-terminal	DOMAIN
+VPS28	124	220	VPS28 C-terminal	DOMAIN
+VPS28	1	1	N-acetylmethionine	MOD_RES
+VPS28	1	221	Vacuolar protein sorting-associated protein 28 homolog	CHAIN
+WDR97	1094	1118		COILED
+WDR97	1090	1112	Disordered	REGION
+WDR97	1453	1472	Disordered	REGION
+WDR97	187	233	WD 1	REPEAT
+WDR97	290	329	WD 2	REPEAT
+WDR97	331	370	WD 3	REPEAT
+WDR97	552	592	WD 4	REPEAT
+WDR97	594	633	WD 5	REPEAT
+WDR97	687	726	WD 6	REPEAT
+WDR97	1	1622	WD repeat-containing protein 97	CHAIN
+WEE2	218	226		BINDING
+WEE2	241	241		BINDING
+WEE2	344	344		BINDING
+WEE2	380	380		BINDING
+WEE2	494	519		COILED
+WEE2	212	486	Protein kinase	DOMAIN
+WEE2	76	76	Phosphoserine	MOD_RES
+WEE2	173	175	Nuclear localization signal	MOTIF
+WEE2	315	329	Nuclear export signal	MOTIF
+WEE2	1	117	Disordered	REGION
+WEE2	514	567	Disordered	REGION
+WEE2	1	567	Wee1-like protein kinase 2	CHAIN
+XAF1	189	257	Disordered	REGION
+XAF1	22	99	TRAF-type	ZN_FING
+XAF1	1	301	XIAP-associated factor 1	CHAIN
+XKR8	362	362	Phosphoserine	MOD_RES
+XKR8	375	375	Phosphothreonine	MOD_RES
+XKR8	355	356	Cleavage; by caspase-3	SITE
+XKR8	1	395	XK-related protein 8	CHAIN
+XKR8	1	355	XK-related protein 8, processed form	CHAIN
+ZDHHC12	97	147	DHHC	DOMAIN
+ZDHHC12	1	267	Palmitoyltransferase ZDHHC12	CHAIN
+ZFAND4	667	667		BINDING
+ZFAND4	670	670		BINDING
+ZFAND4	682	682		BINDING
+ZFAND4	684	684		BINDING
+ZFAND4	689	689		BINDING
+ZFAND4	692	692		BINDING
+ZFAND4	698	698		BINDING
+ZFAND4	700	700		BINDING
+ZFAND4	28	103	Ubiquitin-like	DOMAIN
+ZFAND4	187	217	Disordered	REGION
+ZFAND4	238	264	Disordered	REGION
+ZFAND4	661	708	AN1-type	ZN_FING
+ZFAND4	1	727	AN1-type zinc finger protein 4	CHAIN
+ZFP57	16	88	KRAB	DOMAIN
+ZFP57	410	452	Disordered	REGION
+ZFP57	185	185	Crucial for 5-methylcytosine recognition	SITE
+ZFP57	91	113	C2H2-type 1	ZN_FING
+ZFP57	119	141	C2H2-type 2	ZN_FING
+ZFP57	147	169	C2H2-type 3	ZN_FING
+ZFP57	175	197	C2H2-type 4	ZN_FING
+ZFP57	300	322	C2H2-type 5	ZN_FING
+ZFP57	328	350	C2H2-type 6	ZN_FING
+ZFP57	356	378	C2H2-type 7; degenerate	ZN_FING
+ZFP57	1	452	Zinc finger protein 57 homolog	CHAIN
+ZFR2	516	549		COILED
+ZFR2	570	935	DZF	DOMAIN
+ZFR2	1	72	Disordered	REGION
+ZFR2	116	185	Disordered	REGION
+ZFR2	217	264	Disordered	REGION
+ZFR2	289	314	Disordered	REGION
+ZFR2	360	389	Disordered	REGION
+ZFR2	401	449	Disordered	REGION
+ZFR2	545	590	Disordered	REGION
+ZFR2	906	939	Disordered	REGION
+ZFR2	1	939	Zinc finger RNA-binding protein 2	CHAIN
+ZNF683	130	166	Disordered	REGION
+ZNF683	265	303	Disordered	REGION
+ZNF683	322	344	C2H2-type 1	ZN_FING
+ZNF683	350	372	C2H2-type 2	ZN_FING
+ZNF683	398	420	C2H2-type 3; degenerate	ZN_FING
+ZNF683	426	448	C2H2-type 4	ZN_FING
+ZNF683	1	524	Tissue-resident T-cell transcription regulator protein ZNF683	CHAIN
+ZNF839	329	349	Disordered	REGION
+ZNF839	455	555	Disordered	REGION
+ZNF839	612	654	Disordered	REGION
+ZNF839	197	222	C2H2-type	ZN_FING
+ZNF839	1	811	Zinc finger protein 839	CHAIN
+ZP1	76	76	N-linked (GlcNAc...) asparagine	CARBOHYD
+ZP1	379	379	N-linked (GlcNAc...) asparagine	CARBOHYD
+ZP1	561	561	N-linked (GlcNAc...) asparagine	CARBOHYD
+ZP1	596	596	N-linked (GlcNAc...) asparagine	CARBOHYD
+ZP1	236	261		DISULFID
+ZP1	245	260		DISULFID
+ZP1	255	270		DISULFID
+ZP1	457	478		DISULFID
+ZP1	234	274	P-type	DOMAIN
+ZP1	279	553	ZP	DOMAIN
+ZP1	165	208	Disordered	REGION
+ZP1	549	594	Disordered	REGION
+ZP1	26	553	Zona pellucida sperm-binding protein 1	CHAIN
+ZP1	1	25		SIGNAL
+ZRSR2	45	45	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ZRSR2	62	62	Glycyl lysine isopeptide (Lys-Gly) (interchain with G-Cter in SUMO2)	CROSSLNK
+ZRSR2	198	304	RRM	DOMAIN
+ZRSR2	349	349	Phosphoserine	MOD_RES
+ZRSR2	384	384	Phosphoserine	MOD_RES
+ZRSR2	1	59	Disordered	REGION
+ZRSR2	115	135	Disordered	REGION
+ZRSR2	351	482	Disordered	REGION
+ZRSR2	166	194	C3H1-type 1	ZN_FING
+ZRSR2	306	333	C3H1-type 2	ZN_FING
+ZRSR2	1	482	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa subunit-related protein 2	CHAIN
+ZSCAN18	49	131	SCAN box	DOMAIN
+ZSCAN18	1	40	Disordered	REGION
+ZSCAN18	172	191	Disordered	REGION
+ZSCAN18	201	231	Disordered	REGION
+ZSCAN18	263	413	Disordered	REGION
+ZSCAN18	461	510	Disordered	REGION
+ZSCAN18	413	435	C2H2-type 1	ZN_FING
+ZSCAN18	441	463	C2H2-type 2	ZN_FING
+ZSCAN18	1	510	Zinc finger and SCAN domain-containing protein 18	CHAIN
+ZSWIM6	1	46	Disordered	REGION
+ZSWIM6	133	161	Disordered	REGION
+ZSWIM6	246	283	SWIM-type	ZN_FING
+ZSWIM6	1	1215	Zinc finger SWIM domain-containing protein 6	CHAIN

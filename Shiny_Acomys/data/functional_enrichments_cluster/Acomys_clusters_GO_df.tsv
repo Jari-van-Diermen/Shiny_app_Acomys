@@ -1,0 +1,429 @@
+go	cluster	parent	score	size	term	parentTerm	termUniqueness	termUniquenessWithinCluster	termDispensability	n_of_genes	geneID	terms_per_parent	stringdb_cluster
+GO:0002250	1	GO:0002250	5.736252125811889	760	adaptive immune response	adaptive immune response	0.6665662100456621	0.3364090909090909	0	8	FOXP3/IL12RB1/CD4/ZNF683/LAMP3/CD79B/IL23R/ADGRE1	22	1
+GO:0019221	2	GO:0019221	4.395899600232351	513	cytokine-mediated signaling pathway	cytokine-mediated signaling pathway	0.8571872146118722	0.4307777777777778	0	9	TSLP/IFNGR1/IL12RB1/CD4/ACKR2/IL17RC/IL23R/LAMP3/FOXP3	9	1
+GO:0001819	3	GO:0001819	4.395899600232351	499	positive regulation of cytokine production	positive regulation of cytokine production	0.6888721461187215	0.3448333333333333	0	7	FOXP3/TSLP/IFNGR1/IL12RB1/CD4/IL17RC/IL23R	30	1
+GO:0045058	4	GO:0045058	4.375829375461171	53	T cell selection	T cell selection	0.6221050228310503	0.33466666666666667	0	6	FOXP3/IL12RB1/CD4/IL23R/ZNF683/CD79B	21	1
+GO:0046637	5	GO:0046637	3.9485989142756064	74	regulation of alpha-beta T cell differentiation	regulation of alpha-beta T cell differentiation	0.5300913242009133	0.20676470588235296	0	6	FOXP3/IL12RB1/ZNF683/IL23R/TSLP/CD4	34	1
+GO:0043373	6	GO:0043373	3.842115924858229	23	CD4-positive, alpha-beta T cell lineage commitment	CD4-positive, alpha-beta T cell lineage commitment	0.6153926940639269	0.19362500000000005	0	3	FOXP3/IL12RB1/IL23R	8	1
+GO:0046006	7	GO:0046006	3.599894962226028	44	regulation of activated T cell proliferation	regulation of activated T cell proliferation	0.5766849315068493	0.22790476190476194	0	4	FOXP3/IL12RB1/IL23R/PTGDR2	21	1
+GO:0002711	8	GO:0002711	3.4869937443519428	69	positive regulation of T cell mediated immunity	positive regulation of T cell mediated immunity	0.599310502283105	0.23575862068965514	0	4	FOXP3/IL12RB1/IL23R/ZNF683	29	1
+GO:0050688	9	GO:0050688	3.061379452298743	97	regulation of defense response to virus	regulation of defense response to virus	0.8574611872146118	0.26425	0	5	FOXP3/IL12RB1/IL23R/IFNGR1/CD4	8	1
+GO:0050870	10	GO:0050870	3.0605974388318957	251	positive regulation of T cell activation	positive regulation of T cell activation	0.5049452054794521	0.18100000000000005	0	4	FOXP3/IL12RB1/CD4/IL23R	7	1
+GO:0050731	11	GO:0050731	2.4672526504537213	168	positive regulation of peptidyl-tyrosine phosphorylation	positive regulation of peptidyl-tyrosine phosphorylation	0.8473744292237443	0.31600000000000006	0	4	TSLP/CD4/IL23R/IFNGR1	5	1
+GO:0001912	12	GO:0001912	2.3744932089636603	69	positive regulation of leukocyte mediated cytotoxicity	positive regulation of leukocyte mediated cytotoxicity	0.6223424657534247	0.20233333333333337	0	2	IL12RB1/IL23R	6	1
+GO:1904894	13	GO:1904894	2.3141772673624934	53	positive regulation of receptor signaling pathway via STAT	positive regulation of receptor signaling pathway via STAT	0.8247351598173516	0.24012500000000003	0	2	TSLP/IL23R	8	1
+GO:0019722	14	GO:0019722	2.256642579139703	210	calcium-mediated signaling	calcium-mediated signaling	0.8881872146118721	0.5185	0	3	CD4/ACKR2/PTGDR2	2	1
+GO:1903900	15	GO:1903900	1.6846930956755062	143	regulation of viral life cycle	regulation of viral life cycle	0.945324200913242	0.509	0	2	CD4/LAMP3	2	1
+GO:0006935	16	GO:0006935	1.4846843531151914	468	chemotaxis	chemotaxis	0.9145844748858447	0.503	0	3	ACKR2/IL17RC/PTGDR2	2	1
+GO:0002676	17	GO:0002676	1.4684346985263308	10	regulation of chronic inflammatory response	regulation of chronic inflammatory response	0.8875159817351598	0.52	0	1	FOXP3	2	1
+GO:0075294	18	GO:0075294	1.4474861382588584	14	positive regulation by symbiont of entry into host	positive regulation by symbiont of entry into host	0.9082739726027398	0.5	0	1	CD4	2	1
+GO:1900221	19	GO:1900221	1.3242316334627098	20	regulation of amyloid-beta clearance	regulation of amyloid-beta clearance	0.8322511415525115	1	0	1	IFNGR1	1	1
+GO:0097194	1	GO:0097194	2.188741480843617	89	execution phase of apoptosis	execution phase of apoptosis	0.7648095238095238	0.5116	0	3	TP53/RNF34/BBC3	5	2
+GO:0090200	2	GO:0090200	1.719162451391667	25	positive regulation of release of cytochrome c from mitochondria	positive regulation of release of cytochrome c from mitochondria	0.5394285714285714	0.254	0	2	TP53/BBC3	5	2
+GO:0008340	3	GO:0008340	1.6163021755242255	35	determination of adult lifespan	determination of adult lifespan	1	1	0	2	TP53/ATN1	1	2
+GO:1902108	4	GO:1902108	1.6163021755242255	49	regulation of mitochondrial membrane permeability involved in apoptotic process	regulation of mitochondrial membrane permeability involved in apoptotic process	0.4796666666666667	0.23619999999999997	0	2	TP53/BBC3	5	2
+GO:0051123	5	GO:0051123	1.5638258200343431	68	RNA polymerase II preinitiation complex assembly	RNA polymerase II preinitiation complex assembly	0.8037619047619048	0.3583333333333333	0	2	TP53/TAF7L	3	2
+GO:0071346	6	GO:0071346	1.3399743258911476	120	cellular response to type II interferon	cellular response to type II interferon	0.9143333333333333	1	0	2	TP53/DAPK3	1	2
+GO:1901796	7	GO:1901796	1.3112628237400814	107	regulation of signal transduction by p53 class mediator	regulation of signal transduction by p53 class mediator	0.8553809523809524	1	0	2	TP53/RNF34	1	2
+GO:0030595	1	GO:0030595	3.194565777739273	240	leukocyte chemotaxis	leukocyte chemotaxis	0.5692321428571429	0.23775000000000002	0	4	CXCR2/PPBP/CXCL16/PGF	12	3
+GO:0050900	2	GO:0050900	2.717489875615995	396	leukocyte migration	leukocyte migration	0.7004464285714286	0.2713529411764706	0	4	CXCR2/PPBP/CXCL16/PGF	17	3
+GO:1904018	3	GO:1904018	2.6537609645912292	185	positive regulation of vasculature development	positive regulation of vasculature development	0.8463214285714286	0.2682	0	3	CXCR2/PGF/TNFSF12	5	3
+GO:0070098	4	GO:0070098	1.9532770486939335	91	chemokine-mediated signaling pathway	chemokine-mediated signaling pathway	0.8047321428571429	0.33999999999999997	0	2	CXCR2/PPBP	3	3
+GO:0051781	5	GO:0051781	1.8870321720010839	94	positive regulation of cell division	positive regulation of cell division	0.8959821428571428	0.5285	0	2	PPBP/PGF	2	3
+GO:0001938	6	GO:0001938	1.8870321720010839	111	positive regulation of endothelial cell proliferation	positive regulation of endothelial cell proliferation	0.8659285714285714	0.2885	0	2	PGF/TNFSF12	4	3
+GO:0010498	7	GO:0010498	1.7095672574727625	531	proteasomal protein catabolic process	proteasomal protein catabolic process	0.9967857142857143	1	0	3	SPOPL/PSME1/ECPAS	1	3
+GO:0072173	8	GO:0072173	1.4557197440735363	11	metanephric tubule morphogenesis	metanephric tubule morphogenesis	0.9374464285714286	0.5395	0	1	CXCR2	2	3
+GO:0043248	9	GO:0043248	1.4421853105174771	12	proteasome assembly	proteasome assembly	0.992125	1	0	1	ECPAS	1	3
+GO:0006898	12	GO:0006898	1.4280228778681197	258	receptor-mediated endocytosis	receptor-mediated endocytosis	0.9810714285714286	1	0	2	CXCR2/CXCL16	1	3
+GO:0042994	10	GO:0042994	1.4280228778681197	14	cytoplasmic sequestering of transcription factor	cytoplasmic sequestering of transcription factor	0.9335535714285714	0.511	0	1	NFKBIE	2	3
+GO:0010666	11	GO:0010666	1.4280228778681197	19	positive regulation of cardiac muscle cell apoptotic process	positive regulation of cardiac muscle cell apoptotic process	0.8785714285714286	0.43500000000000005	0	1	CXCR2	5	3
+GO:0043117	13	GO:0043117	1.3518274093280542	18	positive regulation of vascular permeability	positive regulation of vascular permeability	0.9522321428571429	1	0	1	CXCR2	1	3
+GO:0048009	1	GO:0048009	3.6015706995138275	52	insulin-like growth factor receptor signaling pathway	insulin-like growth factor receptor signaling pathway	0.951725	1	0	3	IGF2R/GHR/IGF2	1	4
+GO:0040029	2	GO:0040029	3.6015706995138275	229	epigenetic regulation of gene expression	epigenetic regulation of gene expression	0.8144750000000001	0.40025	0	4	DPPA3/DNMT3L/ZFP57/IGF2	4	4
+GO:0032196	4	GO:0032196	2.6531763074571884	38	transposition	transposition	0.941575	0.33866666666666667	0	2	DNMT3L/MOV10L1	3	4
+GO:0007141	3	GO:0007141	2.6531763074571884	27	male meiosis I	male meiosis I	0.74815	0.26622222222222225	0	3	DNMT3L/MOV10L1/ZFP57	9	4
+GO:0040018	5	GO:0040018	2.6026528169996515	31	positive regulation of multicellular organism growth	positive regulation of multicellular organism growth	0.829975	0.3058333333333334	0	2	GHR/IGF2	6	4
+GO:0006304	6	GO:0006304	1.7913155304751573	103	DNA modification	DNA modification	0.8677	0.42700000000000005	0	2	DPPA3/DNMT3L	4	4
+GO:0000280	7	GO:0000280	1.7851689525582681	441	nuclear division	nuclear division	0.8544	0.508	0	3	DNMT3L/MOV10L1/IGF2	2	4
+GO:0001890	8	GO:0001890	1.5507196151842857	151	placenta development	placenta development	0.94795	1	0	2	DNMT3L/IGF2	1	4
+GO:0050731	9	GO:0050731	1.5408511246864993	168	positive regulation of peptidyl-tyrosine phosphorylation	positive regulation of peptidyl-tyrosine phosphorylation	0.816275	0.28400000000000003	0	2	GHR/IGF2	4	4
+GO:0032869	10	GO:0032869	1.3814450609643005	206	cellular response to insulin stimulus	cellular response to insulin stimulus	0.95965	0.5105	0	2	GHR/IGF2	2	4
+GO:0060717	11	GO:0060717	1.3648052788493372	10	chorion development	chorion development	0.93825	0.509	0	1	DNMT3L	2	4
+GO:0045725	12	GO:0045725	1.3377414898805104	15	positive regulation of glycogen biosynthetic process	positive regulation of glycogen biosynthetic process	0.877775	0.503	0	1	IGF2	2	4
+GO:0031424	1	GO:0031424	11.202238956601636	83	keratinization	keratinization	0.5872222222222222	0.476	0	5	CDSN/KRT2/LORICRIN/SPRR1A/IVL	3	5
+GO:0018149	2	GO:0018149	9.516507058946356	28	peptide cross-linking	peptide cross-linking	0.9843333333333333	1	0	4	KRT2/LORICRIN/SPRR1A/IVL	1	5
+GO:0030216	3	GO:0030216	9.344992471231786	177	keratinocyte differentiation	keratinocyte differentiation	0.5720555555555555	0.2845714285714286	0	5	CDSN/KRT2/LORICRIN/SPRR1A/IVL	7	5
+GO:0051546	5	GO:0051546	1.7465674226001677	20	keratinocyte migration	keratinocyte migration	0.9849444444444444	1	0	1	KRT2	1	5
+GO:0010224	4	GO:0010224	1.7465674226001677	21	response to UV-B	response to UV-B	1	1	0	1	IVL	1	5
+GO:1990000	6	GO:1990000	1.5935049293158141	42	amyloid fibril formation	amyloid fibril formation	0.9303333333333333	1	0	1	CDSN	1	5
+GO:0043616	7	GO:0043616	1.4297344946862103	59	keratinocyte proliferation	keratinocyte proliferation	0.9925	1	0	1	KRT2	1	5
+GO:0045109	8	GO:0045109	1.4297344946862103	73	intermediate filament organization	intermediate filament organization	0.8528888888888889	0.3506666666666667	0	1	KRT2	3	5
+GO:0036297	1	GO:0036297	3.8459619637101716	40	interstrand cross-link repair	interstrand cross-link repair	0.44689473684210523	0.44689473684210523	0	2	FANCE/FANCB	19	6
+GO:0000725	1	GO:0000725	4.96978008531354	179	recombinational repair	recombinational repair	0.5537619047619047	0.33099999999999996	0	4	RAD52/RECQL5/RECQL4/SFR1	12	7
+GO:0006268	2	GO:0006268	3.2745137551798345	21	DNA unwinding involved in DNA replication	DNA unwinding involved in DNA replication	0.5236190476190477	0.3165	0	2	RECQL5/RECQL4	4	7
+GO:0044771	3	GO:0044771	1.474842848358184	13	meiotic cell cycle phase transition	meiotic cell cycle phase transition	0.9398571428571428	0.6895	0	1	PKMYT1	2	7
+GO:0071391	4	GO:0071391	1.3964898760261253	19	cellular response to estrogen stimulus	cellular response to estrogen stimulus	0.9274761904761905	1	0	1	SFR1	1	7
+GO:0032785	5	GO:0032785	1.3964898760261253	23	negative regulation of DNA-templated transcription, elongation	negative regulation of DNA-templated transcription, elongation	0.7565238095238095	0.5055000000000001	0	1	RECQL5	2	7
+GO:0043162	4	GO:0043162	2.515428062534681	37	ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway	ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway	0.9523700787401574	0.54575	0	3	VPS28/NEDD4/ADRB2	8	8
+GO:0007034	1	GO:0007034	2.515428062534681	169	vacuolar transport	vacuolar transport	0.8818976377952756	0.36624999999999996	0	3	ADRB2/VPS28/NEDD4	12	8
+GO:0046755	2	GO:0046755	2.515428062534681	25	viral budding	viral budding	0.9713622047244095	0.27260000000000006	0	2	VPS28/NEDD4	5	8
+GO:0006814	3	GO:0006814	2.515428062534681	248	sodium ion transport	sodium ion transport	0.8759133858267717	0.2569166666666667	0	3	ADRB2/NEDD4/SCNN1A	12	8
+GO:0008217	5	GO:0008217	1.5829670813619439	187	regulation of blood pressure	regulation of blood pressure	0.8951496062992126	0.39270000000000005	0	2	ADRB2/SCNN1A	10	8
+GO:0032412	7	GO:0032412	1.523338905617112	231	regulation of monoatomic ion transmembrane transporter activity	regulation of monoatomic ion transmembrane transporter activity	0.785503937007874	0.395235294117647	0	2	ADRB2/NEDD4	17	8
+GO:0071383	6	GO:0071383	1.523338905617112	208	cellular response to steroid hormone stimulus	cellular response to steroid hormone stimulus	0.8762677165354331	0.34185714285714286	0	3	NEDD4/SCNN1A/ADRB2	14	8
+GO:0006898	8	GO:0006898	1.4673579167059607	258	receptor-mediated endocytosis	receptor-mediated endocytosis	0.9037007874015748	0.6373333333333333	0	3	ADRB2/NEDD4/VPS28	3	8
+GO:0040015	11	GO:0040015	1.4673579167059607	12	negative regulation of multicellular organism growth	negative regulation of multicellular organism growth	0.91248031496063	0.5825	0	2	ADRB2/NEDD4	4	8
+GO:0031649	12	GO:0031649	1.4673579167059607	17	heat generation	heat generation	0.9519527559055118	0.5484285714285715	0	2	ADRB2/SCNN1A	7	8
+GO:0104004	13	GO:0104004	1.4673579167059607	334	cellular response to environmental stimulus	cellular response to environmental stimulus	0.916992125984252	0.5015000000000001	0	2	NEDD4/SCNN1A	2	8
+GO:1901096	15	GO:1901096	1.4673579167059607	17	regulation of autophagosome maturation	regulation of autophagosome maturation	0.8922125984251968	0.42133333333333334	0	1	ADRB2	3	8
+GO:0030948	10	GO:0030948	1.4673579167059607	12	negative regulation of vascular endothelial growth factor receptor signaling pathway	negative regulation of vascular endothelial growth factor receptor signaling pathway	0.8571968503937007	0.3913333333333333	0	1	NEDD4	3	8
+GO:0010739	9	GO:0010739	1.4673579167059607	12	positive regulation of protein kinase A signaling	positive regulation of protein kinase A signaling	0.8849527559055118	0.3696666666666667	0	1	ADRB2	3	8
+GO:0071468	14	GO:0071468	1.4673579167059607	17	cellular response to acidic pH	cellular response to acidic pH	0.912763779527559	0.32000000000000006	0	2	SCNN1A/ADRB2	5	8
+GO:0002029	16	GO:0002029	1.4449809957493667	20	desensitization of G protein-coupled receptor signaling pathway	desensitization of G protein-coupled receptor signaling pathway	0.8690787401574803	0.33666666666666667	0	1	ADRB2	3	8
+GO:0042391	17	GO:0042391	1.436341326362748	440	regulation of membrane potential	regulation of membrane potential	0.9311496062992126	0.4833333333333333	0	2	ADRB2/NEDD4	3	8
+GO:0071880	18	GO:0071880	1.4340012227672532	27	adenylate cyclase-activating adrenergic receptor signaling pathway	adenylate cyclase-activating adrenergic receptor signaling pathway	0.9002834645669291	0.5016666666666667	0	1	ADRB2	3	8
+GO:0097421	19	GO:0097421	1.425577547637062	29	liver regeneration	liver regeneration	0.9585275590551181	0.5245	0	1	GUCD1	2	8
+GO:0036257	20	GO:0036257	1.425577547637062	32	multivesicular body organization	multivesicular body organization	0.9733543307086614	0.501	0	1	VPS28	2	8
+GO:0090148	21	GO:0090148	1.3772744706583586	42	membrane fission	membrane fission	0.9801732283464567	1	0	1	VPS28	1	8
+GO:0030501	22	GO:0030501	1.3772744706583586	44	positive regulation of bone mineralization	positive regulation of bone mineralization	0.9069763779527559	0.5085	0	1	ADRB2	2	8
+GO:0070534	25	GO:0070534	1.3513070152418973	58	protein K63-linked ubiquitination	protein K63-linked ubiquitination	0.9793622047244095	1	0	1	NEDD4	1	8
+GO:0050873	24	GO:0050873	1.3513070152418973	54	brown fat cell differentiation	brown fat cell differentiation	0.9814803149606299	1	0	1	ADRB2	1	8
+GO:0007528	23	GO:0007528	1.3513070152418973	52	neuromuscular junction development	neuromuscular junction development	0.9798346456692913	1	0	1	NEDD4	1	8
+GO:0031055	1	GO:0031055	3.8493712815711616	10	chromatin remodeling at centromere	chromatin remodeling at centromere	0.8541898734177216	0.47025000000000006	0	2	CENPA/HJURP	4	9
+GO:0000281	2	GO:0000281	2.3176983262233404	88	mitotic cytokinesis	mitotic cytokinesis	0.527873417721519	0.25528571428571434	0	2	CENPA/INCENP	7	9
+GO:1902850	3	GO:1902850	1.9428877112723797	163	microtubule cytoskeleton organization involved in mitosis	microtubule cytoskeleton organization involved in mitosis	0.47287341772151903	0.38428571428571423	0	3	CENPA/INCENP/HJURP	42	9
+GO:0051382	5	GO:0051382	1.6664352901513817	17	kinetochore assembly	kinetochore assembly	0.7177215189873418	0.5787142857142857	0	2	CENPA/INCENP	7	9
+GO:0090235	4	GO:0090235	1.6664352901513817	13	regulation of metaphase plate congression	regulation of metaphase plate congression	0.4879113924050633	0.31033333333333335	0	2	INCENP/CENPA	15	9
+GO:0071459	6	GO:0071459	1.5634660066475814	40	protein localization to chromosome, centromeric region	protein localization to chromosome, centromeric region	0.9024556962025316	0.4006666666666666	0	1	CENPA	3	9
+GO:0051101	7	GO:0051101	1.4401241629948631	85	regulation of DNA binding	regulation of DNA binding	0.9653670886075949	1	0	1	HJURP	1	9
+GO:0006706	2	GO:0006706	3.293787220941808	25	steroid catabolic process	steroid catabolic process	0.7546917293233083	0.5194000000000001	0	3	CYP27A1/SCARB1/PLIN5	5	10
+GO:0010867	1	GO:0010867	3.293787220941808	14	positive regulation of triglyceride biosynthetic process	positive regulation of triglyceride biosynthetic process	0.7008872180451128	0.3144146341463414	0	3	PLIN5/SCARB1/CYP27A1	41	10
+GO:0010884	3	GO:0010884	3.293787220941808	27	positive regulation of lipid storage	positive regulation of lipid storage	0.8574360902255639	0.23762499999999998	0	2	PLIN5/SCARB1	8	10
+GO:0046164	4	GO:0046164	3.1914743437845017	36	alcohol catabolic process	alcohol catabolic process	0.791233082706767	0.3071111111111111	0	2	CYP27A1/SCARB1	9	10
+GO:1905954	5	GO:1905954	2.5679944432761177	111	positive regulation of lipid localization	positive regulation of lipid localization	0.8624812030075188	0.335125	0	2	PLIN5/SCARB1	8	10
+GO:0006909	6	GO:0006909	2.105916535516119	237	phagocytosis	phagocytosis	0.9226015037593985	0.33824999999999994	0	2	SCARB1/CD93	4	10
+GO:0034384	7	GO:0034384	1.8146845670032574	18	high-density lipoprotein particle clearance	high-density lipoprotein particle clearance	0.9371503759398496	0.34475	0	1	SCARB1	4	10
+GO:0042362	9	GO:0042362	1.8099414563139082	13	fat-soluble vitamin biosynthetic process	fat-soluble vitamin biosynthetic process	0.8506165413533835	0.4883571428571428	0	2	CYP27A1/PLIN5	14	10
+GO:0032490	8	GO:0032490	1.8099414563139082	13	detection of molecule of bacterial origin	detection of molecule of bacterial origin	0.9754962406015038	0.3716666666666667	0	1	SCARB1	3	10
+GO:0035358	11	GO:0035358	1.799353164339029	15	regulation of peroxisome proliferator activated receptor signaling pathway	regulation of peroxisome proliferator activated receptor signaling pathway	0.9588270676691729	0.5155000000000001	0	1	PLIN5	2	10
+GO:0060192	10	GO:0060192	1.799353164339029	17	negative regulation of lipase activity	negative regulation of lipase activity	0.9451729323308271	0.4732222222222222	0	2	PLIN5/SCARB1	9	10
+GO:0034375	12	GO:0034375	1.799353164339029	16	high-density lipoprotein particle remodeling	high-density lipoprotein particle remodeling	0.9053233082706766	0.23849999999999993	0	1	SCARB1	6	10
+GO:0035461	13	GO:0035461	1.7326775355981165	21	vitamin transmembrane transport	vitamin transmembrane transport	0.939609022556391	0.5369999999999999	0	1	SCARB1	2	10
+GO:0098856	14	GO:0098856	1.7326775355981165	22	intestinal lipid absorption	intestinal lipid absorption	0.8784812030075188	0.31275	0	1	SCARB1	4	10
+GO:0034389	15	GO:0034389	1.6627292428199372	35	lipid droplet organization	lipid droplet organization	0.9814436090225563	1	0	1	PLIN5	1	10
+GO:0070328	16	GO:0070328	1.6627292428199372	43	triglyceride homeostasis	triglyceride homeostasis	0.9798872180451128	0.33125000000000004	0	1	SCARB1	4	10
+GO:2000378	17	GO:2000378	1.6229284484949111	49	negative regulation of reactive oxygen species metabolic process	negative regulation of reactive oxygen species metabolic process	0.8844736842105263	0.5415	0	1	PLIN5	2	10
+GO:0051646	18	GO:0051646	1.6063438622470654	50	mitochondrion localization	mitochondrion localization	0.9502706766917293	1	0	1	PLIN5	1	10
+GO:0031663	19	GO:0031663	1.5747216446717753	58	lipopolysaccharide-mediated signaling pathway	lipopolysaccharide-mediated signaling pathway	0.9486616541353383	0.759	0	1	SCARB1	2	10
+GO:1901264	20	GO:1901264	1.4231333574191989	85	carbohydrate derivative transport	carbohydrate derivative transport	0.9383834586466165	1	0	1	SCARB1	1	10
+GO:0042116	21	GO:0042116	1.3779147856506555	110	macrophage activation	macrophage activation	0.9779624060150376	1	0	1	CD93	1	10
+GO:0010595	22	GO:0010595	1.3745422833808663	130	positive regulation of endothelial cell migration	positive regulation of endothelial cell migration	0.935203007518797	0.5545	0	1	SCARB1	2	10
+GO:0090110	1	GO:0090110	2.9425562111424695	16	COPII-coated vesicle cargo loading	COPII-coated vesicle cargo loading	0.65625	0.35050000000000003	0	2	MIA3/SEC13	4	11
+GO:0016050	2	GO:0016050	2.6535973409383167	366	vesicle organization	vesicle organization	0.8943333333333333	0.43733333333333335	0	3	MIA3/SEC13/OSBP	3	11
+GO:0050657	3	GO:0050657	2.0202602092375037	158	nucleic acid transport	nucleic acid transport	0.7213333333333334	0.45611111111111113	0	3	SEC13/AHCTF1/OSBP	9	11
+GO:0051169	4	GO:0051169	1.6031297034502001	330	nuclear transport	nuclear transport	0.7110833333333333	0.5213749999999999	0	4	SEC13/AHCTF1/MIA3/OSBP	8	11
+GO:2000402	8	GO:2000402	1.6031297034502001	15	negative regulation of lymphocyte migration	negative regulation of lymphocyte migration	0.9623888888888888	0.515	0	1	MIA3	2	11
+GO:0006686	6	GO:0006686	1.6031297034502001	11	sphingomyelin biosynthetic process	sphingomyelin biosynthetic process	0.9503055555555555	0.5043333333333333	0	1	OSBP	3	11
+GO:0140052	7	GO:0140052	1.6031297034502001	14	cellular response to oxidised low-density lipoprotein particle stimulus	cellular response to oxidised low-density lipoprotein particle stimulus	0.9037222222222222	0.371	0	1	MIA3	3	11
+GO:0051292	5	GO:0051292	1.6031297034502001	10	nuclear pore complex assembly	nuclear pore complex assembly	0.9031388888888889	0.356	0	1	AHCTF1	3	11
+GO:0071402	9	GO:0071402	1.3786259417918072	42	cellular response to lipoprotein particle stimulus	cellular response to lipoprotein particle stimulus	0.9285833333333333	1	0	1	MIA3	1	11
+GO:0000460	1	GO:0000460	3.962880455714016	36	maturation of 5.8S rRNA	maturation of 5.8S rRNA	0.28200000000000003	0.3282857142857143	0	2	NOL9/LAS1L	7	13
+GO:0006364	2	GO:0006364	2.7254294546719575	225	rRNA processing	rRNA processing	0.2055454545454546	0.31675	0	2	NOL9/LAS1L	4	13
+GO:0097066	1	GO:0097066	1.3905938986002118	29	response to thyroid hormone	response to thyroid hormone	0.8913888888888889	0.5145	0	1	BRD8	2	14
+GO:0006475	3	GO:0006475	1.3905938986002118	58	internal protein amino acid acetylation	internal protein amino acid acetylation	0.6251666666666666	0.26042857142857145	0	1	BRD8	7	14
+GO:0045911	2	GO:0045911	1.3905938986002118	71	positive regulation of DNA recombination	positive regulation of DNA recombination	0.5606111111111112	0.25755555555555554	0	1	BRD8	9	14
+GO:0080154	1	GO:0080154	3.7944848951927903	17	regulation of fertilization	regulation of fertilization	0.5823478260869566	0.38784615384615384	0	2	WEE2/ZP1	13	15
+GO:1903429	2	GO:1903429	1.5478757335658297	21	regulation of cell maturation	regulation of cell maturation	0.8611739130434782	0.7363333333333333	0	2	WEE2/TLE6	3	15
+GO:0007339	3	GO:0007339	1.522683289897342	38	binding of sperm to zona pellucida	binding of sperm to zona pellucida	0.562	0.353	0	1	ZP1	3	15
+GO:0051646	4	GO:0051646	1.4894642710916062	50	mitochondrion localization	mitochondrion localization	0.9429130434782609	0.5623333333333334	0	1	TLE6	3	15
+GO:0007029	5	GO:0007029	1.3436331408756634	100	endoplasmic reticulum organization	endoplasmic reticulum organization	0.9451304347826087	1	0	1	TLE6	1	15
+GO:0045229	1	GO:0045229	3.5904350687488384	323	external encapsulating structure organization	external encapsulating structure organization	0.8093428571428571	0.30962500000000004	0	3	ELN/COL15A1/TNXB	8	16
+GO:1902903	2	GO:1902903	1.6081049644024106	389	regulation of supramolecular fiber organization	regulation of supramolecular fiber organization	0.8198285714285715	0.512	0	2	ELN/TNXB	3	16
+GO:1901388	3	GO:1901388	1.6081049644024106	10	regulation of transforming growth factor beta activation	regulation of transforming growth factor beta activation	0.7969142857142857	0.508	0	1	TNXB	2	16
+GO:0071636	4	GO:0071636	1.4387670189362756	23	positive regulation of transforming growth factor beta production	positive regulation of transforming growth factor beta production	0.8248	0.366	0	1	TNXB	3	16
+GO:1903846	5	GO:1903846	1.4326164176420702	33	positive regulation of cellular response to transforming growth factor beta stimulus	positive regulation of cellular response to transforming growth factor beta stimulus	0.8573428571428572	0.4076666666666666	0	1	TNXB	6	16
+GO:0001709	7	GO:0001709	1.4315630891350655	42	cell fate determination	cell fate determination	0.9403428571428571	1	0	1	TNXB	1	16
+GO:0003180	6	GO:0003180	1.4315630891350655	38	aortic valve morphogenesis	aortic valve morphogenesis	0.8267428571428571	0.36412500000000003	0	2	ELN/TNXB	8	16
+GO:0007585	8	GO:0007585	1.3668758882649399	74	respiratory gaseous exchange by respiratory system	respiratory gaseous exchange by respiratory system	0.9471428571428572	1	0	1	ELN	1	16
+GO:0090100	11	GO:0090100	1.306360709989904	104	positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	0.8625714285714285	1	0	1	TNXB	1	16
+GO:0006641	10	GO:0006641	1.306360709989904	106	triglyceride metabolic process	triglyceride metabolic process	0.9723142857142857	1	0	1	TNXB	1	16
+GO:0032963	9	GO:0032963	1.306360709989904	106	collagen metabolic process	collagen metabolic process	0.9836571428571429	1	0	1	TNXB	1	16
+GO:1902170	3	GO:1902170	1.8581913965069419	17	cellular response to reactive nitrogen species	cellular response to reactive nitrogen species	0.8938809523809523	0.5885555555555555	0	2	MTR/TXNRD1	9	17
+GO:0046653	2	GO:0046653	1.8581913965069419	16	tetrahydrofolate metabolic process	tetrahydrofolate metabolic process	0.8324047619047619	0.3643333333333334	0	1	MTR	3	17
+GO:0009067	4	GO:0009067	1.8581913965069419	21	aspartate family amino acid biosynthetic process	aspartate family amino acid biosynthetic process	0.7011904761904761	0.3117	0	1	MTR	10	17
+GO:0050667	1	GO:0050667	1.8581913965069419	14	homocysteine metabolic process	homocysteine metabolic process	0.6967380952380953	0.2864285714285715	0	1	MTR	7	17
+GO:0045454	5	GO:0045454	1.736473138743161	41	cell redox homeostasis	cell redox homeostasis	1	1	0	1	TXNRD1	1	17
+GO:0033013	7	GO:0033013	1.736473138743161	62	tetrapyrrole metabolic process	tetrapyrrole metabolic process	0.8718095238095238	0.85	0	1	MTR	2	17
+GO:0031103	6	GO:0031103	1.736473138743161	52	axon regeneration	axon regeneration	0.8561428571428571	0.367	0	1	MTR	3	17
+GO:0048678	9	GO:0048678	1.7109585456160001	84	response to axon injury	response to axon injury	0.9376190476190476	1	0	1	MTR	1	17
+GO:0001707	8	GO:0001707	1.7109585456160001	75	mesoderm formation	mesoderm formation	0.8911428571428571	0.3526666666666667	0	1	TXNRD1	3	17
+GO:0001704	10	GO:0001704	1.6010158847431595	128	formation of primary germ layer	formation of primary germ layer	0.920047619047619	0.521	0	1	TXNRD1	2	17
+GO:0032259	11	GO:0032259	1.3937606003734746	282	methylation	methylation	0.9287619047619048	1	0	1	MTR	1	17
+GO:0048548	2	GO:0048548	1.6651119361599902	12	regulation of pinocytosis	regulation of pinocytosis	0.6586666666666667	0.5061666666666667	0	1	ANKFY1	6	18
+GO:0034058	1	GO:0034058	1.6651119361599902	12	endosomal vesicle fusion	endosomal vesicle fusion	0.5911666666666666	0.3234	0	1	ANKFY1	5	18
+GO:0042147	4	GO:0042147	1.3044064833846163	98	retrograde transport, endosome to Golgi	retrograde transport, endosome to Golgi	0.6391111111111112	0.47375	0	1	ANKFY1	4	18
+GO:0031047	3	GO:0031047	1.3044064833846163	714	regulatory ncRNA-mediated gene silencing	regulatory ncRNA-mediated gene silencing	0.8784444444444445	0.41533333333333333	0	1	HELZ2	3	18
+GO:0020027	3	GO:0020027	1.5592915385021613	18	hemoglobin metabolic process	hemoglobin metabolic process	0.99335	1	0	1	EPB42	1	19
+GO:0043249	2	GO:0043249	1.5592915385021613	18	erythrocyte maturation	erythrocyte maturation	0.6355500000000001	0.3833333333333333	0	1	EPB42	3	19
+GO:0002921	1	GO:0002921	1.5592915385021613	17	negative regulation of humoral immune response	negative regulation of humoral immune response	0.522625	0.3638148148148148	0	2	CR1L/EPB42	27	19
+GO:0018149	4	GO:0018149	1.5498969004107628	28	peptide cross-linking	peptide cross-linking	0.99335	1	0	1	EPB42	1	19
+GO:0060586	5	GO:0060586	1.5498969004107628	25	multicellular organismal-level iron ion homeostasis	multicellular organismal-level iron ion homeostasis	0.910825	0.51675	0	1	EPB42	4	19
+GO:0031341	6	GO:0031341	1.4606839672011667	111	regulation of cell killing	regulation of cell killing	0.932525	0.5265	0	1	CR1L	2	19
+GO:0045667	7	GO:0045667	1.34325081715139	150	regulation of osteoblast differentiation	regulation of osteoblast differentiation	0.8889	0.759	0	2	HEMGN/EPB42	2	19
+GO:0045070	1	GO:0045070	2.9014624643698523	31	positive regulation of viral genome replication	positive regulation of viral genome replication	0.8358	0.238	0	2	STAU1/LARP1	8	20
+GO:0010608	2	GO:0010608	2.898430316247555	1093	post-transcriptional regulation of gene expression	post-transcriptional regulation of gene expression	0.6707294117647058	0.40914285714285714	0	3	STAU1/PUM1/LARP1	14	20
+GO:0043488	3	GO:0043488	2.3702326705013794	235	regulation of mRNA stability	regulation of mRNA stability	0.5323411764705883	0.1644	0	2	PUM1/LARP1	20	20
+GO:0061013	4	GO:0061013	2.3567045203725625	252	regulation of mRNA catabolic process	regulation of mRNA catabolic process	0.5761647058823529	0.26360000000000006	0	2	PUM1/LARP1	5	20
+GO:0017148	5	GO:0017148	2.3558019565321917	317	negative regulation of translation	negative regulation of translation	0.6286470588235293	0.237	0	2	PUM1/LARP1	11	20
+GO:0045472	7	GO:0045472	1.9442016415478056	12	response to ether	response to ether	0.9755411764705882	0.7003333333333333	0	1	LARP1	3	20
+GO:0008298	6	GO:0008298	1.9442016415478056	13	intracellular mRNA localization	intracellular mRNA localization	0.9685176470588235	0.6845	0	1	STAU1	6	20
+GO:0039535	8	GO:0039535	1.8783826407777846	20	regulation of RIG-I signaling pathway	regulation of RIG-I signaling pathway	0.8348941176470588	0.31814285714285717	0	2	PUM1/LARP1	7	20
+GO:1900273	9	GO:1900273	1.8677182538830335	22	positive regulation of long-term synaptic potentiation	positive regulation of long-term synaptic potentiation	0.8375529411764706	0.3255	0	1	STAU1	4	20
+GO:0099010	10	GO:0099010	1.857840101185728	21	modification of postsynaptic structure	modification of postsynaptic structure	0.9781764705882353	0.508	0	1	STAU1	2	20
+GO:0008344	11	GO:0008344	1.487024605770395	81	adult locomotory behavior	adult locomotory behavior	0.9887764705882353	0.523	0	1	PUM1	2	20
+GO:0038202	12	GO:0038202	1.443364516164677	99	TORC1 signaling	TORC1 signaling	0.8900235294117647	0.5275000000000001	0	1	LARP1	2	20
+GO:0051983	13	GO:0051983	1.3807435409169981	131	regulation of chromosome segregation	regulation of chromosome segregation	0.9272823529411764	1	0	1	PUM1	1	20
+GO:0008202	1	GO:0008202	3.1228788911513226	327	steroid metabolic process	steroid metabolic process	0.8586464646464647	0.4382857142857143	0	3	APOA2/APOF/SERPINA6	14	21
+GO:0008203	2	GO:0008203	2.0936089264124305	140	cholesterol metabolic process	cholesterol metabolic process	0.8447070707070707	0.30825	0	2	APOA2/APOF	4	21
+GO:0051346	3	GO:0051346	1.9810663661503167	218	negative regulation of hydrolase activity	negative regulation of hydrolase activity	0.9224040404040404	0.2678571428571429	0	2	APOA2/SERPINA6	7	21
+GO:0018206	6	GO:0018206	1.7758847518003191	12	peptidyl-methionine modification	peptidyl-methionine modification	0.9383838383838384	0.835	0	1	APOA2	2	21
+GO:0034384	8	GO:0034384	1.7758847518003191	18	high-density lipoprotein particle clearance	high-density lipoprotein particle clearance	0.8856666666666667	0.41333333333333333	0	1	APOA2	3	21
+GO:0034380	7	GO:0034380	1.7758847518003191	13	high-density lipoprotein particle assembly	high-density lipoprotein particle assembly	0.8342828282828283	0.24491666666666667	0	1	APOA2	12	21
+GO:0010876	5	GO:0010876	1.7758847518003191	503	lipid localization	lipid localization	0.824030303030303	0.23573333333333335	0	2	APOA2/APOF	15	21
+GO:1904478	4	GO:1904478	1.7758847518003191	12	regulation of intestinal absorption	regulation of intestinal absorption	0.8033232323232323	0.20911111111111114	0	1	APOA2	9	21
+GO:0033700	9	GO:0033700	1.7724122990725548	14	phospholipid efflux	phospholipid efflux	0.8518282828282828	0.43366666666666664	0	1	APOA2	3	21
+GO:0006656	11	GO:0006656	1.6973808436497928	29	phosphatidylcholine biosynthetic process	phosphatidylcholine biosynthetic process	0.8531818181818182	0.43420000000000003	0	1	APOA2	5	21
+GO:0002719	10	GO:0002719	1.6973808436497928	35	negative regulation of cytokine production involved in immune response	negative regulation of cytokine production involved in immune response	0.8151515151515152	0.2403333333333333	0	1	APOA2	6	21
+GO:0031100	14	GO:0031100	1.5623497287442014	64	animal organ regeneration	animal organ regeneration	0.9907676767676767	0.5429999999999999	0	1	APOA2	2	21
+GO:0050766	12	GO:0050766	1.5623497287442014	72	positive regulation of phagocytosis	positive regulation of phagocytosis	0.8314848484848485	0.3596666666666667	0	1	APOA2	3	21
+GO:0032757	13	GO:0032757	1.5623497287442014	63	positive regulation of interleukin-8 production	positive regulation of interleukin-8 production	0.8498282828282828	0.3553333333333334	0	1	APOA2	3	21
+GO:0043627	15	GO:0043627	1.5422162719091597	69	response to estrogen	response to estrogen	0.9695858585858586	0.571	0	1	APOA2	6	21
+GO:0042632	16	GO:0042632	1.5006466257685978	100	cholesterol homeostasis	cholesterol homeostasis	0.9804242424242424	0.354	0	1	APOA2	3	21
+GO:0042157	17	GO:0042157	1.4057691793305287	135	lipoprotein metabolic process	lipoprotein metabolic process	0.9271919191919192	0.817	0	2	APOA2/SERPINA6	2	21
+GO:0034340	1	GO:0034340	2.7405629543750356	89	response to type I interferon	response to type I interferon	0.8098918918918919	0.30354545454545456	0	3	SAMHD1/OAS2/XAF1	11	22
+GO:0032606	2	GO:0032606	2.5397721373385758	123	type I interferon production	type I interferon production	0.7951216216216216	0.27684615384615385	0	2	OAS2/XAF1	13	22
+GO:0140546	3	GO:0140546	1.967907047661164	335	defense response to symbiont	defense response to symbiont	0.8951081081081081	0.45266666666666666	0	2	SAMHD1/OAS2	3	22
+GO:0002566	6	GO:0002566	1.8015180391800731	13	somatic diversification of immune receptors via somatic mutation	somatic diversification of immune receptors via somatic mutation	0.8836756756756756	0.35716666666666663	0	1	SAMHD1	6	22
+GO:0019439	4	GO:0019439	1.8015180391800731	553	aromatic compound catabolic process	aromatic compound catabolic process	0.7812297297297297	0.3172857142857143	0	2	SAMHD1/OAS2	7	22
+GO:0009143	5	GO:0009143	1.8015180391800731	13	nucleoside triphosphate catabolic process	nucleoside triphosphate catabolic process	0.7664864864864864	0.297125	0	1	SAMHD1	8	22
+GO:0009151	7	GO:0009151	1.7981262763543697	16	purine deoxyribonucleotide metabolic process	purine deoxyribonucleotide metabolic process	0.793445945945946	0.3343999999999999	0	1	SAMHD1	5	22
+GO:0032069	8	GO:0032069	1.7168039028961328	22	regulation of nuclease activity	regulation of nuclease activity	0.8957567567567568	1	0	1	OAS2	1	22
+GO:0007595	10	GO:0007595	1.5993074423911389	42	lactation	lactation	0.9387432432432432	0.529	0	1	OAS2	2	22
+GO:0045071	9	GO:0045071	1.5993074423911389	55	negative regulation of viral genome replication	negative regulation of viral genome replication	0.8956621621621621	0.21199999999999997	0	1	OAS2	6	22
+GO:0031297	11	GO:0031297	1.5713993225320662	49	replication fork processing	replication fork processing	0.8526621621621622	0.403	0	1	SAMHD1	5	22
+GO:0051289	12	GO:0051289	1.5633981957221341	59	protein homotetramerization	protein homotetramerization	0.9659864864864864	0.372	0	1	SAMHD1	3	22
+GO:0045824	13	GO:0045824	1.5210008259053833	91	negative regulation of innate immune response	negative regulation of innate immune response	0.8115270270270271	0.372	0	1	SAMHD1	3	22
+GO:0030879	14	GO:0030879	1.376182800257809	133	mammary gland development	mammary gland development	0.9723108108108108	1	0	1	OAS2	1	22
+GO:0033500	1	GO:0033500	1.8790985116826457	252	carbohydrate homeostasis	carbohydrate homeostasis	0.9459896907216495	0.36150000000000004	0	2	G6PC2/FGF21	4	25
+GO:0071402	8	GO:0071402	1.5529310581037459	42	cellular response to lipoprotein particle stimulus	cellular response to lipoprotein particle stimulus	0.9325257731958763	1	0	1	FGF21	1	25
+GO:0051156	5	GO:0051156	1.5529310581037459	29	glucose 6-phosphate metabolic process	glucose 6-phosphate metabolic process	0.9552474226804124	1	0	1	G6PC2	1	25
+GO:0071404	3	GO:0071404	1.5529310581037459	38	cellular response to low-density lipoprotein particle stimulus	cellular response to low-density lipoprotein particle stimulus	0.8633298969072165	0.48024999999999995	0	1	FGF21	8	25
+GO:0046326	7	GO:0046326	1.5529310581037459	37	positive regulation of glucose import	positive regulation of glucose import	0.817061855670103	0.3645652173913043	0	2	FGF21/G6PC2	23	25
+GO:0050996	2	GO:0050996	1.5529310581037459	27	positive regulation of lipid catabolic process	positive regulation of lipid catabolic process	0.8334226804123711	0.3483846153846154	0	1	FGF21	13	25
+GO:0010988	4	GO:0010988	1.5529310581037459	22	regulation of low-density lipoprotein particle clearance	regulation of low-density lipoprotein particle clearance	0.928340206185567	0.2592	0	1	FGF21	5	25
+GO:2000352	6	GO:2000352	1.5529310581037459	36	negative regulation of endothelial cell apoptotic process	negative regulation of endothelial cell apoptotic process	0.9188556701030928	0.21533333333333338	0	1	FGF21	6	25
+GO:0014823	10	GO:0014823	1.4620926766392306	72	response to activity	response to activity	0.954979381443299	1	0	1	FGF21	1	25
+GO:0046503	9	GO:0046503	1.4620926766392306	65	glycerolipid catabolic process	glycerolipid catabolic process	0.852680412371134	0.4085	0	1	FGF21	4	25
+GO:0001101	11	GO:0001101	1.459856161714557	141	response to acid chemical	response to acid chemical	0.9016494845360825	0.6041875	0	1	FGF21	16	25
+GO:0120162	13	GO:0120162	1.459856161714557	101	positive regulation of cold-induced thermogenesis	positive regulation of cold-induced thermogenesis	0.8534536082474227	0.2755000000000001	0	1	FGF21	4	25
+GO:0046364	12	GO:0046364	1.459856161714557	102	monosaccharide biosynthetic process	monosaccharide biosynthetic process	0.9065360824742268	0.19385714285714284	0	1	G6PC2	7	25
+GO:0070374	14	GO:0070374	1.4184598040135663	218	positive regulation of ERK1 and ERK2 cascade	positive regulation of ERK1 and ERK2 cascade	0.8578247422680412	0.3583333333333334	0	1	FGF21	3	25
+GO:0034976	15	GO:0034976	1.3579421978010375	266	response to endoplasmic reticulum stress	response to endoplasmic reticulum stress	0.911360824742268	1	0	1	FGF21	1	25
+GO:0050912	2	GO:0050912	4.6102699869195245	45	detection of chemical stimulus involved in sensory perception of taste	detection of chemical stimulus involved in sensory perception of taste	0.7014545454545454	0.4043333333333333	0	2	PKD1L3/PKD2L1	3	27
+GO:0071468	1	GO:0071468	4.6102699869195245	17	cellular response to acidic pH	cellular response to acidic pH	0.756030303030303	0.30900000000000005	0	2	PKD1L3/PKD2L1	5	27
+GO:0050982	3	GO:0050982	4.24229320162493	53	detection of mechanical stimulus	detection of mechanical stimulus	0.6812727272727273	0.2889999999999999	0	2	PKD1L3/PKD2L1	7	27
+GO:0104004	4	GO:0104004	3.0582367288024868	334	cellular response to environmental stimulus	cellular response to environmental stimulus	0.8370606060606061	0.5015000000000001	0	2	PKD1L3/PKD2L1	2	27
+GO:0070588	5	GO:0070588	3.016532790031699	352	calcium ion transmembrane transport	calcium ion transmembrane transport	0.8744848484848484	0.33399999999999996	0	2	PKD1L3/PKD2L1	6	27
+GO:0009415	6	GO:0009415	2.5484406796248615	13	response to water	response to water	0.7724242424242425	0.4643333333333334	0	1	PKD2L1	3	27
+GO:0051289	7	GO:0051289	1.9334109632831578	59	protein homotetramerization	protein homotetramerization	0.9125757575757576	0.30674999999999997	0	1	PKD2L1	4	27
+GO:0007224	8	GO:0007224	1.5474436632884383	148	smoothened signaling pathway	smoothened signaling pathway	0.8991818181818182	1	0	1	PKD2L1	1	27
+GO:0001822	9	GO:0001822	1.339501919806536	314	kidney development	kidney development	0.9361212121212121	0.505	0	1	PKD1L3	2	27
+GO:0070262	1	GO:0070262	1.773477661859356	14	peptidyl-serine dephosphorylation	peptidyl-serine dephosphorylation	0.7675384615384615	0.40115789473684216	0	2	RUBCN/PPP1R15A	19	28
+GO:0036490	3	GO:0036490	1.773477661859356	12	regulation of translation in response to endoplasmic reticulum stress	regulation of translation in response to endoplasmic reticulum stress	0.6634615384615384	0.366	0	1	PPP1R15A	8	28
+GO:0043086	2	GO:0043086	1.773477661859356	480	negative regulation of catalytic activity	negative regulation of catalytic activity	0.8415538461538461	0.30674999999999997	0	2	RUBCN/PPP1R15A	4	28
+GO:1901096	5	GO:1901096	1.773477661859356	17	regulation of autophagosome maturation	regulation of autophagosome maturation	0.768676923076923	0.30500000000000005	0	1	RUBCN	5	28
+GO:1900102	4	GO:1900102	1.773477661859356	15	negative regulation of endoplasmic reticulum unfolded protein response	negative regulation of endoplasmic reticulum unfolded protein response	0.7096923076923076	0.24184615384615382	0	1	PPP1R15A	13	28
+GO:0016242	6	GO:0016242	1.7432763252642727	32	negative regulation of macroautophagy	negative regulation of macroautophagy	0.7719076923076923	0.32275	0	1	RUBCN	4	28
+GO:0071985	7	GO:0071985	1.7424159638022076	47	multivesicular body sorting pathway	multivesicular body sorting pathway	0.960123076923077	0.60125	0	1	RUBCN	4	28
+GO:0006984	8	GO:0006984	1.7390924884658008	46	ER-nucleus signaling pathway	ER-nucleus signaling pathway	0.8567538461538462	1	0	1	PPP1R15A	1	28
+GO:0051898	9	GO:0051898	1.7332034955820155	68	negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	0.7974461538461538	0.46219999999999994	0	2	RUBCN/PPP1R15A	5	28
+GO:0070972	10	GO:0070972	1.679808580497669	79	protein localization to endoplasmic reticulum	protein localization to endoplasmic reticulum	0.971	1	0	1	PPP1R15A	1	28
+GO:0045833	11	GO:0045833	1.6306273237095703	112	negative regulation of lipid metabolic process	negative regulation of lipid metabolic process	0.8039076923076923	1	0	1	RUBCN	1	28
+GO:0048012	1	GO:0048012	1.8757996140111919	12	hepatocyte growth factor receptor signaling pathway	hepatocyte growth factor receptor signaling pathway	0.9935	1	0	1	MUC20	1	29
+GO:0016266	2	GO:0016266	1.643664150077766	43	O-glycan processing	O-glycan processing	0.36750000000000005	0.3116	0	1	GALNT15	5	29
+GO:0009101	3	GO:0009101	1.3694450836090057	299	glycoprotein biosynthetic process	glycoprotein biosynthetic process	0.49612500000000004	0.5125	0	1	GALNT15	2	29
+GO:0006360	1	GO:0006360	3.5392548351545003	72	transcription by RNA polymerase I	transcription by RNA polymerase I	0.6656923076923077	0.605375	0	2	TTF1/TAF1B	8	32
+GO:0008156	2	GO:0008156	1.9339723977235588	25	negative regulation of DNA replication	negative regulation of DNA replication	0.6410769230769231	0.361	0	1	TTF1	4	32
+GO:0065004	3	GO:0065004	1.5127602721441602	240	protein-DNA complex assembly	protein-DNA complex assembly	0.9164615384615384	1	0	1	TAF1B	1	32
+GO:0051882	2	GO:0051882	1.8582667569128288	23	mitochondrial depolarization	mitochondrial depolarization	0.741125	0.2652	0	1	HSH2D	5	34
+GO:0001783	1	GO:0001783	1.8582667569128288	27	B cell apoptotic process	B cell apoptotic process	0.5443125	0.1955555555555556	0	1	HSH2D	9	34
+GO:0007200	3	GO:0007200	1.7332107463322506	113	phospholipase C-activating G protein-coupled receptor signaling pathway	phospholipase C-activating G protein-coupled receptor signaling pathway	0.902375	0.6985	0	1	LTB4R	2	34
+GO:0034453	1	GO:0034453	1.7269222757967224	25	microtubule anchoring	microtubule anchoring	1	1	0	1	CCDC187	1	36
+GO:1903963	2	GO:1903963	1.7269222757967224	31	arachidonate transport	arachidonate transport	0.30462500000000003	0.2052857142857143	0	1	PROCA1	7	36
+GO:0060623	1	GO:0060623	4.5070701517830996	13	regulation of chromosome condensation	regulation of chromosome condensation	0.786952380952381	0.3456	0	2	NCAPD3/MCPH1	5	37
+GO:0097150	2	GO:0097150	1.6563983946371235	23	neuronal stem cell population maintenance	neuronal stem cell population maintenance	0.9403095238095238	0.43200000000000005	0	1	MCPH1	3	37
+GO:0051294	3	GO:0051294	1.6563983946371235	42	establishment of spindle orientation	establishment of spindle orientation	0.5321904761904762	0.4013	0	2	NCAPD3/MCPH1	20	37
+GO:0071539	4	GO:0071539	1.6563983946371235	34	protein localization to centrosome	protein localization to centrosome	0.8817142857142857	0.26875000000000004	0	1	MCPH1	4	37
+GO:0046605	5	GO:0046605	1.6530039681957898	54	regulation of centrosome cycle	regulation of centrosome cycle	0.5977857142857144	0.32624999999999993	0	1	MCPH1	4	37
+GO:0021987	6	GO:0021987	1.4549321142511131	127	cerebral cortex development	cerebral cortex development	0.9303095238095238	0.42974999999999997	0	1	MCPH1	4	37
+GO:0030010	7	GO:0030010	1.4252314546796174	156	establishment of cell polarity	establishment of cell polarity	0.923047619047619	0.521	0	1	MCPH1	2	37
+GO:0014029	1	GO:0014029	4.653198187461337	15	neural crest formation	neural crest formation	0.771	0.4085	0	2	NOLC1/TCOF1	4	38
+GO:0014033	2	GO:0014033	3.6452066976237276	95	neural crest cell differentiation	neural crest cell differentiation	0.6838500000000001	0.30725	0	2	NOLC1/TCOF1	4	38
+GO:0016072	3	GO:0016072	3.0948754088241546	264	rRNA metabolic process	rRNA metabolic process	0.7652	0.3766666666666667	0	2	NOLC1/TCOF1	6	38
+GO:0006417	4	GO:0006417	2.7944032738430487	537	regulation of translation	regulation of translation	0.79005	0.372	0	2	NOLC1/TCOF1	3	38
+GO:0007000	5	GO:0007000	2.3992179366458584	17	nucleolus organization	nucleolus organization	0.92095	0.569	0	1	NOLC1	2	38
+GO:0042254	6	GO:0042254	1.3424878859350955	325	ribosome biogenesis	ribosome biogenesis	0.9114	1	0	1	NOLC1	1	38
+GO:0048710	2	GO:0048710	1.8151133119609728	32	regulation of astrocyte differentiation	regulation of astrocyte differentiation	0.7450882352941177	0.3239090909090909	0	1	MBD1	11	39
+GO:0044030	3	GO:0044030	1.8151133119609728	21	regulation of DNA methylation	regulation of DNA methylation	0.7879117647058823	0.31375	0	1	MBD1	4	39
+GO:1905269	1	GO:1905269	1.8151133119609728	14	positive regulation of chromatin organization	positive regulation of chromatin organization	0.6716176470588235	0.28049999999999997	0	1	ATF7IP2	12	39
+GO:0042220	4	GO:0042220	1.7546087535360426	49	response to cocaine	response to cocaine	0.9536764705882352	0.475	0	1	MBD1	3	39
+GO:2001252	5	GO:2001252	1.6168533084430847	109	positive regulation of chromosome organization	positive regulation of chromosome organization	0.7727647058823529	0.544	0	1	ATF7IP2	2	39
+GO:0043414	6	GO:0043414	1.410481587279908	210	macromolecule methylation	macromolecule methylation	0.8591764705882353	0.5105	0	1	MBD1	2	39
+GO:0038203	1	GO:0038203	1.5545007221413176	14	TORC2 signaling	TORC2 signaling	0.8867777777777778	1	0	1	SYAP1	1	40
+GO:0048172	2	GO:0048172	1.5545007221413176	16	regulation of short-term neuronal synaptic plasticity	regulation of short-term neuronal synaptic plasticity	0.8645555555555555	0.5389999999999999	0	1	SYAP1	2	40
+GO:0036120	3	GO:0036120	1.5545007221413176	23	cellular response to platelet-derived growth factor stimulus	cellular response to platelet-derived growth factor stimulus	0.7512222222222222	0.471	0	1	SYAP1	4	40
+GO:0000245	5	GO:0000245	1.4302558673161239	95	spliceosomal complex assembly	spliceosomal complex assembly	0.9941111111111111	1	0	1	ZRSR2	1	40
+GO:0045600	4	GO:0045600	1.4302558673161239	71	positive regulation of fat cell differentiation	positive regulation of fat cell differentiation	0.9703333333333334	1	0	1	SYAP1	1	40
+GO:0007020	1	GO:0007020	3.1557658836816582	45	microtubule nucleation	microtubule nucleation	0.7993953488372093	0.278	0	2	HAUS7/AKAP9	14	42
+GO:0032271	2	GO:0032271	2.6257126715390453	204	regulation of protein polymerization	regulation of protein polymerization	0.791	0.33899999999999997	0	2	HAUS7/AKAP9	9	42
+GO:0051657	3	GO:0051657	1.9807579915286553	13	maintenance of organelle location	maintenance of organelle location	0.9182674418604652	0.4783333333333333	0	1	AKAP9	3	42
+GO:1903358	4	GO:1903358	1.866920110847007	16	regulation of Golgi organization	regulation of Golgi organization	0.8422209302325582	0.5775	0	1	AKAP9	2	42
+GO:0060307	6	GO:0060307	1.866920110847007	23	regulation of ventricular cardiac muscle cell membrane repolarization	regulation of ventricular cardiac muscle cell membrane repolarization	0.8688837209302326	0.2561	0	1	AKAP9	10	42
+GO:1901018	5	GO:1901018	1.866920110847007	21	positive regulation of potassium ion transmembrane transporter activity	positive regulation of potassium ion transmembrane transporter activity	0.7605	0.19407692307692304	0	1	AKAP9	13	42
+GO:0061842	7	GO:0061842	1.8091542607847222	32	microtubule organizing center localization	microtubule organizing center localization	0.9180348837209302	0.5	0	1	AKAP9	2	42
+GO:0086004	8	GO:0086004	1.8091542607847222	35	regulation of cardiac muscle cell contraction	regulation of cardiac muscle cell contraction	0.7870697674418605	0.25739999999999996	0	1	AKAP9	5	42
+GO:0086091	9	GO:0086091	1.7980954437699455	38	regulation of heart rate by cardiac conduction	regulation of heart rate by cardiac conduction	0.8016976744186046	0.2976153846153846	0	1	AKAP9	13	42
+GO:0051602	10	GO:0051602	1.7625616539390128	45	response to electrical stimulus	response to electrical stimulus	0.9933953488372093	1	0	1	AKAP9	1	42
+GO:0071320	11	GO:0071320	1.7393426088614563	50	cellular response to cAMP	cellular response to cAMP	0.9577093023255814	0.29400000000000004	0	1	AKAP9	4	42
+GO:0032414	12	GO:0032414	1.6113320430376021	85	positive regulation of ion transmembrane transporter activity	positive regulation of ion transmembrane transporter activity	0.7572441860465116	0.255	0	1	AKAP9	5	42
+GO:0033138	13	GO:0033138	1.605560539359154	104	positive regulation of peptidyl-serine phosphorylation	positive regulation of peptidyl-serine phosphorylation	0.8822906976744186	0.30200000000000005	0	1	AKAP9	4	42
+GO:0031503	14	GO:0031503	1.4497242045450651	188	protein-containing complex localization	protein-containing complex localization	0.9221395348837209	1	0	1	AKAP9	1	42
+GO:0006753	1	GO:0006753	1.6705350598847772	533	nucleoside phosphate metabolic process	nucleoside phosphate metabolic process	0.48664705882352943	0.40700000000000003	0	2	NUDT14/NUDT17	6	43
+GO:0006734	2	GO:0006734	1.6705350598847772	11	NADH metabolic process	NADH metabolic process	0.4732352941176471	0.2846666666666666	0	1	NUDT17	6	43
+GO:0018279	3	GO:0018279	1.6227919195700848	24	protein N-linked glycosylation via asparagine	protein N-linked glycosylation via asparagine	0.6395882352941176	0.32320000000000004	0	1	NUDT14	5	43
+GO:0022900	1	GO:0022900	1.6786885881180587	176	electron transport chain	electron transport chain	0.6201621621621622	0.18827272727272726	0	1	NDUFV3	11	45
+GO:0009144	2	GO:0009144	1.6786885881180587	167	purine nucleoside triphosphate metabolic process	purine nucleoside triphosphate metabolic process	0.38578378378378375	0.15600000000000003	0	1	NDUFV3	22	45
+GO:0072522	3	GO:0072522	1.6165406813692114	267	purine-containing compound biosynthetic process	purine-containing compound biosynthetic process	0.5670540540540541	0.2875	0	1	NDUFV3	4	45
+GO:0006353	6	GO:0006353	1.7106641182086417	30	DNA-templated transcription termination	DNA-templated transcription termination	0.7390153846153846	1	0	1	SCAF4	1	46
+GO:0008334	2	GO:0008334	1.7106641182086417	20	histone mRNA metabolic process	histone mRNA metabolic process	0.6713384615384616	0.4485	0	1	TENT4B	8	46
+GO:0016074	3	GO:0016074	1.7106641182086417	16	sno(s)RNA metabolic process	sno(s)RNA metabolic process	0.7078923076923077	0.4304285714285714	0	1	TENT4B	7	46
+GO:0043628	1	GO:0043628	1.7106641182086417	12	regulatory ncRNA 3'-end processing	regulatory ncRNA 3'-end processing	0.6068615384615385	0.368	0	1	TENT4B	4	46
+GO:0060211	4	GO:0060211	1.7106641182086417	15	regulation of nuclear-transcribed mRNA poly(A) tail shortening	regulation of nuclear-transcribed mRNA poly(A) tail shortening	0.49506153846153844	0.2652941176470588	0	1	TENT4B	17	46
+GO:0032211	5	GO:0032211	1.7106641182086417	20	negative regulation of telomere maintenance via telomerase	negative regulation of telomere maintenance via telomerase	0.4998769230769231	0.19018181818181823	0	1	TENT4B	11	46
+GO:0006378	7	GO:0006378	1.7050903853759984	30	mRNA polyadenylation	mRNA polyadenylation	0.6303538461538462	0.3876666666666667	0	1	TENT4B	3	46
+GO:2000279	8	GO:2000279	1.676067833617965	37	negative regulation of DNA biosynthetic process	negative regulation of DNA biosynthetic process	0.5608461538461538	0.27849999999999997	0	1	TENT4B	6	46
+GO:0043242	9	GO:0043242	1.54781742435395	80	negative regulation of protein-containing complex disassembly	negative regulation of protein-containing complex disassembly	0.7444	0.378	0	1	SCAF4	3	46
+GO:0045727	10	GO:0045727	1.5022672807175768	141	positive regulation of translation	positive regulation of translation	0.6205076923076923	0.3420000000000001	0	1	TENT4B	4	46
+GO:0033500	11	GO:0033500	1.3705672979542625	252	carbohydrate homeostasis	carbohydrate homeostasis	1	1	0	1	TENT4B	1	46
+GO:0046015	1	GO:0046015	1.6625530523451826	10	regulation of transcription by glucose	regulation of transcription by glucose	0.88208	1	0	1	USF2	1	47
+GO:0007595	3	GO:0007595	1.6625530523451826	42	lactation	lactation	0.91212	0.529	0	1	USF2	2	47
+GO:0019083	5	GO:0019083	1.6625530523451826	51	viral transcription	viral transcription	0.96176	0.522	0	1	USF2	2	47
+GO:0031056	2	GO:0031056	1.6625530523451826	40	regulation of histone modification	regulation of histone modification	0.6901999999999999	0.47385714285714287	0	1	NFYC	14	47
+GO:0031670	4	GO:0031670	1.6625530523451826	48	cellular response to nutrient	cellular response to nutrient	0.89276	0.3365	0	1	USF2	4	47
+GO:0055088	7	GO:0055088	1.4945913559631627	175	lipid homeostasis	lipid homeostasis	1	1	0	1	USF2	1	47
+GO:0030879	6	GO:0030879	1.4945913559631627	133	mammary gland development	mammary gland development	0.96412	1	0	1	USF2	1	47
+GO:0042753	1	GO:0042753	3.765999963327499	18	positive regulation of circadian rhythm	positive regulation of circadian rhythm	0.8920087719298245	0.35719999999999996	0	2	MTNR1B/CLOCK	5	48
+GO:0090087	2	GO:0090087	2.539324258402364	200	regulation of peptide transport	regulation of peptide transport	0.8006228070175438	0.22099999999999997	0	2	MTNR1B/CLOCK	16	48
+GO:0046883	3	GO:0046883	2.537956308965273	251	regulation of hormone secretion	regulation of hormone secretion	0.7092982456140351	0.45266666666666666	0	2	MTNR1B/CLOCK	12	48
+GO:0050708	4	GO:0050708	2.537956308965273	266	regulation of protein secretion	regulation of protein secretion	0.7654561403508772	0.18969999999999998	0	2	MTNR1B/CLOCK	10	48
+GO:0010752	5	GO:0010752	2.1387094279305865	12	regulation of cGMP-mediated signaling	regulation of cGMP-mediated signaling	0.8657280701754386	0.40579999999999994	0	2	MTNR1B/CLOCK	5	48
+GO:0042921	6	GO:0042921	2.0582350300993366	13	glucocorticoid receptor signaling pathway	glucocorticoid receptor signaling pathway	0.8514824561403509	0.2616666666666666	0	1	CLOCK	9	48
+GO:0051775	7	GO:0051775	2.0570996478428802	14	response to redox state	response to redox state	0.9682456140350877	1	0	1	CLOCK	1	48
+GO:0031645	9	GO:0031645	2.055253779162318	16	negative regulation of nervous system process	negative regulation of nervous system process	0.8581842105263158	0.432125	0	1	MTNR1B	8	48
+GO:0045187	8	GO:0045187	2.055253779162318	15	regulation of circadian sleep/wake cycle, sleep	regulation of circadian sleep/wake cycle, sleep	0.8238684210526316	0.34099999999999997	0	1	MTNR1B	3	48
+GO:0022410	10	GO:0022410	2.0062194737365293	19	circadian sleep/wake cycle process	circadian sleep/wake cycle process	0.8785526315789474	0.2795714285714286	0	1	MTNR1B	7	48
+GO:0003323	11	GO:0003323	1.9590210761246767	24	type B pancreatic cell development	type B pancreatic cell development	0.880140350877193	0.29275000000000007	0	1	CLOCK	4	48
+GO:0009648	12	GO:0009648	1.92809717826472	28	photoperiodism	photoperiodism	0.9415526315789474	0.44399999999999995	0	1	CLOCK	4	48
+GO:0042634	13	GO:0042634	1.917131942833909	28	regulation of hair cycle	regulation of hair cycle	0.8992631578947369	0.398	0	1	CLOCK	3	48
+GO:0002068	14	GO:0002068	1.859836008641905	36	glandular epithelial cell development	glandular epithelial cell development	0.9313684210526316	0.23450000000000004	0	1	CLOCK	6	48
+GO:0007187	15	GO:0007187	1.7730167074319256	56	G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger	G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger	0.8887368421052632	1	0	1	MTNR1B	1	48
+GO:0006473	16	GO:0006473	1.6186367546254297	106	protein acetylation	protein acetylation	0.9866929824561403	0.518	0	1	CLOCK	2	48
+GO:0035270	20	GO:0035270	1.5602089129106191	139	endocrine system development	endocrine system development	0.9242807017543859	1	0	1	CLOCK	1	48
+GO:0050729	18	GO:0050729	1.5602089129106191	152	positive regulation of inflammatory response	positive regulation of inflammatory response	0.9140350877192982	1	0	1	CLOCK	1	48
+GO:0051092	19	GO:0051092	1.5602089129106191	150	positive regulation of NF-kappaB transcription factor activity	positive regulation of NF-kappaB transcription factor activity	0.9307017543859649	0.522	0	1	CLOCK	2	48
+GO:0000077	17	GO:0000077	1.5602089129106191	126	DNA damage checkpoint signaling	DNA damage checkpoint signaling	0.8237105263157894	0.24539999999999995	0	1	CLOCK	5	48
+GO:0043524	21	GO:0043524	1.531633133791953	163	negative regulation of neuron apoptotic process	negative regulation of neuron apoptotic process	0.8975175438596491	0.364	0	1	MTNR1B	3	48
+GO:0071478	22	GO:0071478	1.507398116933154	181	cellular response to radiation	cellular response to radiation	0.908201754385965	0.368	0	1	CLOCK	3	48
+GO:0033500	23	GO:0033500	1.4143593077376	252	carbohydrate homeostasis	carbohydrate homeostasis	0.9912456140350877	0.501	0	1	MTNR1B	2	48
+GO:0030522	24	GO:0030522	1.3026218874501398	353	intracellular receptor signaling pathway	intracellular receptor signaling pathway	0.8463070175438596	1	0	1	CLOCK	1	48
+GO:0007606	1	GO:0007606	1.8692718810517241	533	sensory perception of chemical stimulus	sensory perception of chemical stimulus	0.46185714285714285	0.3563333333333334	0	1	OR13C4	3	49
+GO:0050906	2	GO:0050906	1.8692718810517241	546	detection of stimulus involved in sensory perception	detection of stimulus involved in sensory perception	0.20371428571428574	0.278	0	1	OR13C4	4	49
+GO:0009636	1	GO:0009636	1.9799019444332613	258	response to toxic substance	response to toxic substance	0.74884	0.43879999999999997	0	2	CYGB/ADAMTS13	10	51
+GO:0035864	5	GO:0035864	1.602843544072337	18	response to potassium ion	response to potassium ion	0.86288	1	0	1	ADAMTS13	1	51
+GO:0015669	3	GO:0015669	1.602843544072337	22	gas transport	gas transport	1	1	0	1	CYGB	1	51
+GO:0072537	4	GO:0072537	1.602843544072337	15	fibroblast activation	fibroblast activation	0.97356	0.7435	0	2	CYGB/ADAMTS13	2	51
+GO:0010764	2	GO:0010764	1.602843544072337	11	negative regulation of fibroblast migration	negative regulation of fibroblast migration	0.91196	0.39	0	1	CYGB	3	51
+GO:0043171	6	GO:0043171	1.5684432242819935	23	peptide catabolic process	peptide catabolic process	0.96576	1	0	1	ADAMTS13	1	51
+GO:0032964	7	GO:0032964	1.5684432242819935	48	collagen biosynthetic process	collagen biosynthetic process	0.87412	0.29925	0	1	CYGB	4	51
+GO:0007229	9	GO:0007229	1.436243546940992	111	integrin-mediated signaling pathway	integrin-mediated signaling pathway	0.89792	1	0	1	ADAMTS13	1	51
+GO:0034440	8	GO:0034440	1.436243546940992	114	lipid oxidation	lipid oxidation	0.9288	0.5025	0	1	CYGB	2	51
+GO:0007007	2	GO:0007007	1.9244178583172613	40	inner mitochondrial membrane organization	inner mitochondrial membrane organization	0.7669090909090909	0.531	0	1	TRMT10B	2	52
+GO:0090151	1	GO:0090151	1.9244178583172613	38	establishment of protein localization to mitochondrial membrane	establishment of protein localization to mitochondrial membrane	0.5381818181818182	0.2482727272727273	0	1	TRMT10B	11	52
+GO:0030488	3	GO:0030488	1.9244178583172613	43	tRNA methylation	tRNA methylation	0.6721363636363636	0.24171428571428566	0	1	TRMT10B	7	52
+GO:0043414	4	GO:0043414	1.7728035331223067	210	macromolecule methylation	macromolecule methylation	0.8025909090909091	0.5105	0	1	TRMT10B	2	52
+GO:0045738	1	GO:0045738	1.69010142397631	38	negative regulation of DNA repair	negative regulation of DNA repair	0.38	0.3249090909090909	0	1	AUNIP	11	53
+GO:0007051	2	GO:0007051	1.450458285375642	202	spindle organization	spindle organization	0.9856666666666667	1	0	1	AUNIP	1	53
+GO:0034205	3	GO:0034205	1.6923877724013967	56	amyloid-beta formation	amyloid-beta formation	0.6215238095238096	0.4803333333333334	0	1	SLC2A13	3	54
+GO:0042255	1	GO:0042255	1.6923877724013967	64	ribosome assembly	ribosome assembly	0.8287619047619048	0.36675	0	1	MRPS7	4	54
+GO:1902004	2	GO:1902004	1.6923877724013967	20	positive regulation of amyloid-beta formation	positive regulation of amyloid-beta formation	0.6178571428571429	0.23299999999999998	0	1	SLC2A13	6	54
+GO:0150104	4	GO:0150104	1.6771925929817453	87	transport across blood-brain barrier	transport across blood-brain barrier	0.8927619047619048	0.364	0	1	SLC2A13	3	54
+GO:0032543	5	GO:0032543	1.5185289220443696	130	mitochondrial translation	mitochondrial translation	0.746	0.5135000000000001	0	1	MRPS7	2	54
+GO:0071826	6	GO:0071826	1.4458634746427612	243	protein-RNA complex organization	protein-RNA complex organization	0.8683809523809524	0.5025	0	1	MRPS7	2	54
+GO:0015850	7	GO:0015850	1.3627321280857703	308	organic hydroxy compound transport	organic hydroxy compound transport	0.9672380952380952	1	0	1	SLC2A13	1	54
+GO:0044706	5	GO:0044706	1.5010108037909338	216	multi-multicellular organism process	multi-multicellular organism process	0.9556428571428571	1	0	1	SMCP	1	55
+GO:0003341	4	GO:0003341	1.5010108037909338	203	cilium movement	cilium movement	0.8545714285714285	1	0	1	SMCP	1	55
+GO:0006997	1	GO:0006997	1.5010108037909338	144	nucleus organization	nucleus organization	0.9622857142857143	0.8065	0	1	PRM2	2	55
+GO:0097722	2	GO:0097722	1.5010108037909338	134	sperm motility	sperm motility	0.5895	0.42800000000000005	0	2	SMCP/PRM2	7	55
+GO:0060294	3	GO:0060294	1.5010108037909338	158	cilium movement involved in cell motility	cilium movement involved in cell motility	0.6733571428571429	0.33799999999999997	0	1	SMCP	3	55
+GO:0006354	1	GO:0006354	2.9105342559991803	135	DNA-templated transcription elongation	DNA-templated transcription elongation	0.6861818181818182	0.27849999999999997	0	2	ELOF1/CCNT2	4	56
+GO:0019080	2	GO:0019080	1.5335155294151703	102	viral gene expression	viral gene expression	0.9130909090909091	0.522	0	1	CCNT2	2	56
+GO:1904029	3	GO:1904029	1.5335155294151703	85	regulation of cyclin-dependent protein kinase activity	regulation of cyclin-dependent protein kinase activity	0.7482727272727272	0.3996666666666666	0	1	CCNT2	3	56
+GO:0060538	4	GO:0060538	1.4438780120023444	178	skeletal muscle organ development	skeletal muscle organ development	0.9097272727272727	0.5035000000000001	0	1	CCNT2	2	56
+GO:0007218	1	GO:0007218	1.3418682351575457	110	neuropeptide signaling pathway	neuropeptide signaling pathway	0.9434	1	0	1	CYSLTR2	1	57
+GO:0008217	2	GO:0008217	1.3418682351575457	187	regulation of blood pressure	regulation of blood pressure	0.6456	0.575	0	1	UTS2	4	57
+GO:0031123	1	GO:0031123	1.540882472452077	102	RNA 3'-end processing	RNA 3'-end processing	0.8006	0.525	0	1	CSTF2T	2	58
+GO:0031023	2	GO:0031023	1.540882472452077	154	microtubule organizing center organization	microtubule organizing center organization	0.7928	0.5055000000000001	0	1	KIAA1614	2	58
+GO:0007163	3	GO:0007163	1.4415755227868252	228	establishment or maintenance of cell polarity	establishment or maintenance of cell polarity	0.98740000000000006	1	0	1	KIAA1614	1	58
+GO:0019395	2	GO:0019395	1.3839845391227723	107	fatty acid oxidation	fatty acid oxidation	0.5479473684210526	0.30900000000000005	0	1	ECH1	6	60
+GO:0050684	1	GO:0050684	1.3839845391227723	129	regulation of mRNA processing	regulation of mRNA processing	0.5771052631578948	0.3048888888888889	0	1	HNRNPL	9	60
+GO:0009062	3	GO:0009062	1.3839845391227723	106	fatty acid catabolic process	fatty acid catabolic process	0.5113684210526316	0.29074999999999995	0	1	ECH1	4	60
+GO:0043114	5	GO:0043114	1.7282345608775926	50	regulation of vascular permeability	regulation of vascular permeability	0.9185625	1	0	1	C2CD4A	1	61
+GO:0048821	2	GO:0048821	1.7282345608775926	40	erythrocyte development	erythrocyte development	0.6259375	0.4165	0	1	MAEA	4	61
+GO:0043353	1	GO:0043353	1.7282345608775926	10	enucleate erythrocyte differentiation	enucleate erythrocyte differentiation	0.6778124999999999	0.38725	0	1	MAEA	4	61
+GO:0033033	3	GO:0033033	1.7282345608775926	20	negative regulation of myeloid cell apoptotic process	negative regulation of myeloid cell apoptotic process	0.859875	0.3606666666666667	0	1	MAEA	3	61
+GO:0002673	4	GO:0002673	1.7282345608775926	49	regulation of acute inflammatory response	regulation of acute inflammatory response	0.8209375	0.3315	0	1	C2CD4A	4	61
+GO:0042462	1	GO:0042462	3.1678496567633565	34	eye photoreceptor cell development	eye photoreceptor cell development	0.7170292397660818	0.5237241379310345	0	2	PAX6/MFRP	29	62
+GO:0048592	2	GO:0048592	2.431523190390568	162	eye morphogenesis	eye morphogenesis	0.7497953216374269	0.30479999999999996	0	2	PAX6/MFRP	10	62
+GO:0060041	3	GO:0060041	2.431523190390568	159	retina development in camera-type eye	retina development in camera-type eye	0.7604210526315789	0.2541428571428571	0	2	PAX6/MFRP	7	62
+GO:0007601	4	GO:0007601	2.303052997228021	219	visual perception	visual perception	0.903608187134503	0.4145	0	2	PAX6/MFRP	4	62
+GO:0040034	8	GO:0040034	1.8136143262572304	12	regulation of development, heterochronic	regulation of development, heterochronic	0.8637543859649123	0.5695	0	1	PAX6	10	62
+GO:0021903	7	GO:0021903	1.8136143262572304	11	rostrocaudal neural tube patterning	rostrocaudal neural tube patterning	0.7762397660818714	0.5030625	0	1	PAX6	16	62
+GO:0003310	6	GO:0003310	1.8136143262572304	11	pancreatic A cell differentiation	pancreatic A cell differentiation	0.7682397660818714	0.41200000000000003	0	1	PAX6	3	62
+GO:0009950	9	GO:0009950	1.8136143262572304	12	dorsal/ventral axis specification	dorsal/ventral axis specification	0.8431578947368421	0.39775000000000005	0	1	PAX6	4	62
+GO:0007406	5	GO:0007406	1.8136143262572304	11	negative regulation of neuroblast proliferation	negative regulation of neuroblast proliferation	0.7353801169590644	0.25770000000000004	0	1	PAX6	10	62
+GO:1901142	10	GO:1901142	1.7999281159548184	16	insulin metabolic process	insulin metabolic process	0.9900175438596491	1	0	1	PAX6	1	62
+GO:0008356	11	GO:0008356	1.7825992251469711	19	asymmetric cell division	asymmetric cell division	0.9894444444444445	0.661	0	1	PAX6	2	62
+GO:2001224	13	GO:2001224	1.7825992251469711	19	positive regulation of neuron migration	positive regulation of neuron migration	0.7718479532163742	0.45399999999999996	0	1	PAX6	5	62
+GO:0071380	12	GO:0071380	1.7825992251469711	16	cellular response to prostaglandin E stimulus	cellular response to prostaglandin E stimulus	0.9026023391812865	0.3496666666666667	0	1	PAX6	9	62
+GO:0070988	20	GO:0070988	1.75330840764518	55	demethylation	demethylation	0.9873508771929824	1	0	1	PAX6	1	62
+GO:0023019	15	GO:0023019	1.75330840764518	22	signal transduction involved in regulation of gene expression	signal transduction involved in regulation of gene expression	0.9464912280701754	1	0	1	PAX6	1	62
+GO:0042659	18	GO:0042659	1.75330840764518	26	regulation of cell fate specification	regulation of cell fate specification	0.8121286549707603	0.45799999999999996	0	1	PAX6	10	62
+GO:0007435	19	GO:0007435	1.75330840764518	32	salivary gland morphogenesis	salivary gland morphogenesis	0.7953801169590643	0.43274999999999997	0	1	PAX6	4	62
+GO:0051647	16	GO:0051647	1.75330840764518	33	nucleus localization	nucleus localization	0.9760701754385965	0.4154285714285715	0	1	PAX6	7	62
+GO:0080111	17	GO:0080111	1.75330840764518	33	DNA demethylation	DNA demethylation	0.9583157894736842	0.27259999999999995	0	1	PAX6	5	62
+GO:2000677	14	GO:2000677	1.75330840764518	40	regulation of transcription regulatory region DNA binding	regulation of transcription regulatory region DNA binding	0.9635964912280701	0.2516666666666667	0	1	PAX6	6	62
+GO:1990823	21	GO:1990823	1.580325593596533	106	response to leukemia inhibitory factor	response to leukemia inhibitory factor	0.9384210526315789	0.5606249999999999	0	1	PAX6	16	62
+GO:0001678	22	GO:0001678	1.5201235333790757	157	intracellular glucose homeostasis	intracellular glucose homeostasis	0.9830058479532163	0.3603333333333334	0	1	PAX6	3	62
+GO:1902850	24	GO:1902850	1.4990176688405361	163	microtubule cytoskeleton organization involved in mitosis	microtubule cytoskeleton organization involved in mitosis	0.9677719298245614	1	0	1	PAX6	1	62
+GO:0007224	23	GO:0007224	1.4990176688405361	148	smoothened signaling pathway	smoothened signaling pathway	0.9481520467836257	1	0	1	PAX6	1	62
+GO:0030010	25	GO:0030010	1.4990176688405361	156	establishment of cell polarity	establishment of cell polarity	0.9763216374269006	0.521	0	1	PAX6	2	62
+GO:0043414	26	GO:0043414	1.437331575233208	210	macromolecule methylation	macromolecule methylation	0.9726491228070175	0.5105	0	1	PAX6	2	62
+GO:0001933	27	GO:0001933	1.3500248072779144	304	negative regulation of protein phosphorylation	negative regulation of protein phosphorylation	0.9421812865497076	0.505	0	1	PAX6	2	62
+GO:0044458	4	GO:0044458	1.5235195603352525	66	motile cilium assembly	motile cilium assembly	0.8974375	1	0	1	DNAAF1	1	63
+GO:0006858	1	GO:0006858	1.5235195603352525	46	extracellular transport	extracellular transport	0.93021875	0.44175	0	1	DNAAF1	4	63
+GO:0003143	5	GO:0003143	1.5235195603352525	71	embryonic heart tube morphogenesis	embryonic heart tube morphogenesis	0.74340625	0.4395	0	1	DNAAF1	6	63
+GO:0003356	2	GO:0003356	1.5235195603352525	17	regulation of cilium beat frequency	regulation of cilium beat frequency	0.768625	0.39949999999999997	0	1	DNAAF1	10	63
+GO:0001947	3	GO:0001947	1.5235195603352525	65	heart looping	heart looping	0.63571875	0.22049999999999992	0	1	DNAAF1	6	63
+GO:0048565	6	GO:0048565	1.4897700249691137	134	digestive tract development	digestive tract development	0.77228125	0.601	0	1	DNAAF1	5	63
+GO:0071800	2	GO:0071800	1.734324685027761	19	podosome assembly	podosome assembly	0.8009999999999999	1	0	1	BIN2	1	64
+GO:0097320	1	GO:0097320	1.734324685027761	19	plasma membrane tubulation	plasma membrane tubulation	0.5326666666666666	0.4842000000000001	0	1	BIN2	5	64
