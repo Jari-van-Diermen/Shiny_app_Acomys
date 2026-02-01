@@ -1363,19 +1363,18 @@ server <- function(input, output, session) {
     current_MSA_page(1)
   })
   
-  get_n_of_retreived_MSAs <- reactive({
+  get_n_of_retrieved_MSAs <- reactive({
     
     ## Stop if no gene selected
     req(input$MEMEGeneInput)
     
-    length(list.files(file.path("www", "MEME_protein_alignments_png",
-                                get_genename_MEME())))
+    length(gene_keys_from_S3_bucket())
   })
   
   # Button to go to next page
   observeEvent(input$MSA_next, {
     i <- current_MSA_page()
-    if (i < get_n_of_retreived_MSAs()) {
+    if (i < get_n_of_retrieved_MSAs()) {
       current_MSA_page(i + 1)
     }
   })
@@ -1395,11 +1394,11 @@ server <- function(input, output, session) {
   
   # Button to jump to the last page
   observeEvent(input$MSA_last, {
-    current_MSA_page(get_n_of_retreived_MSAs())
+    current_MSA_page(get_n_of_retrieved_MSAs())
   })
   
   output$MSAPageIndicator <- renderUI({
-    div(p(em(paste0("Page ", current_MSA_page(), " of ", get_n_of_retreived_MSAs()))))
+    div(p(em(paste0("Page ", current_MSA_page(), " of ", get_n_of_retrieved_MSAs()))))
   })
   
   output$MSACardHeader <- renderUI({
