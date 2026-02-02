@@ -2033,7 +2033,7 @@ server <- function(input, output, session) {
                 mode = "markers",
                 size = ~log10_EBF,
                 sizes = c(0.0001, 200),
-                text = ~paste("<b>log10(EBF):</b> ", EBF)) %>%
+                text = ~paste("<b>log10(EBF):</b> ", log10_EBF)) %>%
       add_trace(data = dplyr::filter(EBF_table_MLE, EBF_100 == is_sign),
                 name = is_sign,
                 x = ~MSA_site,
@@ -2044,7 +2044,7 @@ server <- function(input, output, session) {
                 mode = "markers",
                 size = ~log10_EBF,
                 sizes = c(0.0001, 200),
-                text = ~paste("<b>log10(EBF):</b> ", EBF)) %>%
+                text = ~paste("<b>log10(EBF):</b> ", log10_EBF)) %>%
       # Add an additional hidden trace with the same ranges as the x and y-axes,
       # so that the plot does not resize when a cluster is selected/deselected
       add_trace(data = ranges,
