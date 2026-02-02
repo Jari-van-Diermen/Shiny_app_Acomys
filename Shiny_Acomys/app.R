@@ -152,11 +152,11 @@ ui <- tagList(
                               h3("Gene selection"),
                               selectizeInput(inputId = "aBSRELGeneInput", "Select the gene for which you want to see the results", 
                                              choices = NULL),
-                              checkboxInput("aBSRELSignSwitch", HTML(paste("Only allow selecting genes with significant signs of episodic",
-                                                                           "diversifying selection in", em("Acomys cahirinus"))), value = FALSE),
-                              checkboxInput("aBSRELTranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE),
+                              checkboxInput("aBSRELSignSwitch", HTML(paste("Restrict selection to", em("A. cahirinus"), "diversifying genes")),
+                                            value = FALSE),
+                              checkboxInput("aBSRELTranscriptIDSelect", "Change to Ensembl transcript IDs", value = FALSE),
                               h3("Table options"),
-                              checkboxInput("aBSRELTableSignBranches", "Only show significant Branches", value = FALSE)
+                              checkboxInput("aBSRELTableSignBranches", "Only show significant branches", value = FALSE)
                             ),
                             tags$div(
                               class = "allowstrong",
@@ -166,18 +166,8 @@ ui <- tagList(
                                 "positive selection in every analyzed gene, while for some genes an additional random selection",
                                 "of 3 rodent branches and 9 non-rodent branches were tested for positive selection.",
                                 "Nevertheless, only the A. cahirinus branch LRT results were utilized for the generation of",
-                                "the", em("A. cahirinus"), "positively selected genelist."),
-                              p("The following columns are listed in the table below:"),
-                              tags$ul(
-                                tags$li(strong(em("Branch name:")), em("The name of the tested phylogenetic branch, which is a combination of the genome assembly name and the TOGA projection ID")),
-                                tags$li(strong(em("Genome assembly name:")), em("The identifier of the genome assembly used for this species (i.e. the genome assembly were TOGA identified the orthologs)")),
-                                tags$li(strong(em("TOGA projection ID:")), em("The transcript name that was given to the projected ortholog found in this genome assembly. This unique transcript identifier is made up of the human reference transcript ID, the genename and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID)")),
-                                tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
-                                tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
-                                tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
-                                tags$li(strong(em("Uncorrected P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the uncorrected P-value was below the significance threshold of 0.05")),
-                                tags$li(strong(em("FDR-adjusted P-value significant (P-value <= 0.05):")), em("A logical value (i.e. true or false) indicating if the FDR-adjusted P-value was below the significance threshold of 0.05")),
-                              )),
+                                "the", em("A. cahirinus"), "positively selected genelist.")
+                              ),
                             card(
                               full_screen = TRUE,
                               div(
@@ -196,10 +186,8 @@ ui <- tagList(
                 nav_panel("STRING interaction network",
                           layout_sidebar(
                             sidebar = sidebar(
-                              h4("Display options for STRING clusters"),
-                              checkboxInput("STRINGplotSwitch", HTML("Display all clusters with at least three genes"), value = FALSE),
-                              br(),
-                              sliderInput("STRINGClustTableSlider", "Cluster number:",
+                              h4("Options"),
+                              sliderInput("STRINGClustTableSlider", "Displayed clusters:",
                                           min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
                                                              na.rm = TRUE),
                                           value = c(1, 8)),
@@ -236,20 +224,6 @@ ui <- tagList(
                                 p(strong("This table displays the HyPhy aBSREL output data for the", em("A. cahirinus"),
                                          "Positively selected genelist for each individual STRING cluster. Select the",
                                          "desired STRING clusters using the range buttons on the left side of the page")),
-                                p("The following columns are listed in the table below:"),
-                                tags$ul(
-                                  tags$li(strong(em("STRING cluster:")), em("The STRING cluster in which the gene was clustered by the MCL algorithm.")),
-                                  tags$li(strong(em("genename:")), em("The gene symbol")),
-                                  tags$li(strong(em("Likelyhood ratio test statistic:")), em("The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
-                                  tags$li(strong(em("Uncorrected P-value:")), em("The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic. See the", a("aBSREL paper by Smith et al. (2015)", href = "https://pubmed.ncbi.nlm.nih.gov/25697341/"), "for the exact details on this calculation.")),
-                                  tags$li(strong(em("FDR-adjusted P-value:")), em("The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
-                                  tags$li(strong(em("Inferred branch length:")), em("The length of the A. cahirinus branch, as estimated in the aBSREL full adaptive model. This length is given as the number of substitutions per site.")),
-                                  tags$li(strong(em("Inferred dN branch length:")), em("The non-synonynous component of the inferred A. cahirinus branch length. This length is given as the number of non-synonymous substitutions per site.")),
-                                  tags$li(strong(em("Inferred dS branch length:")), em("The synonynous component of the inferred A. cahirinus branch length. This length is given as the number of synonymous substitutions per site.")),
-                                  tags$li(strong(em("Mean dN/dS:")), em("The mean dN/dS ratio (i.e. the non-synonymous substitution rate divided by the synonymous substitution rate) estimated for the A. cahirinus branch for this gene. This mean dN/dS ratio is calculated by averaging the dN/dS ratios for each estimated omega class, taking into account the proportion of sites assigned to these omega classes.")),
-                                  tags$li(strong(em("Maximum dN/dS:")), em("The maximum (max) dN/dS is the highest estimated dN/dS ratio (i.e. omega class) for the A. cahirinus branch for this gene")),
-                                  tags$li(strong(em("proportion of sites with maximum dN/dS:")), em("The proportion of codon sites were the maximum dN/dS was estimated. In other words, the proportion of codon sites which were assigned to the omega class with the highest dN/dS ratio.")),
-                                ),
                                 gt_output("STRINGClusterTable"))),
                           )
                 ),
@@ -257,10 +231,10 @@ ui <- tagList(
                           layout_sidebar(
                             sidebar = sidebar(
                               #generate_br_tags(40),
-                              h4("Display options for functionel enrichment of STRING clusters"),
-                              checkboxInput("FunEnrichReducedSwitch", HTML("Display all GO-terms per cluster instead of only the reduced GO-terms"), value = FALSE),
-                              h4("Select which clusters to display"),
-                              sliderInput("FunEnrichSelectClust", "Cluster number:",
+                              h4("Options"),
+                              checkboxInput("FunEnrichReducedSwitch", HTML("Display all GO-terms per cluster instead of the reduced GO-terms"), value = FALSE),
+                              #h4("Select which clusters to display"),
+                              sliderInput("FunEnrichSelectClust", "Displayed clusters:",
                                           min = 1, max = max(enrichGO_aco$`\`__mclCluster\``,
                                                              na.rm = TRUE),
                                           value = c(1, 8)),
@@ -351,24 +325,7 @@ ui <- tagList(
                                     "which sites might be involved in the episodic diversifying selection signal",
                                     "in the Acomys cahirinus genes, even when this limitation is kept in mind.")),
                             p(paste("Every Gene was individually analyzed using HyPhy MEME. The test results are",
-                                    "described in the tables below, where the column names represent the following:")),
-                            div(
-                              class = "allowstrong",
-                              tags$ul(
-                                tags$li(HTML(paste(strong(HTML("&alpha;")), ": Synonymous substitution rate at a site."))),
-                                tags$li(HTML(paste(strong(HTML("&beta;<sup>-</sup>")), ": Non-synonymous substitution rate at a site for the negative/neutral evolution component."))),
-                                tags$li(HTML(paste(strong(HTML("p<sup>-</sup>")), ": Mixture distribution weight allocated to &beta;<sup>-</sup>; loosely -- the proportion of the tree evolving neutrally or under negative selection."))),
-                                tags$li(HTML(paste(strong(HTML("&beta;<sup>+</sup>")), ": Non-synonymous substitution rate at a site for the positive/neutral evolution component."))),
-                                tags$li(HTML(paste(strong(HTML("p<sup>+</sup>")), ": Mixture distribution weight allocated to &beta;<sup>+</sup>; loosely -- the proportion of the tree evolving neutrally or under positive selection."))),
-                                tags$li(HTML(paste(strong("LRT"), ": Likelihood ratio test statistic for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
-                                tags$li(HTML(paste(strong("p-value"), ": Asymptotic p-value for episodic diversification, i.e., p<sup>+</sup> &gt; 0 <emph>and<emph> &beta;<sup>+</sup> &gt; &alpha;."))),
-                                tags$li(HTML(paste(strong("number of branches under selection"), ": The (very approximate and rough) estimate of how many branches may have been under selection at this site, i.e., had an empirical Bayes factor of 100 or more for the &beta;<sup>+</sup> rate."))),
-                                tags$li(HTML(paste(strong("Total branch length"), ": The total length of branches contributing to inference at this site, and used to scale dN-dS."))),
-                                tags$li(HTML(paste(strong("MEME LogL"), ": Site Log-likelihood under the MEME model."))),
-                                tags$li(HTML(paste(strong("FEL LogL"), ": Site Log-likelihood under the FEL model."))),
-                                tags$li(HTML(paste(strong("Variation p"), ": Asymptotic p-value for whether or not there is evidence of dN/dS variation across branches."))),
-                              )
-                            ),
+                                    "described in the tables below.")),
                             card(
                               full_screen = TRUE,
                               card_header(uiOutput("MEMETableDescription")),
@@ -690,16 +647,17 @@ server <- function(input, output, session) {
                               full_adapt_dS, mean_dNdS, max_omega,
                               max_omega_prop)) %>%
       fmt_number(decimals = 2, sep_mark = "") %>%
-      cols_label(contains("p_value_uncorrected") ~ "Uncorrected P-value",
-                 contains("LRT") ~ "likelyhood ratio test statistic",
-                 contains("FDR") ~ "FDR-adjusted P-value",
-                 contains("full_adapt") ~ "Inferred branch length",
-                 contains("full_adapt_dN") ~ "Inferred dN branch length",
-                 contains("full_adapt_dS") ~ "Inferred dS branch length",
-                 contains("mean_dNdS") ~ "Mean dN/dS",
-                 contains("max_omega") ~ "maximum dN/dS",
-                 contains("max_omega_prop") ~ "proportion of sites with maximum dN/dS") %>%
-      tab_stubhead(label = "STRING cluster") %>%
+      cols_label(contains("genename") ~ bslib::tooltip(tags$span("Genename"), "The gene symbol"),
+                 contains("LRT") ~ bslib::tooltip(tags$span("likelyhood ratio test statistic"), "The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values"),
+                 contains("p_value_uncorrected") ~ bslib::tooltip(tags$span("Uncorrected P-value"), "The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic"),
+                 contains("FDR") ~ bslib::tooltip(tags$span("FDR-adjusted P-value"), "The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL"),
+                 contains("full_adapt") ~ bslib::tooltip(tags$span("Inferred branch length"), "The length of the A. cahirinus branch, as estimated in the aBSREL full adaptive model. This length is given as the number of substitutions per site."),
+                 contains("full_adapt_dN") ~ bslib::tooltip(tags$span("Inferred dN branch length"), "The non-synonynous component of the inferred A. cahirinus branch length. This length is given as the number of non-synonymous substitutions per site."),
+                 contains("full_adapt_dS") ~ bslib::tooltip(tags$span("Inferred dS branch length"), "The synonynous component of the inferred A. cahirinus branch length. This length is given as the number of synonymous substitutions per site."),
+                 contains("mean_dNdS") ~ bslib::tooltip(tags$span("Mean dN/dS"), "The mean dN/dS ratio (i.e. the non-synonymous substitution rate divided by the synonymous substitution rate) estimated for the A. cahirinus branch for this gene. This mean dN/dS ratio is calculated by averaging the dN/dS ratios for each estimated omega class, taking into account the proportion of sites assigned to these omega classes."),
+                 contains("max_omega") ~ bslib::tooltip(tags$span("maximum dN/dS"), "The maximum (max) dN/dS is the highest estimated dN/dS ratio (i.e. omega class) for the A. cahirinus branch for this gene"),
+                 contains("max_omega_prop") ~ bslib::tooltip(tags$span("proportion of sites with maximum dN/dS"), "The proportion of codon sites were the maximum dN/dS was estimated. In other words, the proportion of codon sites which were assigned to the omega class with the highest dN/dS ratio.")) %>%
+      tab_stubhead(label = bslib::tooltip(tags$span("STRING cluster"), "The STRING cluster in which the gene was clustered by the MCL algorithm")) %>%
       cols_align(align = "left") %>%
       opt_stylize(style = 1) %>%
       data_color(
@@ -820,9 +778,9 @@ server <- function(input, output, session) {
         palette = "Greens",
         reverse = TRUE) %>%
       opt_interactive(use_resizers = TRUE)
-      
+    
   })
-
+  
   get_GOterm_plot_height <- eventReactive(input$FunEnrichClustAction, {
     # Get the number of GO-terms that will be plotted, which will
     # specify the height of the plot.
@@ -882,77 +840,77 @@ server <- function(input, output, session) {
                    space = "free_y")
     }
   }, ignoreNULL = FALSE)
+  
+  output$FunEnrichaBSRELClusters <- renderPlot({
+    FunEnrichClustPlot()
+  },
+  width = 1400,
+  height = function() {get_GOterm_plot_height()})
+  
+  FunEnrichClustTable <- eventReactive(input$FunEnrichClustAction, {
     
-    output$FunEnrichaBSRELClusters <- renderPlot({
-      FunEnrichClustPlot()
-    },
-    width = 1400,
-    height = function() {get_GOterm_plot_height()})
-    
-    FunEnrichClustTable <- eventReactive(input$FunEnrichClustAction, {
-      
-      # Render reduced GO-terms unless FunEnrichReducedSwitch is set to TRUE
-      if (input$FunEnrichReducedSwitch) {
-        enrichGO_aco %>%
-          dplyr::select(-`\`__mclCluster\``) %>%
-          dplyr::filter(Cluster %in% seq(input$FunEnrichSelectClust[1],
-                                         input$FunEnrichSelectClust[2])) %>%
-          dplyr::mutate(Cluster_label = if_else(is.na(Cluster), "Not clustered",
-                                                paste0("Cluster ", Cluster)),
-                        Cluster_label = factor(Cluster_label,
-                                               levels = c(paste0("Cluster ",
-                                                                 seq(max(Cluster, na.rm = TRUE))),
-                                                          "Not clustered"))) %>%
-          dplyr::select(-Cluster) %>%
-          gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
-          opt_stylize(style = 1) %>%
-          cols_align(align = "left") %>%
-          data_color(
-            columns = qvalue,
-            palette = "Greens",
-            reverse = TRUE) %>%
-          data_color(
-            columns = Count,
-            palette = "Blues") %>%
-          opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
-      } else {
-        Acomys_reduced_GO_clusters %>%
-          dplyr::select(-all_of(c("cluster", "parent", "parentTerm", "termDispensability",
-                                  "termUniquenessWithinCluster"))) %>%
-          dplyr::filter(stringdb_cluster %in% seq(input$FunEnrichSelectClust[1],
-                                                  input$FunEnrichSelectClust[2])) %>%
-          dplyr::mutate(Cluster_label = if_else(is.na(stringdb_cluster), "Not clustered",
-                                                paste0("Cluster ", stringdb_cluster)),
-                        Cluster_label = factor(Cluster_label,
-                                               levels = c(paste0("Cluster ",
-                                                                 seq(max(stringdb_cluster, na.rm = TRUE))),
-                                                          "Not clustered"))) %>%
-          dplyr::select(-stringdb_cluster) %>%
-          dplyr::rename("Representative GO of reduced GO-terms" = go,
-                        "-log10(FDR) of representative GO" = score,
-                        "representative GO-term size" = size,
-                        "GO description" = term,
-                        "Term Uniqueness" = termUniqueness,
-                        "number of genes in reduced GO-terms" = n_of_genes,
-                        "Gene IDs" = geneID,
-                        "Number of reduced GO-terms" = terms_per_parent) %>%
-          gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
-          opt_stylize(style = 1) %>%
-          cols_align(align = "left") %>%
-          data_color(
-            columns = "-log10(FDR) of representative GO",
-            palette = "Greens") %>%
-          data_color(
-            columns = "number of genes in reduced GO-terms",
-            palette = "Blues") %>%
-          opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
-      }
-    }, ignoreNULL = FALSE)
-    
-    output$FunEnrichaBSRELClustersTable <- render_gt({
-      FunEnrichClustTable()
-    })
-    
+    # Render reduced GO-terms unless FunEnrichReducedSwitch is set to TRUE
+    if (input$FunEnrichReducedSwitch) {
+      enrichGO_aco %>%
+        dplyr::select(-`\`__mclCluster\``) %>%
+        dplyr::filter(Cluster %in% seq(input$FunEnrichSelectClust[1],
+                                       input$FunEnrichSelectClust[2])) %>%
+        dplyr::mutate(Cluster_label = if_else(is.na(Cluster), "Not clustered",
+                                              paste0("Cluster ", Cluster)),
+                      Cluster_label = factor(Cluster_label,
+                                             levels = c(paste0("Cluster ",
+                                                               seq(max(Cluster, na.rm = TRUE))),
+                                                        "Not clustered"))) %>%
+        dplyr::select(-Cluster) %>%
+        gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
+        opt_stylize(style = 1) %>%
+        cols_align(align = "left") %>%
+        data_color(
+          columns = qvalue,
+          palette = "Greens",
+          reverse = TRUE) %>%
+        data_color(
+          columns = Count,
+          palette = "Blues") %>%
+        opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
+    } else {
+      Acomys_reduced_GO_clusters %>%
+        dplyr::select(-all_of(c("cluster", "parent", "parentTerm", "termDispensability",
+                                "termUniquenessWithinCluster"))) %>%
+        dplyr::filter(stringdb_cluster %in% seq(input$FunEnrichSelectClust[1],
+                                                input$FunEnrichSelectClust[2])) %>%
+        dplyr::mutate(Cluster_label = if_else(is.na(stringdb_cluster), "Not clustered",
+                                              paste0("Cluster ", stringdb_cluster)),
+                      Cluster_label = factor(Cluster_label,
+                                             levels = c(paste0("Cluster ",
+                                                               seq(max(stringdb_cluster, na.rm = TRUE))),
+                                                        "Not clustered"))) %>%
+        dplyr::select(-stringdb_cluster) %>%
+        dplyr::rename("Representative GO of reduced GO-terms" = go,
+                      "-log10(FDR) of representative GO" = score,
+                      "representative GO-term size" = size,
+                      "GO description" = term,
+                      "Term Uniqueness" = termUniqueness,
+                      "number of genes in reduced GO-terms" = n_of_genes,
+                      "Gene IDs" = geneID,
+                      "Number of reduced GO-terms" = terms_per_parent) %>%
+        gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
+        opt_stylize(style = 1) %>%
+        cols_align(align = "left") %>%
+        data_color(
+          columns = "-log10(FDR) of representative GO",
+          palette = "Greens") %>%
+        data_color(
+          columns = "number of genes in reduced GO-terms",
+          palette = "Blues") %>%
+        opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
+    }
+  }, ignoreNULL = FALSE)
+  
+  output$FunEnrichaBSRELClustersTable <- render_gt({
+    FunEnrichClustTable()
+  })
+  
   # retrieve which gene has been selected
   get_genename <- reactive({
     
@@ -1034,11 +992,38 @@ server <- function(input, output, session) {
     # Stop if no gene selected
     req(input$aBSRELGeneInput)
     
-    get_aBSREL_results()
-    
-  }, escape = FALSE, rownames = FALSE, 
-  options = list(scrollX = TRUE, 
-                 lengthMenu = c(get_aBSREL_results_length(), 10, 20))
+    DT::datatable(get_aBSREL_results(),
+                  escape = FALSE, rownames = FALSE, 
+                  options = list(scrollX = TRUE, 
+                                 lengthMenu = c(get_aBSREL_results_length(), 10, 20)),
+                  colnames = c(
+                    as.character(
+                      bslib::tooltip(tags$span("Branch name"),
+                                     "The name of the tested phylogenetic branch, which is a combination of the genome assembly name and the TOGA projection ID")),
+                    as.character(
+                      bslib::tooltip(tags$span("Genome assembly name"),
+                                     "The identifier of the genome assembly used for this species (i.e. the genome assembly where TOGA identified the orthologs)")),
+                    as.character(
+                      bslib::tooltip(tags$span("TOGA projection ID"),
+                                     "The transcript name that was given to the projected ortholog found in this genome assembly. This unique transcript identifier is made up of the human reference transcript ID, the genename and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID)")),
+                    as.character(
+                      bslib::tooltip(tags$span("Likelihood ratio test statistic"),
+                                     "The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
+                    as.character(
+                      bslib::tooltip(tags$span("Uncorrected P-value"),
+                                     "The raw (episodic) positive selection P-value for this branch, calculated from the LRT statistic")),
+                    as.character(
+                      bslib::tooltip(tags$span("FDR-adjusted P-value"),
+                                     "The (episodic) positive selection P-value for this branch, adjusted for the number of genes analyzed by HyPhy aBSREL")),
+                    as.character(
+                      bslib::tooltip(tags$span("Uncorrected P-value significant"),
+                                     "A logical value (i.e. TRUE or FALSE) indicating if the uncorrected P-value was below the significance threshold of 0.05")),
+                    as.character(
+                      bslib::tooltip(tags$span("FDR-adjusted P-value significant"),
+                                     "A logical value (i.e. TRUE or FALSE) indicating if the FDR-adjusted P-value was below the significance threshold of 0.05"))
+                  )
+    )
+  }
   )
   
   ### Backend for MEME results page
@@ -1198,16 +1183,25 @@ server <- function(input, output, session) {
       cols_align(align = "left") %>%
       opt_stylize(style = 1) %>%
       cols_label(
-        MSA_site = "MSA site",
-        TOGA_Human_site = "TOGA Human site",
-        TOGA_Acomys_site = "TOGA Acomys site",
-        UP_Human_site = "UP Human site",
-        `&alpha;` = gt::html("&alpha;"),
-        `&beta;<sup>-</sup>` = gt::html("&beta;<sup>-</sup>"),
-        `p<sup>-</sup>` = gt::html("p<sup>-</sup>"),
-        `&beta;<sup>+</sup>` = gt::html("&beta;<sup>+</sup>"),
-        `p<sup>+</sup>` = gt::html("p<sup>+</sup>")
-      ) %>%
+        MSA_site ~ bslib::tooltip(tags$span("MSA site"), "The position in the MSA in the 'multiple sequence alignment' tab"),
+        TOGA_Human_site ~ bslib::tooltip(tags$span("TOGA Human site"), "The codon site in the human sequence in the TOGA alignment"),
+        TOGA_Acomys_site ~ bslib::tooltip(tags$span("TOGA Acomys site"), "The codon site in the A. cahirinus sequence in the TOGA alignment"),
+        UP_Human_site ~ bslib::tooltip(tags$span("UP Human site"), "The position in the Human canonical protein sequence from UniProtKB/Swiss-Prot"),
+        `&alpha;` ~ bslib::tooltip(tags$span(gt::html("&alpha;&nbsp;&nbsp;&nbsp;")), "Synonymous substitution rate at a site"),
+        `&beta;<sup>-</sup>` ~ bslib::tooltip(tags$span(gt::html("&beta;<sup>-</sup>&nbsp;&nbsp;&nbsp;")), "Non-synonymous substitution rate at a site for the negative/neutral evolution component."),
+        `p<sup>-</sup>` ~ bslib::tooltip(tags$span(gt::html("p<sup>-</sup>&nbsp;&nbsp;&nbsp;")), "Mixture distribution weight allocated to β-; loosely -- the proportion of the tree evolving neutrally or under negative selection."),
+        `&beta;<sup>+</sup>` ~ bslib::tooltip(tags$span(gt::html("&beta;<sup>+</sup>&nbsp;&nbsp;&nbsp;")), "Non-synonymous substitution rate at a site for the positive/neutral evolution component."),
+        `p<sup>+</sup>` ~ bslib::tooltip(tags$span(gt::html("p<sup>+</sup>&nbsp;&nbsp;&nbsp;")), "Mixture distribution weight allocated to β+; loosely -- the proportion of the tree evolving neutrally or under positive selection."),
+        LRT ~ bslib::tooltip(tags$span("LRT"), "Likelihood ratio test statistic for episodic diversification, i.e., p+ > 0 and β+ > α."),
+        `p-value` ~ bslib::tooltip(tags$span("p-value"), "Asymptotic p-value for episodic diversification, i.e., p+ > 0 and β+ > α."),
+        `# branches under selection` ~ bslib::tooltip(tags$span("# branches under selection"), "The (very approximate and rough) estimate of how many branches may have been under selection at this site, i.e., had an empirical Bayes factor of 100 or more for the β+ rate."),
+        `Total branch length` ~ bslib::tooltip(tags$span("Total branch length"), "The total length of branches contributing to inference at this site, and used to scale dN-dS."),
+        `MEME LogL` ~ bslib::tooltip(tags$span("MEME LogL"), "Site Log-likelihood under the MEME model."),
+        `FEL LogL` ~ bslib::tooltip(tags$span("FEL LogL"), "Site Log-likelihood under the FEL model."),
+        `Variation p` ~ bslib::tooltip(tags$span("Variation p"), "Asymptotic p-value for whether or not there is evidence of dN/dS variation across branches."),
+        `Substitution in Homo sapiens branch` ~ bslib::tooltip(tags$span("Substitution in Homo sapiens branch"), "Displays the MEME-predicted substitution that took place in the Homo sapiens leaf branch."),
+        `Substitution in A. cahirinus branch` ~ bslib::tooltip(tags$span("Substitution in A. cahirinus branch"), "Displays the MEME-predicted substitution that took place in the A. cahirinus leaf branch.")
+        ) %>%
       data_color(
         columns = LRT,
         palette = "Blues") %>%
