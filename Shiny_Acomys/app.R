@@ -1910,12 +1910,17 @@ server <- function(input, output, session) {
       # Sort by MSA_site and branch
       dplyr::arrange(branch, MSA_site)
     
-    # Get max non-inf EBF value
-    max_EBF <- max(EBF_table$EBF[!is.infinite(EBF_table$EBF)], na.rm = TRUE)
-    
     EBF_table <- EBF_table %>%
-      # Transform infinite values to highest non-inf value
-      dplyr::mutate(EBF = if_else(is.infinite(EBF), max_EBF, EBF))
+      # Remove infinite EBF values, as they display weird behaviour
+      # (e.g. EBF being infinite in all branches)
+      dplyr::mutate(EBF = if_else(is.infinite(EBF), NA, EBF))
+    
+    # # Get max non-inf EBF value
+    # max_EBF <- max(EBF_table$EBF[!is.infinite(EBF_table$EBF)], na.rm = TRUE)
+    # 
+    # EBF_table <- EBF_table %>%
+    #   Transform infinite values to highest non-inf value
+    #   dplyr::mutate(EBF = if_else(is.infinite(EBF), max_EBF, EBF))
     
     EBF_table
   })
