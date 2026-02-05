@@ -102,7 +102,7 @@ Create_STRINGScatterplot <- function(dNdS_acomys_clust,
 
 translate_branch_subs <- function(aco_site, branch_sub) {
   
-  if ((is.na(branch_sub)) | (is.na(aco_site))) {
+  if (is.na(branch_sub)) {
     return(NA_character_)
   }
   
@@ -111,7 +111,13 @@ translate_branch_subs <- function(aco_site, branch_sub) {
     ","
   )[[1]]
   
-  return(paste0(subst_split[1], aco_site, subst_split[3]))
+  if ((is.na(aco_site)) & (subst_split[3] == "-Gap")) {
+    return(paste0(subst_split[1], gsub("-", "", subst_split[3])))
+  } else if (is.na(aco_site)) {
+    return(NA_character_)
+  } else {
+    return(paste0(subst_split[1], aco_site, subst_split[3]))
+  }
 }
 
 # Function to link uniprot sequence annotations to the unimapped MEME
