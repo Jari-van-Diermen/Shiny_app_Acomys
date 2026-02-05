@@ -446,8 +446,19 @@ ui <- tagList(
                   nav_panel("EBF",
                             card(
                               full_screen = TRUE,
-                              card_header(uiOutput("EBFBubbleplotDesc")),
-                              card_body(plotlyOutput("EBF_bubbleplot"))
+                              layout_sidebar(
+                                sidebar = sidebar(
+                                  selectInput("MEMEBubbleplotRefFrame", label = "Select reference frame", choices = list("MSA site" = 1,
+                                                                                                                         "TOGA Human site" = 2,
+                                                                                                                         "TOGA Acomys_site" = 3,
+                                                                                                                         "UP Human site" = 4),
+                                              selected = 1)
+                                ),
+                                card_header(uiOutput("EBFBubbleplotDesc")),
+                                card_body(
+                                  uiOutput("EBFBubbleMessage"),
+                                  plotlyOutput("EBF_bubbleplot"))
+                              )
                             ),
                             card(
                               class = "no-dt-scroll",
@@ -1936,6 +1947,18 @@ server <- function(input, output, session) {
       dplyr::arrange(branch, MSA_site)
   })
   
+  # Combine with substitutions
+  get_MEME_results_with_EBF_subs <- reactive({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    get_MEME_acomys_sub() %>%
+                    dplyr::rename(sub = subs) %>%
+      dplyr::select(Species_Tree, MSA_site, sub) %>%
+      dplyr::right_join(get_MEME_results_with_EBF(), by = join_by(Species_Tree, MSA_site))
+  })
+  
   get_species_order <- reactive({
     unique(
       sapply(included_assemblies, function(assembly) {
@@ -1949,11 +1972,11 @@ server <- function(input, output, session) {
   })
   
   get_bubbleplot_df <- reactive({
-    
+  
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
-    EBF_table_MLE <- get_MEME_results_with_EBF() %>%
+    EBF_table_MLE <- get_MEME_results_with_EBF_subs() %>%
       # change character to doubles or integers
       dplyr::mutate(MSA_site = as.integer(MSA_site),
                     TOGA_Human_site = as.integer(TOGA_Human_site),
@@ -2001,36 +2024,94 @@ server <- function(input, output, session) {
                                              "\nand\nEBF >= 100"))) %>%
       dplyr::arrange(branch, MSA_site) %>%
       dplyr::mutate(branch = Species_Tree) %>%
-      dplyr::filter(log10_EBF >= 0)
+      dplyr::filter(log10_EBF >= 0) %>%
+      # Round to four decimals
+      dplyr::mutate(`p-value` = round(`p-value`, digits = 4),
+                    EBF = round(EBF, digits = 4),
+                    log10_EBF = round(log10_EBF, digits = 4))
     EBF_table_MLE
     })
   
+  # Filter and prepare bubbleplot for selected coordinate reference
+  get_bubbleplot_ref_frame <- reactive({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMEBubbleplotRefFrame]]
+    
+    get_bubbleplot_df() %>%
+      # Filter for sites in a specific coordinate reference frame
+      dplyr::filter(!is.na(.data[[coord_sel[1]]])) %>%
+      dplyr::arrange(across(all_of(c("branch", coord_sel[1])))) %>%
+      # Transform 'sign_EBF_site' to the new reference frame
+      dplyr::mutate(sign_EBF_site = if_else(!is.na(sign_EBF_site), .data[[coord_sel[1]]], NA_integer_))
+  })
+  
+  # Let user know that no data exists for this reference frame
+  output$EBFBubbleMessage <- renderUI({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    if (nrow(get_bubbleplot_ref_frame()) != 0) {
+      return(NULL)
+    }
+    
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMEBubbleplotRefFrame]]
+    
+    main_message <- p("No data available for", get_genename_MEME(), "in the", coord_sel[1], "reference frame.")
+    
+    if (coord_sel[1] == "UP_Human_site") {
+      final_message <- div(main_message,
+                        p("This means that we found no human canonical protein sequence matching the",
+                          get_genename_MEME(),
+                          "gene."))
+    } else {
+      final_message <- div(main_message)
+    }
+    
+    return(final_message)
+  })
+
   # render bubbleplot
   output$EBF_bubbleplot <- renderPlotly({
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
+    # Do not plot bubbleplot when no data 
+    if (nrow(get_bubbleplot_ref_frame()) == 0) {
+      return(NULL)
+    }
+    
+    # Get selected coordinate frame
+    coord_sel <- coord_options[[input$MEMEBubbleplotRefFrame]]
+    
+    bubble_x_label <- paste0("Codon site ", gsub(",", "", coord_sel[2]))
+    
     # Reverse species order
     species_order <- rev(get_species_order())
     
-    EBF_table_MLE <- get_bubbleplot_df()
+    EBF_table_MLE <- get_bubbleplot_ref_frame()
     
     # Generate data that will be hidden in the plot, for the purpose of keeping
     # the plot range identical when hiding/selecting legend items
-    rangex <- range(EBF_table_MLE$MSA_site)
+    rangex <- range(EBF_table_MLE[[coord_sel[1]]])
     ranges <- tidyr::expand(tibble(x = rep(rangex, length.out = length(species_order)),
                                    y = species_order),
                             crossing(x, y))
-    
+
     not_sign <- paste0("MEME LRT p-value > ", input$p_val_select, "\nor\nEBF < 100")
     is_sign <- paste0("MEME LRT p-value <= ", input$p_val_select, "\nand\nEBF >= 100")
-    
+
     # Generate plotly
     plot_ly() %>%
       add_trace(data = dplyr::filter(EBF_table_MLE, EBF_100 == not_sign),
                 name = not_sign,
-                x = ~MSA_site,
+                x = ~.data[[coord_sel[1]]],
                 y = ~branch,
                 color = ~EBF_100,
                 colors = rev(as.character(met.brewer("OKeeffe2", type = "continuous", n = 2))),
@@ -2038,10 +2119,16 @@ server <- function(input, output, session) {
                 mode = "markers",
                 size = ~log10_EBF,
                 sizes = c(0.0001, 200),
-                text = ~paste("<b>log10(EBF):</b> ", log10_EBF)) %>%
+                text = ~paste0("<b>MSA site:</b> ", MSA_site, "<br>",
+                               "<b>TOGA Human site:</b> ", TOGA_Human_site, "<br>",
+                               "<b>TOGA Acomys site:</b> ", TOGA_Acomys_site, "<br>",
+                               "<b>Uniprot Human site:</b> ", UP_Human_site, "<br>",
+                               "<b>log10(EBF):</b> ", log10_EBF, "<br>",
+                               "<b>MEME P-value:</b> ", `p-value`, "<br>",
+                               "<b>Substitution:</b> ", sub)) %>%
       add_trace(data = dplyr::filter(EBF_table_MLE, EBF_100 == is_sign),
                 name = is_sign,
-                x = ~MSA_site,
+                x = ~.data[[coord_sel[1]]],
                 y = ~branch,
                 color = ~EBF_100,
                 colors = rev(as.character(met.brewer("OKeeffe2", type = "continuous", n = 2))),
@@ -2049,7 +2136,13 @@ server <- function(input, output, session) {
                 mode = "markers",
                 size = ~log10_EBF,
                 sizes = c(0.0001, 200),
-                text = ~paste("<b>log10(EBF):</b> ", log10_EBF)) %>%
+                text = ~paste0("<b>MSA site:</b> ", MSA_site, "<br>",
+                               "<b>TOGA Human site:</b> ", TOGA_Human_site, "<br>",
+                               "<b>TOGA Acomys site:</b> ", TOGA_Acomys_site, "<br>",
+                               "<b>Uniprot Human site:</b> ", UP_Human_site, "<br>",
+                               "<b>log10(EBF):</b> ", log10_EBF, "<br>",
+                               "<b>MEME P-value:</b> ", `p-value`, "<br>",
+                               "<b>Substitution:</b> ", sub)) %>%
       # Add an additional hidden trace with the same ranges as the x and y-axes,
       # so that the plot does not resize when a cluster is selected/deselected
       add_trace(data = ranges,
@@ -2066,10 +2159,10 @@ server <- function(input, output, session) {
       }),
       yaxis = list(title = "", categoryorder = "array",
                    categoryarray = species_order),
-      xaxis = list(title = "Codon site (i.e. Relative to Multiple sequence alignment)"),
+      xaxis = list(title = bubble_x_label),
       legend = list(itemsizing = "constant"))
     })
-
+  
   output$EBFBubbleplotDesc <- renderUI({
     # Makes sure nothing gets generated when no gene has been selected
     if (get_genename_MEME() == "") {
@@ -2100,24 +2193,14 @@ server <- function(input, output, session) {
       # Convert underscores to spaces
       dplyr::rename_with(~ gsub("_", " ", .x)) %>%
       dplyr::select(`MSA site`, `TOGA Human site`, `TOGA Acomys site`,
-                    `UP Human site`, branch, EBF, `log10 EBF`, `p-value`, sign, `EBF 100`) %>%
+                    `UP Human site`, branch, EBF, `log10 EBF`, `p-value`, sign, `EBF 100`, sub) %>%
       # if toggled, will filter the table for significant sites
       {if (input$MEMETableSignSites) dplyr::filter(., `p-value` <= input$p_val_select) else .} %>%
       dplyr::mutate(`EBF 100` = if_else(`EBF 100` == "MEME LRT p-value > 0.05\nor\nEBF < 100",
-                                        FALSE, TRUE),
-                    `p-value` = round(`p-value`, digits = 4),
-                    EBF = round(EBF, digits = 4),
-                    `log10 EBF` = round(`log10 EBF`, digits = 4),
-                    ) %>%
+                                        FALSE, TRUE)) %>%
       dplyr::rename(`MEME LRT p-value <= 0.05 and EBF >= 100` = `EBF 100`,
                     `p-value significance` = sign)
     
-    cleaned_EBF_table <- get_MEME_acomys_sub() %>%
-      dplyr::rename(branch = Species_Tree,
-                    `MSA site` = MSA_site) %>%
-      dplyr::rename(sub = subs) %>%
-      dplyr::select(branch, `MSA site`, sub) %>%
-      dplyr::right_join(cleaned_EBF_table, by = join_by(branch, `MSA site`))
     cleaned_EBF_table
   })
   
@@ -2125,7 +2208,6 @@ server <- function(input, output, session) {
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
-    test <- get_cleaned_EBF_table()
     # Filter for sites with substitutions, if selected
     if (input$MEMEFilterSitesForSubs == 2) {
       sites_to_keep <- get_cleaned_EBF_table() %>%
