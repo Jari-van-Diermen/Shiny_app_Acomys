@@ -286,7 +286,7 @@ ui <- tagList(
                   selectizeInput(inputId = "MEMEGeneInput", "Select the gene for which you want to see the results", 
                                  choices = NULL),
                   checkboxInput("MEMETranscriptIDSelect", "Choose genes based on their transcript IDs", value = FALSE),
-                  h3("Table options"),
+                  h3("Filter options"),
                   checkboxInput("MEMETableSignSites", "Only show significant sites", value = FALSE),
                   numericInput("p_val_select", "p-value significance cut-off", value = 0.05),
                   radioButtons(
