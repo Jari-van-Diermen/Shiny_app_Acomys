@@ -1,5 +1,6 @@
 library(shiny)
 library(tidyverse)
+library(purrr)
 library(magrittr)
 library(DT)
 library(tibble)
@@ -141,8 +142,8 @@ ui <- tagList(
   ),
   # Page contents
   page_navbar(
-    title = HTML("Title to be determined"),
-    theme = bs_theme(version = 5, bootswatch = "lux"),
+    title = HTML("Acomys diversifying selection web resource"),
+    theme = bs_theme(version = 5, bootswatch = "united"),
     nav_panel("aBSREL results",
               navset_underline(
                 nav_panel("aBSREL LRT results",
@@ -960,12 +961,17 @@ server <- function(input, output, session) {
     
     genename_chosen <- get_genename()
     
+    # Get transcript ID
+    gene_transcript_id <- aBSREL_data %>%
+      dplyr::filter(genename == genename_chosen) %>%
+      dplyr::pull(transcript_id)
+    
     # generation of datatable
     aBSREL_data %>%
       dplyr::filter(genename == genename_chosen) %>%
       magrittr::use_series(test_results) %>%
       magrittr::extract2(1) %>%
-      dplyr::rename("Branch name" = "branch_name",
+      dplyr::rename("Leaf branch species" = "branch_name",
              "Genome assembly name" = "branch_assembly",
              "TOGA projection ID" = "branch_projection",
              "Likelyhood ratio test statistic" = "LRT",
@@ -977,7 +983,12 @@ server <- function(input, output, session) {
       {if (input$aBSRELTableSignBranches) 
         dplyr::filter(., `FDR-adjusted P-value significant (P-value < 0.05)` == TRUE) else .} %>%
       # change assembly names to species names
-      dplyr::mutate(`Branch name` = map_chr(`Branch name`, ~ {
+      dplyr::mutate(
+        `Genome assembly name` = replace(`Genome assembly name`,
+                                         `Leaf branch species` == "REFERENCE", "GRCh38"),
+        `TOGA projection ID` = replace(`TOGA projection ID`, `Leaf branch species` == "REFERENCE",
+                                       paste(gene_transcript_id, genename_chosen, sep = "_")),
+        `Leaf branch species` = map_chr(`Genome assembly name`, ~ {
         if (.x == "REFERENCE") {
           return("Homo_sapiens")
         } else if (!(.x %in% name_conversion$`Assembly name`)) {
@@ -987,7 +998,7 @@ server <- function(input, output, session) {
           species_tree <- name_conversion$Species_Tree[index]
           return(species_tree)
         } else {
-          cat("ERROR! non-recognized branch name!")
+          cat("ERROR! non-recognized assembly name!")
           return(NULL)
         }
       }))
@@ -1009,14 +1020,17 @@ server <- function(input, output, session) {
                                  lengthMenu = c(get_aBSREL_results_length(), 10, 20)),
                   colnames = c(
                     as.character(
-                      bslib::tooltip(tags$span("Branch name"),
-                                     "The name of the tested phylogenetic branch, which is a combination of the genome assembly name and the TOGA projection ID")),
+                      bslib::tooltip(tags$span("Leaf branch species"),
+                                     "The species representing this phylogenetic leaf branch")),
                     as.character(
                       bslib::tooltip(tags$span("Genome assembly name"),
                                      "The identifier of the genome assembly used for this species (i.e. the genome assembly where TOGA identified the orthologs)")),
                     as.character(
                       bslib::tooltip(tags$span("TOGA projection ID"),
-                                     "The transcript name that was given to the projected ortholog found in this genome assembly. This unique transcript identifier is made up of the human reference transcript ID, the genename and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID)")),
+                                     HTML(paste0("The transcript name that was given to the projected ortholog found in this genome assembly. ",
+                                                 "This unique transcript identifier is made up of the human reference transcript ID, the genename ",
+                                                 "and the chain ID (in the format ReferenceTranscript.GeneSymbol.ChainID).", br(), br(),
+                                                 "As the Human GRCh38 assembly was the TOGA reference, it has no unique chain ID.")))),
                     as.character(
                       bslib::tooltip(tags$span("Likelihood ratio test statistic"),
                                      "The LRT statistic that was used to calculate the uncorrected and FDR-adjusted p-values")),
