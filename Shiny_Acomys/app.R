@@ -155,7 +155,7 @@ ui <- tagList(
                               checkboxInput("aBSRELSignSwitch", HTML(paste("Restrict selection to", em("A. cahirinus"), "diversifying genes")),
                                             value = FALSE),
                               checkboxInput("aBSRELTranscriptIDSelect", "Change to Ensembl transcript IDs", value = FALSE),
-                              h3("Table options"),
+                              h3("Filter options"),
                               checkboxInput("aBSRELTableSignBranches", "Only show significant branches", value = FALSE)
                             ),
                             tags$div(
