@@ -136,12 +136,15 @@ s3BucketName <- "acomys-positive-selection-rshiny"
 
 # Define UI ----
 ui <- tagList(
+  # Set up shinyjs
+  shinyjs::useShinyjs(),
   # Header for CSS class that allows bold text
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
   ),
   # Page contents
   page_navbar(
+    id = "top_nav",
     title = HTML("Acomys diversifying selection web resource"),
     theme = bs_theme(version = 5, bootswatch = "united"),
     nav_panel("aBSREL results",
@@ -176,8 +179,12 @@ ui <- tagList(
                                 card_header(uiOutput("aBSRELTableDescription"))
                               ),
                               card_body(
+                                tags$div(
+                                  style = "display: flex; margin-left: auto;",
+                                  downloadButton("aBSRELTableDownload", "Download TSV")
+                                ),
                                 # Wrapped inside CSS class that disables scrolling
-                                div(
+                                tags$div(
                                   class = "no-dt-scroll",
                                   DT::dataTableOutput("aBSREL_table")
                                 )
@@ -222,6 +229,10 @@ ui <- tagList(
                               class = "allowstrong",
                               card_header(strong("HyPhy aBSREL output per STRING cluster")),
                               card_body(
+                                tags$div(
+                                  style = "display: flex; margin-left: auto;",
+                                  downloadButton("STRINGTableDownload", "Download TSV")
+                                ),
                                 p(strong("This table displays the HyPhy aBSREL output data for the", em("A. cahirinus"),
                                          "Positively selected genelist for each individual STRING cluster. Select the",
                                          "desired STRING clusters using the range buttons on the left side of the page")),
@@ -249,6 +260,7 @@ ui <- tagList(
                                   "There is also the option to display all the GO-terms per cluster, and not just the reduced GO-terms.")),
                             accordion(
                               class = "allowstrong",
+                              open = "string_clusters",
                               accordion_panel(
                                 value = "all_genes",
                                 strong("Functional overrepresentation analysis of complete positively selected genelist"),
@@ -260,6 +272,7 @@ ui <- tagList(
                                 value = "string_clusters",
                                 strong("Functional overrepresentation analysis of the individual positively selected STRING clusters"),
                                 accordion(
+                                  open = "string_enrich_plot",
                                   accordion_panel(
                                     value = "string_enrich_plot",
                                     em("Functional enrichment dot plot"),
@@ -270,6 +283,10 @@ ui <- tagList(
                                   accordion_panel(
                                     value = "string_enrich_table",
                                     em("Functional enrichment table"),
+                                    tags$div(
+                                      style = "display: flex; margin-left: auto;",
+                                      downloadButton("FuncEnrichTableDownload", "Download TSV")
+                                    ),
                                     gt_output("FunEnrichaBSRELClustersTable")
                                   )
                                 )
@@ -280,6 +297,7 @@ ui <- tagList(
               )
     ),
     nav_panel("MEME results",
+              value = "MEME_results",
               layout_sidebar(
                 sidebar = sidebar(
                   width = 350,
@@ -301,7 +319,9 @@ ui <- tagList(
                   )
                 ),
                 navset_underline(
+                  id = "MEME_subtabs",
                   nav_panel("MEME LRT results",
+                            value = "LRT",
                             br(),
                             p(paste("This HyPhy MEME analysis was a follow-up analysis after",
                                     "the HyPhy aBSREL analysis. During the aBSREL analysis,",
@@ -331,6 +351,10 @@ ui <- tagList(
                               full_screen = TRUE,
                               card_header(uiOutput("MEMETableDescription")),
                               card_body(
+                                tags$div(
+                                  style = "display: flex; margin-left: auto;",
+                                  downloadButton("MEMETableDownload", "Download TSV")
+                                ),
                                 p(HTML(paste("This table and summary data represents the MEME likelyhood ratio test results for each site of the",
                                              "selected gene. Here, the positional site information is relative to the human gene",
                                              "that was used in the TOGA multiple sequence alignment (i.e. the multiple sequence",
@@ -353,6 +377,7 @@ ui <- tagList(
                               )),
                   ),
                   nav_panel("Multiple sequence alignment",
+                            value = "msa_tab",
                             p("This tab displays the protein multiple sequence alignment (MSA),",
                               "which were created by translating the TOGA codon MSAs."),
                             p("The MSAs have been annotated with the MEME likelyhood ratio test (LRT) P-values.",
@@ -407,6 +432,7 @@ ui <- tagList(
                             )
                   ),
                   nav_panel("Substitutions",
+                            value = "subs",
                             div(p("This page visualizes predicted substitutions at positively selected sites, identified using the HyPhy MEME framework across",
                                   "the mammalian species included in the evolutionary model."),
                                 p("These substitutions are displayed as a tree view for a selected site, or in the form of an interactive table where all substitutions are displayed among the mammalian species",
@@ -436,6 +462,10 @@ ui <- tagList(
                               full_screen = TRUE,
                               card_header(h5("All substitutions at positively selected codon sites")),
                               card_body(
+                                tags$div(
+                                  style = "display: flex; margin-left: auto;",
+                                  downloadButton("SubstitutionsTableDownload", "Download TSV")
+                                ),
                                 # Wrapped inside CSS class that disables scrolling
                                 div(
                                   class = "no-dt-scroll", 
@@ -445,6 +475,7 @@ ui <- tagList(
                             )
                   ),
                   nav_panel("EBF",
+                            value = "ebf",
                             card(
                               full_screen = TRUE,
                               layout_sidebar(
@@ -466,12 +497,17 @@ ui <- tagList(
                               full_screen = TRUE,
                               card_header(uiOutput("EBFTableDesc")),
                               card_body(
-                                checkboxInput("MEME_EBF_acomys_select", "Only select Acomys cahirinus EBF values", value = TRUE),
+                                tags$div(
+                                  style = "display: flex; align-items: center; justify-content: space-between; width: 100%;",
+                                  checkboxInput("MEME_EBF_acomys_select", "Only select Acomys cahirinus EBF values", value = TRUE),
+                                  downloadButton("EBFTableDownload", "Download TSV")
+                                ),
                                 DT::dataTableOutput("EBF_table")
                               )
                             )
                   ),
                   nav_panel("Uniprot sequence annotations",
+                            value = "uniprot",
                             tags$div(
                               class = "allowstrong",
                               p("For genes with canonical human sequences identified in the UniProtKB/Swiss-Prot",
@@ -515,6 +551,10 @@ ui <- tagList(
                                     selectizeInput(inputId = "UPDomainSiteSelectDomain", "Select Uniprot annotation type", 
                                                    choices = NULL),
                                   ),
+                                  tags$div(
+                                    style = "display: flex; margin-left: auto;",
+                                    downloadButton("UniDomainSiteTableDownload", "Download TSV")
+                                  ),
                                   uiOutput("UniDomainSiteDesc"),
                                   gt_output("UniDomainSiteTable")
                                 )
@@ -525,6 +565,10 @@ ui <- tagList(
                               class = "allowstrong",
                               card_header(uiOutput("UniDomainFeatTitle")),
                               card_body(
+                                tags$div(
+                                  style = "display: flex; margin-left: auto;",
+                                  downloadButton("UniDomainFeatTableDownload", "Download TSV")
+                                ),
                                 uiOutput("UniDomainFeatDesc"),
                                 gt_output("UniDomainFeatTable")
                               )
@@ -633,10 +677,20 @@ server <- function(input, output, session) {
         dplyr::filter(Cluster %in% seq(input$STRINGClustTableSlider[1],
                                        input$STRINGClustTableSlider[2]))
     }
+    aBSREL_table_omega_test_clusters
+    }, ignoreNULL = FALSE)
+  
+  # Transform to a gt table object
+  STRINGClustGtTable <- reactive({
+    
+    nonclust_switch <- isolate(input$STRINGDisplayNonClust)
+    slider <- isolate(input$STRINGClustTableSlider)
+    slider1 <- slider[1]
+    slider2 <- slider[2]
     
     # Generate table for likelyhood ratio test statistics and model estimations
     # per gene and cluster
-    gt_table <- aBSREL_table_omega_test_clusters %>%
+    gt_table <- STRINGClustTable() %>%
       # Make custom cluster labels
       dplyr::mutate(Cluster_label = if_else(is.na(Cluster), "Not clustered",
                                             paste0("Cluster ", Cluster)),
@@ -684,23 +738,32 @@ server <- function(input, output, session) {
         locations = cells_body(columns = genename),
         style = cell_fill(color = "gray95"))
     
-      # Reorder row groups
-    if (input$STRINGDisplayNonClust) {
+    # Reorder row groups
+    if (nonclust_switch) {
       gt_table %>%
-        row_group_order(groups = c(paste0("Cluster ", seq(input$STRINGClustTableSlider[1],
-                                                          input$STRINGClustTableSlider[2])),
+        row_group_order(groups = c(paste0("Cluster ", seq(slider1, slider2)),
                                    "Not clustered")) %>%
         opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
     } else {
       gt_table %>%
-        row_group_order(groups = paste0("Cluster ", seq(input$STRINGClustTableSlider[1],
-                                                        input$STRINGClustTableSlider[2]))) %>%
+        row_group_order(groups = paste0("Cluster ", seq(slider1, slider2))) %>%
         opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
     }
-  }, ignoreNULL = FALSE)
+  })
+  
+  output$STRINGTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return("aBSREL_STRING_cluster_results.tsv")
+    },
+    content = function(file) {
+      readr::write_delim(STRINGClustTable(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
   
   output$STRINGClusterTable <- render_gt({
-    STRINGClustTable()
+    STRINGClustGtTable()
     })
   
   output$aBSRELSTRINGScatterplot <- renderPlotly({
@@ -873,18 +936,7 @@ server <- function(input, output, session) {
                                              levels = c(paste0("Cluster ",
                                                                seq(max(Cluster, na.rm = TRUE))),
                                                         "Not clustered"))) %>%
-        dplyr::select(-Cluster) %>%
-        gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
-        opt_stylize(style = 1) %>%
-        cols_align(align = "left") %>%
-        data_color(
-          columns = qvalue,
-          palette = "Greens",
-          reverse = TRUE) %>%
-        data_color(
-          columns = Count,
-          palette = "Blues") %>%
-        opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
+        dplyr::select(-Cluster)
     } else {
       Acomys_reduced_GO_clusters %>%
         dplyr::select(-all_of(c("cluster", "parent", "parentTerm", "termDispensability",
@@ -905,7 +957,32 @@ server <- function(input, output, session) {
                       "Term Uniqueness" = termUniqueness,
                       "number of genes in reduced GO-terms" = n_of_genes,
                       "Gene IDs" = geneID,
-                      "Number of reduced GO-terms" = terms_per_parent) %>%
+                      "Number of reduced GO-terms" = terms_per_parent)
+    }
+  }, ignoreNULL = FALSE)
+  
+  # Convert to gt table
+  FunEnrichClustGtTable <- reactive({
+    
+    # Make sure switch does not cause re-evaluation
+    reduced_switch <- isolate(input$FunEnrichReducedSwitch)
+    
+    # Render reduced GO-terms unless FunEnrichReducedSwitch is set to TRUE
+    if (reduced_switch) {
+      FunEnrichClustTable() %>%
+        gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
+        opt_stylize(style = 1) %>%
+        cols_align(align = "left") %>%
+        data_color(
+          columns = qvalue,
+          palette = "Greens",
+          reverse = TRUE) %>%
+        data_color(
+          columns = Count,
+          palette = "Blues") %>%
+        opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
+    } else {
+      FunEnrichClustTable() %>%
         gt(groupname_col = "Cluster_label", row_group_as_column = TRUE) %>%
         opt_stylize(style = 1) %>%
         cols_align(align = "left") %>%
@@ -916,11 +993,22 @@ server <- function(input, output, session) {
           columns = "number of genes in reduced GO-terms",
           palette = "Blues") %>%
         opt_interactive(use_compact_mode = TRUE, use_filters = TRUE)
-    }
-  }, ignoreNULL = FALSE)
+      }
+  })
+  
+  output$FuncEnrichTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return("aBSREL_Functional_enrichment_results.tsv")
+    },
+    content = function(file) {
+      readr::write_delim(FunEnrichClustTable(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
   
   output$FunEnrichaBSRELClustersTable <- render_gt({
-    FunEnrichClustTable()
+    FunEnrichClustGtTable()
   })
   
   # retrieve which gene has been selected
@@ -1009,6 +1097,19 @@ server <- function(input, output, session) {
     nrow(get_aBSREL_results())
   })
   
+  output$aBSRELTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename(),
+                    "_aBSREL_results",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(get_aBSREL_results(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
   output$aBSREL_table <- DT::renderDataTable({
     
     # Stop if no gene selected
@@ -1086,6 +1187,9 @@ server <- function(input, output, session) {
   
   output$MEMETableDescription <- renderUI({
     
+    # Only run when LRT is open
+    req(input$MEME_subtabs == "LRT")
+    
     if (get_genename_MEME() == "") {
       # If no gene has been selected
       paragraph <- h5("Select a gene to display its results")
@@ -1149,12 +1253,6 @@ server <- function(input, output, session) {
       dplyr::mutate(branch_assembly = replace(branch_assembly, label == "REFERENCE", "REFERENCE"),
                     Species_Tree = replace(Species_Tree, label == "REFERENCE", "Homo_sapiens")) %>%
       dplyr::filter(Species_Tree %in% c("Homo_sapiens", "Acomys_cahirinus")) %>%
-      # change substitution site if A. cahirinus
-      dplyr::rowwise() %>%
-      dplyr::mutate(subs = if_else(Species_Tree == "Acomys_cahirinus",
-                                   translate_branch_subs(TOGA_Acomys_site, subs),
-                                   subs)) %>%
-      ungroup() %>%
       dplyr::select("MSA_site", "TOGA_Human_site", "TOGA_Acomys_site", "UP_Human_site", "subs", "Species_Tree") %>%
       tidyr::pivot_wider(values_from = "subs", names_from = "Species_Tree") %>%
       dplyr::right_join(MEME_results, by = join_by(MSA_site, TOGA_Human_site, TOGA_Acomys_site, UP_Human_site)) %>%
@@ -1183,7 +1281,23 @@ server <- function(input, output, session) {
     nrow(get_MEME_results())
   })
   
+  output$MEMETableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename_MEME(),
+                    "_MEME_results",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(get_MEME_results(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
   output$MEME_table <- gt::render_gt({
+    
+    # Only run when LRT is open
+    req(input$MEME_subtabs == "LRT")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -1242,6 +1356,10 @@ server <- function(input, output, session) {
   })
   
   output$MEMEResultDescriptionTitle <- renderUI({
+    
+    # Only run when LRT is open
+    req(input$MEME_subtabs == "LRT")
+    
     # Makes sure nothing gets generated when no gene has been selected
     if (get_genename_MEME() == "") {
       # If no gene has been selected
@@ -1254,6 +1372,9 @@ server <- function(input, output, session) {
   
   # render block of summarizing text 
   output$MEMEResultDescription <- renderUI({
+    
+    # Only run when LRT is open
+    req(input$MEME_subtabs == "LRT")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -1297,6 +1418,9 @@ server <- function(input, output, session) {
   # Get list of all MSA PNG objects in the S3 bucket
   object_keys_from_S3_bucket_png <- reactive({
     
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "msa_tab")
+    
     ## Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -1309,6 +1433,9 @@ server <- function(input, output, session) {
   
   # Find object keys that represent MSAs for the selected gene 
   gene_keys_from_S3_bucket <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "msa_tab")
     
     ## Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -1329,6 +1456,9 @@ server <- function(input, output, session) {
   
   # Retrieve the PNG MSAs from the AWS s3 bucket
   Get_PNG_MSA_from_S3 <- observe({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "msa_tab")
     
     ## Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -1429,6 +1559,9 @@ server <- function(input, output, session) {
   
   # Render the multiple sequence alignment
   output$MultipleAlignment <- renderImage({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "msa_tab")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -1590,6 +1723,9 @@ server <- function(input, output, session) {
   
   # Get the site selection options
   observe({
+    
+    # Only run when subs is open
+    req(input$MEME_subtabs == "subs")
   
     freezeReactiveValue(input, "SubSiteSelect")
     updateSelectizeInput(session, "SubSiteSelect", choices = get_site_options(),
@@ -1653,6 +1789,8 @@ server <- function(input, output, session) {
     site_branch_subs <- get_MEME_acomys_sub_pval() %>%
       dplyr::select(!all_of(c("p-value", cols_to_remove))) %>%
       dplyr::distinct(label, subs, .keep_all = TRUE) %>%
+      # Remove subs not mapping to a position in the current reference frame
+      dplyr::filter(!is.na(.data[[coord_sel[1]]])) %>%
       tidyr::pivot_wider(names_from = all_of(coord_sel[1]), values_from = subs) %>%
       # Join with tibble_tree
       {if ("branch.length" %in% colnames(.)) {
@@ -1854,7 +1992,13 @@ server <- function(input, output, session) {
   
   output$SubSitePhylo <- renderPlot({
     
+    # Only run when subs is open
+    req(input$MEME_subtabs == "subs")
+    
     req(input$MEMEGeneInput)
+    
+    # Make sure no error occurs when switching between genes
+    req(input$SubSiteSelect)
     
     # Makes sure nothing gets generated when no sites has been selected
     if (length(get_site_options()) == 0) {
@@ -1864,9 +2008,28 @@ server <- function(input, output, session) {
     annotate_phylo()
   })
   
+  output$SubstitutionsTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename_MEME(),
+                    "_positive_selection_substitutions",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(get_sub_display_table(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
   output$MEME_branch_subs <- DT::renderDataTable({
     
+    # Only run when subs is open
+    req(input$MEME_subtabs == "subs")
+    
     req(input$MEMEGeneInput)
+    
+    # Make sure no error occurs when switching between genes
+    req(input$SubSiteSelect)
     
     get_sub_display_table()
   }, rownames = FALSE, options = list(scrollX = TRUE,
@@ -2066,6 +2229,9 @@ server <- function(input, output, session) {
   # Let user know that no data exists for this reference frame
   output$EBFBubbleMessage <- renderUI({
     
+    # Only run when ebf is open
+    req(input$MEME_subtabs == "ebf")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2092,6 +2258,9 @@ server <- function(input, output, session) {
 
   # render bubbleplot
   output$EBF_bubbleplot <- renderPlotly({
+    
+    # Only run when ebf is open
+    req(input$MEME_subtabs == "ebf")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2178,6 +2347,10 @@ server <- function(input, output, session) {
     })
   
   output$EBFBubbleplotDesc <- renderUI({
+    
+    # Only run when ebf is open
+    req(input$MEME_subtabs == "ebf")
+    
     # Makes sure nothing gets generated when no gene has been selected
     if (get_genename_MEME() == "") {
       return("Select a gene to generate the EBF plot")
@@ -2188,6 +2361,10 @@ server <- function(input, output, session) {
   
   
   output$EBFTableDesc <- renderUI({
+    
+    # Only run when ebf is open
+    req(input$MEME_subtabs == "ebf")
+    
     # Makes sure nothing gets generated when no gene has been selected
     if (get_genename_MEME() == "") {
       return("Select a gene to generate the EBF plot")
@@ -2262,9 +2439,25 @@ server <- function(input, output, session) {
       {if (input$MEME_EBF_acomys_select) dplyr::filter(., branch == "Acomys_cahirinus") else .}
   })
   
+  output$EBFTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename_MEME(),
+                    "_EBF_data",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(MEME_EBF_acomys_selecter(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
   # render datatable
   output$EBF_table <- DT::renderDataTable({
 
+    # Only run when ebf is open
+    req(input$MEME_subtabs == "ebf")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2285,6 +2478,9 @@ server <- function(input, output, session) {
   
   
   get_unimapped_MEME_results <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2354,6 +2550,10 @@ server <- function(input, output, session) {
   })
   
   output$DomainPageDesc <- renderUI({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2379,6 +2579,9 @@ server <- function(input, output, session) {
   })
   
   get_uniprot_anno_dfs <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
 
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2417,6 +2620,9 @@ server <- function(input, output, session) {
   # Find Uniprot anno type options
   get_UP_type_options <- reactive({
     
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2439,6 +2645,9 @@ server <- function(input, output, session) {
   # Get the site selection options
   observe({
     
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
     freezeReactiveValue(input, "UPDomainSiteSelectDomain")
     updateSelectizeInput(session, "UPDomainSiteSelectDomain", choices = get_UP_type_options(),
                          server = TRUE, 
@@ -2447,6 +2656,10 @@ server <- function(input, output, session) {
   
   # Retrieve the UP features for drawing and annotation
   get_draw_features <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2470,6 +2683,9 @@ server <- function(input, output, session) {
   })
   
   output$UniDomainPlot <- renderPlotly({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2654,6 +2870,9 @@ server <- function(input, output, session) {
   
   output$UniDomainSiteDesc <- renderUI({
     
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
     # Stop if no gene selected
     req(input$MEMEGeneInput)
     
@@ -2681,8 +2900,11 @@ server <- function(input, output, session) {
     div(p(main_text))
     
   })
-
+  
   get_UniDomainSiteTable <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2737,7 +2959,34 @@ server <- function(input, output, session) {
                                    "Likelyhood ratio test statistic", "p-value",
                                    "# branches under selection", "MEME LogL",
                                    "FEL LogL", "Variation p")))
-      } else {.}} %>%
+      } else {.}}
+  })
+  
+  # Convert to GT table
+  get_UniDomainSiteGtTable <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    # Stop if no UP annotation selected
+    req(input$UPDomainSiteSelectDomain)
+    
+    # Return NULL when no uniprot ID was identified
+    # Do nothing if we found no uniprot_ID for the gene
+    if (length(get_uniprot_id()) == 0) {
+      return(NULL)
+    }
+    
+    # Return NULL when no positively selected sites remain under the
+    # current filtering settings
+    if (nrow(get_unimapped_MEME_results()) == 0) {
+      return(NULL)
+    }
+    
+    get_UniDomainSiteTable() %>%
       gt(groupname_col = "gene") %>%
       opt_stylize(style = 1) %>%
       cols_align(align = "left") %>%
@@ -2784,7 +3033,11 @@ server <- function(input, output, session) {
       opt_interactive(use_compact_mode = TRUE)
   })
   
-  output$UniDomainSiteTable <- render_gt({
+  # Select a coordinate frame for display
+  get_UniDomainSiteTable_coord_frame <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2803,20 +3056,56 @@ server <- function(input, output, session) {
     
     # Only display selected coordinate frame
     if (input$MEMEUPCoordSelector == "1") {
-      get_UniDomainSiteTable() %>%
+      get_UniDomainSiteGtTable() %>%
         cols_hide(c("TOGA Human site", "TOGA Acomys site", "UP Human site"))
     } else if (input$MEMEUPCoordSelector == "2") {
-      get_UniDomainSiteTable() %>%
+      get_UniDomainSiteGtTable() %>%
         cols_hide(c("MSA site", "TOGA Acomys site", "UP Human site"))
     } else if (input$MEMEUPCoordSelector == "3") {
-      get_UniDomainSiteTable() %>%
+      get_UniDomainSiteGtTable() %>%
         cols_hide(c("MSA site", "TOGA Human site", "UP Human site"))
     } else if (input$MEMEUPCoordSelector == "4") {
-      get_UniDomainSiteTable() %>%
+      get_UniDomainSiteGtTable() %>%
         cols_hide(c("MSA site", "TOGA Human site", "TOGA Acomys site"))
     } else {
       stop("Error, input$MEMEUPCoordSelector should be '1', '2', '3' or '4'")
     }
+  })
+  
+  observe({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
+    tbl <- tryCatch(get_UniDomainSiteTable(), error = function(e) NULL)
+    ids <- get_uniprot_id()
+    
+    if (length(ids) == 0 || is.null(tbl)) {
+      shinyjs::disable("UniDomainSiteTableDownload")
+    } else {
+      shinyjs::enable("UniDomainSiteTableDownload")
+    }
+  })
+  
+  output$UniDomainSiteTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename_MEME(),
+                    "_UP_sequence_annotations",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(get_UniDomainSiteTable(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
+  output$UniDomainSiteTable <- render_gt({
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    get_UniDomainSiteTable_coord_frame()
   })
   
   output$UniDomainFeatTitle <- renderUI({
@@ -2854,7 +3143,10 @@ server <- function(input, output, session) {
     return(main_text)
   })
   
-  output$UniDomainFeatTable <- render_gt({
+  get_UniDomainFeatTable <- reactive({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
     
     # Stop if no gene selected
     req(input$MEMEGeneInput)
@@ -2870,7 +3162,51 @@ server <- function(input, output, session) {
                     "Feature End site" = End,
                     "Uniprot feature name" = feat_name,
                     "Uniprot feature type" = feat_type,
-                    "Feature length" = length) %>%
+                    "Feature length" = length)
+  })
+  
+  observe({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
+    tbl <- get_UniDomainFeatTable()
+    
+    if (is.null(tbl)) {
+      shinyjs::disable("UniDomainFeatTableDownload")
+    } else {
+      shinyjs::enable("UniDomainFeatTableDownload")
+    }
+  })
+  
+  output$UniDomainFeatTableDownload <- downloadHandler(
+    filename = function() {
+      # filename that the browser will give the downloaded TSV file
+      return(paste0(get_genename_MEME(),
+                    "_UP_feature_table",
+                    ".tsv"))
+    },
+    content = function(file) {
+      readr::write_delim(get_UniDomainFeatTable(), file, delim = "\t")
+    },
+    contentType = "text/tab-separated-values"
+  )
+  
+  output$UniDomainFeatTable <- render_gt({
+    
+    # Only run when msa_tab is open
+    req(input$MEME_subtabs == "uniprot")
+    
+    # Stop if no gene selected
+    req(input$MEMEGeneInput)
+    
+    # Return NULL when no uniprot ID was identified
+    # Do nothing if we found no uniprot_ID for the gene
+    if (length(get_uniprot_id()) == 0) {
+      return(NULL)
+    }
+    
+    get_UniDomainFeatTable() %>%
       gt(groupname_col = "Gene") %>%
       opt_stylize(style = 1) %>%
       cols_align(align = "left") %>%
@@ -2879,7 +3215,6 @@ server <- function(input, output, session) {
         palette = "Greens") %>%
       opt_interactive(use_compact_mode = TRUE)
   })
-
 }
 
 # Run the app ----
