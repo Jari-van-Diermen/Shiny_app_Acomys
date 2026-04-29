@@ -2276,7 +2276,7 @@
         "Package": "ggtree",
         "Type": "Package",
         "Title": "an R package for visualization of tree and annotation data",
-        "Version": "4.0.4",
+        "Version": "4.0.5",
         "Authors@R": "c(\n       person(\"Guangchuang\", \"Yu\",     email = \"guangchuangyu@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"), \n            comment = c(ORCID = \"0000-0002-6485-8781\")),\n       person(\"Tommy Tsan-Yuk\", \"Lam\", email = \"tylam.tommy@gmail.com\",   role = c(\"aut\", \"ths\")),\n       person(\"Shuangbin\", \"Xu\",       email = \"xshuangbin@163.com\",      role = \"aut\", \n            comment = c(ORCID=\"0000-0003-3513-5362\")),\n       person(\"Lin\", \" Li\",            email = \"williamlee2220@qq.com\",   role = \"ctb\"),\n       person(\"Bradley\", \"Jones\",      email = \"bjones@cfenet.ubc.ca\",    role = \"ctb\"),\n       person(\"Justin\", \"Silverman\",   email = \"jsilve24@gmail.com\",      role = \"ctb\"),\n       person(\"Watal M.\", \"Iwasaki\",   email = \"heavy.watal@gmail.com\",   role = \"ctb\"),\n       person(\"Yonghe\", \"Xia\",         email = \"xiayh17@gmail.com\",       role = \"ctb\"),\n       person(\"Ruizhu\", \"Huang\",       email = \"ruizhuRH@gmail.com\",      role = \"ctb\")\n       )",
         "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
         "Description": "'ggtree' extends the 'ggplot2' plotting system which implemented\n    the grammar of graphics. 'ggtree' is designed for visualization and annotation\n    of phylogenetic trees and other tree-like structures with their annotation data.",
@@ -2289,19 +2289,19 @@
         "License": "Artistic-2.0",
         "URL": "https://www.amazon.com/Integration-Manipulation-Visualization-Phylogenetic-Computational-ebook/dp/B0B5NLZR1Z/\n(book),\nhttp://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12628\n(paper)",
         "BugReports": "https://github.com/YuLab-SMU/ggtree/issues",
-        "Packaged": "2026-01-05 22:51:35 UTC; biocbuild",
+        "Packaged": "2026-03-17 21:49:23 UTC; biocbuild",
         "biocViews": "Alignment, Annotation, Clustering, DataImport,\nMultipleSequenceAlignment, Phylogenetics, ReproducibleResearch,\nSoftware, Visualization",
         "RoxygenNote": "7.3.3",
         "Roxygen": "list(markdown = TRUE)",
         "git_url": "https://git.bioconductor.org/packages/ggtree",
         "git_branch": "RELEASE_3_22",
-        "git_last_commit": "8e25254",
-        "git_last_commit_date": "2026-01-04",
+        "git_last_commit": "a91f8e6",
+        "git_last_commit_date": "2026-03-16",
         "Repository": "Bioconductor 3.22",
-        "Date/Publication": "2026-01-05",
+        "Date/Publication": "2026-03-17",
         "NeedsCompilation": "no",
         "Author": "Guangchuang Yu [aut, cre, cph] (ORCID:\n    <https://orcid.org/0000-0002-6485-8781>),\n  Tommy Tsan-Yuk Lam [aut, ths],\n  Shuangbin Xu [aut] (ORCID: <https://orcid.org/0000-0003-3513-5362>),\n  Lin Li [ctb],\n  Bradley Jones [ctb],\n  Justin Silverman [ctb],\n  Watal M. Iwasaki [ctb],\n  Yonghe Xia [ctb],\n  Ruizhu Huang [ctb]",
-        "Built": "R 4.5.3; ; 2026-04-29 21:56:16 UTC; unix"
+        "Built": "R 4.5.3; ; 2026-04-29 22:53:42 UTC; unix"
       }
     },
     "glue": {
